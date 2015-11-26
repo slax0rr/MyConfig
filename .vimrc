@@ -59,7 +59,7 @@ set wmnu
 
 " Add current line marker
 set cursorline
-highlight CursorLine guibg=#333333
+highlight CursorLine ctermbg=7 guibg=#333333
 
 " Set autocompletion
 filetype plugin on
@@ -137,7 +137,7 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 
 " Highligh 80 and 120 columns
-highlight ColorColumn guibg=#333333
+highlight ColorColumn ctermbg=0 guibg=#333333
 let &colorcolumn="80,".join(range(120,999),",")
 
 " ctag bar
@@ -205,8 +205,8 @@ function! LoadSession()
     let b:sessionfile = b:sessiondir . "/session.vim"
     if (filereadable(b:sessionfile))
       exe 'source ' b:sessionfile
-      highlight CursorLine guibg=#333333
-      highlight ColorColumn guibg=#333333
+      highlight CursorLine ctermbg=7 guibg=#333333
+      highlight ColorColumn ctermbg=0 guibg=#333333
     else
       echo "No session loaded."
     endif

@@ -59,7 +59,9 @@ set wmnu
 
 " Add current line marker
 set cursorline
-highlight CursorLine ctermbg=7 guibg=#333333
+if has('gui')
+    highlight CursorLine guibg=#333333
+endif
 
 " Set autocompletion
 filetype plugin on
@@ -205,7 +207,9 @@ function! LoadSession()
     let b:sessionfile = b:sessiondir . "/session.vim"
     if (filereadable(b:sessionfile))
       exe 'source ' b:sessionfile
-      highlight CursorLine ctermbg=7 guibg=#333333
+	  if has('gui')
+          highlight CursorLine guibg=#333333
+	  endif
       highlight ColorColumn ctermbg=0 guibg=#333333
     else
       echo "No session loaded."

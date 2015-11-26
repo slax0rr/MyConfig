@@ -5,9 +5,9 @@ set background=dark
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-let vimdir = ".vim"
+let g:vimdir = ".vim"
 if has("win32")
-	let vimdir = "vimfiles"
+	let g:vimdir = "vimfiles"
 endif
 
 " set the runtime path to include Vundle and initialize
@@ -16,7 +16,7 @@ if has("win32")
 else
 	set rtp+=~/.vim/bundle/Vundle.vim
 endif
-call vundle#begin('~/' + vimdir + '/')
+call vundle#begin('~/' + g:vimdir + '/')
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
@@ -179,7 +179,7 @@ let g:vdebug_keymap = {
 " Functions, functions everywhere!
 " Creates a session
 function! MakeSession()
-  let b:sessiondir = substitute($HOME . "/" + vimdir + "/sessions" .  substitute(getcwd(), '\(\w\):', '/\1/', 'gei'), '/', '\', 'g')
+  let b:sessiondir = substitute($HOME . "/" + g:vimdir + "/sessions" .  substitute(getcwd(), '\(\w\):', '/\1/', 'gei'), '/', '\', 'g')
   if (filewritable(b:sessiondir) != 2)
     exe 'silent !mkdir ' b:sessiondir
     redraw!
@@ -190,7 +190,7 @@ endfunction
 
 " Updates a session, BUT ONLY IF IT ALREADY EXISTS
 function! UpdateSession()
-  let b:sessiondir = substitute($HOME . "/" + vimdir + "/sessions" .  substitute(getcwd(), '\(\w\):', '/\1/', 'gei'), '/', '\', 'g')
+  let b:sessiondir = substitute($HOME . "/" + g:vimdir + "/sessions" .  substitute(getcwd(), '\(\w\):', '/\1/', 'gei'), '/', '\', 'g')
   let b:sessionfile = b:sessiondir . "/session.vim"
   if (filereadable(b:sessionfile))
     exe "mksession! " . b:sessionfile
@@ -201,7 +201,7 @@ endfunction
 " Loads a session if it exists
 function! LoadSession()
   if argc() == 0
-    let b:sessiondir = substitute($HOME . "/" + vimdir + "/sessions" .  substitute(getcwd(), '\(\w\):', '/\1/', 'gei'), '/', '\', 'g')
+    let b:sessiondir = substitute($HOME . "/" + g:vimdir + "/sessions" .  substitute(getcwd(), '\(\w\):', '/\1/', 'gei'), '/', '\', 'g')
     let b:sessionfile = b:sessiondir . "/session.vim"
     if (filereadable(b:sessionfile))
       exe 'source ' b:sessionfile

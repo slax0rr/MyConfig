@@ -22,7 +22,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'shawncplus/phpcomplete.vim'
 " Plugin 'joonty/vim-phpqa'
- Plugin 'joonty/vdebug'
+Plugin 'joonty/vdebug'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

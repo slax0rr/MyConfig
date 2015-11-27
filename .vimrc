@@ -16,13 +16,13 @@ if has("win32")
 else
 	set rtp+=~/.vim/bundle/Vundle.vim
 endif
-call vundle#begin('~/' + g:vimdir + '/')
+call vundle#begin('~/' . g:vimdir . '/')
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'shawncplus/phpcomplete.vim'
-Plugin 'joonty/vim-phpqa'
-Plugin 'joonty/vdebug'
+" Plugin 'joonty/vim-phpqa'
+ Plugin 'joonty/vdebug'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -37,7 +37,7 @@ endif
 " Tab and indent settings
 set tabstop=4
 set shiftwidth=4
-set expandtab
+" set expandtab
 set autoindent
 set smartindent
 
@@ -60,7 +60,7 @@ set wmnu
 " Add current line marker
 set cursorline
 if has('gui')
-    highlight CursorLine guibg=#333333
+	highlight CursorLine guibg=#333333
 endif
 
 " Set autocompletion
@@ -81,6 +81,12 @@ set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  " remove left-hand scroll bar
+
+" add custom ctags file
+set tags=.tags;
+
+" set forward slashes
+set shellslash
 
 " Key remaps
 " Remap Ctrl+x Ctrl+o to Ctrl+Space (omni complete)
@@ -154,34 +160,32 @@ map <leader>j g<C-]>
 map <leader>sj <C-W>g<C-]>
 
 " Horizontal split to vertical split
-map <F11> <C-w>H
-map <F12> <C-w>K
+map <leader>h <C-w>H
+map <leader>k <C-w>K
 
 " Run some formatting rules on a file
 map <leader>f :call FixFormatting()<cr>
-
-" add custom ctags file
-set tags=.tags;
 
 " VDebug settings
 let g:vdebug_options = {}
 let g:vdebug_options["port"] = 9000
 
 let g:vdebug_options["path_maps"] = {
-    \    "/var/www/": "/Users/tomazlovrec/Development/vagrant/dev/"
+\    "/mnt/hgfs/webserver/": "S:/projects/"
 \}
 
 let g:vdebug_options["server"] = "0.0.0.0"
 let g:vdebug_options["break_on_open"] = 0
+let g:vdebug_options["continuous_mode"] = 1
 
 let g:vdebug_keymap = {
-\    "set_breakpoint" : "<C-b>",
+\    "set_breakpoint" : "<C-b>"
 \}
 
 " Functions, functions everywhere!
 " Creates a session
 function! MakeSession()
-  let b:sessiondir = substitute($HOME . "/" + g:vimdir + "/sessions" .  substitute(getcwd(), '\(\w\):', '/\1/', 'gei'), '/', '\', 'g')
+  let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '/', '\', 'g')
   if (filewritable(b:sessiondir) != 2)
     exe 'silent !mkdir ' b:sessiondir
     redraw!
@@ -192,7 +196,7 @@ endfunction
 
 " Updates a session, BUT ONLY IF IT ALREADY EXISTS
 function! UpdateSession()
-  let b:sessiondir = substitute($HOME . "/" + g:vimdir + "/sessions" .  substitute(getcwd(), '\(\w\):', '/\1/', 'gei'), '/', '\', 'g')
+  let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '/', '\', 'g')
   let b:sessionfile = b:sessiondir . "/session.vim"
   if (filereadable(b:sessionfile))
     exe "mksession! " . b:sessionfile
@@ -203,13 +207,13 @@ endfunction
 " Loads a session if it exists
 function! LoadSession()
   if argc() == 0
-    let b:sessiondir = substitute($HOME . "/" + g:vimdir + "/sessions" .  substitute(getcwd(), '\(\w\):', '/\1/', 'gei'), '/', '\', 'g')
+    let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '/', '\', 'g')
     let b:sessionfile = b:sessiondir . "/session.vim"
     if (filereadable(b:sessionfile))
       exe 'source ' b:sessionfile
-	  if has('gui')
-          highlight CursorLine guibg=#333333
-	  endif
+      if has('gui')
+        highlight CursorLine guibg=#333333
+      endif
       highlight ColorColumn ctermbg=0 guibg=#333333
     else
       echo "No session loaded."
@@ -223,7 +227,7 @@ endfunction
 " Fix formatting
 function! FixFormatting()
 	" wrap logical operators with spaces if there aren't any
-	execute '%s/\(\S\{-}\)\([<>!]\{-}=\+\|[<>|&]\+\)\(\S\{-}\)/\1 \2 \3/ge'
+	execute '%s/\(\S\{-}\)\([<>!]\{-}=\+\|[<>|]\+\)\(\S\{-}\)/\1 \2 \3/ge'
 	execute '%s/[,a-zA-Z0-9 	]\@<!\([a-zA-Z0-9 	]\+\)\(&\+\)/\1 \2 /ge'
 	execute '%s/< ?php/<?php/ge'
 	" Add a space after control structure keyword, and after closing parenthesis

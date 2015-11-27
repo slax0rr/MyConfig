@@ -29,11 +29,6 @@ filetype plugin indent on    " required
 
 execute pathogen#infect()
 
-" Reopen file on same line as it was closed
-if has("autocmd")
-  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-endif
-
 " Tab and indent settings
 set tabstop=4
 set shiftwidth=4
@@ -255,6 +250,10 @@ function! FixFormatting()
     execute '%s/\n\{3,}/\r\r/e'
 endfunction
 
-au VimEnter * nested :call LoadSession()
-au VimLeave * :call UpdateSession()
+" Reopen file on same line as it was closed
+if has("autocmd")
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+    au VimEnter * nested :call LoadSession()
+    au VimLeave * :call UpdateSession()
+endif
 map <leader>m :call MakeSession()<CR>

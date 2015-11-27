@@ -2,8 +2,8 @@
 syntax on
 set background=dark
 
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible			  " be iMproved, required
+filetype off				  " required
 
 let g:vimdir = ".vim"
 if has("win32")
@@ -24,15 +24,10 @@ Plugin 'shawncplus/phpcomplete.vim'
 " Plugin 'joonty/vim-phpqa'
 Plugin 'joonty/vdebug'
 
-call vundle#end()            " required
-filetype plugin indent on    " required
+call vundle#end()			 " required
+filetype plugin indent on	 " required
 
 execute pathogen#infect()
-
-" Reopen file on same line as it was closed
-if has("autocmd")
-  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-endif
 
 " Tab and indent settings
 set tabstop=4
@@ -91,42 +86,42 @@ set shellslash
 " Key remaps
 " Remap Ctrl+x Ctrl+o to Ctrl+Space (omni complete)
 inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
-        \ "\<lt>C-n>" :
-        \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
-        \ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
-        \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
+			\ "\<lt>C-n>" :
+			\ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
+			\ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
+			\ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
 imap <C-@> <C-Space>
 
 " Add closing brackets when an opening bracket is written
 " Squirly brackets
-inoremap {  {}<Left>
-inoremap {<CR>  {<CR>}<Esc>O
+inoremap {	{}<Left>
+inoremap {<CR>	{<CR>}<Esc>O
 inoremap {{  {
 inoremap {}  {}
-inoremap        {  {}<Left>
+inoremap		{  {}<Left>
 inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
 
 " Parenthesis
-inoremap (  ()<Left>
+inoremap (	()<Left>
 inoremap (<CR> (<CR>)<Esc>O
 inoremap ((  (
 inoremap ()  ()
-inoremap        (  ()<Left>
+inoremap		(  ()<Left>
 inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
 
 " Square brackets
-inoremap [  []<Left>
+inoremap [	[]<Left>
 inoremap [<CR> [<CR>]<Esc>O
 inoremap [[  [
 inoremap []  []
-inoremap        [  []<Left>
+inoremap		[  []<Left>
 inoremap <expr> ]  strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
 
 " Add closing quotes when an opening bracket is written, and jump over closing
-inoremap "  ""<Left>
+inoremap "	""<Left>
 inoremap "" "
 inoremap <expr> " strpart(getline('.'), col('.')-1, 1) == "\"" ? "\<Right>" : "\"\"\<Left>"
-inoremap '  ''<Left>
+inoremap '	''<Left>
 inoremap '' '
 inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\'\'\<Left>"
 
@@ -135,12 +130,12 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " Autocomplete already-existing words in the file with tab (extremely useful!)
 function! InsertTabWrapper()
-      let col = col('.') - 1
-      if !col || getline('.')[col - 1] !~ '\k'
-          return "\<tab>"
-      else
-          return "\<c-p>"
-      endif
+	let col = col('.') - 1
+	if !col || getline('.')[col - 1] !~ '\k'
+		return "\<tab>"
+	else
+		return "\<c-p>"
+	endif
 endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 
@@ -171,64 +166,64 @@ let g:vdebug_options = {}
 let g:vdebug_options["port"] = 9000
 
 let g:vdebug_options["path_maps"] = {
-\    "/mnt/hgfs/webserver/": "S:/projects/"
-\}
+			\	 "/mnt/hgfs/webserver/": "S:/projects/"
+			\}
 
 let g:vdebug_options["server"] = "0.0.0.0"
 let g:vdebug_options["break_on_open"] = 0
 let g:vdebug_options["continuous_mode"] = 1
 
 let g:vdebug_keymap = {
-\    "set_breakpoint" : "<C-b>"
-\}
+			\	 "set_breakpoint" : "<C-b>"
+			\}
 
 " Functions, functions everywhere!
 " Creates a session
 function! MakeSession()
-  let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '/', '\', 'g')
-  if (filewritable(b:sessiondir) != 2)
-    exe 'silent !mkdir ' b:sessiondir
-    redraw!
-  endif
-  let b:sessionfile = b:sessiondir . '/session.vim'
-  exe "mksession! " . b:sessionfile
+	let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '/', '\', 'g')
+	if (filewritable(b:sessiondir) != 2)
+		exe 'silent !mkdir ' b:sessiondir
+		redraw!
+	endif
+	let b:sessionfile = b:sessiondir . '/session.vim'
+	exe "mksession! " . b:sessionfile
 endfunction
 
 " Updates a session, BUT ONLY IF IT ALREADY EXISTS
 function! UpdateSession()
-  let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '/', '\', 'g')
-  let b:sessionfile = b:sessiondir . "/session.vim"
-  if (filereadable(b:sessionfile))
-    exe "mksession! " . b:sessionfile
-    echo "updating session"
-  endif
+	let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '/', '\', 'g')
+	let b:sessionfile = b:sessiondir . "/session.vim"
+	if (filereadable(b:sessionfile))
+		exe "mksession! " . b:sessionfile
+		echo "updating session"
+	endif
 endfunction
 
 " Loads a session if it exists
 function! LoadSession()
-  if argc() == 0
-    let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '/', '\', 'g')
-    let b:sessionfile = b:sessiondir . "/session.vim"
-    if (filereadable(b:sessionfile))
-      exe 'source ' b:sessionfile
-      if has('gui')
-        highlight CursorLine guibg=#333333
-      endif
-      highlight ColorColumn ctermbg=0 guibg=#333333
-    else
-      echo "No session loaded."
-    endif
-  else
-    let b:sessionfile = ""
-    let b:sessiondir = ""
-  endif
+	if argc() == 0
+		let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '/', '\', 'g')
+		let b:sessionfile = b:sessiondir . "/session.vim"
+		if (filereadable(b:sessionfile))
+			exe 'source ' b:sessionfile
+			if has('gui')
+				highlight CursorLine guibg=#333333
+			endif
+			highlight ColorColumn ctermbg=0 guibg=#333333
+		else
+			echo "No session loaded."
+		endif
+	else
+		let b:sessionfile = ""
+		let b:sessiondir = ""
+	endif
 endfunction
 
 " Fix formatting
 function! FixFormatting()
 	" wrap logical operators with spaces if there aren't any
 	execute '%s/\(\S\{-}\)\([<>!]\{-}=\+\|[<>|]\+\)\(\S\{-}\)/\1 \2 \3/ge'
-	execute '%s/[,a-zA-Z0-9 	]\@<!\([a-zA-Z0-9 	]\+\)\(&\+\)/\1 \2 /ge'
+	execute '%s/[,a-zA-Z0-9	^I]\@<!\([a-zA-Z0-9 ^I]\+\)\(&\+\)/\1 \2 /ge'
 	execute '%s/< ?php/<?php/ge'
 	" Add a space after control structure keyword, and after closing parenthesis
 	execute '%s/\(if\|for\|foreach\|while\|switch\)\s\{-}\((.*)\)\s\{-}{/\1 \2 {/ge'
@@ -256,6 +251,11 @@ function! FixFormatting()
 	execute '%s/\n\{3,}/\r\r/e'
 endfunction
 
-au VimEnter * nested :call LoadSession()
-au VimLeave * :call UpdateSession()
+
+" Reopen file on same line as it was closed
+if has("autocmd")
+	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+	au VimEnter * nested :call LoadSession()
+	au VimLeave * :call UpdateSession()
+endif
 map <leader>m :call MakeSession()<CR>

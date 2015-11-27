@@ -224,6 +224,7 @@ endfunction
 function! FixFormatting()
 	" wrap logical operators with spaces if there aren't any
 	execute '%s/\(\S\{-}\)\([<>!]\{-}=\+\|[<>|&]\+\)\(\S\{-}\)/\1 \2 \3/ge'
+	execute '%s/[,a-zA-Z0-9 	]\@<!\([a-zA-Z0-9 	]\+\)\(&\+\)/\1 \2 /ge'
 	execute '%s/< ?php/<?php/ge'
 	" Add a space after control structure keyword, and after closing parenthesis
 	execute '%s/\(if\|for\|foreach\|while\|switch\)\s\{-}\((.*)\)\s\{-}{/\1 \2 {/ge'

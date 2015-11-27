@@ -7,22 +7,22 @@ filetype off                  " required
 
 let g:vimdir = ".vim"
 if has("win32")
-	let g:vimdir = "vimfiles"
+    let g:vimdir = "vimfiles"
 endif
 
 " set the runtime path to include Vundle and initialize
 if has("win32")
-	set rtp+=~/vimfiles/bundle/Vundle.vim
+    set rtp+=~/vimfiles/bundle/Vundle.vim
 else
-	set rtp+=~/.vim/bundle/Vundle.vim
+    set rtp+=~/.vim/bundle/Vundle.vim
 endif
 call vundle#begin('~/' . g:vimdir . '/')
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'shawncplus/phpcomplete.vim'
-" Plugin 'joonty/vim-phpqa'
- Plugin 'joonty/vdebug'
+Plugin 'joonty/vim-phpqa'
+Plugin 'joonty/vdebug'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -37,7 +37,7 @@ endif
 " Tab and indent settings
 set tabstop=4
 set shiftwidth=4
-" set expandtab
+set expandtab
 set autoindent
 set smartindent
 
@@ -60,7 +60,7 @@ set wmnu
 " Add current line marker
 set cursorline
 if has('gui')
-	highlight CursorLine guibg=#333333
+    highlight CursorLine guibg=#333333
 endif
 
 " Set autocompletion
@@ -91,10 +91,10 @@ set shellslash
 " Key remaps
 " Remap Ctrl+x Ctrl+o to Ctrl+Space (omni complete)
 inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
-        \ "\<lt>C-n>" :
-        \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
-        \ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
-        \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
+\   "\<lt>C-n>" :
+\   "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
+\   "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
+\   "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
 imap <C-@> <C-Space>
 
 " Add closing brackets when an opening bracket is written
@@ -103,7 +103,7 @@ inoremap {  {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{  {
 inoremap {}  {}
-inoremap        {  {}<Left>
+inoremap {  {}<Left>
 inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
 
 " Parenthesis
@@ -111,7 +111,7 @@ inoremap (  ()<Left>
 inoremap (<CR> (<CR>)<Esc>O
 inoremap ((  (
 inoremap ()  ()
-inoremap        (  ()<Left>
+inoremap (  ()<Left>
 inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
 
 " Square brackets
@@ -119,7 +119,7 @@ inoremap [  []<Left>
 inoremap [<CR> [<CR>]<Esc>O
 inoremap [[  [
 inoremap []  []
-inoremap        [  []<Left>
+inoremap [  []<Left>
 inoremap <expr> ]  strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
 
 " Add closing quotes when an opening bracket is written, and jump over closing
@@ -171,7 +171,6 @@ let g:vdebug_options = {}
 let g:vdebug_options["port"] = 9000
 
 let g:vdebug_options["path_maps"] = {
-\    "/mnt/hgfs/webserver/": "S:/projects/"
 \}
 
 let g:vdebug_options["server"] = "0.0.0.0"
@@ -226,34 +225,34 @@ endfunction
 
 " Fix formatting
 function! FixFormatting()
-	" wrap logical operators with spaces if there aren't any
-	execute '%s/\(\S\{-}\)\([<>!]\{-}=\+\|[<>|]\+\)\(\S\{-}\)/\1 \2 \3/ge'
-	execute '%s/[,a-zA-Z0-9 	]\@<!\([a-zA-Z0-9 	]\+\)\(&\+\)/\1 \2 /ge'
-	execute '%s/< ?php/<?php/ge'
-	" Add a space after control structure keyword, and after closing parenthesis
-	execute '%s/\(if\|for\|foreach\|while\|switch\)\s\{-}\((.*)\)\s\{-}{/\1 \2 {/ge'
-	" Turn else if into elseif
-	execute '%s/}\s\{-}else\s*if\s\{-}/} elseif/ge'
-	" Wrap else statement with spaces if there aren't any
-	execute '%s/}\s\{-}else\s\{-}{/} else {/ge'
-	" Remove whitespace in parenthesis
-	execute '%s/(\s*\(.*\)\s*)/(\1)/ge'
-	" Remove excesive whitespace
-	execute '%s/\(\S\+\) \{2,}\(\S\+\)/\1 \2/ge'
-	execute '%s/\(\S\+\) \{2,}\(\S\+\)/\1 \2/ge'
-	" Add whitespace after each comma
-	execute '%s/,\(\S\+\)/, \1/ge'
-	" Properly format function definitions
-	execute '%s/function\s\+\(.\{-}\)\s\{-}(\(.\{-})\)\s*{/function \1(\2) {/ge'
-	" Properly format class definitions
-	execute '%s/\(class\|interface\)\s\+\([a-zA-Z0-9]*\)\(.\{-}\)\s*{/\1 \2\3 {/ge'
-	" Retab the whole file
-	execute 'retab'
-	normal gg=G
-	" Remove any trailing whitespace
-	execute '%s/\s\+$//ge'
-	" Remove excesive blank lines
-	execute '%s/\n\{3,}/\r\r/e'
+    " wrap logical operators with spaces if there aren't any
+    execute '%s/\(\S\{-}\)\([<>!]\{-}=\+\|[<>|]\+\)\(\S\{-}\)/\1 \2 \3/ge'
+    execute '%s/[,a-zA-Z0-9     ]\@<!\([a-zA-Z0-9   ]\+\)\(&\+\)/\1 \2 /ge'
+    execute '%s/< ?php/<?php/ge'
+    " Add a space after control structure keyword, and after closing parenthesis
+    execute '%s/\(if\|for\|foreach\|while\|switch\)\s\{-}\((.*)\)\s\{-}{/\1 \2 {/ge'
+    " Turn else if into elseif
+    execute '%s/}\s\{-}else\s*if\s\{-}/} elseif/ge'
+    " Wrap else statement with spaces if there aren't any
+    execute '%s/}\s\{-}else\s\{-}{/} else {/ge'
+    " Remove whitespace in parenthesis
+    execute '%s/(\s*\(.*\)\s*)/(\1)/ge'
+    " Remove excesive whitespace
+    execute '%s/\(\S\+\) \{2,}\(\S\+\)/\1 \2/ge'
+    execute '%s/\(\S\+\) \{2,}\(\S\+\)/\1 \2/ge'
+    " Add whitespace after each comma
+    execute '%s/,\(\S\+\)/, \1/ge'
+    " Properly format function definitions
+    execute '%s/function\s\+\(.\{-}\)\s\{-}(\(.\{-})\)\s*{/function \1(\2) {/ge'
+    " Properly format class definitions
+    execute '%s/\(class\|interface\)\s\+\([a-zA-Z0-9]*\)\(.\{-}\)\s*{/\1 \2\3 {/ge'
+    " Retab the whole file
+    execute 'retab'
+    normal gg=G
+    " Remove any trailing whitespace
+    execute '%s/\s\+$//ge'
+    " Remove excesive blank lines
+    execute '%s/\n\{3,}/\r\r/e'
 endfunction
 
 au VimEnter * nested :call LoadSession()

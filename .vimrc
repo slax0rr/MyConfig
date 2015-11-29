@@ -61,7 +61,7 @@ set omnifunc=syntaxcomplete#Complete
 set hlsearch
 
 " set colorscheme
-colorscheme slate
+colorscheme candystripe
 
 " set font
 if has('gui_gtk2')

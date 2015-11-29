@@ -13,10 +13,11 @@ endif
 " set the runtime path to include Vundle and initialize
 if has("win32")
 	set rtp+=~/vimfiles/bundle/Vundle.vim
+	call vundle#begin('~/' . g:vimdir . '/')
 else
 	set rtp+=~/.vim/bundle/Vundle.vim
+	call vundle#begin()
 endif
-call vundle#begin('~/' . g:vimdir . '/')
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
@@ -168,6 +169,8 @@ map <leader>f :call FixFormatting()<cr>
 " VDebug settings
 let g:vdebug_options = {}
 let g:vdebug_options["port"] = 9000
+let g:vdebug_options["timeout"] = 60
+let g:vdebug_options["ide_key"] = "vim"
 
 let g:vdebug_options["path_maps"] = {
 \	 "/mnt/hgfs/webserver/": "/media/sf_S_DRIVE/projects/"

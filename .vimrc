@@ -52,12 +52,6 @@ set backspace=2
 " Enable wmnu
 set wmnu
 
-" Add current line marker
-set cursorline
-if has('gui')
-	highlight CursorLine guibg=#333333
-endif
-
 " Set autocompletion
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
@@ -69,7 +63,11 @@ set hlsearch
 colorscheme slate
 
 " set font
-set guifont=Consolas:h9
+if has('gui_gtk2')
+	set guifont=Consolas\ 9
+else
+	set guifont=Consolas:h9
+endif
 
 " remove gui elements
 set guioptions-=m  "remove menu bar
@@ -82,6 +80,12 @@ set tags=.tags;
 
 " set forward slashes
 set shellslash
+
+" Add current line marker
+set cursorline
+if has('gui')
+	highlight CursorLine guibg=#222222
+endif
 
 " Key remaps
 " Remap Ctrl+x Ctrl+o to Ctrl+Space (omni complete)
@@ -140,7 +144,7 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 
 " Highligh 80 and 120 columns
-highlight ColorColumn ctermbg=0 guibg=#333333
+highlight ColorColumn ctermbg=0 guibg=#222222
 let &colorcolumn="80,".join(range(120,999),",")
 
 " ctag bar
@@ -166,23 +170,27 @@ let g:vdebug_options = {}
 let g:vdebug_options["port"] = 9000
 
 let g:vdebug_options["path_maps"] = {
-			\	 "/mnt/hgfs/webserver/": "S:/projects/"
-			\}
+\	 "/mnt/hgfs/webserver/": "/media/sf_S_DRIVE/projects/"
+\}
 
 let g:vdebug_options["server"] = "0.0.0.0"
 let g:vdebug_options["break_on_open"] = 0
 let g:vdebug_options["continuous_mode"] = 1
 
 let g:vdebug_keymap = {
-			\	 "set_breakpoint" : "<C-b>"
-			\}
+\	 "set_breakpoint" : "<C-b>"
+\}
 
 " Functions, functions everywhere!
 " Creates a session
 function! MakeSession()
-	let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '/', '\', 'g')
+	let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '\', '/', 'g')
 	if (filewritable(b:sessiondir) != 2)
-		exe 'silent !mkdir ' b:sessiondir
+		if has('win32')
+			exe 'silent !mkdir ' b:sessiondir
+		else
+			exe 'silent !mkdir -p ' b:sessiondir
+		endif
 		redraw!
 	endif
 	let b:sessionfile = b:sessiondir . '/session.vim'
@@ -191,7 +199,7 @@ endfunction
 
 " Updates a session, BUT ONLY IF IT ALREADY EXISTS
 function! UpdateSession()
-	let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '/', '\', 'g')
+	let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '\', '/', 'g')
 	let b:sessionfile = b:sessiondir . "/session.vim"
 	if (filereadable(b:sessionfile))
 		exe "mksession! " . b:sessionfile
@@ -202,14 +210,14 @@ endfunction
 " Loads a session if it exists
 function! LoadSession()
 	if argc() == 0
-		let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '/', '\', 'g')
+		let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '\', '/', 'g')
 		let b:sessionfile = b:sessiondir . "/session.vim"
 		if (filereadable(b:sessionfile))
 			exe 'source ' b:sessionfile
 			if has('gui')
-				highlight CursorLine guibg=#333333
+				highlight CursorLine guibg=#222222
 			endif
-			highlight ColorColumn ctermbg=0 guibg=#333333
+			highlight ColorColumn ctermbg=0 guibg=#222222
 		else
 			echo "No session loaded."
 		endif

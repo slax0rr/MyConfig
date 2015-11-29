@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/slax0r/Development/GamblingPlattform/branches/branch-staging'
+let g:netrw_dirhist_2='/home/slax0r/Development/GamblingPlattform/tags/tag-1.0.1'
+let g:netrw_dirhist_3='/home/slax0r/Development/GamblingPlattform/branches/branch-staging'
+let g:netrw_dirhist_4='/home/slax0r/Development/GamblingPlattform/branches/branch-staging-20131018'
+let g:netrw_dirhist_5='/home/slax0r/Development/GamblingPlatform/trunk'
+let g:netrw_dirhist_6='/home/slax0r/Development/GamblingPlatform/branches/branch-1021'
+let g:netrw_dirhist_7='/home/slax0r/Development/SoccerEngine/css'

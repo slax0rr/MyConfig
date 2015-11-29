@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='s:/projects/timetac-web/AffiliProject/admin'
+let g:netrw_dirhist_2='s:/projects/timetac-web/AffiliProject/admin/cronjobs'
+let g:netrw_dirhist_3='s:/projects/timetac-wrapper/environments'
+let g:netrw_dirhist_4='s:/projects/timetac-wrapper/includes'
+let g:netrw_dirhist_5='S:/projects/shard-search'

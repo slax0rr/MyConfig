@@ -61,7 +61,7 @@ set omnifunc=syntaxcomplete#Complete
 set hlsearch
 
 " set colorscheme
-colorscheme candystripe
+colorscheme solarized
 
 " set font
 if has('gui_gtk2')
@@ -84,9 +84,6 @@ set shellslash
 
 " Add current line marker
 set cursorline
-if has('gui')
-	highlight CursorLine guibg=#222222
-endif
 
 " Key remaps
 " Remap Ctrl+x Ctrl+o to Ctrl+Space (omni complete)
@@ -145,7 +142,6 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 
 " Highligh 80 and 120 columns
-highlight ColorColumn ctermbg=0 guibg=#222222
 let &colorcolumn="80,".join(range(120,999),",")
 
 " ctag bar
@@ -217,10 +213,6 @@ function! LoadSession()
 		let b:sessionfile = b:sessiondir . "/session.vim"
 		if (filereadable(b:sessionfile))
 			exe 'source ' b:sessionfile
-			if has('gui')
-				highlight CursorLine guibg=#222222
-			endif
-			highlight ColorColumn ctermbg=0 guibg=#222222
 		else
 			echo "No session loaded."
 		endif
@@ -270,3 +262,4 @@ if has("autocmd")
 	au VimLeave * :call UpdateSession()
 endif
 map <leader>m :call MakeSession()<CR>
+map <leader>l :call LoadSession()<CR>

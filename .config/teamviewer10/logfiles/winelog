@@ -1,0 +1,24 @@
+fixme:actctx:parse_depend_manifests Could not find dependent assembly L"Microsoft.Windows.Common-Controls" (6.0.0.0)
+fixme:ole:CoInitializeSecurity ((nil),-1,(nil),(nil),0,3,(nil),0,(nil)) - stub!
+fixme:heap:HeapSetInformation (nil) 1 (nil) 0
+fixme:process:SetProcessDEPPolicy (3): stub
+fixme:ver:GetCurrentPackageId (0x32f8b4 (nil)): stub
+fixme:process:SetProcessShutdownParameters (00000100, 00000000): partial stub.
+fixme:win:EnumDisplayDevicesW ((null),0,0x32d500,0x00000000), stub!
+fixme:win:EnumDisplayDevicesW (L"\\\\.\\DISPLAY1",0,0x32d848,0x00000000), stub!
+fixme:win:EnumDisplayDevicesW ((null),1,0x32d500,0x00000000), stub!
+fixme:module:load_library unsupported flag(s) used (flags: 0x00000060)
+fixme:module:load_library unsupported flag(s) used (flags: 0x00000060)
+fixme:module:load_library unsupported flag(s) used (flags: 0x00000060)
+fixme:module:load_library unsupported flag(s) used (flags: 0x00000060)
+fixme:resource:GetGuiResources (0xffffffff,0): stub
+fixme:ntdll:NtQueryInformationToken QueryInformationToken( ..., TokenElevation, ...) semi-stub
+fixme:winhttp:WinHttpDetectAutoProxyConfigUrl discovery via DHCP not supported
+WARNING: QApplication was not created in the main() thread.
+Unable to load library icui18n "Cannot load library icui18n: (icui18n: cannot open shared object file: No such file or directory)" 
+fixme:nls:GetGeoInfoW -1 4 0x32f99c 3 0
+fixme:bitmap:CreateBitmapIndirect planes = 0
+fixme:msg:ChangeWindowMessageFilter 233 00000001
+fixme:msg:ChangeWindowMessageFilter 4a 00000001
+fixme:msg:ChangeWindowMessageFilter 407 00000001
+fixme:msg:ChangeWindowMessageFilter 49 00000001

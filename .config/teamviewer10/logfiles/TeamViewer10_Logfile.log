@@ -97,3 +97,8 @@ UserAccount:        slax0r
 2015/12/02 20:11:28.387  3311 2736449280 gX0   XClipboard: RequestClipboard as TARGETS (458)
 2015/12/02 20:11:28.388  3311 2736449280 gX0   XClipboard: RequestClipboard as UTF8_STRING (309)
 2015/12/02 20:11:28.416  3311 2736449280 gX0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=53, c=106)
+2015/12/02 20:55:59.561  3311 2736449280 gX0   XClipboard: RequestClipboard as TARGETS (458)
+2015/12/02 20:55:59.562  3311 2736449280 gX0   XClipboard: RequestClipboard as text/html (558)
+2015/12/02 20:55:59.562  3311 2736449280 gX0   XClipboard: RequestClipboard as UTF8_STRING (309)
+2015/12/02 20:55:59.562  3311 2736449280 gX0   XClipboard: Got clipboard as 'text/html', size (n=640, c=640)
+2015/12/02 20:55:59.562  3311 2736449280 gX0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=79, c=158)

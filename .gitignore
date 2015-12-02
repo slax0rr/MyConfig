@@ -2,3 +2,4 @@ vimfiles/sessions/*
 .vim/sessions/*
 *.swp
 .config/chromium/
+vimfiles/bundle/*

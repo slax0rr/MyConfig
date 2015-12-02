@@ -164,7 +164,7 @@ map <leader>f :call FixFormatting()<cr>
 " Debugger config
 let g:dbgPavimPort = 9000
 let g:dbgPavimBreakAtEntry = 0
-"\	 "/mnt/hgfs/webserver/": "/media/sf_S_DRIVE/projects/"
+"\   "/mnt/hgfs/webserver/": "/media/sf_S_DRIVE/projects/"
 
 " Functions, functions everywhere!
 " Creates a session
@@ -252,5 +252,5 @@ map <leader>l :call LoadSession()<CR>
 
 " Load environment specific files, if it exists
 if !empty(glob("~/.vimrc_env"))
-	source ~/.vimrc_env
+    source ~/.vimrc_env
 endif

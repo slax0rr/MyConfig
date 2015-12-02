@@ -5,4 +5,10 @@ if exists('timetacweb')
 elseif exists('wrapper')
 	cd ~/Development/projects/timetac-wrapper
 	call LoadSession()
+elseif exists('booking')
+    cd ~/Development/vagrant/dev/booking-framework.dev/
+    call LoadSession()
+elseif exists('c3')
+    cd ~/Development/vagrant/dev/c3/
+    call LoadSession()
 endif

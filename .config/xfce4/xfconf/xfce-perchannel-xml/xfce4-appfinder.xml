@@ -10,6 +10,8 @@
     <value type="int" value="6"/>
     <value type="int" value="7"/>
     <value type="int" value="8"/>
+    <value type="int" value="9"/>
+    <value type="int" value="10"/>
     <property name="action-4" type="empty">
       <property name="type" type="int" value="0"/>
       <property name="pattern" type="string" value="#"/>
@@ -53,6 +55,16 @@
     <property name="action-8" type="empty">
       <property name="pattern" type="string" value="!isup"/>
       <property name="command" type="string" value="exo-open --launch WebBrowser http://isup.me/%s"/>
+    </property>
+    <property name="action-9" type="empty">
+      <property name="pattern" type="string" value="gvim-bkf"/>
+      <property name="command" type="string" value="gvim --cmd &quot;let booking = 1&quot;"/>
+      <property name="save" type="bool" value="true"/>
+    </property>
+    <property name="action-10" type="empty">
+      <property name="pattern" type="string" value="gvim-c3"/>
+      <property name="command" type="string" value="gvim --cmd &quot;let c3 = 1&quot;"/>
+      <property name="save" type="bool" value="true"/>
     </property>
   </property>
   <property name="last" type="empty">

@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "フリーテキスト、URL、電話番号、SMSメッセージ、または連絡先（vCard）のからQRコードを生成します。"
+   },
+   "application_title": {
+      "message": "QRコードジェネレータ"
+   }
+}

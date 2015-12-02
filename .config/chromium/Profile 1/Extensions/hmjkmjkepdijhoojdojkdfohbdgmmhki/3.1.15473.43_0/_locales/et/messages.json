@@ -1,0 +1,2260 @@
+{
+   "1001407065815272462": {
+      "message": "Ei saa lisada kausta $2​Minu ketas$1​"
+   },
+   "1013939682284715002": {
+      "message": "Korraldamine"
+   },
+   "1016268207702373216": {
+      "message": "Jagage märkmeid sõprade ja perega. Ostunimekirjadest kuni uusima raamatuideeni – teised saavad jagatud märkmeid hõlpsalt vaadata ja muuta."
+   },
+   "1030781695901615026": {
+      "message": "Alla"
+   },
+   "1039394921418415681": {
+      "message": "Logi sisse"
+   },
+   "1061011362310586469": {
+      "message": "Jagamine"
+   },
+   "1083918249169198626": {
+      "message": "Klaviatuuri otseteed on keelatud."
+   },
+   "1101371910696766077": {
+      "message": "Tee koopia"
+   },
+   "1122146167985532789": {
+      "message": "eile"
+   },
+   "1127320433256851404": {
+      "message": "Videopleier"
+   },
+   "1159463938127271829": {
+      "message": "kasutajalt $1​"
+   },
+   "1162642135048988280": {
+      "message": "Dokumendi ümbernimetamine"
+   },
+   "1163324543881570799": {
+      "message": "Google’i dokumendid"
+   },
+   "1166244120191806795": {
+      "message": "Tagasiside andmine"
+   },
+   "1179891706526242218": {
+      "message": "Järgmine"
+   },
+   "1185164838496022543": {
+      "message": "Lehe uuesti laadimiseks klõpsake siin."
+   },
+   "1206655808961684109": {
+      "message": "Kahjuks ei ole selle rakendusega failide avamine toetatud."
+   },
+   "1213005208968286932": {
+      "message": "Märgitud lahendatuks"
+   },
+   "124900027451629830": {
+      "message": "Esita"
+   },
+   "1256362146573583104": {
+      "message": "Ekstraktimine"
+   },
+   "1259492729704800881": {
+      "message": "Märkme arhiivimine"
+   },
+   "1263685395252160366": {
+      "message": "LaTeX"
+   },
+   "1270239770279341085": {
+      "message": "Silt on juba olemas"
+   },
+   "1271038294394884640": {
+      "message": "Tühista"
+   },
+   "1280430284217153733": {
+      "message": "Lisage aeg"
+   },
+   "1319037146426591038": {
+      "message": "või"
+   },
+   "1335763707789999819": {
+      "message": "{NUM_ITEMS,plural, =1{Teil pole luba selle üksuse teisaldamiseks selle praegustest kaustadest. Lisage üksus selle asemel kausta {START_SPAN_1}{NAME}{END_SPAN}.}other{Teil pole luba nende üksuste teisaldamiseks nende praegustest kaustadest. Lisage üksused selle asemel kausta {START_SPAN_2}{NAME}{END_SPAN}.}}"
+   },
+   "1349697396109290623": {
+      "message": "Pildifaili $1​ suurema eraldusvõimega versiooni kuvamine"
+   },
+   "136335357683289450": {
+      "message": "Sule"
+   },
+   "1397887822627488928": {
+      "message": "Isik või isiku e-posti aadress, kellega jagada"
+   },
+   "139942704574044780": {
+      "message": "Nõustu"
+   },
+   "1419896259743862406": {
+      "message": "Ava rakendusega"
+   },
+   "1440171352837969028": {
+      "message": "Video/heli"
+   },
+   "1441487391064925653": {
+      "message": "Vaadake kõiki otseteid abikeskusest"
+   },
+   "1446829548948002072": {
+      "message": "koma"
+   },
+   "1463389029497634261": {
+      "message": "Helitugevuse vähendamine"
+   },
+   "1467797923781828000": {
+      "message": "$1​ üksust lisati kausta $2​."
+   },
+   "1475261522522402536": {
+      "message": "Koha valimine"
+   },
+   "1482452362096735080": {
+      "message": "Esineb {numOccurrences} korda"
+   },
+   "1499433769420882987": {
+      "message": "Üksuse $1​ kuvamine"
+   },
+   "1505876360160857231": {
+      "message": "$1​ TB"
+   },
+   "1507063529674142853": {
+      "message": "Iga kuu viimasel päeval"
+   },
+   "1507445189431379166": {
+      "message": "Kustuta"
+   },
+   "1512454807955173272": {
+      "message": "Keepi värskendatakse, kui võrguühendus on saadaval"
+   },
+   "1536051766421561160": {
+      "message": "võrdusmärk"
+   },
+   "153659275234722804": {
+      "message": "Loobumine"
+   },
+   "156992719062713230": {
+      "message": "Hall"
+   },
+   "1586968957182554447": {
+      "message": "Keelamine"
+   },
+   "1588268697057804046": {
+      "message": "$1​ tundi tagasi"
+   },
+   "1633798963327779260": {
+      "message": "Homme"
+   },
+   "1654222450095043962": {
+      "message": "Heli"
+   },
+   "1655692513689044870": {
+      "message": "Olete välja logitud."
+   },
+   "1656911987308166143": {
+      "message": "Kustutamine"
+   },
+   "1661251023749398110": {
+      "message": "Laadi heli alla"
+   },
+   "1665821947855814052": {
+      "message": "Suurus"
+   },
+   "1679322931860897953": {
+      "message": "Kopeeri Google'i dokumenti"
+   },
+   "1680617124502957636": {
+      "message": "Praegu ei õnnestu ühendust luua. Proovige hiljem uuesti."
+   },
+   "1692901784886701962": {
+      "message": "Märge on liiga suur."
+   },
+   "1697160643589236962": {
+      "message": "$1​ PB"
+   },
+   "1703175513040690135": {
+      "message": "Igaüks domeenis $1​"
+   },
+   "1704004075228783011": {
+      "message": "{every,plural, =1{Kordub iga kuu viimasel päeval}other{Kordub iga # kuu tagant kuu viimasel päeval}}"
+   },
+   "171683163267149669": {
+      "message": "$1​ GB"
+   },
+   "1737240194537729525": {
+      "message": "Iga nädal"
+   },
+   "1739900012825270238": {
+      "message": "Eelmise üksuse juurde liikumine"
+   },
+   "1740371341228065086": {
+      "message": "Laadi uuesti"
+   },
+   "1745782414562966515": {
+      "message": "Kas ühendada silt „$1​” sildiga „$2​”? Kõigile sildiga „$1​” märkmetele lisatakse silt „$2​” ja silt „$1​” kustutatakse."
+   },
+   "1783719421893050637": {
+      "message": "Mõõtmed"
+   },
+   "178927681797742562": {
+      "message": "Logi sisse"
+   },
+   "1791115075948268631": {
+      "message": "Klaviatuuri otsetee avamise abi"
+   },
+   "179545118447015250": {
+      "message": "Ruudustikuvaade"
+   },
+   "1808245543551507519": {
+      "message": "Heli"
+   },
+   "1810036091857944187": {
+      "message": "Tagasivõtmine"
+   },
+   "1818306025747564729": {
+      "message": "Lingi avamine"
+   },
+   "1823222042913714987": {
+      "message": "Edasta parool"
+   },
+   "1823854753950594157": {
+      "message": "Hoia paigal"
+   },
+   "1830157062072535681": {
+      "message": "Üksuse $1​ kuvamine"
+   },
+   "1852745815330163711": {
+      "message": "Google’i joonised"
+   },
+   "1870691479127746185": {
+      "message": "paremale"
+   },
+   "187077078156858455": {
+      "message": "Helimärge"
+   },
+   "189303170370862360": {
+      "message": "$1​/$2​ üksusest"
+   },
+   "1900571668686750716": {
+      "message": "vCard"
+   },
+   "1918176455405610789": {
+      "message": "Valmis"
+   },
+   "195154114623528341": {
+      "message": "Lisa asukoht"
+   },
+   "1956794332842050061": {
+      "message": "Järgmine leht"
+   },
+   "1965626377712226216": {
+      "message": "Keynote"
+   },
+   "1967536906522187719": {
+      "message": "Lehe eelvaate kuvamisel ilmnes probleem."
+   },
+   "1968405748623909021": {
+      "message": "Selle üksuse avamiseks või muutmiseks proovige mõnda allolevat rakendust"
+   },
+   "1973454937875679500": {
+      "message": "Sildi nime sisestamine"
+   },
+   "1975630610063119352": {
+      "message": "{charsRemaining,plural, =1{# tähemärk on jäänud}other{# tähemärki on jäänud}}"
+   },
+   "1980209166254310911": {
+      "message": "Päev"
+   },
+   "1988244842147989817": {
+      "message": "Prügikastis olevad märkmed kustutatakse 7 päeva möödudes."
+   },
+   "1996872514195688196": {
+      "message": "Jagatud märkmetele ei pääse praegu juurde. Proovige hiljem uuesti."
+   },
+   "2003845117979929469": {
+      "message": "Üksikasjad"
+   },
+   "2009529126622551485": {
+      "message": "Loendi üksus"
+   },
+   "2039757863628752523": {
+      "message": "Sageduse valikud"
+   },
+   "2055836117545582610": {
+      "message": "Loendi seaded"
+   },
+   "205876860571942679": {
+      "message": "Google My Maps"
+   },
+   "2059084517358086391": {
+      "message": "Otsinguriba sulgemine"
+   },
+   "2061440050632248160": {
+      "message": "Arhiveerimine"
+   },
+   "2068023589621557589": {
+      "message": "TrueType'i font"
+   },
+   "2073322475696388995": {
+      "message": "Edasi liikumine"
+   },
+   "207810168108507460": {
+      "message": "$1​ tund tagasi"
+   },
+   "2107379241532042955": {
+      "message": "Asukoht"
+   },
+   "2107589831642088814": {
+      "message": "Loo „$3​$2​$1​”"
+   },
+   "212796670323571824": {
+      "message": "OK"
+   },
+   "213665695896111861": {
+      "message": "Märkused"
+   },
+   "2138593281154109183": {
+      "message": "Arhiiv"
+   },
+   "214517458278879973": {
+      "message": "Logi sisse kasutajana $1​"
+   },
+   "2147952938331523160": {
+      "message": "Ümbernimetamine ..."
+   },
+   "2154372123324862271": {
+      "message": "kaldkriips"
+   },
+   "21582033570022607": {
+      "message": "Vali märge"
+   },
+   "2173675558412671739": {
+      "message": "Kopeeriti Google'i dokumenti"
+   },
+   "2184278444368405837": {
+      "message": "$1​ üksust"
+   },
+   "2187239650627580457": {
+      "message": "Esita"
+   },
+   "2198096971937872560": {
+      "message": "Meeldetuletus:"
+   },
+   "220168959069469607": {
+      "message": "Veel toiminguid"
+   },
+   "2216904725760458480": {
+      "message": "Iga päev"
+   },
+   "221715292685577880": {
+      "message": "Jah"
+   },
+   "2264311811697505466": {
+      "message": "Värskendamine"
+   },
+   "2280650195464600721": {
+      "message": "Navigeerimine"
+   },
+   "2285069188138705005": {
+      "message": "Ühendatud rakendused"
+   },
+   "228741435562395266": {
+      "message": "Printimine pole veel saadaval"
+   },
+   "2289534534793293486": {
+      "message": "Arhiivist taastamine"
+   },
+   "2289812403593835836": {
+      "message": "Pages"
+   },
+   "229177484946387188": {
+      "message": "Google Earth"
+   },
+   "2292696732672795285": {
+      "message": "Helitugevuse suurendamine"
+   },
+   "2310145944356900158": {
+      "message": "Märgitud"
+   },
+   "2311880726221661199": {
+      "message": "Suuremate eraldusvõimete laadimine"
+   },
+   "2323863827212547996": {
+      "message": "Tühista märkme valik"
+   },
+   "2329167963662998826": {
+      "message": "Google Keep soovib kasutada teie asukohta, et täiustada kohasoovitusi asukoha meeldetuletuste jaoks."
+   },
+   "2359614137862708172": {
+      "message": "Tõstuklahv"
+   },
+   "236689092839978781": {
+      "message": "Ei kordu"
+   },
+   "2370463380397641604": {
+      "message": "Populaarsed klaviatuuri otseteed"
+   },
+   "2370656573843123707": {
+      "message": "parem nurksulg"
+   },
+   "2386536768112358461": {
+      "message": "Lehe võrra alla"
+   },
+   "2405795704816921421": {
+      "message": "Fail $1​"
+   },
+   "2433429041384246549": {
+      "message": "Summutamine"
+   },
+   "2449254824382583885": {
+      "message": "Hüpikaken"
+   },
+   "2452522051596946166": {
+      "message": "Vabandust! Üksuse $1​ eelvaatega ilmnes probleem. Proovime uuesti."
+   },
+   "2454642351139428112": {
+      "message": "Tagasivõtmine"
+   },
+   "2466251465475184755": {
+      "message": "Kas tühjendada prügikast? Kõik prügikastis olevad märkmed kustutatakse jäävalt."
+   },
+   "2475181823688399272": {
+      "message": "Järgmine"
+   },
+   "2491578858569300584": {
+      "message": "Kustuta otsing"
+   },
+   "2504232652631703202": {
+      "message": "Ühendatud"
+   },
+   "251025074207413762": {
+      "message": "Lisa kirjeldus"
+   },
+   "2532280782491328445": {
+      "message": "Eelmise otsimine"
+   },
+   "2541423827251928667": {
+      "message": "Kõikide otseteede otsing"
+   },
+   "2546225293834487484": {
+      "message": "Märge"
+   },
+   "2555961950726197809": {
+      "message": "Vaataja kuvamine."
+   },
+   "257317112834806705": {
+      "message": "Loendi- ja ruudustikuvaate vahel vahetamine"
+   },
+   "2579261044590673579": {
+      "message": "Minu ketas"
+   },
+   "2579679351920691492": {
+      "message": "Tagasi liikumine"
+   },
+   "2609409316752026806": {
+      "message": "PDF"
+   },
+   "2623861453769098676": {
+      "message": "Selle dokumendi eelvaatega ilmnes probleem."
+   },
+   "2630254198275172065": {
+      "message": "Teisaldamine asukohta ..."
+   },
+   "2632263751512428257": {
+      "message": "Iga aasta"
+   },
+   "2645469029410848421": {
+      "message": "{noteCount,plural, =1{Sildi märge}other{Sildi märkmed}}"
+   },
+   "2661850177130037208": {
+      "message": "Üksuse avamine"
+   },
+   "2665571821980053260": {
+      "message": "Teie märget ei saa jagada. Proovige hiljem uuesti."
+   },
+   "2681830832355823748": {
+      "message": "Kõigi otseteede otsing"
+   },
+   "268402507078609011": {
+      "message": "{imagesAdded,plural, =1{Kujutis on lisatud}other{# kujutist on lisatud}}"
+   },
+   "2702485557996900362": {
+      "message": "Parandage vastuolulised muudatused"
+   },
+   "2716433087531258659": {
+      "message": "lehe võrra üles"
+   },
+   "2742719907061406418": {
+      "message": "XML"
+   },
+   "2758125083752925237": {
+      "message": "(Omanik)"
+   },
+   "277430914014962533": {
+      "message": "Vabandust! Üksuse $1​ eelvaatega ilmnes probleem."
+   },
+   "2793841261389879255": {
+      "message": "Eelmine leht"
+   },
+   "2794676336056877832": {
+      "message": "{every,plural, =1{Kordub iga kuu samal päeval}other{Kordub iga # kuu tagant samal päeval}}"
+   },
+   "2796950576714807268": {
+      "message": "Teksti ei õnnestu tuvastada."
+   },
+   "2817277146396981386": {
+      "message": "pm"
+   },
+   "2818020101821669029": {
+      "message": "Loodud"
+   },
+   "2827039933590757722": {
+      "message": "Windowsi otsetee"
+   },
+   "2829226075651806940": {
+      "message": "Suurendamine"
+   },
+   "2854717396594966319": {
+      "message": "OpenOffice Writer"
+   },
+   "2862675909830094845": {
+      "message": "Loo uus silt"
+   },
+   "2873089307546162154": {
+      "message": "OK"
+   },
+   "2877285560485318801": {
+      "message": "Peatamine"
+   },
+   "2879276552944958066": {
+      "message": "Mine tagasi kausta $1​."
+   },
+   "2893055432094515558": {
+      "message": "Märkeruudud on kuvatud"
+   },
+   "289798573180023043": {
+      "message": "OK"
+   },
+   "2901360496423912565": {
+      "message": "Teavita"
+   },
+   "2902570047322934912": {
+      "message": "Luba jagamine"
+   },
+   "2902747751281161248": {
+      "message": "Rakenda uutele loenditele"
+   },
+   "2942094715879803305": {
+      "message": "Märgitud üksuste kustutamine"
+   },
+   "295331174171409695": {
+      "message": "Üksuse „$1​” allalaadimisloa värskendamisel tekkis probleem."
+   },
+   "2960516445247616550": {
+      "message": "Printimine pole saadaval"
+   },
+   "2964778642459027786": {
+      "message": "Prügikastis pole ühtegi märget"
+   },
+   "2973306402585941108": {
+      "message": "Hommik"
+   },
+   "298817883481775869": {
+      "message": "Laadimine ..."
+   },
+   "3005058076425755361": {
+      "message": "Tagasilüke"
+   },
+   "3043961722025425136": {
+      "message": "Kirjeldus"
+   },
+   "3045997283325725532": {
+      "message": "Mis on uut rakenduses Google Keep?"
+   },
+   "306516303501625305": {
+      "message": "Autentimine ebaõnnestus."
+   },
+   "3089735918990490582": {
+      "message": "Meeldetuletus eemaldati"
+   },
+   "31018542656161389": {
+      "message": "Suumimine sobivasse suurusesse"
+   },
+   "3109321241584918345": {
+      "message": "Ühenda rohkem rakendusi ..."
+   },
+   "3121560585545725724": {
+      "message": "$1​ kell $2​"
+   },
+   "3140236589681731084": {
+      "message": "$1​ tunni pärast"
+   },
+   "3150651996344750990": {
+      "message": "{count,plural, =1{Märke arhiivimine on tühistatud}other{# märkme arhiivimine on tühistatud}}"
+   },
+   "3155087947817133141": {
+      "message": "Jagamine ja koostöö"
+   },
+   "3176246635438298155": {
+      "message": "Kustuta"
+   },
+   "3189089961261793350": {
+      "message": "Viga Drive’i kausta andmete laadimisel"
+   },
+   "3189854932778515441": {
+      "message": "Märge on arhiivis"
+   },
+   "3190546672187601036": {
+      "message": "Öö"
+   },
+   "3195812604657128345": {
+      "message": "Valige Drive'i kaust, millesse ekstraktida"
+   },
+   "3207650089232728475": {
+      "message": "Siltide muutmine"
+   },
+   "3211163842850942567": {
+      "message": "Suurendamine"
+   },
+   "3220641589840600333": {
+      "message": "Lülitati kuvale $1​"
+   },
+   "3222929029344613957": {
+      "message": "Kahjuks ilmnes faili avamisel viga. Proovige uuesti."
+   },
+   "3241696131593027453": {
+      "message": "Märkme valimine"
+   },
+   "3250489229749307913": {
+      "message": "Electronic Publication"
+   },
+   "3261131345401321392": {
+      "message": "Saab kommenteerida"
+   },
+   "3268028083415317236": {
+      "message": "Ei, aitäh"
+   },
+   "3272496516667407797": {
+      "message": "Üksikasjade laadimisel ilmnes probleem."
+   },
+   "3275029321588462173": {
+      "message": "Puudub"
+   },
+   "3278046126264096288": {
+      "message": "Nädal"
+   },
+   "3288498486633948368": {
+      "message": "„$1​” on lisatud Google Drive'i."
+   },
+   "330603631583186798": {
+      "message": "Word"
+   },
+   "3312545971976531405": {
+      "message": "Sõnum"
+   },
+   "3319087486907616296": {
+      "message": "Üksuse ülekandmine"
+   },
+   "3343273953047473521": {
+      "message": "Kas kustutada märkmed?"
+   },
+   "3345567742278474807": {
+      "message": "Märge on tähistatud sobimatuna ja seda ei saa jagada."
+   },
+   "3354260708176476985": {
+      "message": "Laadimine&hellip;"
+   },
+   "336772567640975291": {
+      "message": "Järgmine nädal"
+   },
+   "3381619429606029445": {
+      "message": "Visio"
+   },
+   "3382236845597426718": {
+      "message": "Avamine"
+   },
+   "3409257542937182842": {
+      "message": "Proovime uuesti ..."
+   },
+   "3409483962000136213": {
+      "message": "Esitamine/peatamine"
+   },
+   "3418767079436101103": {
+      "message": "Selle lehe laadimisel ilmnes probleem."
+   },
+   "3421685394169412932": {
+      "message": "Iga tehtud muudatus salvestatakse automaatselt"
+   },
+   "3428726060007577698": {
+      "message": "Loend on liiga suur."
+   },
+   "3448234415275521882": {
+      "message": "Üldteave"
+   },
+   "3455405209271884570": {
+      "message": "Ekstraktimine"
+   },
+   "3468441711253011521": {
+      "message": "Google'i arvutustabelid"
+   },
+   "3473620774713000513": {
+      "message": "Lahendatud"
+   },
+   "3485469306694683931": {
+      "message": "Ekstraktimine Drive'i kontole"
+   },
+   "3505141932202244291": {
+      "message": "Otsimine"
+   },
+   "3511274344439521198": {
+      "message": "Toimingud"
+   },
+   "3518073392823563581": {
+      "message": "Klaviatuuri otseteed"
+   },
+   "3543475399174940144": {
+      "message": "Veel $1​"
+   },
+   "3547194749488601916": {
+      "message": "Värskendamine ..."
+   },
+   "354828103903104581": {
+      "message": "Märgitud üksused"
+   },
+   "3551522853788442530": {
+      "message": "Mine tagasi"
+   },
+   "3561658662634401836": {
+      "message": "Pealkiri"
+   },
+   "3569884090205828853": {
+      "message": "OpenOffice Calc"
+   },
+   "3570074492517305433": {
+      "message": "Registreerumine"
+   },
+   "3580293729117872545": {
+      "message": "Lõpeb"
+   },
+   "3595000514985906359": {
+      "message": "Excel"
+   },
+   "3595562664731337243": {
+      "message": "Sildi ümbernimetamine"
+   },
+   "3608606849109645545": {
+      "message": "Sisestage dokumendi uus nimi:"
+   },
+   "361630518611593946": {
+      "message": "Peida märkeruudud"
+   },
+   "3625886392901506764": {
+      "message": "või"
+   },
+   "3651893685901703652": {
+      "message": "..."
+   },
+   "3657386785336906042": {
+      "message": "kurakaldkriips"
+   },
+   "3659554681396757189": {
+      "message": "Minu avatud"
+   },
+   "366289214151975122": {
+      "message": "Igaüks domeenis $1​, kellel on link"
+   },
+   "3663571259791438207": {
+      "message": "Väärkasutusest teavitamine"
+   },
+   "3664842788764635265": {
+      "message": "Puudub"
+   },
+   "3666123569747918021": {
+      "message": "Selles dokumendis on salvestama muudatusi. Kas soovite sellelt lehelt lahkuda ja loobuda muudatustest?"
+   },
+   "3666594998669810518": {
+      "message": "Mis on Keepis uut?"
+   },
+   "3675629455109824289": {
+      "message": "{numberOfNotes,plural, =1{Märge on taastatud}other{# märget on taastatud}}"
+   },
+   "3678477908297567934": {
+      "message": "alljoon"
+   },
+   "3681747688524363195": {
+      "message": "Üles"
+   },
+   "3690515530505404607": {
+      "message": "Selle video esitamisel ilmnes probleem."
+   },
+   "369764661829607970": {
+      "message": "{NUM_ITEMS,plural, =0{Üksuseid pole}=1{1 üksus}other{# üksust}}"
+   },
+   "3712215972250917265": {
+      "message": "Kommentaarid"
+   },
+   "3741641473167151543": {
+      "message": "Ekraanilugeja tugi on lubatud."
+   },
+   "3760084546578947451": {
+      "message": "Kas soovite Google Keepi meeldetuletused sisse lülitada? Võimalik, et peate lubama brauseri märguanded."
+   },
+   "3770795578481676514": {
+      "message": "Kollane"
+   },
+   "3793086499925031123": {
+      "message": "Otsinguriba avamine / eelmise otsimine"
+   },
+   "3796511349428373407": {
+      "message": "Kuupäeva valikud"
+   },
+   "37992665410817181": {
+      "message": "Uuesti avatud"
+   },
+   "3801617971018550169": {
+      "message": "Eile"
+   },
+   "3808213429720572062": {
+      "message": "Taastamine"
+   },
+   "381100310424863459": {
+      "message": "Illustrator"
+   },
+   "3845302429676793049": {
+      "message": "Üksuse „$1​” kirjelduse värskendamisel tekkis probleem."
+   },
+   "3858324058837632381": {
+      "message": "Selle helifaili esitamisel ilmnes probleem."
+   },
+   "3869166581651870488": {
+      "message": "Muutmise lõpetamine"
+   },
+   "3873215756962047275": {
+      "message": "ARHIIV"
+   },
+   "3873482466313193066": {
+      "message": "{count,plural, =1{Märge on arhiivitud}other{# märget on arhiivitud}}"
+   },
+   "3897281533382850749": {
+      "message": "Summutuse tühistamine"
+   },
+   "3955575370175991097": {
+      "message": "Lülitati sildi $1​ kuvale"
+   },
+   "3974822583047850066": {
+      "message": "Loobu"
+   },
+   "3977699855735576796": {
+      "message": "Rohkem lehti ei saanud laadida."
+   },
+   "3988418762222300024": {
+      "message": "punkt"
+   },
+   "4005725939358875643": {
+      "message": "Toiming on tagasi võetud."
+   },
+   "4010991525243002125": {
+      "message": "SILDID JA KORDUVAD MEELDETULETUSED"
+   },
+   "4014287326684608407": {
+      "message": "Sinakasroheline"
+   },
+   "4023299615382814997": {
+      "message": "Prügikastis ei saa muuta"
+   },
+   "4059387791040010947": {
+      "message": "Meta"
+   },
+   "4061102590585232601": {
+      "message": "Eemaldatud: $1​"
+   },
+   "4065471327582105766": {
+      "message": "Kujutise järgi filtreerimine"
+   },
+   "4087289538934418537": {
+      "message": "Teie loodud märkmed ei ole pärast kustutamist enam kellelegi nähtavad. Teiega jagatud märkmed jäävad nähtavaks nendele, kellel on neile juurdepääs."
+   },
+   "4087667435414545203": {
+      "message": "Pole enam sisse logitud. Muudatuste tegemiseks laadige uuesti."
+   },
+   "4097921967754832323": {
+      "message": "sidekriips"
+   },
+   "4106990792743182780": {
+      "message": "Kujutise teksti ei õnnestu hõivata. Proovige hiljem uuesti."
+   },
+   "4108415852995579458": {
+      "message": "Heli järgi filtreerimine"
+   },
+   "411137507354526852": {
+      "message": "Kuu"
+   },
+   "4111452225725405610": {
+      "message": "Tärn eemaldati üksuselt „$1​”."
+   },
+   "4117632433281998979": {
+      "message": "Iga kuu"
+   },
+   "411791562637880104": {
+      "message": "Eemalda mind"
+   },
+   "4134385041569168669": {
+      "message": "Laadimine ..."
+   },
+   "4148564423510181521": {
+      "message": "Otsingu kustutamine"
+   },
+   "4152315289461886": {
+      "message": "Dokumendi juhtelemendid"
+   },
+   "4155905925766040098": {
+      "message": "Ühtegi eelvaadet pole saadaval"
+   },
+   "4174786386751618325": {
+      "message": "Fotomärge"
+   },
+   "4182427157920112948": {
+      "message": "tilde"
+   },
+   "4184267625445112917": {
+      "message": "Märkme lisamine"
+   },
+   "4186465168527990324": {
+      "message": "Fail „$1​” on ekstraktitud kausta $2​"
+   },
+   "4204345954541079744": {
+      "message": "Selle sildiga pole veel ühtegi märget"
+   },
+   "4205329094859140439": {
+      "message": "am"
+   },
+   "4211182812451835307": {
+      "message": "Saab muuta"
+   },
+   "4214190403999219403": {
+      "message": "Suumi"
+   },
+   "4214427276033711472": {
+      "message": "Seaded"
+   },
+   "4216242742234357612": {
+      "message": "Kõigi märkmete valimine"
+   },
+   "42239889404644810": {
+      "message": "Taotle juurdepääsu"
+   },
+   "4228870062013120023": {
+      "message": "Järgmise/eelmise märkme juurde navigeerimine"
+   },
+   "4230101516585408149": {
+      "message": "Uue märkme koostamine"
+   },
+   "4280747719095153198": {
+      "message": "Lahendatud kommentaar"
+   },
+   "4286663890332754386": {
+      "message": "Üleslaadimine ebaõnnestus."
+   },
+   "4299690446455033653": {
+      "message": "Works"
+   },
+   "4318861667254318892": {
+      "message": "Google Video"
+   },
+   "4320831042030778": {
+      "message": "Tühista"
+   },
+   "4320942249997687388": {
+      "message": "Lõpeta"
+   },
+   "4332252081504252077": {
+      "message": "Vabandust!"
+   },
+   "4343825450663233452": {
+      "message": "Saab vaadata"
+   },
+   "4343848624651344174": {
+      "message": "Pärastlõuna"
+   },
+   "4346644280640625035": {
+      "message": "Märkme jagamine lõpetati."
+   },
+   "435214284915110062": {
+      "message": "Otsinguriba avamine"
+   },
+   "4356312843186491987": {
+      "message": "Teisalda"
+   },
+   "4391715930031906467": {
+      "message": "Järgmise otsimine"
+   },
+   "4397482594800054550": {
+      "message": "Üksuse „$1​” ümbernimetamisel tekkis probleem."
+   },
+   "4422985761498356257": {
+      "message": "Avamine rakendusega"
+   },
+   "4440180985666883750": {
+      "message": "Jagamine"
+   },
+   "4444571967705751871": {
+      "message": "Prügikast"
+   },
+   "4457424709416639982": {
+      "message": "Lisamine jaotisesse Minu ketas"
+   },
+   "4466605492523079635": {
+      "message": "Salvesta"
+   },
+   "4468872996560163913": {
+      "message": "Tühjenda prügikast nüüd"
+   },
+   "4470437581055298361": {
+      "message": "Märge on valitud"
+   },
+   "45228242181482134": {
+      "message": "Esitamine"
+   },
+   "4557086341175267918": {
+      "message": "Võrguühenduseta ei saa jagada"
+   },
+   "4564682305303579317": {
+      "message": "Jätka"
+   },
+   "4566838580250578446": {
+      "message": "{every,plural, =1{Kordub iga aasta}other{Kordub iga # aasta järel}}"
+   },
+   "4608848277887462246": {
+      "message": "Rohkem lehti"
+   },
+   "4620034373159179678": {
+      "message": "$1​. leht $2​-st"
+   },
+   "4643940860676429496": {
+      "message": "Salvestamine ..."
+   },
+   "4675792829115971960": {
+      "message": "Märgistame selle märkme ja eemaldame selle teie kontolt."
+   },
+   "4685321580747790677": {
+      "message": "{every,plural, =1{Kordub iga nädal: {days}}other{Kordub iga # nädala järel: {days}}}"
+   },
+   "4691283408020124345": {
+      "message": "Loendivaade"
+   },
+   "4717484643724894786": {
+      "message": "Kopeeri dokumenti"
+   },
+   "4740100782728373253": {
+      "message": "Drive'i salvestamine"
+   },
+   "4748046231232264180": {
+      "message": "Google'i vormid"
+   },
+   "4751202914935960324": {
+      "message": "E-posti aadress on juba olemas"
+   },
+   "4762625944764691132": {
+      "message": "Peamenüü"
+   },
+   "4767722428137216885": {
+      "message": "Tühista"
+   },
+   "477328789314249432": {
+      "message": "Märkmete otsing"
+   },
+   "4773737319879079980": {
+      "message": "Selle rakendusega saate kiiremini märkmeid teha"
+   },
+   "4775368111547931093": {
+      "message": "Kirjeldus puudub"
+   },
+   "4783695823456312682": {
+      "message": "Teisalda alla"
+   },
+   "47844150329705564": {
+      "message": "Päringu „$1​” otsingutulemused"
+   },
+   "4805047680716507619": {
+      "message": " - Teisalduskoht:"
+   },
+   "4806763987633034948": {
+      "message": "PKCS7 Signature"
+   },
+   "4807444103404336088": {
+      "message": "Tärni lisamisel üksusele „$1​” tekkis probleem."
+   },
+   "4833214200453019325": {
+      "message": "$1​/$2​-st"
+   },
+   "4846720038197420778": {
+      "message": "Ühenda rohkem rakendusi"
+   },
+   "4853788427396558692": {
+      "message": "$1​ MB"
+   },
+   "4858389278403807208": {
+      "message": "Märge on prügikastis"
+   },
+   "4864051612562026766": {
+      "message": "{count,plural, =1{1 on valitud}other{# on valitud}}"
+   },
+   "4888104357342241891": {
+      "message": "Meeldetuletused"
+   },
+   "4889853674709731963": {
+      "message": "Kõik märkmed on salvestatud võrguühenduseta"
+   },
+   "4901386320110714275": {
+      "message": "Parool on vale. Proovige uuesti."
+   },
+   "4906669330059413958": {
+      "message": "Parooli esitamine"
+   },
+   "4908614808966678155": {
+      "message": "Päringule „$1​” ei leitud ühtegi otsingutulemust"
+   },
+   "4917607226908075328": {
+      "message": "Kustuta"
+   },
+   "4918998818369420588": {
+      "message": "Teavita väärkasutusest"
+   },
+   "4925002811848839819": {
+      "message": "$1​ üksust teisaldati kaustast $2​ kausta $3​."
+   },
+   "4930422592340561418": {
+      "message": "Minu ketas"
+   },
+   "4934109328393349339": {
+      "message": "Rohkem üksusi ei saa lisada"
+   },
+   "4957674814179289955": {
+      "message": "Järgmise/eelmise loendi üksuse juurde liikumine"
+   },
+   "4963784280521435720": {
+      "message": "Salvestamine ..."
+   },
+   "4979006991456129515": {
+      "message": "{count,plural, =1{ja # märgitud üksus}other{ja # märgitud üksust}}"
+   },
+   "4988132901627446385": {
+      "message": "Üksikasjade paneeli on laiendatud."
+   },
+   "5006225450559627366": {
+      "message": "+ veel $1​"
+   },
+   "5006765610090288212": {
+      "message": "Värv $1​ on rakendatud"
+   },
+   "5008901799534614532": {
+      "message": "Kustuta"
+   },
+   "5009448218905630614": {
+      "message": "Eemalda"
+   },
+   "5011858093760184160": {
+      "message": "Eemalda tärn"
+   },
+   "501475221876543407": {
+      "message": "Lisatud märkmed kuvatakse siin"
+   },
+   "5023623739220371850": {
+      "message": "Autentimine nurjus. Muudatused sünkroonitakse, kui sisse logite."
+   },
+   "5041572047197549869": {
+      "message": "Iga kuu samal päeval"
+   },
+   "5045725997997672553": {
+      "message": "{weekNumber,plural, =1{Iga kuu (esimene {day})}=2{Iga kuu (teine {day})}=3{Iga kuu (kolmas {day})}=4{Iga kuu (neljas {day})}other{Iga kuu (viimane {day})}}"
+   },
+   "5046371569383796818": {
+      "message": "Säilita"
+   },
+   "5052461293250181960": {
+      "message": "lehe võrra alla"
+   },
+   "5095987896933771566": {
+      "message": "Dokumendi printimine"
+   },
+   "509815948423424872": {
+      "message": "Navigeerimine"
+   },
+   "5098941979861776792": {
+      "message": "Sisesta"
+   },
+   "512429649443191386": {
+      "message": "$2​Abi$1​"
+   },
+   "5130903421326358933": {
+      "message": "Manuse salvestamisel Google Drive'i ilmnes probleem."
+   },
+   "5134649253619244584": {
+      "message": "Sildi kustutamine"
+   },
+   "5140285776541296873": {
+      "message": "Kohandatud"
+   },
+   "5151247077945318396": {
+      "message": "Ekstraktimiseks kausta valimisel ilmnes viga."
+   },
+   "5180454621500142444": {
+      "message": "Taastamine"
+   },
+   "5180989337128758117": {
+      "message": "vasak nurksulg"
+   },
+   "5182569285908080938": {
+      "message": "Lõppkuupäeva valikud"
+   },
+   "5184692850089055965": {
+      "message": "Kujutise teksti hõivamine"
+   },
+   "5197718200713913936": {
+      "message": "C++"
+   },
+   "5201670213497642487": {
+      "message": "Teabepaneeli vahekaardiriba. Vahekaartide vahel vahetamiseks vajutage vasak- ja paremnooli."
+   },
+   "5204391636475413312": {
+      "message": "Salvesta"
+   },
+   "5213411023807957844": {
+      "message": "Otsing Google Keepis"
+   },
+   "5238307666527496111": {
+      "message": "OK"
+   },
+   "5238371081785912565": {
+      "message": "Avamine rakendusega $1​"
+   },
+   "5281121179861637423": {
+      "message": "Üksusele $1​ juurdepääsuks on nõutav parool. Sisestage parool"
+   },
+   "5288037028604092288": {
+      "message": "XPS"
+   },
+   "5291153964865714504": {
+      "message": "Vastavaid märkmeid pole"
+   },
+   "5299648222246616124": {
+      "message": "graavis"
+   },
+   "5319313176242717957": {
+      "message": "Kujutiste töötlemine ..."
+   },
+   "5321772883765574323": {
+      "message": "„$1​” teisaldati kaustast $2​ kausta $3​."
+   },
+   "5334959887390704534": {
+      "message": "Kustutame selle sildi ja eemaldame selle kõikide teie Keepi märkmete juurest. Märkmeid ei kustutata."
+   },
+   "5336801339221383042": {
+      "message": "Javascript"
+   },
+   "5336924963122494935": {
+      "message": "Valimine"
+   },
+   "534191528712675978": {
+      "message": "Peata"
+   },
+   "534228323125524312": {
+      "message": "Vähendamine"
+   },
+   "5353129315502554762": {
+      "message": "Style Sheet"
+   },
+   "5372143986724491245": {
+      "message": "$1​ päev tagasi"
+   },
+   "5372160981898991853": {
+      "message": "Publisher"
+   },
+   "5394695048211047984": {
+      "message": "Lisage kuupäev"
+   },
+   "5398036630337418486": {
+      "message": "Ava dokument"
+   },
+   "5399553230649155346": {
+      "message": "$1​ tunni pärast"
+   },
+   "540596856674438371": {
+      "message": "Ei saa jagada, kuna jagamine on välja lülitatud."
+   },
+   "5408091115193390231": {
+      "message": "AutoCAD"
+   },
+   "5447119197363232006": {
+      "message": "Drive'is kuvamine"
+   },
+   "5472312735475866917": {
+      "message": "Kasutaja $1​ kommentaar."
+   },
+   "547865385964196102": {
+      "message": "$1​ minutit tagasi"
+   },
+   "5480497191725157666": {
+      "message": "Välju"
+   },
+   "5482604275203517054": {
+      "message": "vasakule"
+   },
+   "5539958940810433464": {
+      "message": "Märkme prügikasti teisaldamine"
+   },
+   "5545146751578623220": {
+      "message": "Suurtähelukk"
+   },
+   "5555182241047709329": {
+      "message": "Valige asukoht"
+   },
+   "5555599189512365009": {
+      "message": "SELGE"
+   },
+   "556742419793425318": {
+      "message": "Loobu"
+   },
+   "5581834527128285229": {
+      "message": "Üksuse „$1​” lisamisel teenusesse Minu Drive tekkis probleem."
+   },
+   "5598649706113950710": {
+      "message": "Redigeerija"
+   },
+   "5627470193961862490": {
+      "message": "Märkmed koos tulevaste meeldetuletustega kuvatakse siin"
+   },
+   "5631086126416409232": {
+      "message": "Sinine"
+   },
+   "564165666160590723": {
+      "message": "Windows Media Player"
+   },
+   "568072913338360182": {
+      "message": "HTML"
+   },
+   "5707549724380589079": {
+      "message": "Kas kustutada märgitud üksused?"
+   },
+   "5713014647314396479": {
+      "message": "Pärast"
+   },
+   "5714240424645614611": {
+      "message": "Androidi pakett"
+   },
+   "5728640851616538925": {
+      "message": "Roheline"
+   },
+   "5755541943799933389": {
+      "message": "Tärn lisati üksusele „$1​”."
+   },
+   "577619047319778196": {
+      "message": "Tühista valik"
+   },
+   "5783875011049188612": {
+      "message": "Kujutise tekst on hõivatud"
+   },
+   "5785010887521443923": {
+      "message": "Eemalda"
+   },
+   "5820033033803019104": {
+      "message": "Korralda"
+   },
+   "5840202488368071194": {
+      "message": "Uus pildiga märge"
+   },
+   "5840330517914556080": {
+      "message": "Vähendamine"
+   },
+   "5854158607727111728": {
+      "message": "Vahekaart"
+   },
+   "585503297543253590": {
+      "message": "Kuupäeval"
+   },
+   "5870134033985574990": {
+      "message": "Ekstraktimine ..."
+   },
+   "5871966496153339793": {
+      "message": "Video $1​ pisipildi kuvamine"
+   },
+   "5877526626743756786": {
+      "message": "Tagasiside"
+   },
+   "5909490544352162901": {
+      "message": "Küsige omanikult juurdepääsu sellele märkmele või lülituge kontole, millel on luba. Olete sisse logitud kasutajana $1​."
+   },
+   "5911012384539794869": {
+      "message": "Ekstraktimise alustamine ebaõnnestus."
+   },
+   "5916010927050975496": {
+      "message": "$1​ kB"
+   },
+   "5947346285379390298": {
+      "message": "Ekraanilugeja tugi on keelatud."
+   },
+   "5949528478488617689": {
+      "message": "Allalaadimise luba"
+   },
+   "5950887255133612666": {
+      "message": "Pole alanud."
+   },
+   "5969696744752069015": {
+      "message": "Ühtegi eelvaadet pole saadaval."
+   },
+   "5984398071085567332": {
+      "message": "Google'i risttabelid"
+   },
+   "5987609488177213747": {
+      "message": "Loo silt"
+   },
+   "5989809255170931770": {
+      "message": "{time,plural, =1{Keepi värskendatakse # sekundi pärast}other{Keepi värskendatakse # sekundi pärast}}"
+   },
+   "6009962986062136164": {
+      "message": "Üksuse $1​ laadimine."
+   },
+   "6011637630664474614": {
+      "message": "Tühik"
+   },
+   "60305871484579258": {
+      "message": "Alt"
+   },
+   "6031219625563537221": {
+      "message": "Rohkem otseteid"
+   },
+   "6042628357935708897": {
+      "message": "Seda märget ei jagata enam teie kontoga. Küsige omanikult juurdepääsu või lülituge kontole, millel on luba."
+   },
+   "6062216008944363143": {
+      "message": "{weekNumber,plural, =1{Kordub iga {every} kuu tagant (kuu esimene {day})}=2{Kordub iga {every} kuu tagant (kuu teine {day})}=3{Kordub iga {every} kuu tagant (kuu kolmas {day})}=4{Kordub iga {every} kuu tagant (kuu neljas {day})}other{Kordub iga {every} kuu tagant (kuu viimane {day})}}"
+   },
+   "6070475007374165567": {
+      "message": "Salvestamine ..."
+   },
+   "6087078248621415351": {
+      "message": "Muudetud: $1​"
+   },
+   "6104991132648864933": {
+      "message": "Kas kustutada märge?"
+   },
+   "6105571474005679446": {
+      "message": "Eelvaatega ilmnes probleem."
+   },
+   "6113237889871930608": {
+      "message": "Tühi märge"
+   },
+   "6118623991445349480": {
+      "message": "$1​. leht"
+   },
+   "6122643025527543706": {
+      "message": "Ctrl"
+   },
+   "6131822680770571276": {
+      "message": "PowerPoint"
+   },
+   "6140634664402328750": {
+      "message": "Rakenduste loend"
+   },
+   "6149175749937815029": {
+      "message": "Kõigi üksuste kuvamine"
+   },
+   "6156725896714172645": {
+      "message": "Kopeerimine Google'i dokumenti"
+   },
+   "6160805346274626656": {
+      "message": "Kustuta lõplikult"
+   },
+   "616807262818311711": {
+      "message": "Tüüp"
+   },
+   "618371060803280843": {
+      "message": "{numberOfNotes,plural, =1{Kustuta märge}other{Kustuta märkmed}}"
+   },
+   "6185886893933834031": {
+      "message": "Säilita valitud"
+   },
+   "6186753450686672643": {
+      "message": "{every,plural, =1{Kordub iga päev}other{Kordub iga # päeva tagant}}"
+   },
+   "6203260615455347677": {
+      "message": "Numbers"
+   },
+   "6211895332551673425": {
+      "message": "Lisatud jaotisesse $2​Minu ketas$1​"
+   },
+   "6212070333807533570": {
+      "message": "Lisamine jaotisesse $2​Minu ketas$1​ ..."
+   },
+   "6221913717826961969": {
+      "message": "Jagamise järgi filtreerimine"
+   },
+   "6223207695466118454": {
+      "message": "YouTube"
+   },
+   "6224687211096863620": {
+      "message": "Kõik"
+   },
+   "6252259197986158120": {
+      "message": "Eile"
+   },
+   "6253076263700695984": {
+      "message": "Autentimisviga. Laadige uuesti."
+   },
+   "6286379137937560558": {
+      "message": "Artikkel"
+   },
+   "6286806453721792102": {
+      "message": "Drive’is korraldamine"
+   },
+   "6289564019832728437": {
+      "message": "Võite jagada, kui Keep lõpetab laadimise."
+   },
+   "6305748545202493254": {
+      "message": "Üksikasjade paani kuvamine/peitmine"
+   },
+   "6306268376900894985": {
+      "message": "Esineb kuni {endDate}"
+   },
+   "6324768448533022780": {
+      "message": "$1​ $2​"
+   },
+   "6333496730738019575": {
+      "message": "Laadimine ..."
+   },
+   "6375244206466599493": {
+      "message": "Aasta"
+   },
+   "6375395544374251820": {
+      "message": "Rohkem lehti ei saanud laadida. Proovime uuesti ..."
+   },
+   "6386587519843563719": {
+      "message": "Binaarfail"
+   },
+   "6413404795391222793": {
+      "message": "Koosta uus loend"
+   },
+   "6416495701611778255": {
+      "message": "Soovitatud kolmanda osapoole rakendused"
+   },
+   "6419411265907669340": {
+      "message": "Täna"
+   },
+   "6450508807204492448": {
+      "message": "Ikoon $1​"
+   },
+   "6457802200418354862": {
+      "message": "Vaatajad saavad alla laadida"
+   },
+   "6459405233858728718": {
+      "message": "Google'i esitlused"
+   },
+   "6464761738227651511": {
+      "message": "$1​ minut tagasi"
+   },
+   "6466736813846482957": {
+      "message": "Eelmine"
+   },
+   "6466858417983764649": {
+      "message": "Määrake meeldetuletusi kohtade ja kellaaegade märkmete kohta, tehte häälmärkmeid ning töötage võrgus või võrguühenduseta."
+   },
+   "6480260198815372102": {
+      "message": "Lülita sisse"
+   },
+   "6510131849363684615": {
+      "message": "Homme"
+   },
+   "6522917155620379865": {
+      "message": "Laadi alla"
+   },
+   "6524849072392100692": {
+      "message": "Google Drive'i kaust"
+   },
+   "6571686604846453345": {
+      "message": "Selle üksuse lisamisel Drive'i ilmnes probleem."
+   },
+   "6579707685908557993": {
+      "message": "Õhtu"
+   },
+   "6588176324871799870": {
+      "message": "Google Apps Script"
+   },
+   "661771364073001489": {
+      "message": "Vaheta kontot"
+   },
+   "6618562607681757575": {
+      "message": "Ära teisalda ühestki kaustast, lihtsalt lisa kausta $3​$2​$1​"
+   },
+   "6622304228074863427": {
+      "message": "Rakendus"
+   },
+   "6632478894450324594": {
+      "message": "MUUD"
+   },
+   "6650600936729710500": {
+      "message": "Vastused."
+   },
+   "6664835828596108553": {
+      "message": "Valik"
+   },
+   "6707173584987026005": {
+      "message": "Täna"
+   },
+   "6710728478489145370": {
+      "message": "Sulgemine"
+   },
+   "6726462693927865256": {
+      "message": "Üksikasjad"
+   },
+   "6726879257388338969": {
+      "message": "Printimine"
+   },
+   "6732800471045353930": {
+      "message": "Seda märget on jagatud maksimaalse arvu inimestega."
+   },
+   "6744457949320515234": {
+      "message": "Tühi märge on tühistatud"
+   },
+   "6747528043814108113": {
+      "message": "Lülitati vaatele $1​"
+   },
+   "6749829802551750923": {
+      "message": "üles"
+   },
+   "6750600017746655174": {
+      "message": "Valik"
+   },
+   "6780628488957834429": {
+      "message": "Oranž"
+   },
+   "6787580031482277539": {
+      "message": "Mitte kunagi"
+   },
+   "681598652078493281": {
+      "message": "Lisateave"
+   },
+   "6822520214440117457": {
+      "message": "Töökoht"
+   },
+   "6823109315717909214": {
+      "message": "Proovige"
+   },
+   "6827821461670731013": {
+      "message": "Kuva märkeruudud"
+   },
+   "6833760103261954639": {
+      "message": "Selle lehe laadimisel ilmnes probleem. Proovime uuesti ..."
+   },
+   "6851307437837490686": {
+      "message": "Keela vaatajatel allalaadimine"
+   },
+   "6891563484025164308": {
+      "message": "Eelmine"
+   },
+   "6898823203505321799": {
+      "message": "Üksikasjad"
+   },
+   "6904351530369058983": {
+      "message": "Omanik"
+   },
+   "6922953828399110511": {
+      "message": "Vaaturi sulgemine"
+   },
+   "695253297035211081": {
+      "message": "Tühjenda prügikast"
+   },
+   "7017485862232001373": {
+      "message": "„$1​” lisati kausta $2​."
+   },
+   "7050898523853841537": {
+      "message": "Sageduse valikud"
+   },
+   "7054631817922169541": {
+      "message": "Google Keepis on salvestamata muudatusi. Kas soovite sellelt lehelt lahkuda ja loobuda muudatustest?"
+   },
+   "705714112650622350": {
+      "message": "Üksuse lisamisel Google Drive'i ilmnes probleem."
+   },
+   "7059437903473652416": {
+      "message": "Esita YouTube'i video $1​"
+   },
+   "7084324152376766809": {
+      "message": "$1​ päeva tagasi"
+   },
+   "7084991134824194740": {
+      "message": "Tuleta mulle meelde"
+   },
+   "7086801490719148597": {
+      "message": "Valiku tühistamine"
+   },
+   "7141983486405549971": {
+      "message": "Lisa"
+   },
+   "7146242673022399081": {
+      "message": "Tekst"
+   },
+   "7148992630785407972": {
+      "message": "See fail on parooliga kaitstud ja seda ei saa eelvaadata."
+   },
+   "7153847618034547771": {
+      "message": "Lubamine"
+   },
+   "7161134329606048317": {
+      "message": "Sule"
+   },
+   "7164532930742017984": {
+      "message": "Kõik, kellel on link"
+   },
+   "7174189954350964804": {
+      "message": "Proovi uuesti"
+   },
+   "7188754206068648188": {
+      "message": "Komaeraldusega väärtused"
+   },
+   "722702934847795304": {
+      "message": "Project"
+   },
+   "7247530225058410142": {
+      "message": "$2​ $1​"
+   },
+   "7247965266239591227": {
+      "message": "Faili „$1​” ekstraktimisel ilmnes probleem."
+   },
+   "7282548567245878869": {
+      "message": "Üksus on kustutatud"
+   },
+   "7290932540630116546": {
+      "message": "Meeldetuletus on määratud. $1​"
+   },
+   "7295254213841803546": {
+      "message": "Kas loobuda muudatustest? Muudatusi ei salvestata."
+   },
+   "7304355547638486270": {
+      "message": "Laadi heli alla ($1​)"
+   },
+   "7342923890755029722": {
+      "message": "Sulgemine"
+   },
+   "734478884582426793": {
+      "message": "Tihendatud arhiiv"
+   },
+   "735950239427610537": {
+      "message": "Lisage oma märkmetele sildid. Alates igapäevastest ülesannetest kuni uute inspiratsiooniallikateni – Keep aitab teil asjad korras hoida. Seadistage korduvad meeldetuletused, et midagi kunagi vahele ei jääks."
+   },
+   "7364571366369083618": {
+      "message": "Video"
+   },
+   "7377239345926788722": {
+      "message": "Toimingud"
+   },
+   "7382688299146249119": {
+      "message": "Üksuse allalaadimine"
+   },
+   "7383706174467122149": {
+      "message": "Märkus on kustutatud"
+   },
+   "7388342865555961406": {
+      "message": "$1​ päeva pärast"
+   },
+   "7389099426842546376": {
+      "message": "Koostöö ei ole praegu võimalik"
+   },
+   "7393771571081973549": {
+      "message": "C"
+   },
+   "7420117636241237177": {
+      "message": "Faili $1​ sõnumid ekstraktiti teie meilikontole sildi „Import: $2​” alla."
+   },
+   "7422452809590461532": {
+      "message": "Punane"
+   },
+   "7426603384368095928": {
+      "message": "Uuesti sisselogimiseks ja tööga jätkamiseks laadige leht uuesti."
+   },
+   "7429084719905985261": {
+      "message": "Objective C"
+   },
+   "7429233294323724765": {
+      "message": "Omanik on printimise keelanud"
+   },
+   "7432956605646331928": {
+      "message": "SQL"
+   },
+   "7440735091552109962": {
+      "message": "$2​ (muudetud: $1​)"
+   },
+   "7441891675459021164": {
+      "message": "Drive'i salvestamine"
+   },
+   "7468842863971844562": {
+      "message": "Uus loend"
+   },
+   "7469895656894091562": {
+      "message": "See e-posti aadress on sobimatu"
+   },
+   "7482924911694634213": {
+      "message": "{weekNumber,plural, =1{Kordub iga kuu (kuu esimene {day})}=2{Kordub iga kuu (kuu teine {day})}=3{Kordub iga kuu (kuu kolmas {day})}=4{Kordub iga kuu (kuu neljas {day})}other{Kordub iga kuu (kuu viimane {day})}}"
+   },
+   "7488945223835574498": {
+      "message": "Postscript"
+   },
+   "7500786109708143683": {
+      "message": "Heliklipp on kustutatud"
+   },
+   "754367112212424716": {
+      "message": "Hiljem tänase päeva jooksul"
+   },
+   "7546994163355383999": {
+      "message": "Kõik märkmed on salvestatud"
+   },
+   "7565383798249439151": {
+      "message": "$1​ päeva pärast"
+   },
+   "7579280421767578228": {
+      "message": "Meeldetuletus valiku Kunagi jaoks"
+   },
+   "7586291841734385643": {
+      "message": "Hüpikaknas avamine"
+   },
+   "7587936635257676112": {
+      "message": "Lisatud: $1​"
+   },
+   "7598582624136632660": {
+      "message": "Otsinguriba avamine / järgmise otsimine"
+   },
+   "7602870977118971161": {
+      "message": "Laadi uuesti"
+   },
+   "7604275940271852148": {
+      "message": "Ekstraktimine meilikontole"
+   },
+   "7610654194202731772": {
+      "message": "Kustutamine"
+   },
+   "7613790043108978452": {
+      "message": "Otsinguvõimalused"
+   },
+   "7630723924002267143": {
+      "message": "Klaviatuuri otseteed on lubatud."
+   },
+   "7649506133540465463": {
+      "message": "Toimingut ei saanud tagasi võtta."
+   },
+   "7669846901402551021": {
+      "message": "Täna"
+   },
+   "7691521283331762131": {
+      "message": "Teie arhiivitud märkmed kuvatakse siin"
+   },
+   "772000107335590599": {
+      "message": "$1​ minuti pärast"
+   },
+   "7734578122414851725": {
+      "message": "PHP"
+   },
+   "7772544658778579390": {
+      "message": "Dokumendist otsimine"
+   },
+   "777546328624962090": {
+      "message": "Seda faili ei saa üles laadida. Aktsepteerime $1​-vormingus faile, mis on väiksemad kui $2​ MB ja $3​ megapikslit."
+   },
+   "7800318069267901681": {
+      "message": "Muudetud"
+   },
+   "7814778057875152792": {
+      "message": "Manuse teisaldamisel valitud kausta Google Drive'is ilmnes probleem."
+   },
+   "7822364282298323175": {
+      "message": "Loend on kustutatud"
+   },
+   "7830513726270865588": {
+      "message": "Kalender"
+   },
+   "7842164552344536314": {
+      "message": "Korraldamine ..."
+   },
+   "7844842290699524598": {
+      "message": "Siltide maksimaalne arv on saavutatud. Uue sildi lisamiseks kustutage mõni olemasolev."
+   },
+   "7845751753397906805": {
+      "message": "Leiti vastuolulised muudatused"
+   },
+   "785840448809859989": {
+      "message": "Kellaaja valikud"
+   },
+   "7859526172011446452": {
+      "message": "Ülekandmise lõpetamine"
+   },
+   "7865240075542402013": {
+      "message": "Lisa tärn"
+   },
+   "7873060817438017568": {
+      "message": "$2​ · $1​"
+   },
+   "7889179838401647357": {
+      "message": "Taotlus on saadetud. Kinnitamisel saate meili."
+   },
+   "7895643887742936844": {
+      "message": "semikoolon"
+   },
+   "7899913952063063825": {
+      "message": "Kujutis on kustutatud"
+   },
+   "7903276896883020622": {
+      "message": "Jagamine ei ole praegu saadaval"
+   },
+   "7906726367011430855": {
+      "message": "Ühenda"
+   },
+   "7910887984113996757": {
+      "message": "Lülita jagamine sisse"
+   },
+   "7922692430438844436": {
+      "message": "Ekstrakti"
+   },
+   "7943657844420237650": {
+      "message": "OpenOffice Impress"
+   },
+   "7946114032014914338": {
+      "message": "{repeatSentence}. {endSentence}"
+   },
+   "7988058806865329896": {
+      "message": "Kuupäeva ja aja valimine"
+   },
+   "800402007626972565": {
+      "message": "{numberOfNotes,plural, =1{Märge on teisaldatud prügikasti}other{# märget on teisaldatud prügikasti}}"
+   },
+   "8011497727123874703": {
+      "message": "Kausta $1​ nupp"
+   },
+   "8019402848412685977": {
+      "message": "„$2​” nimetati ümber nimeks „$1​”."
+   },
+   "8021465164414684024": {
+      "message": "{count,plural, =1{# üksus kustutati}other{# üksust kustutati}}"
+   },
+   "8043514121228710092": {
+      "message": "Kujutise lisamine"
+   },
+   "8044700199531805239": {
+      "message": "$3​$1​$2​ on ühendatud."
+   },
+   "8069384932934428393": {
+      "message": "$1​ minuti pärast"
+   },
+   "8080583426915938264": {
+      "message": "Teie arvutis olevad rakendused"
+   },
+   "8085493757603803516": {
+      "message": "Valiku muutmine"
+   },
+   "8090743714060857028": {
+      "message": "Vaatajad ei saa alla laadida"
+   },
+   "8095838445486198080": {
+      "message": "{FILE_SIZE,plural, =0{0 baiti}=1{1 bait}other{# baiti}}"
+   },
+   "8105635255693472607": {
+      "message": "Lisa uued loendiüksused"
+   },
+   "8111632928339277375": {
+      "message": "{NUM_FOLDERS,plural, =1{Teisalda ühest kaustast}=2{Teisalda mõlemast kaustast}other{Teisalda kõigist # kaustast}}"
+   },
+   "8125425371755035523": {
+      "message": "Võta tagasi"
+   },
+   "8133866583554546341": {
+      "message": "$1​, $2​"
+   },
+   "8135145577663029437": {
+      "message": "Säilita mõlemad"
+   },
+   "8146560259680897627": {
+      "message": "Tühista"
+   },
+   "8149439558305434788": {
+      "message": "$1​ kell $2​"
+   },
+   "8159493406018222636": {
+      "message": "Tagasiside saatmine"
+   },
+   "8174654098152723289": {
+      "message": "Kirjelduse muutmine"
+   },
+   "8194941811853358224": {
+      "message": "Tärni eemaldamisel üksuselt „$1​” tekkis probleem."
+   },
+   "8214941501817169086": {
+      "message": "{count,plural, =1{Kas kustutada märge jäädavalt?}other{Kas kustutada märkmed jäädavalt?}}"
+   },
+   "821942580510564685": {
+      "message": "Dokumendi vaatamiseks sisestage selle parool"
+   },
+   "8223878224920694193": {
+      "message": "Iga"
+   },
+   "8231449936104909428": {
+      "message": "Üksuse „$1​” teisaldamisel valitud Drive'i kausta ilmnes probleem."
+   },
+   "8242655297101700529": {
+      "message": "Minu ketas"
+   },
+   "826433162451399549": {
+      "message": "Homme"
+   },
+   "8267458240960831780": {
+      "message": "Autentimine ..."
+   },
+   "8273434617910595878": {
+      "message": "alla"
+   },
+   "8278004577315225077": {
+      "message": "Meeldetuletuse järgi filtreerimine"
+   },
+   "8281141013543828574": {
+      "message": "RAW-pildifail"
+   },
+   "8304474373444239435": {
+      "message": "Kasutaja $1​ vastus."
+   },
+   "8322416564157128458": {
+      "message": "Jagamine"
+   },
+   "8334718599538726981": {
+      "message": "Värskendatud"
+   },
+   "8337582740675387693": {
+      "message": "Java"
+   },
+   "8342620486324515462": {
+      "message": "Loobumine"
+   },
+   "8379952094517631162": {
+      "message": "Ei"
+   },
+   "8408756681779291666": {
+      "message": "Märkmete otsing"
+   },
+   "8409393124758970712": {
+      "message": "$2​ x $1​"
+   },
+   "8412098268689886334": {
+      "message": "Ühenda"
+   },
+   "8412306118114780633": {
+      "message": "Värskenda"
+   },
+   "84334343973701810": {
+      "message": "Avaleht"
+   },
+   "8467894483369467251": {
+      "message": "Flash"
+   },
+   "8471029293590878384": {
+      "message": "Peata"
+   },
+   "8473619468455115498": {
+      "message": "Märkme valik on tühistatud"
+   },
+   "8505368783342665564": {
+      "message": "VARSTI"
+   },
+   "8505989225387082493": {
+      "message": "Sildi lisamine"
+   },
+   "8509270263487836281": {
+      "message": "Logi sisse"
+   },
+   "8517148045938431718": {
+      "message": "Vigade parandamine"
+   },
+   "8519556481067341819": {
+      "message": "Sildi ümbernimetamine või kustutamine"
+   },
+   "8595175575778060149": {
+      "message": "Rohkem"
+   },
+   "8596279649507974639": {
+      "message": "Teisalda siia"
+   },
+   "8616342546716995946": {
+      "message": "Sain aru"
+   },
+   "8621067185485606452": {
+      "message": "ECMAScript"
+   },
+   "8625391761733744226": {
+      "message": "Loendi järgi filtreerimine"
+   },
+   "8638281560898810401": {
+      "message": "{MINUTES,plural, =0{0 minutit }=1{1 minut }other{# minutit }}{SECONDS,plural, =0{0 sekundit.}=1{1 sekund.}other{# sekundit.}}"
+   },
+   "8646821180780920830": {
+      "message": "Sildid"
+   },
+   "8660016472468563221": {
+      "message": "koolon"
+   },
+   "8663507590720636709": {
+      "message": "$1​ + veel $2​"
+   },
+   "8663993454460982287": {
+      "message": "Märkeruudud on peidetud"
+   },
+   "8674222789100049233": {
+      "message": "Sule"
+   },
+   "86815590954366945": {
+      "message": "Arhiivitud sisu loend"
+   },
+   "8711002053494037632": {
+      "message": "Ükski üksus pole märgitud"
+   },
+   "8775097441636640256": {
+      "message": "$2​ – $1​"
+   },
+   "8781837301864053001": {
+      "message": "Rikastekst"
+   },
+   "8786673003584562680": {
+      "message": "Lehe võrra üles"
+   },
+   "8787051885478443427": {
+      "message": "Kahjuks ei saanud rakendust autoriseerida kõigi failidega, mida proovisite avada. Proovige uuesti."
+   },
+   "8792038552136453044": {
+      "message": "Vabandust! Midagi läks valesti"
+   },
+   "8793166064242077041": {
+      "message": "Selle pildi kuvamisel ilmnes probleem."
+   },
+   "8822326207328431952": {
+      "message": "Kujutiste üleslaadimine ei ole saadaval"
+   },
+   "8845176264121061589": {
+      "message": "Eemalda märgistus kõikidelt üksustelt"
+   },
+   "8850238112725591771": {
+      "message": "otsetee $1​"
+   },
+   "8852550049823214385": {
+      "message": "seejärel"
+   },
+   "8860658114732392347": {
+      "message": "Meeldetuletuse kustutamine"
+   },
+   "888015650266122140": {
+      "message": "esinemised"
+   },
+   "8889019648958415451": {
+      "message": "Tundmatu fail"
+   },
+   "8916237870980173557": {
+      "message": "Ühendamine ..."
+   },
+   "8917554093651202032": {
+      "message": "Esita video $1​"
+   },
+   "8919660666733306860": {
+      "message": "Kujutis"
+   },
+   "8930959387403789939": {
+      "message": "Meeldetuletus"
+   },
+   "8938626240031421092": {
+      "message": "Lülita märkeruudud sisse/välja"
+   },
+   "8943760679396635042": {
+      "message": "Üksuse $1​ kuvamine."
+   },
+   "8953555255469284376": {
+      "message": "Lohistage kujutised siia"
+   },
+   "8958118622768332570": {
+      "message": "Kopeerimine Google'i dokumenti ebaõnnestus"
+   },
+   "8977359195911624009": {
+      "message": "Veel $1​"
+   },
+   "8979104019474011578": {
+      "message": "{every,plural, =1{Kordub iga nädal}other{Kordub iga # nädala tagant}}"
+   },
+   "8979615310931291676": {
+      "message": "Muudetud $1​"
+   },
+   "8996041620846572145": {
+      "message": "$1​ silt kustutati"
+   },
+   "900086393693234779": {
+      "message": "Kodu"
+   },
+   "9021945828354340363": {
+      "message": "{count,plural, =1{Seda märget ei jagata enam teiega.}other{Neid märkmeid ei jagata enam teiega.}}"
+   },
+   "9024023699330078373": {
+      "message": "Üksuse avamisel lisatakse see teie Drive'i"
+   },
+   "9058308423774656474": {
+      "message": "Hangul Word Processor"
+   },
+   "9083935734710258396": {
+      "message": "Keeldu"
+   },
+   "9094248058931620597": {
+      "message": "Üksikasjade paneeli on ahendatud."
+   },
+   "9108438908858432277": {
+      "message": "Tühista valik"
+   },
+   "911586799466052745": {
+      "message": "OpenOffice'i joonis"
+   },
+   "9121915169985572840": {
+      "message": "Värvi muutmine"
+   },
+   "9146716987301178362": {
+      "message": "Ilmnes viga. Laadige uuesti."
+   },
+   "9197837492705576727": {
+      "message": "Järgmise üksuse juurde liikumine"
+   },
+   "919969969251998566": {
+      "message": "Ekstraktige see arhiiv oma e-posti kontole."
+   },
+   "9208632284144316801": {
+      "message": "Kordamine"
+   },
+   "938074023403688885": {
+      "message": "Eemalda"
+   },
+   "943493480163896757": {
+      "message": "{resultCount,plural, =1{# vastav märge}other{# vastavat märget}}"
+   },
+   "951963820437151566": {
+      "message": "Google Sites"
+   },
+   "960732173870658714": {
+      "message": "Google Keepi dokument"
+   },
+   "985197728509875956": {
+      "message": "Chemical Model"
+   },
+   "991852286447868510": {
+      "message": "Otsing päringule $1​"
+   },
+   "996381410993745580": {
+      "message": "Photoshop"
+   },
+   "appDesc": {
+      "description": "App description",
+      "message": "Jäädvustage kiiresti mõtteid ja jagage neid oma sõprade ning perega."
+   },
+   "appName": {
+      "description": "App name.",
+      "message": "Google Keep – märkmed ja loendid"
+   }
+}

@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "Genereert QR Codes uit vrije tekst, URL&#39;s, telefoonnummers, sms-berichten of contacten (vCard)."
+   },
+   "application_title": {
+      "message": "De QR Code Generator"
+   }
+}

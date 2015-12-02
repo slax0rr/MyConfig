@@ -1,0 +1,16 @@
+<svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="stroke-miterlimit:1.41421;clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round">
+ <circle id="0" cx="50" cy="50" r="50" style="fill:url(#3)"/>
+ <circle id="1" cx="50" cy="50" r="47" style="fill:url(#4)"/>
+ <path id="2" d="m32.9 18.8l18.161 0 20.039 31.25-20.039 31.25-18.161 0 20.039-31.25-20.039-31.25" style="fill:url(#5)"/>
+ <defs>
+  <linearGradient id="3" x1="100" x2="0" gradientUnits="userSpaceOnUse">
+   <stop offset="0%" style="stop-color:#f9be03"/>
+   <stop offset="100%" style="stop-color:#cc7b19"/>
+  </linearGradient>
+  <linearGradient id="4" x1="97" x2="3" gradientUnits="userSpaceOnUse">
+   <stop offset="0%" style="stop-color:#282828"/>
+   <stop offset="100%" style="stop-color:#1f1f1f"/>
+  </linearGradient>
+  <radialGradient id="5" cx="67" cy="49.9" r="57.8123" gradientUnits="userSpaceOnUse" xlink:href="#3"/>
+ </defs>
+</svg>

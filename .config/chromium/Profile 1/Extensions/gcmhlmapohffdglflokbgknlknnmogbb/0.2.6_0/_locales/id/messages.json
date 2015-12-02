@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "Menghasilkan QR Codes dari teks bebas, URL, nomor telepon, pesan SMS, atau kontak (vcard)."
+   },
+   "application_title": {
+      "message": "Generator QR Kode"
+   }
+}

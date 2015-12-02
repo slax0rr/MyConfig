@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "Generuoja QR kodus iš laisvo teksto, URL adresus, telefono numerius, SMS žinutes ar kontaktus (vCard)."
+   },
+   "application_title": {
+      "message": "QR kodo generatorius"
+   }
+}

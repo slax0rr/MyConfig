@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "Create your own QR Codes! This App generates QR Codes from free text, URLs, phone numbers, SMS messages, or contacts (vcard)."
+   },
+   "application_title": {
+      "message": "The QR Code Generator"
+   }
+}

@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "Tekitab QR koode vaba teksti, URL, telefoninumbrid SMS sõnumeid või kontakte (vCard)."
+   },
+   "application_title": {
+      "message": "QR-kood Generator"
+   }
+}

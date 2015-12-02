@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "Generuje QR kody z dowolny tekst, adresy, numery telefonów, wiadomości SMS i kontaktów (vCard)."
+   },
+   "application_title": {
+      "message": "QR Code Generator"
+   }
+}

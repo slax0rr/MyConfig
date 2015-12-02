@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "Genererer QR koder fra fritekst, webadresser, telefonnumre, SMS-beskeder eller kontakter (vCard)."
+   },
+   "application_title": {
+      "message": "Den QR Code Generator"
+   }
+}

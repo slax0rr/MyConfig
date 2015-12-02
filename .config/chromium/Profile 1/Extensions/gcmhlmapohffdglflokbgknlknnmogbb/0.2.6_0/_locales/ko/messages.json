@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "무료 텍스트, URL을, 전화 번호, SMS 메시지 또는 연락처 (vCard를)에서 QR 코드를 생성합니다."
+   },
+   "application_title": {
+      "message": "QR 코드 생성기"
+   }
+}

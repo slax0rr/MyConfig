@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "Ustvari QR kode iz prosto besedilo, URL, telefonske številke, SMS sporočil ali vizitke (vCard)."
+   },
+   "application_title": {
+      "message": "QR koda Generator"
+   }
+}

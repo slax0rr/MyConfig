@@ -1,0 +1,23 @@
+{
+   "background_page": "background.html",
+   "content_scripts": [ {
+      "js": [ "prettify.min.js", "neo-vision.js" ],
+      "matches": [ "http://*/*.css*", "http://*/*.js*", "https://*/*.css*", "https://*/*.js*", "file:///*/*.css*", "file:///*/*.js*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Syntax-highlights source code files with customizable themes",
+   "icons": {
+      "128": "neo-vision-128.png",
+      "16": "neo-vision-16.png",
+      "48": "neo-vision-48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDrEAon8YdJu2ISE+51cNUgjXo7rU/PBXdQKoBXy514pa6sRLuai69MWPGQa/Nc1Fpoc+AViGl/ltmdSqO/NxOKHLDahH9wcFpTNrcWH6jd6e9l+L0/qwF/1Yi+GWNW5hVsA0Su1eOgwrXajriMO3CvGkMRL6LOioKyBlNcuqYnlQIDAQAB",
+   "name": "Neo Vision",
+   "options_page": "options.html",
+   "page_action": {
+      "default_icon": "neo-vision-16.png",
+      "default_title": "Neo Vision active"
+   },
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.3"
+}

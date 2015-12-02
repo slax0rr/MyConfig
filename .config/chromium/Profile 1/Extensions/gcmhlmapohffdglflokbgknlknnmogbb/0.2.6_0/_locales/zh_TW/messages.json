@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "生成QR碼的自由文本，網址，電話號碼，短信或聯繫人（名片）。"
+   },
+   "application_title": {
+      "message": "的QR碼生成器"
+   }
+}

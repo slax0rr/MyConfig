@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "Generál QR kódok a szabad szöveget, URL-ek, telefonszámok, SMS üzenetek, illetve kapcsolatok (vCard)."
+   },
+   "application_title": {
+      "message": "A QR-kód generátor"
+   }
+}

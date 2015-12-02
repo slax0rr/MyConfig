@@ -1,0 +1,2260 @@
+{
+   "1001407065815272462": {
+      "message": "Položky sa nepodarilo pridať do sekcie $2​Môj disk$1​"
+   },
+   "1013939682284715002": {
+      "message": "Usporiadať"
+   },
+   "1016268207702373216": {
+      "message": "Zdieľajte svoje poznámky s priateľmi a rodinou. Poznámky, ktoré zdieľate, môžu ostatní ľahko zobrazovať a upravovať, či už ide o nákupný zoznam, alebo o najnovší nápad na knihu."
+   },
+   "1030781695901615026": {
+      "message": "Na koniec"
+   },
+   "1039394921418415681": {
+      "message": "Prihlásiť sa"
+   },
+   "1061011362310586469": {
+      "message": "Zdieľanie"
+   },
+   "1083918249169198626": {
+      "message": "Klávesové skratky sú zakázané"
+   },
+   "1101371910696766077": {
+      "message": "Vytvoriť kópiu"
+   },
+   "1122146167985532789": {
+      "message": "včera"
+   },
+   "1127320433256851404": {
+      "message": "Prehrávač videa"
+   },
+   "1159463938127271829": {
+      "message": "od: $1​"
+   },
+   "1162642135048988280": {
+      "message": "Premenovanie dokumentu"
+   },
+   "1163324543881570799": {
+      "message": "Dokumenty Google"
+   },
+   "1166244120191806795": {
+      "message": "Odoslať spätnú väzbu"
+   },
+   "1179891706526242218": {
+      "message": "Ďalej"
+   },
+   "1185164838496022543": {
+      "message": "Kliknutím tu znova načítajte stránku."
+   },
+   "1206655808961684109": {
+      "message": "Je nám to ľúto, ale otváranie súborov pomocou tejto aplikácie nie je podporované."
+   },
+   "1213005208968286932": {
+      "message": "Označené ako vyriešené"
+   },
+   "124900027451629830": {
+      "message": "Prehrať"
+   },
+   "1256362146573583104": {
+      "message": "Extrahovať"
+   },
+   "1259492729704800881": {
+      "message": "Archivovať poznámku"
+   },
+   "1263685395252160366": {
+      "message": "LaTeX"
+   },
+   "1270239770279341085": {
+      "message": "Štítok už existuje"
+   },
+   "1271038294394884640": {
+      "message": "Zrušiť"
+   },
+   "1280430284217153733": {
+      "message": "Pridať čas"
+   },
+   "1319037146426591038": {
+      "message": "alebo"
+   },
+   "1335763707789999819": {
+      "message": "{NUM_ITEMS,plural, =1{Nemáte povolenie na presun tejto položky z jej aktuálnych priečinkov. Namiesto toho pridajte položku do priečinka {START_SPAN_1}{NAME}{END_SPAN}.}few{Nemáte povolenie na presun týchto položiek z ich aktuálnych priečinkov. Namiesto toho pridajte položky do priečinka {START_SPAN_2}{NAME}{END_SPAN}.}many{Nemáte povolenie na presun týchto položiek z ich aktuálnych priečinkov. Namiesto toho pridajte položky do priečinka {START_SPAN_2}{NAME}{END_SPAN}.}other{Nemáte povolenie na presun týchto položiek z ich aktuálnych priečinkov. Namiesto toho pridajte položky do priečinka {START_SPAN_2}{NAME}{END_SPAN}.}}"
+   },
+   "1349697396109290623": {
+      "message": "Zobrazuje sa vyššie rozlíšenie súboru $1​"
+   },
+   "136335357683289450": {
+      "message": "Zavrieť"
+   },
+   "1397887822627488928": {
+      "message": "Osoba alebo e-mailová adresa na zdieľanie"
+   },
+   "139942704574044780": {
+      "message": "Povoliť"
+   },
+   "1419896259743862406": {
+      "message": "Otvoriť pomocou"
+   },
+   "1440171352837969028": {
+      "message": "Video alebo zvuk"
+   },
+   "1441487391064925653": {
+      "message": "Zobraziť všetky skratky v centre pomoci"
+   },
+   "1446829548948002072": {
+      "message": "čiarka"
+   },
+   "1463389029497634261": {
+      "message": "Znížiť hlasitosť"
+   },
+   "1467797923781828000": {
+      "message": "Niekoľko položiek ($1​) bolo pridaných do priečinka $2​."
+   },
+   "1475261522522402536": {
+      "message": "Vybrať miesto"
+   },
+   "1482452362096735080": {
+      "message": "Opakuje sa {numOccurrences}-krát"
+   },
+   "1499433769420882987": {
+      "message": "Zobrazuje sa $1​"
+   },
+   "1505876360160857231": {
+      "message": "$1​ TB"
+   },
+   "1507063529674142853": {
+      "message": "Posledný deň v mesiaci"
+   },
+   "1507445189431379166": {
+      "message": "Odstrániť"
+   },
+   "1512454807955173272": {
+      "message": "Keep sa aktualizuje, keď budete online"
+   },
+   "1536051766421561160": {
+      "message": "rovná sa"
+   },
+   "153659275234722804": {
+      "message": "Odmietnuť"
+   },
+   "156992719062713230": {
+      "message": "Sivá"
+   },
+   "1586968957182554447": {
+      "message": "Zakázať"
+   },
+   "1588268697057804046": {
+      "message": "pred $1​ hodinami"
+   },
+   "1633798963327779260": {
+      "message": "Zajtra"
+   },
+   "1654222450095043962": {
+      "message": "Zvuk"
+   },
+   "1655692513689044870": {
+      "message": "Odhlásili ste sa."
+   },
+   "1656911987308166143": {
+      "message": "Odstrániť"
+   },
+   "1661251023749398110": {
+      "message": "Stiahnuť zvuk"
+   },
+   "1665821947855814052": {
+      "message": "Veľkosť"
+   },
+   "1679322931860897953": {
+      "message": "Kopírovať do dokumentu Google"
+   },
+   "1680617124502957636": {
+      "message": "Momentálne nie je možné pripojiť sa. Skúste to znova neskôr."
+   },
+   "1692901784886701962": {
+      "message": "Poznámka je príliš veľká."
+   },
+   "1697160643589236962": {
+      "message": "$1​ PB"
+   },
+   "1703175513040690135": {
+      "message": "Ktokoľvek v doméne $1​"
+   },
+   "1704004075228783011": {
+      "message": "{every,plural, =1{Opakuje sa mesačne v posledný deň mesiaca}few{Opakuje sa každé # mesiace v posledný deň mesiaca}many{Opakuje sa každého # mesiaca v posledný deň mesiaca}other{Opakuje sa každých # mesiacov v posledný deň mesiaca}}"
+   },
+   "171683163267149669": {
+      "message": "$1​ GB"
+   },
+   "1737240194537729525": {
+      "message": "Týždenne"
+   },
+   "1739900012825270238": {
+      "message": "Prejsť na predchádzajúcu položku"
+   },
+   "1740371341228065086": {
+      "message": "Znova načítať"
+   },
+   "1745782414562966515": {
+      "message": "Chcete zlúčiť štítky „$1​“ a „$2​“? Všetky poznámky označené štítkom „$1​“ budú označené „$2​“. Štítok „$1​“ bude odstránený."
+   },
+   "1783719421893050637": {
+      "message": "Rozmery"
+   },
+   "178927681797742562": {
+      "message": "Prihlásiť sa"
+   },
+   "1791115075948268631": {
+      "message": "Otvoriť aplikáciu pomocníka pre klávesové skratky"
+   },
+   "179545118447015250": {
+      "message": "Zobrazenie mriežky"
+   },
+   "1808245543551507519": {
+      "message": "Zvuk"
+   },
+   "1810036091857944187": {
+      "message": "Späť"
+   },
+   "1818306025747564729": {
+      "message": "Prejsť na odkaz"
+   },
+   "1823222042913714987": {
+      "message": "Odoslať heslo"
+   },
+   "1823854753950594157": {
+      "message": "Ponechať na mieste"
+   },
+   "1830157062072535681": {
+      "message": "Zobrazuje sa súbor $1​"
+   },
+   "1852745815330163711": {
+      "message": "Nákresy Google"
+   },
+   "1870691479127746185": {
+      "message": "doprava"
+   },
+   "187077078156858455": {
+      "message": "Zvuková poznámka"
+   },
+   "189303170370862360": {
+      "message": "$1​ z $2​ položiek"
+   },
+   "1900571668686750716": {
+      "message": "vCard"
+   },
+   "1918176455405610789": {
+      "message": "Hotovo"
+   },
+   "195154114623528341": {
+      "message": "Pridať umiestnenie"
+   },
+   "1956794332842050061": {
+      "message": "Ďalšia stránka"
+   },
+   "1965626377712226216": {
+      "message": "Keynote"
+   },
+   "1967536906522187719": {
+      "message": "Vyskytol sa problém so zobrazením ukážky tejto tabuľky."
+   },
+   "1968405748623909021": {
+      "message": "Skúste túto položku otvoriť a upraviť pomocou jednej z aplikácií nižšie"
+   },
+   "1973454937875679500": {
+      "message": "Zadajte názov štítka"
+   },
+   "1975630610063119352": {
+      "message": "{charsRemaining,plural, =1{Zostáva # znak}few{Zostávajú # znaky}many{Zostáva # znaku}other{Zostáva # znakov}}"
+   },
+   "1980209166254310911": {
+      "message": "Deň"
+   },
+   "1988244842147989817": {
+      "message": "Poznámky v koši budú odstránené po siedmich dňoch."
+   },
+   "1996872514195688196": {
+      "message": "K zdieľaným poznámkam momentálne nie je možné pristupovať. Skúste to znova neskôr."
+   },
+   "2003845117979929469": {
+      "message": "Podrobnosti"
+   },
+   "2009529126622551485": {
+      "message": "Položka zoznamu"
+   },
+   "2039757863628752523": {
+      "message": "Možnosti frekvencie"
+   },
+   "2055836117545582610": {
+      "message": "Nastavenia zoznamu"
+   },
+   "205876860571942679": {
+      "message": "Moje mapy Google"
+   },
+   "2059084517358086391": {
+      "message": "Zavrieť panel vyhľadávania"
+   },
+   "2061440050632248160": {
+      "message": "Archivovať"
+   },
+   "2068023589621557589": {
+      "message": "Písmo TrueType"
+   },
+   "2073322475696388995": {
+      "message": "Preskočiť dopredu"
+   },
+   "207810168108507460": {
+      "message": "pred $1​ hodinou"
+   },
+   "2107379241532042955": {
+      "message": "Poloha"
+   },
+   "2107589831642088814": {
+      "message": "Vytvoriť štítok $3​$2​$1​"
+   },
+   "212796670323571824": {
+      "message": "OK"
+   },
+   "213665695896111861": {
+      "message": "Poznámky"
+   },
+   "2138593281154109183": {
+      "message": "Archív"
+   },
+   "214517458278879973": {
+      "message": "Prihlásiť sa ako $1​"
+   },
+   "2147952938331523160": {
+      "message": "Premenovať..."
+   },
+   "2154372123324862271": {
+      "message": "lomka"
+   },
+   "21582033570022607": {
+      "message": "Vybrať poznámku"
+   },
+   "2173675558412671739": {
+      "message": "Obsah bol skopírovaný do dokumentu Google"
+   },
+   "2184278444368405837": {
+      "message": "Počet položiek: $1​"
+   },
+   "2187239650627580457": {
+      "message": "Odoslať"
+   },
+   "2198096971937872560": {
+      "message": "Pripomenutie:"
+   },
+   "220168959069469607": {
+      "message": "Ďalšie akcie"
+   },
+   "2216904725760458480": {
+      "message": "Denne"
+   },
+   "221715292685577880": {
+      "message": "Áno"
+   },
+   "2264311811697505466": {
+      "message": "Obnoviť"
+   },
+   "2280650195464600721": {
+      "message": "Navigácia"
+   },
+   "2285069188138705005": {
+      "message": "Pripojené aplikácie"
+   },
+   "228741435562395266": {
+      "message": "Tlač zatiaľ nie je k dispozícii"
+   },
+   "2289534534793293486": {
+      "message": "Zrušiť archiváciu"
+   },
+   "2289812403593835836": {
+      "message": "Pages"
+   },
+   "229177484946387188": {
+      "message": "Google Earth"
+   },
+   "2292696732672795285": {
+      "message": "Zvýšiť hlasitosť"
+   },
+   "2310145944356900158": {
+      "message": "Začiarknuté"
+   },
+   "2311880726221661199": {
+      "message": "Načítavajú sa vyššie rozlíšenia"
+   },
+   "2323863827212547996": {
+      "message": "Zrušiť výber poznámky"
+   },
+   "2329167963662998826": {
+      "message": "Služba Google Keep žiada o prístup k údajom o vašej polohe, ktoré pomôžu upresniť návrhy pre pripomenutia miest."
+   },
+   "2359614137862708172": {
+      "message": "Shift"
+   },
+   "236689092839978781": {
+      "message": "Neopakuje sa"
+   },
+   "2370463380397641604": {
+      "message": "Obľúbené klávesové skratky"
+   },
+   "2370656573843123707": {
+      "message": "pravá hranatá zátvorka"
+   },
+   "2386536768112358461": {
+      "message": "Page Down"
+   },
+   "2405795704816921421": {
+      "message": "Súbor $1​"
+   },
+   "2433429041384246549": {
+      "message": "Vypnúť zvuk"
+   },
+   "2449254824382583885": {
+      "message": "Otvoriť v novom okne"
+   },
+   "2452522051596946166": {
+      "message": "Ojoj! Vyskytol sa problém s ukážkou položky $1​. Pokus sa opakuje."
+   },
+   "2454642351139428112": {
+      "message": "Späť"
+   },
+   "2466251465475184755": {
+      "message": "Chcete vyprázdniť kôš? Všetky poznámky v koši budú natrvalo odstránené."
+   },
+   "2475181823688399272": {
+      "message": "Nasledujúce"
+   },
+   "2491578858569300584": {
+      "message": "Vymazať vyhľadávanie"
+   },
+   "2504232652631703202": {
+      "message": "Pripojené"
+   },
+   "251025074207413762": {
+      "message": "Pridať popis"
+   },
+   "2532280782491328445": {
+      "message": "Nájsť predchádzajúcu"
+   },
+   "2541423827251928667": {
+      "message": "Hľadať všetky skratky"
+   },
+   "2546225293834487484": {
+      "message": "Poznámka"
+   },
+   "2555961950726197809": {
+      "message": "Zobrazuje sa čitateľ"
+   },
+   "257317112834806705": {
+      "message": "Prepnúť medzi zobrazením zoznamu a mriežky"
+   },
+   "2579261044590673579": {
+      "message": "Môj disk"
+   },
+   "2579679351920691492": {
+      "message": "Preskočiť dozadu"
+   },
+   "2609409316752026806": {
+      "message": "PDF"
+   },
+   "2623861453769098676": {
+      "message": "Vyskytol sa problém s ukážkou tohto dokumentu."
+   },
+   "2630254198275172065": {
+      "message": "Presunúť do..."
+   },
+   "2632263751512428257": {
+      "message": "Ročne"
+   },
+   "2645469029410848421": {
+      "message": "{noteCount,plural, =1{Poznámka k štítku}few{Poznámky k štítkom}many{Poznámky k štítkom}other{Poznámky k štítkom}}"
+   },
+   "2661850177130037208": {
+      "message": "Otvoriť položku"
+   },
+   "2665571821980053260": {
+      "message": "Vašu poznámku nie je možné zdieľať. Skúste to znova neskôr."
+   },
+   "2681830832355823748": {
+      "message": "Prehľadať všetky skratky"
+   },
+   "268402507078609011": {
+      "message": "{imagesAdded,plural, =1{Obrázok bol pridaný}few{Boli pridané # obrázky}many{Bolo pridané # obrázka}other{Bolo pridaných # obrázkov}}"
+   },
+   "2702485557996900362": {
+      "message": "Opravte konfliktné úpravy"
+   },
+   "2716433087531258659": {
+      "message": "page up"
+   },
+   "2742719907061406418": {
+      "message": "XML"
+   },
+   "2758125083752925237": {
+      "message": "(Vlastník)"
+   },
+   "277430914014962533": {
+      "message": "Ojoj! Vyskytol sa problém s ukážkou položky $1​."
+   },
+   "2793841261389879255": {
+      "message": "Predchádzajúca stránka"
+   },
+   "2794676336056877832": {
+      "message": "{every,plural, =1{Opakuje sa mesačne v ten istý deň}few{Opakuje sa každé # mesiace v ten istý deň}many{Opakuje sa každého # mesiaca v ten istý deň}other{Opakuje sa každých # mesiacov v ten istý deň}}"
+   },
+   "2796950576714807268": {
+      "message": "Text nie je možné rozpoznať"
+   },
+   "2817277146396981386": {
+      "message": "odp."
+   },
+   "2818020101821669029": {
+      "message": "Vytvorené"
+   },
+   "2827039933590757722": {
+      "message": "Odkaz systému Windows"
+   },
+   "2829226075651806940": {
+      "message": "Priblížiť"
+   },
+   "2854717396594966319": {
+      "message": "OpenOffice Writer"
+   },
+   "2862675909830094845": {
+      "message": "Vytvoriť nový štítok"
+   },
+   "2873089307546162154": {
+      "message": "OK"
+   },
+   "2877285560485318801": {
+      "message": "Pozastaviť"
+   },
+   "2879276552944958066": {
+      "message": "Vrátiť sa do priečinka $1​."
+   },
+   "2893055432094515558": {
+      "message": "Začiarkavacie políčka sú zobrazené"
+   },
+   "289798573180023043": {
+      "message": "OK"
+   },
+   "2901360496423912565": {
+      "message": "Nahlásiť"
+   },
+   "2902570047322934912": {
+      "message": "Povoliť zdieľanie"
+   },
+   "2902747751281161248": {
+      "message": "Použiť na nové zoznamy"
+   },
+   "2942094715879803305": {
+      "message": "Odstrániť začiarknuté položky"
+   },
+   "295331174171409695": {
+      "message": "Povolenie na stiahnutie položky $1​ sa nepodarilo aktualizovať."
+   },
+   "2960516445247616550": {
+      "message": "Tlač nie je k dispozícii"
+   },
+   "2964778642459027786": {
+      "message": "V koši nie sú žiadne poznámky"
+   },
+   "2973306402585941108": {
+      "message": "Ráno"
+   },
+   "298817883481775869": {
+      "message": "Prebieha načítavanie..."
+   },
+   "3005058076425755361": {
+      "message": "Backspace"
+   },
+   "3043961722025425136": {
+      "message": "Popis"
+   },
+   "3045997283325725532": {
+      "message": "Novinky v aplikácii Google Keep"
+   },
+   "306516303501625305": {
+      "message": "Overenie zlyhalo."
+   },
+   "3089735918990490582": {
+      "message": "Pripomenutie bolo odstránené"
+   },
+   "31018542656161389": {
+      "message": "Prispôsobiť priblížením alebo oddialením"
+   },
+   "3109321241584918345": {
+      "message": "Pripojiť ďalšie aplikácie..."
+   },
+   "3121560585545725724": {
+      "message": "$1​, $2​"
+   },
+   "3140236589681731084": {
+      "message": "o $1​ hod."
+   },
+   "3150651996344750990": {
+      "message": "{count,plural, =1{Archivácia poznámky bola zrušená}few{Archivácia # poznámok bola zrušená}many{Archivácia # poznámky bola zrušená}other{Archivácia # poznámok bola zrušená}}"
+   },
+   "3155087947817133141": {
+      "message": "Zdieľanie a spolupráca"
+   },
+   "3176246635438298155": {
+      "message": "Delete"
+   },
+   "3189089961261793350": {
+      "message": "Pri načítavaní údajov z priečinka Disku sa vyskytla chyba"
+   },
+   "3189854932778515441": {
+      "message": "Poznámka v archíve"
+   },
+   "3190546672187601036": {
+      "message": "Noc"
+   },
+   "3195812604657128345": {
+      "message": "Vyberte priečinok na Disku, do ktorého sa má archív rozbaliť."
+   },
+   "3207650089232728475": {
+      "message": "Zmeniť štítky"
+   },
+   "3211163842850942567": {
+      "message": "Priblížiť"
+   },
+   "3220641589840600333": {
+      "message": "Prepnuté do zobrazenia $1​"
+   },
+   "3222929029344613957": {
+      "message": "Ľutujeme, pri otváraní tohto súboru sa vyskytla chyba. Skúste to znova."
+   },
+   "3241696131593027453": {
+      "message": "Vybrať poznámku"
+   },
+   "3250489229749307913": {
+      "message": "Elektronická publikácia"
+   },
+   "3261131345401321392": {
+      "message": "Môže komentovať"
+   },
+   "3268028083415317236": {
+      "message": "Nie, ďakujem"
+   },
+   "3272496516667407797": {
+      "message": "Vyskytol sa problém s načítaním podrobností."
+   },
+   "3275029321588462173": {
+      "message": "Žiadna"
+   },
+   "3278046126264096288": {
+      "message": "Týždeň"
+   },
+   "3288498486633948368": {
+      "message": "Položka $1​ bola pridaná na Disk Google."
+   },
+   "330603631583186798": {
+      "message": "Word"
+   },
+   "3312545971976531405": {
+      "message": "Správa"
+   },
+   "3319087486907616296": {
+      "message": "Prenášať túto položku"
+   },
+   "3343273953047473521": {
+      "message": "Odstrániť poznámky?"
+   },
+   "3345567742278474807": {
+      "message": "Táto poznámka bola nahlásená ako nevhodná a nedá sa zdieľať"
+   },
+   "3354260708176476985": {
+      "message": "Načítava sa&hellip;"
+   },
+   "336772567640975291": {
+      "message": "Budúci týždeň"
+   },
+   "3381619429606029445": {
+      "message": "Visio"
+   },
+   "3382236845597426718": {
+      "message": "Otvoriť"
+   },
+   "3409257542937182842": {
+      "message": "Pokus sa opakuje..."
+   },
+   "3409483962000136213": {
+      "message": "Prehrať alebo pozastaviť"
+   },
+   "3418767079436101103": {
+      "message": "Vyskytol sa problém s načítaním tejto stránky."
+   },
+   "3421685394169412932": {
+      "message": "Každá vykonaná zmena sa automaticky uloží"
+   },
+   "3428726060007577698": {
+      "message": "Zoznam je príliš dlhý."
+   },
+   "3448234415275521882": {
+      "message": "Všeobecné informácie"
+   },
+   "3455405209271884570": {
+      "message": "Rozbaliť"
+   },
+   "3468441711253011521": {
+      "message": "Tabuľky Google"
+   },
+   "3473620774713000513": {
+      "message": "Vyriešené"
+   },
+   "3485469306694683931": {
+      "message": "Rozbaliť do účtu služby Disk"
+   },
+   "3505141932202244291": {
+      "message": "Vyhľadať"
+   },
+   "3511274344439521198": {
+      "message": "Akcie"
+   },
+   "3518073392823563581": {
+      "message": "Klávesové skratky"
+   },
+   "3543475399174940144": {
+      "message": "+ $1​"
+   },
+   "3547194749488601916": {
+      "message": "Aktualizuje sa..."
+   },
+   "354828103903104581": {
+      "message": "Začiarknuté položky"
+   },
+   "3551522853788442530": {
+      "message": "Späť"
+   },
+   "3561658662634401836": {
+      "message": "Názov"
+   },
+   "3569884090205828853": {
+      "message": "OpenOffice Calc"
+   },
+   "3570074492517305433": {
+      "message": "Registrovať sa"
+   },
+   "3580293729117872545": {
+      "message": "Ukončenie"
+   },
+   "3595000514985906359": {
+      "message": "Excel"
+   },
+   "3595562664731337243": {
+      "message": "Premenovať štítok"
+   },
+   "3608606849109645545": {
+      "message": "Zadajte nový názov dokumentu:"
+   },
+   "361630518611593946": {
+      "message": "Skryť začiarkavacie políčka"
+   },
+   "3625886392901506764": {
+      "message": "alebo"
+   },
+   "3651893685901703652": {
+      "message": "..."
+   },
+   "3657386785336906042": {
+      "message": "opačná lomka"
+   },
+   "3659554681396757189": {
+      "message": "Otvorené mnou"
+   },
+   "366289214151975122": {
+      "message": "Ktokoľvek s odkazom v doméne $1​"
+   },
+   "3663571259791438207": {
+      "message": "Nahlásiť zneužitie"
+   },
+   "3664842788764635265": {
+      "message": "Žiadne"
+   },
+   "3666123569747918021": {
+      "message": "Tento dokument obsahuje neuložené zmeny. Chcete opustiť stránku a zahodiť zmeny?"
+   },
+   "3666594998669810518": {
+      "message": "Čo je nové v aplikácii Keep"
+   },
+   "3675629455109824289": {
+      "message": "{numberOfNotes,plural, =1{Poznámka bola obnovená}few{# poznámky boli obnovené}many{# poznámky bolo obnovenej}other{# poznámok bolo obnovených}}"
+   },
+   "3678477908297567934": {
+      "message": "podčiarkovník"
+   },
+   "3681747688524363195": {
+      "message": "Na začiatok"
+   },
+   "3690515530505404607": {
+      "message": "Vyskytol sa problém s prehrávaním tohto videa."
+   },
+   "369764661829607970": {
+      "message": "{NUM_ITEMS,plural, =0{Žiadne položky}=1{1 položka}few{# položky}many{# items}other{# položiek}}"
+   },
+   "3712215972250917265": {
+      "message": "Komentáre"
+   },
+   "3741641473167151543": {
+      "message": "Podpora čítačky obrazovky bola zapnutá"
+   },
+   "3760084546578947451": {
+      "message": "Zapnúť pripomenutia aplikácie Google Keep? Možno budete musieť povoliť upozornenia prehliadača."
+   },
+   "3770795578481676514": {
+      "message": "Žltá"
+   },
+   "3793086499925031123": {
+      "message": "Otvoriť vyhľadávací panel a nájsť predchádzajúci výskyt"
+   },
+   "3796511349428373407": {
+      "message": "Možnosti dátumu"
+   },
+   "37992665410817181": {
+      "message": "Znova otvorené"
+   },
+   "3801617971018550169": {
+      "message": "Včera"
+   },
+   "3808213429720572062": {
+      "message": "Obnoviť"
+   },
+   "381100310424863459": {
+      "message": "Illustrator"
+   },
+   "3845302429676793049": {
+      "message": "Popis položky $1​ sa nepodarilo aktualizovať."
+   },
+   "3858324058837632381": {
+      "message": "Vyskytol sa problém s prehrávaním tohto zvukového súboru."
+   },
+   "3869166581651870488": {
+      "message": "Dokončiť úpravy"
+   },
+   "3873215756962047275": {
+      "message": "ARCHÍV"
+   },
+   "3873482466313193066": {
+      "message": "{count,plural, =1{Poznámka bola archivovaná}few{# poznámky boli archivované}many{# poznámky bolo archivované}other{# poznámok bolo archivovaných}}"
+   },
+   "3897281533382850749": {
+      "message": "Obnoviť zvuk"
+   },
+   "3955575370175991097": {
+      "message": "Prepnuté do zobrazenia štítka $1​"
+   },
+   "3974822583047850066": {
+      "message": "Zrušiť"
+   },
+   "3977699855735576796": {
+      "message": "Vyskytol sa problém s načítaním ďalších stránok."
+   },
+   "3988418762222300024": {
+      "message": "bodka"
+   },
+   "4005725939358875643": {
+      "message": "Akcia bola vrátená späť."
+   },
+   "4010991525243002125": {
+      "message": "ŠTÍTKY A OPAKUJÚCE SA PRIPOMENUTIA"
+   },
+   "4014287326684608407": {
+      "message": "Modrozelená"
+   },
+   "4023299615382814997": {
+      "message": "Poznámky v koši nie je možné upraviť"
+   },
+   "4059387791040010947": {
+      "message": "Meta"
+   },
+   "4061102590585232601": {
+      "message": "Bol odstránený spolupracovník $1​"
+   },
+   "4065471327582105766": {
+      "message": "Filtrovať podľa obrázka"
+   },
+   "4087289538934418537": {
+      "message": "Poznámky, ktoré ste vytvorili, po odstránení už nikto neuvidí. Poznámky, ktoré s vami niekto zdieľa, uvidia používatelia s prístupom aj naďalej."
+   },
+   "4087667435414545203": {
+      "message": "Už nie ste prihlásený/-á. Ak chcete vykonať zmeny, načítajte stránku znova."
+   },
+   "4097921967754832323": {
+      "message": "spojovník"
+   },
+   "4106990792743182780": {
+      "message": "Text z obrázkov nie je možné načítať. Skúste to znova neskôr."
+   },
+   "4108415852995579458": {
+      "message": "Filtrovať podľa zvukovej stopy"
+   },
+   "411137507354526852": {
+      "message": "Mesiac"
+   },
+   "4111452225725405610": {
+      "message": "Hviezdička bola odstránená z položky $1​."
+   },
+   "4117632433281998979": {
+      "message": "Mesačne"
+   },
+   "411791562637880104": {
+      "message": "Odstrániť seba"
+   },
+   "4134385041569168669": {
+      "message": "Načítava sa..."
+   },
+   "4148564423510181521": {
+      "message": "Vymazať vyhľadávanie"
+   },
+   "4152315289461886": {
+      "message": "Ovládacie prvky dokumentov"
+   },
+   "4155905925766040098": {
+      "message": "Ukážka nie je k dispozícii"
+   },
+   "4174786386751618325": {
+      "message": "Fotografická poznámka"
+   },
+   "4182427157920112948": {
+      "message": "vlnovka"
+   },
+   "4184267625445112917": {
+      "message": "Pridať poznámku"
+   },
+   "4186465168527990324": {
+      "message": "Súbor $1​ bol úspešne extrahovaný do priečinka $2​."
+   },
+   "4204345954541079744": {
+      "message": "Nemáte zatiaľ žiadne poznámky s týmto štítkom"
+   },
+   "4205329094859140439": {
+      "message": "AM"
+   },
+   "4211182812451835307": {
+      "message": "Môže upravovať"
+   },
+   "4214190403999219403": {
+      "message": "Lupa"
+   },
+   "4214427276033711472": {
+      "message": "Nastavenia"
+   },
+   "4216242742234357612": {
+      "message": "Vybrať všetky poznámky"
+   },
+   "42239889404644810": {
+      "message": "Požiadať o prístup"
+   },
+   "4228870062013120023": {
+      "message": "Prejsť na nasledujúcu alebo predchádzajúcu poznámku"
+   },
+   "4230101516585408149": {
+      "message": "Napísať novú poznámku"
+   },
+   "4280747719095153198": {
+      "message": "Vyriešený komentár"
+   },
+   "4286663890332754386": {
+      "message": "Nahrávanie sa nepodarilo"
+   },
+   "4299690446455033653": {
+      "message": "Works"
+   },
+   "4318861667254318892": {
+      "message": "Video Google"
+   },
+   "4320831042030778": {
+      "message": "Zrušiť"
+   },
+   "4320942249997687388": {
+      "message": "End"
+   },
+   "4332252081504252077": {
+      "message": "Ojoj!"
+   },
+   "4343825450663233452": {
+      "message": "Môže zobraziť"
+   },
+   "4343848624651344174": {
+      "message": "Popoludnie"
+   },
+   "4346644280640625035": {
+      "message": "Zdieľanie poznámky bolo zrušené."
+   },
+   "435214284915110062": {
+      "message": "Otvoriť vyhľadávací panel"
+   },
+   "4356312843186491987": {
+      "message": "Presunúť"
+   },
+   "4391715930031906467": {
+      "message": "Nájsť ďalšiu"
+   },
+   "4397482594800054550": {
+      "message": "Položku $1​ sa nepodarilo premenovať."
+   },
+   "4422985761498356257": {
+      "message": "Otvoriť pomocou"
+   },
+   "4440180985666883750": {
+      "message": "Zdieľanie"
+   },
+   "4444571967705751871": {
+      "message": "Kôš"
+   },
+   "4457424709416639982": {
+      "message": "Pridať na Môj disk"
+   },
+   "4466605492523079635": {
+      "message": "Uložiť"
+   },
+   "4468872996560163913": {
+      "message": "Vyprázdniť kôš"
+   },
+   "4470437581055298361": {
+      "message": "Bola vybratá poznámka"
+   },
+   "45228242181482134": {
+      "message": "Prehrať"
+   },
+   "4557086341175267918": {
+      "message": "Nie je možné zdieľať offline"
+   },
+   "4564682305303579317": {
+      "message": "Pokračovať"
+   },
+   "4566838580250578446": {
+      "message": "{every,plural, =1{Opakuje sa ročne}few{Opakuje sa každé # roky}many{Opakuje sa každých # roka}other{Opakuje sa každých # rokov}}"
+   },
+   "4608848277887462246": {
+      "message": "Ďalšie hárky"
+   },
+   "4620034373159179678": {
+      "message": "Strana $1​ z $2​"
+   },
+   "4643940860676429496": {
+      "message": "Ukladá sa..."
+   },
+   "4675792829115971960": {
+      "message": "Danú poznámku nahlásime a odstránime z vášho účtu."
+   },
+   "4685321580747790677": {
+      "message": "{every,plural, =1{Opakuje sa týždenne (deň: {days})}few{Opakuje sa každé # týždne (deň: {days})}many{Opakuje sa každých # týždňa (deň: {days})}other{Opakuje sa každých # týždňov (deň: {days})}}"
+   },
+   "4691283408020124345": {
+      "message": "Zobrazenie zoznamu"
+   },
+   "4717484643724894786": {
+      "message": "Kopírovať do dokumentu"
+   },
+   "4740100782728373253": {
+      "message": "Uložiť na Disk"
+   },
+   "4748046231232264180": {
+      "message": "Formuláre Google"
+   },
+   "4751202914935960324": {
+      "message": "Táto e-mailová adresa už existuje"
+   },
+   "4762625944764691132": {
+      "message": "Hlavná ponuka"
+   },
+   "4767722428137216885": {
+      "message": "Zrušiť"
+   },
+   "477328789314249432": {
+      "message": "Hľadať v poznámkach"
+   },
+   "4773737319879079980": {
+      "message": "Využite túto aplikáciu na rýchle zapisovanie poznámok"
+   },
+   "4775368111547931093": {
+      "message": "Žiadny popis"
+   },
+   "4783695823456312682": {
+      "message": "Presunúť naspodok"
+   },
+   "47844150329705564": {
+      "message": "Výsledky vyhľadávania pre výraz „$1​“"
+   },
+   "4805047680716507619": {
+      "message": " – presunúť do:"
+   },
+   "4806763987633034948": {
+      "message": "Podpis PKCS7"
+   },
+   "4807444103404336088": {
+      "message": "Položke $1​ sa nepodarilo pridať hviezdičku."
+   },
+   "4833214200453019325": {
+      "message": "$1​ z $2​"
+   },
+   "4846720038197420778": {
+      "message": "Pripojiť ďalšie aplikácie"
+   },
+   "4853788427396558692": {
+      "message": "$1​ MB"
+   },
+   "4858389278403807208": {
+      "message": "Poznámka v koši"
+   },
+   "4864051612562026766": {
+      "message": "{count,plural, =1{1 vybraná položka}few{# vybrané položky}many{# vybranej položky}other{# vybraných položiek}}"
+   },
+   "4888104357342241891": {
+      "message": "Pripomenutia"
+   },
+   "4889853674709731963": {
+      "message": "Všetky poznámky boli uložené offline"
+   },
+   "4901386320110714275": {
+      "message": "Nesprávne heslo. Skúste to znova."
+   },
+   "4906669330059413958": {
+      "message": "Odoslať heslo"
+   },
+   "4908614808966678155": {
+      "message": "Žiadne výsledky vyhľadávania pre výraz „$1​“"
+   },
+   "4917607226908075328": {
+      "message": "Odstrániť"
+   },
+   "4918998818369420588": {
+      "message": "Nahlásiť položku ako urážlivú"
+   },
+   "4925002811848839819": {
+      "message": "Niekoľko položiek ($1​) bolo presunutých z priečinka $2​ do priečinka $3​."
+   },
+   "4930422592340561418": {
+      "message": "Môj disk"
+   },
+   "4934109328393349339": {
+      "message": "Nie je možné pridať ďalšie položky"
+   },
+   "4957674814179289955": {
+      "message": "Prejsť na nasledujúcu alebo predchádzajúcu položku v zozname"
+   },
+   "4963784280521435720": {
+      "message": "Ukladá sa..."
+   },
+   "4979006991456129515": {
+      "message": "{count,plural, =1{+ # začiarknutá položka}few{+ # začiarknuté položky}many{+ # začiarknutej položky}other{+ # začiarknutých položiek}}"
+   },
+   "4988132901627446385": {
+      "message": "Panel s podrobnosťami bol rozbalený."
+   },
+   "5006225450559627366": {
+      "message": "+ ďalšie: $1​"
+   },
+   "5006765610090288212": {
+      "message": "Bola použitá farba $1​"
+   },
+   "5008901799534614532": {
+      "message": "Odstrániť"
+   },
+   "5009448218905630614": {
+      "message": "Odstrániť"
+   },
+   "5011858093760184160": {
+      "message": "Odstrániť hviezdičku"
+   },
+   "501475221876543407": {
+      "message": "Tu sa zobrazia pridané poznámky"
+   },
+   "5023623739220371850": {
+      "message": "Nepodarilo sa overiť totožnosť. Zmeny sa synchronizujú po prihlásení."
+   },
+   "5041572047197549869": {
+      "message": "Mesačne v ten istý deň"
+   },
+   "5045725997997672553": {
+      "message": "{weekNumber,plural, =1{Prvý/-ú {day} v mesiaci}=2{Druhý/-ú {day} v mesiaci}=3{Tretí/-iu {day} v mesiaci}=4{Štvrtý/-ú {day} v mesiaci}many{Posledný/-ú {day} v mesiaci}other{Posledný/-ú {day} v mesiaci}}"
+   },
+   "5046371569383796818": {
+      "message": "Ponechať"
+   },
+   "5052461293250181960": {
+      "message": "page down"
+   },
+   "5095987896933771566": {
+      "message": "Tlačiť dokument"
+   },
+   "509815948423424872": {
+      "message": "Navigácia"
+   },
+   "5098941979861776792": {
+      "message": "Enter"
+   },
+   "512429649443191386": {
+      "message": "$2​Pomocník$1​"
+   },
+   "5130903421326358933": {
+      "message": "Vyskytol sa problém pri sťahovaní prílohy na Disk Google"
+   },
+   "5134649253619244584": {
+      "message": "Odstrániť štítok"
+   },
+   "5140285776541296873": {
+      "message": "Vlastné"
+   },
+   "5151247077945318396": {
+      "message": "Pri výbere priečinka na extrahovanie sa vyskytla chyba"
+   },
+   "5180454621500142444": {
+      "message": "Obnoviť"
+   },
+   "5180989337128758117": {
+      "message": "ľavá hranatá zátvorka"
+   },
+   "5182569285908080938": {
+      "message": "Možnosti dátumu ukončenia"
+   },
+   "5184692850089055965": {
+      "message": "Načítať text z obrázka"
+   },
+   "5197718200713913936": {
+      "message": "C++"
+   },
+   "5201670213497642487": {
+      "message": "Pruh informačných kariet. Medzi kartami môžete prepínať stláčaním klávesov so šípkou doľava a doprava."
+   },
+   "5204391636475413312": {
+      "message": "Uložiť"
+   },
+   "5213411023807957844": {
+      "message": "Hľadať v službe Google Keep"
+   },
+   "5238307666527496111": {
+      "message": "OK"
+   },
+   "5238371081785912565": {
+      "message": "Otvoriť v aplikácii $1​"
+   },
+   "5281121179861637423": {
+      "message": "Na prístup k položke $1​ sa vyžaduje heslo. Zadajte heslo"
+   },
+   "5288037028604092288": {
+      "message": "XPS"
+   },
+   "5291153964865714504": {
+      "message": "Žiadne zodpovedajúce poznámky"
+   },
+   "5299648222246616124": {
+      "message": "opačný dĺžeň"
+   },
+   "5319313176242717957": {
+      "message": "Spracovávanie obrázkov..."
+   },
+   "5321772883765574323": {
+      "message": "Položka $1​ bola presunutá z priečinka $2​ do priečinka $3​."
+   },
+   "5334959887390704534": {
+      "message": "Tento štítok odstránime a vymažeme ho zo všetkých vašich poznámok aplikácie Keep. Vaše poznámky neodstránime."
+   },
+   "5336801339221383042": {
+      "message": "JavaScript"
+   },
+   "5336924963122494935": {
+      "message": "Vybrať túto položku"
+   },
+   "534191528712675978": {
+      "message": "Pause"
+   },
+   "534228323125524312": {
+      "message": "Oddialiť"
+   },
+   "5353129315502554762": {
+      "message": "Kaskádové štýly"
+   },
+   "5372143986724491245": {
+      "message": "pred $1​ dňom"
+   },
+   "5372160981898991853": {
+      "message": "Publisher"
+   },
+   "5394695048211047984": {
+      "message": "Pridať dátum"
+   },
+   "5398036630337418486": {
+      "message": "Otvoriť dokument"
+   },
+   "5399553230649155346": {
+      "message": "o $1​ hodinu"
+   },
+   "540596856674438371": {
+      "message": "Položku nie je možné zdieľať, pretože zdieľanie je vypnuté."
+   },
+   "5408091115193390231": {
+      "message": "AutoCAD"
+   },
+   "5447119197363232006": {
+      "message": "Zobraziť na Disku"
+   },
+   "5472312735475866917": {
+      "message": "Komentár od používateľa $1​"
+   },
+   "547865385964196102": {
+      "message": "pred $1​ minútami"
+   },
+   "5480497191725157666": {
+      "message": "Esc"
+   },
+   "5482604275203517054": {
+      "message": "doľava"
+   },
+   "5539958940810433464": {
+      "message": "Vyhodiť poznámku do koša"
+   },
+   "5545146751578623220": {
+      "message": "Caps Lock"
+   },
+   "5555182241047709329": {
+      "message": "Vybrať miesto"
+   },
+   "5555599189512365009": {
+      "message": "DOBRE"
+   },
+   "556742419793425318": {
+      "message": "Zahodiť"
+   },
+   "5581834527128285229": {
+      "message": "Položku $1​ sa nepodarilo pridať na Môj disk."
+   },
+   "5598649706113950710": {
+      "message": "Editor"
+   },
+   "5627470193961862490": {
+      "message": "Tu sa zobrazia poznámky s nadchádzajúcimi pripomienkami"
+   },
+   "5631086126416409232": {
+      "message": "Modrá"
+   },
+   "564165666160590723": {
+      "message": "Windows Media Player"
+   },
+   "568072913338360182": {
+      "message": "HTML"
+   },
+   "5707549724380589079": {
+      "message": "Chcete odstrániť začiarknuté položky?"
+   },
+   "5713014647314396479": {
+      "message": "Po"
+   },
+   "5714240424645614611": {
+      "message": "Balíček systému Android"
+   },
+   "5728640851616538925": {
+      "message": "Zelená"
+   },
+   "5755541943799933389": {
+      "message": "Hviezdička bola pridaná k položke $1​."
+   },
+   "577619047319778196": {
+      "message": "Vymazať výber"
+   },
+   "5783875011049188612": {
+      "message": "Bol načítaný text z obrázkov"
+   },
+   "5785010887521443923": {
+      "message": "Odstrániť"
+   },
+   "5820033033803019104": {
+      "message": "Usporiadať"
+   },
+   "5840202488368071194": {
+      "message": "Nová poznámka s obrázkom"
+   },
+   "5840330517914556080": {
+      "message": "Oddialiť"
+   },
+   "5854158607727111728": {
+      "message": "Tab"
+   },
+   "585503297543253590": {
+      "message": "Dňa"
+   },
+   "5870134033985574990": {
+      "message": "Extrahuje sa..."
+   },
+   "5871966496153339793": {
+      "message": "Zobrazuje sa miniatúra videa $1​"
+   },
+   "5877526626743756786": {
+      "message": "Spätná väzba"
+   },
+   "5909490544352162901": {
+      "message": "O prístup k tejto poznámke požiadajte jej vlastníka alebo prepnite na účet s povolením. Ste prihlásený/-á do účtu $1​."
+   },
+   "5911012384539794869": {
+      "message": "Nepodarilo sa spustiť úlohu extrahovania."
+   },
+   "5916010927050975496": {
+      "message": "$1​ kB"
+   },
+   "5947346285379390298": {
+      "message": "Podpora čítačky obrazovky bola vypnutá"
+   },
+   "5949528478488617689": {
+      "message": "Povolenie sťahovania"
+   },
+   "5950887255133612666": {
+      "message": "Zvuk sa nespustil"
+   },
+   "5969696744752069015": {
+      "message": "Ukážka nie je k dispozícii."
+   },
+   "5984398071085567332": {
+      "message": "Dynamické tabuľky Google"
+   },
+   "5987609488177213747": {
+      "message": "Vytvoriť štítok"
+   },
+   "5989809255170931770": {
+      "message": "{time,plural, =1{Keep sa aktualizuje o # s}few{Keep sa aktualizuje o # s}many{Keep sa aktualizuje o # s}other{Keep sa aktualizuje o # s}}"
+   },
+   "6009962986062136164": {
+      "message": "Prebieha načítavanie položky $1​."
+   },
+   "6011637630664474614": {
+      "message": "Medzerník"
+   },
+   "60305871484579258": {
+      "message": "Alt"
+   },
+   "6031219625563537221": {
+      "message": "Ďalšie skratky"
+   },
+   "6042628357935708897": {
+      "message": "Táto poznámka sa už nezdieľa s vaším účtom. Požiadajte vlastníka o prístup alebo prepnite na účet s povolením."
+   },
+   "6062216008944363143": {
+      "message": "{weekNumber,plural, =1{Opakuje sa vždy po {every} mesiacoch prvý deň {day} v mesiaci}=2{Opakuje sa vždy po {every} mesiacoch druhý deň {day} v mesiaci}=3{Opakuje sa vždy po {every} mesiacoch tretí deň {day} v mesiaci}=4{Opakuje sa vždy po {every} mesiacoch štvrtý deň {day} v mesiaci}many{Opakuje sa vždy po {every} mesiacoch posledný deň {day} v mesiaci}other{Opakuje sa vždy po {every} mesiacoch posledný deň {day} v mesiaci}}"
+   },
+   "6070475007374165567": {
+      "message": "Ukladá sa..."
+   },
+   "6087078248621415351": {
+      "message": "Upravená $1​"
+   },
+   "6104991132648864933": {
+      "message": "Odstrániť poznámku?"
+   },
+   "6105571474005679446": {
+      "message": "Vyskytol sa problém s ukážkou."
+   },
+   "6113237889871930608": {
+      "message": "Prázdna poznámka"
+   },
+   "6118623991445349480": {
+      "message": "Strana $1​"
+   },
+   "6122643025527543706": {
+      "message": "Ctrl"
+   },
+   "6131822680770571276": {
+      "message": "PowerPoint"
+   },
+   "6140634664402328750": {
+      "message": "Zoznam aplikácií"
+   },
+   "6149175749937815029": {
+      "message": "Zobraziť všetky položky"
+   },
+   "6156725896714172645": {
+      "message": "Kopíruje sa do dokumentu Google"
+   },
+   "6160805346274626656": {
+      "message": "Navždy odstrániť"
+   },
+   "616807262818311711": {
+      "message": "Typ"
+   },
+   "618371060803280843": {
+      "message": "{numberOfNotes,plural, =1{Odstrániť poznámku}few{Odstrániť poznámky}many{Odstrániť poznámky}other{Odstrániť poznámky}}"
+   },
+   "6185886893933834031": {
+      "message": "Ponechať vybratú"
+   },
+   "6186753450686672643": {
+      "message": "{every,plural, =1{Opakuje sa denne}few{Opakuje sa každé # dni}many{Opakuje sa každého # dňa}other{Opakuje sa každých # dní}}"
+   },
+   "6203260615455347677": {
+      "message": "Numbers"
+   },
+   "6211895332551673425": {
+      "message": "Položky boli pridané na $2​Môj disk$1​"
+   },
+   "6212070333807533570": {
+      "message": "Položky sa pridávajú na $2​Môj disk$1​..."
+   },
+   "6221913717826961969": {
+      "message": "Filtrovať podľa zdieľaných"
+   },
+   "6223207695466118454": {
+      "message": "YouTube"
+   },
+   "6224687211096863620": {
+      "message": "Ktokoľvek"
+   },
+   "6252259197986158120": {
+      "message": "Včera"
+   },
+   "6253076263700695984": {
+      "message": "Chyba pri overovaní. Znova načítajte."
+   },
+   "6286379137937560558": {
+      "message": "Článok"
+   },
+   "6286806453721792102": {
+      "message": "Usporiadanie na Disku"
+   },
+   "6289564019832728437": {
+      "message": "Zdieľať môžete po tom, ako služba Keep dokončí načítavanie."
+   },
+   "6305748545202493254": {
+      "message": "Zobraziť alebo skryť podokno podrobností"
+   },
+   "6306268376900894985": {
+      "message": "Opakuje sa do {endDate}"
+   },
+   "6324768448533022780": {
+      "message": "$1​ $2​"
+   },
+   "6333496730738019575": {
+      "message": "Načítava sa..."
+   },
+   "6375244206466599493": {
+      "message": "Rok"
+   },
+   "6375395544374251820": {
+      "message": "Vyskytol sa problém s načítaním ďalších stránok. Pokus sa opakuje..."
+   },
+   "6386587519843563719": {
+      "message": "Binárny súbor"
+   },
+   "6413404795391222793": {
+      "message": "Vytvoriť nový zoznam"
+   },
+   "6416495701611778255": {
+      "message": "Odporúčané aplikácie tretích strán"
+   },
+   "6419411265907669340": {
+      "message": "Dnes"
+   },
+   "6450508807204492448": {
+      "message": "Ikona $1​"
+   },
+   "6457802200418354862": {
+      "message": "Čitatelia môžu sťahovať"
+   },
+   "6459405233858728718": {
+      "message": "Prezentácie Google"
+   },
+   "6464761738227651511": {
+      "message": "pred $1​ minútou"
+   },
+   "6466736813846482957": {
+      "message": "Predchádzajúce"
+   },
+   "6466858417983764649": {
+      "message": "Nastavte si pripomenutia pre miesta a časy, vytvárajte hlasové poznámky a pracujte online alebo offline."
+   },
+   "6480260198815372102": {
+      "message": "Zapnúť"
+   },
+   "6510131849363684615": {
+      "message": "Zajtra"
+   },
+   "6522917155620379865": {
+      "message": "Stiahnuť"
+   },
+   "6524849072392100692": {
+      "message": "Priečinok Disku Google"
+   },
+   "6571686604846453345": {
+      "message": "Vyskytol sa problém pri pridávaní tejto položky na Disk"
+   },
+   "6579707685908557993": {
+      "message": "Večer"
+   },
+   "6588176324871799870": {
+      "message": "Google Apps Script"
+   },
+   "661771364073001489": {
+      "message": "Prepnúť účty"
+   },
+   "6618562607681757575": {
+      "message": "Nepresúvať zo žiadneho priečinka, len pridať do priečinka $3​$2​$1​"
+   },
+   "6622304228074863427": {
+      "message": "Aplikácia"
+   },
+   "6632478894450324594": {
+      "message": "ĎALŠIE"
+   },
+   "6650600936729710500": {
+      "message": "Odpovede"
+   },
+   "6664835828596108553": {
+      "message": "Možnosť"
+   },
+   "6707173584987026005": {
+      "message": "Dnes"
+   },
+   "6710728478489145370": {
+      "message": "Zavrieť"
+   },
+   "6726462693927865256": {
+      "message": "Podrobnosti"
+   },
+   "6726879257388338969": {
+      "message": "Tlačiť"
+   },
+   "6732800471045353930": {
+      "message": "Táto poznámka je už zdieľaná s maximálnym počtom ľudí"
+   },
+   "6744457949320515234": {
+      "message": "Prázdna poznámka bola zahodená"
+   },
+   "6747528043814108113": {
+      "message": "Aktuálne zobrazenie: $1​"
+   },
+   "6749829802551750923": {
+      "message": "nahor"
+   },
+   "6750600017746655174": {
+      "message": "Možnosť"
+   },
+   "6780628488957834429": {
+      "message": "Oranžová"
+   },
+   "6787580031482277539": {
+      "message": "Nikdy"
+   },
+   "681598652078493281": {
+      "message": "Viac informácií"
+   },
+   "6822520214440117457": {
+      "message": "Práca"
+   },
+   "6823109315717909214": {
+      "message": "Vyskúšajte ju"
+   },
+   "6827821461670731013": {
+      "message": "Zobraziť začiarkavacie políčka"
+   },
+   "6833760103261954639": {
+      "message": "Vyskytol sa problém s načítaním tejto stránky. Pokus sa opakuje..."
+   },
+   "6851307437837490686": {
+      "message": "Brániť čitateľom v sťahovaní"
+   },
+   "6891563484025164308": {
+      "message": "Späť"
+   },
+   "6898823203505321799": {
+      "message": "Podrobnosti"
+   },
+   "6904351530369058983": {
+      "message": "Vlastník"
+   },
+   "6922953828399110511": {
+      "message": "Zatvoriť zobrazovač"
+   },
+   "695253297035211081": {
+      "message": "Vyprázdniť kôš"
+   },
+   "7017485862232001373": {
+      "message": "Položka $1​ bola pridaná do priečinka $2​."
+   },
+   "7050898523853841537": {
+      "message": "Možnosti frekvencie"
+   },
+   "7054631817922169541": {
+      "message": "Google Keep obsahuje neuložené zmeny. Chcete opustiť stránku a zmeny zahodiť?"
+   },
+   "705714112650622350": {
+      "message": "Pri pokuse o pridanie položky na Disk Google sa vyskytol problém."
+   },
+   "7059437903473652416": {
+      "message": "Prehrať video $1​ v službe YouTube"
+   },
+   "7084324152376766809": {
+      "message": "pred $1​ dňami"
+   },
+   "7084991134824194740": {
+      "message": "Pripomenúť"
+   },
+   "7086801490719148597": {
+      "message": "Zrušiť výber tejto položky"
+   },
+   "7141983486405549971": {
+      "message": "Insert"
+   },
+   "7146242673022399081": {
+      "message": "Text"
+   },
+   "7148992630785407972": {
+      "message": "Tento súbor je chránený heslom, a preto nie je možné zobraziť jeho ukážku."
+   },
+   "7153847618034547771": {
+      "message": "Povoliť"
+   },
+   "7161134329606048317": {
+      "message": "Zavrieť"
+   },
+   "7164532930742017984": {
+      "message": "Ktokoľvek s odkazom"
+   },
+   "7174189954350964804": {
+      "message": "Skúsiť znova"
+   },
+   "7188754206068648188": {
+      "message": "Dáta oddelené čiarkami"
+   },
+   "722702934847795304": {
+      "message": "Project"
+   },
+   "7247530225058410142": {
+      "message": "$2​ $1​"
+   },
+   "7247965266239591227": {
+      "message": "Pri extrahovaní súboru $1​ došlo k chybe."
+   },
+   "7282548567245878869": {
+      "message": "Položka bola odstránená"
+   },
+   "7290932540630116546": {
+      "message": "Pripomenutie bolo nastavené. $1​"
+   },
+   "7295254213841803546": {
+      "message": "Chcete zmeny zahodiť? Vykonané zmeny sa neuložia."
+   },
+   "7304355547638486270": {
+      "message": "Stiahnuť zvuk ($1​)"
+   },
+   "7342923890755029722": {
+      "message": "Zavrieť"
+   },
+   "734478884582426793": {
+      "message": "Komprimovaný archív"
+   },
+   "735950239427610537": {
+      "message": "Pridajte si k poznámkam štítky! Služba Keep vám pomáha s organizáciou rôznych vecí od denných povinností po nové zdroje inšpirácie. Ak už nechcete nič zmeškať, nastavte si opakujúce sa pripomenutia."
+   },
+   "7364571366369083618": {
+      "message": "Video"
+   },
+   "7377239345926788722": {
+      "message": "Akcie"
+   },
+   "7382688299146249119": {
+      "message": "Stiahnuť položku"
+   },
+   "7383706174467122149": {
+      "message": "Poznámka bola odstránená"
+   },
+   "7388342865555961406": {
+      "message": "o $1​ deň"
+   },
+   "7389099426842546376": {
+      "message": "Spolupráca nie je v súčasnosti k dispozícii"
+   },
+   "7393771571081973549": {
+      "message": "C"
+   },
+   "7420117636241237177": {
+      "message": "Správy zo súboru $1​ boli extrahované do vášho e-mailového účtu pod štítkom „Import: $2​“."
+   },
+   "7422452809590461532": {
+      "message": "Červená"
+   },
+   "7426603384368095928": {
+      "message": "Znova načítajte stránku, aby ste sa mohli opätovne prihlásiť a pokračovať v práci."
+   },
+   "7429084719905985261": {
+      "message": "Objective C"
+   },
+   "7429233294323724765": {
+      "message": "Tlač je zakázaná vlastníkom"
+   },
+   "7432956605646331928": {
+      "message": "SQL"
+   },
+   "7440735091552109962": {
+      "message": "$2​ (upravené $1​)"
+   },
+   "7441891675459021164": {
+      "message": "Prebieha ukladanie na Disk"
+   },
+   "7468842863971844562": {
+      "message": "Nový zoznam"
+   },
+   "7469895656894091562": {
+      "message": "Táto e-mailová adresa nie je platná"
+   },
+   "7482924911694634213": {
+      "message": "{weekNumber,plural, =1{Opakuje sa mesačne každý prvý deň {day} v mesiaci}=2{Opakuje sa mesačne každý druhý deň {day} v mesiaci}=3{Opakuje sa mesačne každý tretí deň {day} v mesiaci}=4{Opakuje sa mesačne každý štvrtý deň {day} v mesiaci}many{Opakuje sa mesačne každý posledný deň {day} v mesiaci}other{Opakuje sa mesačne každý posledný deň {day} v mesiaci}}"
+   },
+   "7488945223835574498": {
+      "message": "PostScript"
+   },
+   "7500786109708143683": {
+      "message": "Zvuk bol odstránený"
+   },
+   "754367112212424716": {
+      "message": "Dnes neskôr"
+   },
+   "7546994163355383999": {
+      "message": "Všetky poznámky boli uložené"
+   },
+   "7565383798249439151": {
+      "message": "o $1​ dni/dní"
+   },
+   "7579280421767578228": {
+      "message": "Pripomenutie na neurčito"
+   },
+   "7586291841734385643": {
+      "message": "Rozbaliť"
+   },
+   "7587936635257676112": {
+      "message": "Bol pridaný spolupracovník $1​"
+   },
+   "7598582624136632660": {
+      "message": "Otvoriť vyhľadávací panel a nájsť ďalší výskyt"
+   },
+   "7602870977118971161": {
+      "message": "Znova načítať"
+   },
+   "7604275940271852148": {
+      "message": "Rozbaliť do e-mailového účtu"
+   },
+   "7610654194202731772": {
+      "message": "Odstrániť"
+   },
+   "7613790043108978452": {
+      "message": "Možnosti vyhľadávania"
+   },
+   "7630723924002267143": {
+      "message": "Klávesové skratky sú povolené"
+   },
+   "7649506133540465463": {
+      "message": "Akciu sa nepodarilo vrátiť späť."
+   },
+   "7669846901402551021": {
+      "message": "Dnes"
+   },
+   "7691521283331762131": {
+      "message": "Tu sa zobrazia vaše archivované poznámky"
+   },
+   "772000107335590599": {
+      "message": "o $1​ min."
+   },
+   "7734578122414851725": {
+      "message": "PHP"
+   },
+   "7772544658778579390": {
+      "message": "Hľadať v dokumente"
+   },
+   "777546328624962090": {
+      "message": "Tento súbor nie je možné nahrať. Prijímame súbory $1​ menšie ako $2​ MB a $3​ Mpx."
+   },
+   "7800318069267901681": {
+      "message": "Upravené"
+   },
+   "7814778057875152792": {
+      "message": "Vyskytol sa problém pri premiestňovaní prílohy do vybraného priečinka na Disku Google"
+   },
+   "7822364282298323175": {
+      "message": "Zoznam bol odstránený"
+   },
+   "7830513726270865588": {
+      "message": "Kalendár"
+   },
+   "7842164552344536314": {
+      "message": "Usporadúva sa..."
+   },
+   "7844842290699524598": {
+      "message": "Dosiahli ste limit pre počet štítkov. Ak chcete pridať nový štítok, najprv musíte odstrániť jeden z existujúcich."
+   },
+   "7845751753397906805": {
+      "message": "Našli sa konfliktné úpravy"
+   },
+   "785840448809859989": {
+      "message": "Možnosti času"
+   },
+   "7859526172011446452": {
+      "message": "Zastaviť prenos"
+   },
+   "7865240075542402013": {
+      "message": "Pridať hviezdičku"
+   },
+   "7873060817438017568": {
+      "message": "$2​ · $1​"
+   },
+   "7889179838401647357": {
+      "message": "Žiadosť bola odoslaná. Po schválení dostanete e-mailovú správu."
+   },
+   "7895643887742936844": {
+      "message": "bodkočiarka"
+   },
+   "7899913952063063825": {
+      "message": "Obrázok bol odstránený"
+   },
+   "7903276896883020622": {
+      "message": "Zdieľanie momentálne nie je k dispozícii"
+   },
+   "7906726367011430855": {
+      "message": "Pripojiť"
+   },
+   "7910887984113996757": {
+      "message": "Zapnúť zdieľanie"
+   },
+   "7922692430438844436": {
+      "message": "Rozbaliť"
+   },
+   "7943657844420237650": {
+      "message": "OpenOffice Impress"
+   },
+   "7946114032014914338": {
+      "message": "{repeatSentence}. {endSentence}"
+   },
+   "7988058806865329896": {
+      "message": "Vybrať dátum a čas"
+   },
+   "800402007626972565": {
+      "message": "{numberOfNotes,plural, =1{Poznámka bola presunutá do koša}few{# poznámky boli presunuté do koša}many{# poznámky bolo presunutej do koša}other{# poznámok bolo presunutých do koša}}"
+   },
+   "8011497727123874703": {
+      "message": "Tlačidlo priečinka $1​"
+   },
+   "8019402848412685977": {
+      "message": "Položka $2​ bola premenovaná na $1​."
+   },
+   "8021465164414684024": {
+      "message": "{count,plural, =1{# položka bola vymazaná}few{# položky boli vymazané}many{# položky bolo vymazanej}other{# položiek bolo vymazaných}}"
+   },
+   "8043514121228710092": {
+      "message": "Pridať obrázok"
+   },
+   "8044700199531805239": {
+      "message": "Aplikácia $3​$1​$2​ bola pripojená."
+   },
+   "8069384932934428393": {
+      "message": "o $1​ minútu"
+   },
+   "8080583426915938264": {
+      "message": "Aplikácie vo vašom počítači"
+   },
+   "8085493757603803516": {
+      "message": "Upraviť výber"
+   },
+   "8090743714060857028": {
+      "message": "Čitatelia nemôžu sťahovať"
+   },
+   "8095838445486198080": {
+      "message": "{FILE_SIZE,plural, =0{0 bajtov}=1{1 bajt}few{# bajty}many{# bytes}other{# bajtov}}"
+   },
+   "8105635255693472607": {
+      "message": "Pridať nové položky zoznamu"
+   },
+   "8111632928339277375": {
+      "message": "{NUM_FOLDERS,plural, =1{Presunúť z jedného priečinka}=2{Presunúť z oboch priečinkov}few{Presunúť zo všetkých priečinkov (#)}many{Presunúť zo všetkých priečinkov (#)}other{Presunúť zo všetkých # priečinkov}}"
+   },
+   "8125425371755035523": {
+      "message": "Späť"
+   },
+   "8133866583554546341": {
+      "message": "$1​, $2​"
+   },
+   "8135145577663029437": {
+      "message": "Ponechať obe"
+   },
+   "8146560259680897627": {
+      "message": "Zrušiť"
+   },
+   "8149439558305434788": {
+      "message": "$1​, $2​"
+   },
+   "8159493406018222636": {
+      "message": "Odoslať spätnú väzbu"
+   },
+   "8174654098152723289": {
+      "message": "Úprava popisu"
+   },
+   "8194941811853358224": {
+      "message": "Z položky $1​ sa nepodarilo odstrániť hviezdičku."
+   },
+   "8214941501817169086": {
+      "message": "{count,plural, =1{Navždy poznámku odstrániť?}few{Navždy poznámky odstrániť?}many{Navždy poznámky odstrániť?}other{Navždy poznámky odstrániť?}}"
+   },
+   "821942580510564685": {
+      "message": "Ak chcete dokument zobraziť, zadajte heslo"
+   },
+   "8223878224920694193": {
+      "message": "Každý"
+   },
+   "8231449936104909428": {
+      "message": "Pri presúvaní položky $1​ do vybraného priečinka na Disku sa vyskytol problém."
+   },
+   "8242655297101700529": {
+      "message": "Môj disk"
+   },
+   "826433162451399549": {
+      "message": "Zajtra"
+   },
+   "8267458240960831780": {
+      "message": "Overuje sa..."
+   },
+   "8273434617910595878": {
+      "message": "nadol"
+   },
+   "8278004577315225077": {
+      "message": "Filtrovať podľa pripomenutia"
+   },
+   "8281141013543828574": {
+      "message": "Obrázok RAW"
+   },
+   "8304474373444239435": {
+      "message": "Odpoveď od používateľa $1​"
+   },
+   "8322416564157128458": {
+      "message": "Zdieľanie"
+   },
+   "8334718599538726981": {
+      "message": "Aktualizované"
+   },
+   "8337582740675387693": {
+      "message": "Java"
+   },
+   "8342620486324515462": {
+      "message": "Odmietnuť"
+   },
+   "8379952094517631162": {
+      "message": "Nie"
+   },
+   "8408756681779291666": {
+      "message": "Vyhľadať poznámky"
+   },
+   "8409393124758970712": {
+      "message": "$2​ x $1​"
+   },
+   "8412098268689886334": {
+      "message": "Zlúčiť"
+   },
+   "8412306118114780633": {
+      "message": "Obnoviť"
+   },
+   "84334343973701810": {
+      "message": "Home"
+   },
+   "8467894483369467251": {
+      "message": "Flash"
+   },
+   "8471029293590878384": {
+      "message": "Pozastaviť"
+   },
+   "8473619468455115498": {
+      "message": "Výber poznámky bol zrušený"
+   },
+   "8505368783342665564": {
+      "message": "ČOSKORO"
+   },
+   "8505989225387082493": {
+      "message": "Pridať štítok"
+   },
+   "8509270263487836281": {
+      "message": "Prihlásiť sa"
+   },
+   "8517148045938431718": {
+      "message": "Opravte chyby"
+   },
+   "8519556481067341819": {
+      "message": "Premenovať alebo odstrániť štítok"
+   },
+   "8595175575778060149": {
+      "message": "Viac"
+   },
+   "8596279649507974639": {
+      "message": "Presunúť tu"
+   },
+   "8616342546716995946": {
+      "message": "Dobre"
+   },
+   "8621067185485606452": {
+      "message": "ECMAScript"
+   },
+   "8625391761733744226": {
+      "message": "Filtrovať podľa zoznamu"
+   },
+   "8638281560898810401": {
+      "message": "{MINUTES,plural, =0{0 minút }=1{1 minúta }few{# minúty }many{# minutes }other{# minút }}{SECONDS,plural, =0{0 sekúnd}=1{1 sekunda}few{# sekundy}many{# seconds.}other{# sekúnd}}"
+   },
+   "8646821180780920830": {
+      "message": "Štítky"
+   },
+   "8660016472468563221": {
+      "message": "dvojbodka"
+   },
+   "8663507590720636709": {
+      "message": "$1​ + $2​"
+   },
+   "8663993454460982287": {
+      "message": "Začiarkavacie políčka sú skryté"
+   },
+   "8674222789100049233": {
+      "message": "Zavrieť"
+   },
+   "86815590954366945": {
+      "message": "Zoznam archivovaného obsahu"
+   },
+   "8711002053494037632": {
+      "message": "Začiarknutie všetkých položiek bolo zrušené"
+   },
+   "8775097441636640256": {
+      "message": "$2​ – $1​"
+   },
+   "8781837301864053001": {
+      "message": "Formátovaný text"
+   },
+   "8786673003584562680": {
+      "message": "Page Up"
+   },
+   "8787051885478443427": {
+      "message": "Je nám to ľúto, ale nepodarilo sa autorizovať túto aplikáciu pre všetky súbory, ktoré ste sa pokúsili otvoriť. Skúste to znova."
+   },
+   "8792038552136453044": {
+      "message": "Ojoj! Niečo sa pokazilo"
+   },
+   "8793166064242077041": {
+      "message": "Vyskytol sa problém so zobrazením tohto obrázka."
+   },
+   "8822326207328431952": {
+      "message": "Nahrávanie obrázkov nie je k dispozícii"
+   },
+   "8845176264121061589": {
+      "message": "Zrušiť začiarknutie všetkých"
+   },
+   "8850238112725591771": {
+      "message": "skratka $1​"
+   },
+   "8852550049823214385": {
+      "message": "potom"
+   },
+   "8860658114732392347": {
+      "message": "Odstrániť pripomenutie"
+   },
+   "888015650266122140": {
+      "message": "výskytoch"
+   },
+   "8889019648958415451": {
+      "message": "Neznámy súbor"
+   },
+   "8916237870980173557": {
+      "message": "Pripája sa..."
+   },
+   "8917554093651202032": {
+      "message": "Prehrať video $1​"
+   },
+   "8919660666733306860": {
+      "message": "Obrázok"
+   },
+   "8930959387403789939": {
+      "message": "Pripomenutie"
+   },
+   "8938626240031421092": {
+      "message": "Prepnúť začiarkavacie políčka"
+   },
+   "8943760679396635042": {
+      "message": "Zobrazuje sa položka $1​."
+   },
+   "8953555255469284376": {
+      "message": "Tu vložte obrázky"
+   },
+   "8958118622768332570": {
+      "message": "Kopírovanie do dokumentu Google zlyhalo"
+   },
+   "8977359195911624009": {
+      "message": "+ $1​"
+   },
+   "8979104019474011578": {
+      "message": "{every,plural, =1{Opakuje sa týždenne}few{Opakuje sa každé # týždne}many{Opakuje sa každého # týždňa}other{Opakuje sa každých # týždňov}}"
+   },
+   "8979615310931291676": {
+      "message": "Upravené $1​"
+   },
+   "8996041620846572145": {
+      "message": "Štítok $1​ bol odstránený"
+   },
+   "900086393693234779": {
+      "message": "Domov"
+   },
+   "9021945828354340363": {
+      "message": "{count,plural, =1{Táto poznámka sa už s vami nebude zdieľať.}few{Tieto poznámky sa už s vami nebudú zdieľať.}many{Tieto poznámky sa už s vami nebudú zdieľať.}other{Tieto poznámky sa už s vami nebudú zdieľať.}}"
+   },
+   "9024023699330078373": {
+      "message": "Ak otvoríte túto položku, pridáte ju tým na svoj Disk."
+   },
+   "9058308423774656474": {
+      "message": "Hangul Word Processor"
+   },
+   "9083935734710258396": {
+      "message": "Zamietnuť"
+   },
+   "9094248058931620597": {
+      "message": "Panel s podrobnosťami bol zbalený."
+   },
+   "9108438908858432277": {
+      "message": "Vymazať výber"
+   },
+   "911586799466052745": {
+      "message": "OpenOffice Draw"
+   },
+   "9121915169985572840": {
+      "message": "Zmeniť farbu"
+   },
+   "9146716987301178362": {
+      "message": "Vyskytla sa chyba. Znova načítajte stránku."
+   },
+   "9197837492705576727": {
+      "message": "Prejsť na ďalšiu položku"
+   },
+   "919969969251998566": {
+      "message": "Rozbaliť archív do vášho e-mailového účtu"
+   },
+   "9208632284144316801": {
+      "message": "Opakovanie"
+   },
+   "938074023403688885": {
+      "message": "Odstrániť"
+   },
+   "943493480163896757": {
+      "message": "{resultCount,plural, =1{# zodpovedajúca poznámka}few{# zodpovedajúce poznámky}many{# matching notes}other{# zodpovedajúcich poznámok}}"
+   },
+   "951963820437151566": {
+      "message": "Webové stránky Google"
+   },
+   "960732173870658714": {
+      "message": "Dokument služby Google Keep"
+   },
+   "985197728509875956": {
+      "message": "Chemický model"
+   },
+   "991852286447868510": {
+      "message": "Vyhľadáva sa dopyt „$1​“"
+   },
+   "996381410993745580": {
+      "message": "Photoshop"
+   },
+   "appDesc": {
+      "description": "App description",
+      "message": "Rýchlo si zaznamenajte svoje nápady a zdieľajte ich s priateľmi a rodinou."
+   },
+   "appName": {
+      "description": "App name.",
+      "message": "Google Keep – poznámky a zoznamy"
+   }
+}

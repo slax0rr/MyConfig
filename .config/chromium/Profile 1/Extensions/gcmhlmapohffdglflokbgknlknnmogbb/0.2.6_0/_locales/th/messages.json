@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "สร้างรหัส QR จากข้อความฟรี, URL, หมายเลขโทรศัพท์, ข้อความ SMS, หรือการติดต่อ (vCard)"
+   },
+   "application_title": {
+      "message": "Generator รหัส QR"
+   }
+}

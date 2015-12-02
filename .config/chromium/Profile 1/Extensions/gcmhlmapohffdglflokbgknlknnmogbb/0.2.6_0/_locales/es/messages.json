@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "Crea códigos QR de texto libre, URLs, números de teléfono, mensajes SMS, o los contactos (vCard)."
+   },
+   "application_title": {
+      "message": "The QR Code Generator"
+   }
+}

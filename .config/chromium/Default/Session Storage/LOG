@@ -1,0 +1,84 @@
+2015/11/30-06:48:25.323 1378 Reusing MANIFEST /home/slax0r/.config/chromium/Default/Session Storage/MANIFEST-000001
+2015/11/30-06:48:25.323 1378 Recovering log #4
+2015/11/30-06:48:25.411 1378 Reusing old log /home/slax0r/.config/chromium/Default/Session Storage/000004.log 
+2015/11/30-06:55:32.855 2448 Level-0 table #8: started
+2015/11/30-06:55:32.873 2448 Level-0 table #8: 1426305 bytes OK
+2015/11/30-06:55:32.875 2448 Delete type=0 #4
+2015/11/30-08:00:07.105 2448 Level-0 table #10: started
+2015/11/30-08:00:07.137 2448 Level-0 table #10: 2167873 bytes OK
+2015/11/30-08:00:07.138 2448 Delete type=0 #7
+2015/11/30-09:02:25.562 2448 Level-0 table #12: started
+2015/11/30-09:02:25.647 2448 Level-0 table #12: 1495306 bytes OK
+2015/11/30-09:02:25.649 2448 Delete type=0 #9
+2015/11/30-10:55:47.212 2448 Compacting 2@0 + 1@1 files
+2015/11/30-10:55:47.286 2448 Generated table #13: 1619 keys, 2099835 bytes
+2015/11/30-10:55:47.312 2448 Generated table #14: 1142 keys, 1674779 bytes
+2015/11/30-10:55:47.312 2448 Compacted 2@0 + 1@1 files => 3774614 bytes
+2015/11/30-10:55:47.313 2448 compacted to: files[ 0 2 1 0 0 0 0 ]
+2015/11/30-10:55:47.313 2448 Delete type=2 #12
+2015/11/30-10:55:47.314 2448 Delete type=2 #10
+2015/11/30-10:55:47.314 2448 Delete type=2 #8
+2015/11/30-12:04:20.061 2448 Level-0 table #16: started
+2015/11/30-12:04:20.081 2448 Level-0 table #16: 1420104 bytes OK
+2015/11/30-12:04:20.082 2448 Delete type=0 #11
+2015/11/30-14:00:05.341 2448 Compacting 1@0 + 2@1 files
+2015/11/30-14:00:05.404 2448 Generated table #17: 3038 keys, 2129148 bytes
+2015/11/30-14:00:05.418 2448 Generated table #18: 607 keys, 868587 bytes
+2015/11/30-14:00:05.418 2448 Compacted 1@0 + 2@1 files => 2997735 bytes
+2015/11/30-14:00:05.419 2448 compacted to: files[ 0 2 1 0 0 0 0 ]
+2015/11/30-14:00:05.419 2448 Delete type=2 #16
+2015/11/30-14:00:05.419 2448 Delete type=2 #14
+2015/11/30-14:00:05.420 2448 Delete type=2 #13
+2015/11/30-14:12:42.578 2448 Level-0 table #20: started
+2015/11/30-14:12:42.608 2448 Level-0 table #20: 1416106 bytes OK
+2015/11/30-14:12:42.610 2448 Delete type=0 #15
+2015/12/01-08:35:04.984 2448 Compacting 1@0 + 2@1 files
+2015/12/01-08:35:05.082 2448 Generated table #21: 1303 keys, 2112578 bytes
+2015/12/01-08:35:05.136 2448 Generated table #22: 3176 keys, 1281332 bytes
+2015/12/01-08:35:05.136 2448 Compacted 1@0 + 2@1 files => 3393910 bytes
+2015/12/01-08:35:05.136 2448 compacted to: files[ 0 2 1 0 0 0 0 ]
+2015/12/01-08:35:05.136 2448 Delete type=2 #20
+2015/12/01-08:35:05.137 2448 Delete type=2 #18
+2015/12/01-08:35:05.137 2448 Delete type=2 #17
+2015/12/01-10:11:39.960 2448 Level-0 table #24: started
+2015/12/01-10:11:40.014 2448 Level-0 table #24: 1428221 bytes OK
+2015/12/01-10:11:40.016 2448 Delete type=0 #19
+2015/12/01-13:52:33.171 2448 Compacting 1@0 + 2@1 files
+2015/12/01-13:52:33.258 2448 Generated table #25: 2127 keys, 2105910 bytes
+2015/12/01-13:52:33.355 2448 Generated table #26: 3298 keys, 993088 bytes
+2015/12/01-13:52:33.355 2448 Compacted 1@0 + 2@1 files => 3098998 bytes
+2015/12/01-13:52:33.360 2448 compacted to: files[ 0 2 1 0 0 0 0 ]
+2015/12/01-13:52:33.360 2448 Delete type=2 #21
+2015/12/01-13:52:33.360 2448 Delete type=2 #24
+2015/12/01-13:52:33.360 2448 Delete type=2 #22
+2015/12/01-14:58:58.282 2448 Level-0 table #28: started
+2015/12/01-14:58:58.309 2448 Level-0 table #28: 1389278 bytes OK
+2015/12/01-14:58:58.310 2448 Delete type=0 #23
+2015/12/01-17:08:34.818 2448 Compacting 1@0 + 2@1 files
+2015/12/01-17:08:34.865 2448 Generated table #29: 3166 keys, 2112820 bytes
+2015/12/01-17:08:34.877 2448 Generated table #30: 3096 keys, 691637 bytes
+2015/12/01-17:08:34.877 2448 Compacted 1@0 + 2@1 files => 2804457 bytes
+2015/12/01-17:08:34.878 2448 compacted to: files[ 0 2 1 0 0 0 0 ]
+2015/12/01-17:08:34.878 2448 Delete type=2 #26
+2015/12/01-17:08:34.878 2448 Delete type=2 #28
+2015/12/01-17:08:34.878 2448 Delete type=2 #25
+2015/12/02-08:17:01.042 2448 Level-0 table #32: started
+2015/12/02-08:17:01.075 2448 Level-0 table #32: 1491301 bytes OK
+2015/12/02-08:17:01.076 2448 Delete type=0 #27
+2015/12/02-10:08:02.073 2448 Compacting 1@0 + 2@1 files
+2015/12/02-10:08:02.266 2448 Generated table #33: 7176 keys, 1936815 bytes
+2015/12/02-10:08:02.266 2448 Compacted 1@0 + 2@1 files => 1936815 bytes
+2015/12/02-10:08:02.269 2448 compacted to: files[ 0 1 1 0 0 0 0 ]
+2015/12/02-10:08:02.269 2448 Delete type=2 #30
+2015/12/02-10:08:02.269 2448 Delete type=2 #32
+2015/12/02-10:08:02.269 2448 Delete type=2 #29
+2015/12/02-10:10:15.455 2448 Level-0 table #35: started
+2015/12/02-10:10:15.525 2448 Level-0 table #35: 1413350 bytes OK
+2015/12/02-10:10:15.532 2448 Delete type=0 #31
+2015/12/02-13:20:44.736 2448 Compacting 1@0 + 1@1 files
+2015/12/02-13:20:44.896 2448 Generated table #36: 6734 keys, 2107572 bytes
+2015/12/02-13:20:44.901 2448 Generated table #37: 1307 keys, 84512 bytes
+2015/12/02-13:20:44.901 2448 Compacted 1@0 + 1@1 files => 2192084 bytes
+2015/12/02-13:20:44.905 2448 compacted to: files[ 0 2 1 0 0 0 0 ]
+2015/12/02-13:20:44.905 2448 Delete type=2 #33
+2015/12/02-13:20:44.905 2448 Delete type=2 #35

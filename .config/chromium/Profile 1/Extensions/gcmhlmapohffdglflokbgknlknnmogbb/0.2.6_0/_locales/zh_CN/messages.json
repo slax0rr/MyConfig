@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "从自由文本，网址，电话号码，短信，或接触（vCard）的生成QR码。"
+   },
+   "application_title": {
+      "message": "QR码发生器"
+   }
+}

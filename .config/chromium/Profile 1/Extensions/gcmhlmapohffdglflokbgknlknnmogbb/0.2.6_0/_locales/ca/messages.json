@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "Genera codis QR de text lliure, URL, números de telèfon, missatges SMS, o els contactes (vCard)."
+   },
+   "application_title": {
+      "message": "El generador de codi QR"
+   }
+}

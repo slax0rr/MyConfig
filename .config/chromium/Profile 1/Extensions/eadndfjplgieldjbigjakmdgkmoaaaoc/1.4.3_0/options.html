@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Xdebug helper</title>
+
+		<link rel="stylesheet" href="options.css">
+
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="options.js"></script>
+	</head>
+
+	<body>
+		<div id="content">
+			<div id="heading">
+				<h1>Xdebug helper</h1>
+				<p>Easy debugging, profiling and tracing</p>
+			</div>
+
+			<h3>Introduction</h3>
+			<p class="contentTxt">
+				First install and configure <a target="_blank" class="txtlink" href="http://www.xdebug.org/docs/install">Xdebug</a>, then set your IDE key below. Now tell Xdebug to debug, profile or trace by clicking the little bug in the addressbar:
+			</p>
+			<p class="contentTxt">
+				<img class="inlineicon" alt="" src="images/bug-gray.png" /> Debugging, profiling &amp; tracing disabled<br />
+				<img class="inlineicon" alt="" src="images/bug.png" /> Debugging enabled<br />
+				<img class="inlineicon" alt="" src="images/clock.png" /> Profiling enabled<br />
+				<img class="inlineicon" alt="" src="images/script.png" /> Tracing enabled
+			</p>
+			<p id="hint"><img src="images/lightbulb.png" alt="Tip!" title="Tip!" /> Love hotkeys? Try Ctrl+Shift+X</p>
+
+			<h3>IDE key</h3>
+			<p class="note">Select your IDE to use the default sessionkey or choose other to use a custom key.</p>
+			<p>
+				<select id="ide">
+					<option value="XDEBUG_ECLIPSE">Eclipse</option>
+					<option value="netbeans-xdebug">Netbeans</option>
+					<option value="macgdbp">MacGDBp</option>
+					<option value="PHPSTORM">PhpStorm</option>
+					<option value="null">Other</option>
+				</select>
+				<span id="customkey"><input type="text" id="idekey" /> <a href="#" id="save-options"><img id="saveButton" src="images/disk.png" alt="Save" title="Save" /></a></span>
+			</p>
+
+			<h3>Domain filter</h3>
+			<p class="note">By default we show the bug icon on all pages, but here you can whitelist domains where the icon should show up. Note that all filters are regular expressions.</p>
+			<p><input type="text" value="" id="newSite">
+				<a id='add-site'><img id="addButton" src="images/add.png" alt="Add" title="Add" /></a>
+				<br/>
+				<select id="siteBox" multiple size="5"></select>
+				<a id='remove-site'><img id="removeButton" src="images/delete.png" alt="Remove selected" title="Remove selected" /></a>
+			</p>
+
+			<p id="hint"><img class="inlineicon" src="images/lightbulb.png" alt="Tip!" title="Tip!" /> <a href="http://wrepblog.tumblr.com/post/31720573340/xdebug-helper-for-chrome-how-to-use-the-domain-filter" target="_blank">Need help? Read our <span>blogpost</span>!</a></p>
+		</div>
+
+		<div id="footer">
+			<a href="https://github.com/mac-cain13/xdebug-helper-for-chrome" class="contribute" target="_blank">
+				Feel free to submit ideas, bugs and pull request to our <span>Github project</span>
+			</a>
+		</div>
+	</body>
+</html>

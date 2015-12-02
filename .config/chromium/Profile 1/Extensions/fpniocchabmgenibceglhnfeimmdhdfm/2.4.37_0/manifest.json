@@ -1,0 +1,49 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "js/background.js" ]
+      }
+   },
+   "commands": {
+      "playPause": {
+         "description": "Play or Pause",
+         "global": true,
+         "suggested_key": {
+            "default": "MediaPlayPause"
+         }
+      },
+      "skipNext": {
+         "description": "Skip to Next Item",
+         "global": true,
+         "suggested_key": {
+            "default": "MediaNextTrack"
+         }
+      },
+      "skipPrevious": {
+         "description": "Skip to Previous Item",
+         "global": true,
+         "suggested_key": {
+            "default": "MediaPrevTrack"
+         }
+      },
+      "stop": {
+         "description": "Stop",
+         "global": true,
+         "suggested_key": {
+            "default": "MediaStop"
+         }
+      }
+   },
+   "description": "Easily organize and share your personal media and online content on all of your devices, no matter where you are.",
+   "icons": {
+      "128": "img/chrome/icon-128.png",
+      "16": "img/chrome/icon-16.png",
+      "48": "img/chrome/icon-48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCb6iyEyA95Js10BMvUluNJgSaXmHUoiN2X9JVMzUXfrj/Dk4W6xae/Zx0/cydBe7RbiiPSS7kuvHZE/qYOWmYds97tGIECuMkB4c1GWuZP4BdbU7RsSovNY/CVhTgIamIMCNQ2brh79grlwSbJU54fJqKqZbCoqTq9ImGmOp+O1wIDAQAB",
+   "manifest_version": 2,
+   "name": "Plex",
+   "permissions": [ "https://plex.tv/", "https://pubsub.plex.tv/", "https://pubsubload.plex.tv/", "https://my.plexapp.com/", "https://www.google-analytics.com/", "http://www.gravatar.com/", "storage", "fullscreen" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.4.37"
+}

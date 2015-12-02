@@ -1,0 +1,8 @@
+{
+   "application_description": {
+      "message": "Δημιουργεί QR Κώδικες από ελεύθερο κείμενο, URLs, τηλέφωνα, μηνύματα SMS, ή τις επαφές (vCard)."
+   },
+   "application_title": {
+      "message": "Το QR Code Generator"
+   }
+}

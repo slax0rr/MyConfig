@@ -1,0 +1,22 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "launch.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_title": "Hide Images"
+   },
+   "description": "Hides images/backgrounds/video/multimedia/flash elements on any page for increased privacy and readability",
+   "icons": {
+      "128": "128.png",
+      "16": "16.png",
+      "48": "48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCx7ylbqD9v43EHfJvTKe9vFYHGoEDJNcHr9Q4TIwKI3p2GMrDYAi8ZHyPI7QDLgqzJo8+4axmALWSTZOOtwFUjoAhGny1sYNYz2teySnkqXtDB+iFb2OeE33fWKMWV9SUYubVd1JG6WUuJrUK1LRfpvccvAu8bQOSbK4yuYq952QIDAQAB",
+   "manifest_version": 2,
+   "name": "Hide Images",
+   "permissions": [ "tabs", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.1"
+}

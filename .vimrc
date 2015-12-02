@@ -23,7 +23,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'shawncplus/phpcomplete.vim'
 " Plugin 'joonty/vim-phpqa'
-Plugin 'joonty/vdebug'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -145,7 +144,7 @@ inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 let &colorcolumn="80,".join(range(120,999),",")
 
 " ctag bar
-nmap <F8> :TagbarToggle<CR>
+nmap <leader>tb :TagbarToggle<CR>
 
 " Folding and unfolding
 map ,f :set foldmethod=indent<cr>zM<cr>
@@ -162,23 +161,10 @@ map <leader>k <C-w>K
 " Run some formatting rules on a file
 map <leader>f :call FixFormatting()<cr>
 
-" VDebug settings
-let g:vdebug_options = {}
-let g:vdebug_options["port"] = 9000
-let g:vdebug_options["timeout"] = 60
-let g:vdebug_options["ide_key"] = "vim"
-
-let g:vdebug_options["path_maps"] = {
-\    "/mnt/hgfs/webserver/": "/media/sf_S_DRIVE/projects/"
-\}
-
-let g:vdebug_options["server"] = "0.0.0.0"
-let g:vdebug_options["break_on_open"] = 0
-let g:vdebug_options["continuous_mode"] = 1
-
-let g:vdebug_keymap = {
-\    "set_breakpoint" : "<C-b>"
-\}
+" Debugger config
+let g:dbgPavimPort = 9000
+let g:dbgPavimBreakAtEntry = 0
+"\	 "/mnt/hgfs/webserver/": "/media/sf_S_DRIVE/projects/"
 
 " Functions, functions everywhere!
 " Creates a session
@@ -263,3 +249,8 @@ if has("autocmd")
 endif
 map <leader>m :call MakeSession()<CR>
 map <leader>l :call LoadSession()<CR>
+
+" Load environment specific files, if it exists
+if !empty(glob("~/.vimrc_env"))
+	source ~/.vimrc_env
+endif

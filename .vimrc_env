@@ -1,0 +1,8 @@
+" Timetac development environment vimrc
+if exists('timetacweb')
+	cd ~/Development/projects/timetac-web
+	call LoadSession()
+elseif exists('wrapper')
+	cd ~/Development/projects/timetac-wrapper
+	call LoadSession()
+endif

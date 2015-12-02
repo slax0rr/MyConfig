@@ -1,8 +1,0 @@
-{
-   "application_description": {
-      "message": "Generează codurile QR din text liber, URL-uri, numere de telefon, mesaje SMS, sau date de contact (vCard)."
-   },
-   "application_title": {
-      "message": "QR Code Generator"
-   }
-}

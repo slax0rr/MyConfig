@@ -1,8 +1,0 @@
-{
-   "application_description": {
-      "message": "Генерира QR кодове от свободен текст, URL адреси, телефонни номера, SMS съобщения, или контакти (VCard)."
-   },
-   "application_title": {
-      "message": "QR Generator кодекс"
-   }
-}

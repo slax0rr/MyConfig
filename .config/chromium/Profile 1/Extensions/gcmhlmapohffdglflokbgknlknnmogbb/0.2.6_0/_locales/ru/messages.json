@@ -1,8 +1,0 @@
-{
-   "application_description": {
-      "message": "Формирует QR-коды из свободного текста, URL-адреса, телефонные номера, SMS-сообщений или контактов (VCard)."
-   },
-   "application_title": {
-      "message": "QR Генератор кода"
-   }
-}

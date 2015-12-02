@@ -19,7 +19,7 @@
         <value type="int" value="6"/>
         <value type="int" value="2"/>
       </property>
-      <property name="output-name" type="string" value="VGA-1"/>
+      <property name="output-name" type="string" value="HDMI-0"/>
     </property>
     <property name="panel-2" type="empty">
       <property name="position" type="string" value="p=10;x=0;y=0"/>

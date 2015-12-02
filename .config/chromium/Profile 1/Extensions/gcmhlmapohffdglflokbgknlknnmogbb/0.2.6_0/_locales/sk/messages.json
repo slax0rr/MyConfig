@@ -1,8 +1,0 @@
-{
-   "application_description": {
-      "message": "Generuje QR kódy z voľného textu, adresy URL, telefónne čísla, SMS správ alebo kontaktov (vCard)."
-   },
-   "application_title": {
-      "message": "QR Code Generator"
-   }
-}

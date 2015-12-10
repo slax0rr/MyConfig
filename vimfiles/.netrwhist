@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/media/sf_S_DRIVE/projects/timetac-web/AffiliShop/system/helper/exceptions'
 let g:netrw_dirhist_2='/media/sf_S_DRIVE/projects/timetac-web'
+let g:netrw_dirhist_3='/home/slax0r/Development/jobqueue'
+let g:netrw_dirhist_4='/home/slax0r/Development/jobqueue/classes'

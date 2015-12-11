@@ -22,7 +22,7 @@ endif
 Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'shawncplus/phpcomplete.vim'
-" Plugin 'joonty/vim-phpqa'
+Plugin 'joonty/vim-phpqa'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -84,6 +84,9 @@ set shellslash
 " Add current line marker
 set cursorline
 
+" Disable mouse
+set mouse=
+
 " Key remaps
 " Remap Ctrl+x Ctrl+o to Ctrl+Space (omni complete)
 inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
@@ -128,6 +131,10 @@ inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\
 
 " Hide search highlights for current search
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+" Find on PHP.net
+command! -nargs=1 Pdoc !xdg-open http://php.net/<args> &
+nmap <leader>pd :Pdoc <cword><CR>
 
 " Autocomplete already-existing words in the file with tab (extremely useful!)
 function! InsertTabWrapper()

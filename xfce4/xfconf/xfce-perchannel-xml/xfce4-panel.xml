@@ -6,7 +6,7 @@
     <value type="int" value="1"/>
     <value type="int" value="2"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=6;x=960;y=15"/>
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="false"/>
       <property name="size" type="uint" value="30"/>
@@ -53,11 +53,13 @@
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
+        <value type="string" value="thunar"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="clipman"/>
         <value type="string" value="guake-indicator"/>
         <value type="string" value="guake"/>
         <value type="string" value="systray icon"/>
+        <value type="string" value="scp-dbus-service.py"/>
       </property>
       <property name="names-hidden" type="array">
         <value type="string" value="vlc"/>

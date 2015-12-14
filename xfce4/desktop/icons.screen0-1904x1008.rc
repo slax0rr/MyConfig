@@ -1,5 +1,17 @@
-[214 GB Volume]
+[FireStorage]
+row=6
+col=0
+
+[73 GB Volume]
 row=3
+col=0
+
+[570 GB Volume]
+row=5
+col=0
+
+[214 GB Volume]
+row=4
 col=0
 
 [Wastebasket]

@@ -23,6 +23,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'joonty/vim-phpqa'
+Plugin 'alvan/vim-php-manual'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -253,6 +254,7 @@ if has("autocmd")
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
     au VimEnter * nested :call LoadSession()
     au VimLeave * :call UpdateSession()
+	au FileType php set keywordprg=pman
 endif
 map <leader>m :call MakeSession()<CR>
 map <leader>l :call LoadSession()<CR>

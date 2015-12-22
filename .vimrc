@@ -24,6 +24,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'joonty/vim-phpqa'
 Plugin 'alvan/vim-php-manual'
+Plugin 'bling/vim-airline'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -65,15 +66,15 @@ colorscheme solarized
 
 " set font
 if has('gui_gtk2')
-    set guifont=Consolas\ 9
+    set guifont=Hack\ 9
 else
-    set guifont=Consolas:h9
+    set guifont=Hack:h9
 endif
 
 " remove gui elements
-set guioptions-=m  "remove menu bar
-set guioptions-=T  "remove toolbar
-set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=m  " remove menu bar
+set guioptions-=T  " remove toolbar
+set guioptions-=r  " remove right-hand scroll bar
 set guioptions-=L  " remove left-hand scroll bar
 
 " add custom ctags file
@@ -87,6 +88,16 @@ set cursorline
 
 " Disable mouse
 set mouse=
+
+" Airline settings
+" Enable powerline symbols
+let g:airline_powerline_fonts = 1
+" Show pretty tabline
+let g:airline#extensions#tabline#enabled = 1
+" Change theme for cli version
+if has('gui_running') == 0
+	let g:airline_theme='jellybeans'
+endif
 
 " Key remaps
 " Remap Ctrl+x Ctrl+o to Ctrl+Space (omni complete)

@@ -25,6 +25,7 @@ Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'joonty/vim-phpqa'
 Plugin 'alvan/vim-php-manual'
 Plugin 'bling/vim-airline'
+Plugin 'sheerun/vim-polyglot'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -98,6 +99,12 @@ let g:airline#extensions#tabline#enabled = 1
 if has('gui_running') == 0
 	let g:airline_theme='jellybeans'
 endif
+
+" Turn on all python highlights of the python syntax plugin
+let python_highlight_all = 1
+
+" Disable polyglot language packages
+let g:polyglot_disables = ['php']
 
 " Key remaps
 " Remap Ctrl+x Ctrl+o to Ctrl+Space (omni complete)

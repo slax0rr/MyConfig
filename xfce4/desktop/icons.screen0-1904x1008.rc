@@ -1,5 +1,5 @@
-[FireStorage]
-row=6
+[Steam]
+row=7
 col=0
 
 [73 GB Volume]
@@ -12,6 +12,10 @@ col=0
 
 [214 GB Volume]
 row=4
+col=0
+
+[FireStorage]
+row=6
 col=0
 
 [Wastebasket]

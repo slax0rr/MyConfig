@@ -8,7 +8,7 @@
     <property name="panel-1" type="empty">
       <property name="position" type="string" value="p=6;x=960;y=15"/>
       <property name="length" type="uint" value="100"/>
-      <property name="position-locked" type="bool" value="false"/>
+      <property name="position-locked" type="bool" value="true"/>
       <property name="size" type="uint" value="30"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
@@ -97,6 +97,9 @@
       <property name="style" type="uint" value="1"/>
     </property>
     <property name="plugin-14" type="string" value="directorymenu">
+      <property name="base-directory" type="string" value="/home/slax0r"/>
+    </property>
+    <property name="plugin-16" type="empty">
       <property name="base-directory" type="string" value="/home/slax0r"/>
     </property>
   </property>

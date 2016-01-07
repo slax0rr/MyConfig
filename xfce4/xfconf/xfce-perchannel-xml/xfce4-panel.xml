@@ -20,7 +20,7 @@
         <value type="int" value="2"/>
         <value type="int" value="7"/>
       </property>
-      <property name="output-name" type="string" value="HDMI-0"/>
+      <property name="output-name" type="string" value="VGA-1"/>
     </property>
     <property name="panel-2" type="empty">
       <property name="position" type="string" value="p=10;x=0;y=0"/>
@@ -96,6 +96,9 @@
       <property name="style" type="uint" value="1"/>
     </property>
     <property name="plugin-14" type="string" value="directorymenu">
+      <property name="base-directory" type="string" value="/home/slax0r"/>
+    </property>
+    <property name="plugin-16" type="empty">
       <property name="base-directory" type="string" value="/home/slax0r"/>
     </property>
   </property>

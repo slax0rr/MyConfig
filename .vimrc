@@ -35,7 +35,7 @@ execute pathogen#infect()
 " Tab and indent settings
 set tabstop=4
 set shiftwidth=4
-set expandtab
+set noexpandtab
 set autoindent
 set smartindent
 

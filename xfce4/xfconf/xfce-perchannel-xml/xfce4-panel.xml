@@ -61,6 +61,7 @@
         <value type="string" value="guake-indicator"/>
         <value type="string" value="guake"/>
         <value type="string" value="systray icon"/>
+        <value type="string" value="scp-dbus-service.py"/>
       </property>
       <property name="names-hidden" type="array">
         <value type="string" value="vlc"/>

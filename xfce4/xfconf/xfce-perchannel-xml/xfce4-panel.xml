@@ -51,6 +51,7 @@
     <property name="plugin-5" type="string" value="clock">
       <property name="show-frame" type="bool" value="false"/>
       <property name="digital-format" type="string" value="%R"/>
+      <property name="mode" type="uint" value="4"/>
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
@@ -77,6 +78,7 @@
       <property name="items" type="array">
         <value type="string" value="14487931341.desktop"/>
       </property>
+      <property name="style" type="uint" value="1"/>
     </property>
     <property name="plugin-10" type="string" value="launcher">
       <property name="items" type="array">
@@ -98,6 +100,7 @@
     </property>
     <property name="plugin-14" type="string" value="directorymenu">
       <property name="base-directory" type="string" value="/home/slax0r"/>
+      <property name="style" type="uint" value="1"/>
     </property>
     <property name="plugin-16" type="empty">
       <property name="base-directory" type="string" value="/home/slax0r"/>

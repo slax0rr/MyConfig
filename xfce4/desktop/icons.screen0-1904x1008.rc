@@ -6,16 +6,8 @@ col=0
 row=3
 col=0
 
-[570 GB Volume]
-row=5
-col=0
-
-[214 GB Volume]
+[Data]
 row=4
-col=0
-
-[FireStorage]
-row=6
 col=0
 
 [Wastebasket]

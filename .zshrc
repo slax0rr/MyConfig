@@ -4430,6 +4430,9 @@ zrclocal
 
 ## }}}
 
+# Set 256 colors for TERM
+export TERM=xterm-256color
+
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=4
 # Local variables:

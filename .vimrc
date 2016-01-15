@@ -105,13 +105,13 @@ let g:polyglot_disables = ['php']
 let g:NERDTreeWinSize = 40 
 map <leader>nt :NERDTree<CR>
 
-" Add cursorline
+" Add cursorline and cursorcolumn
 set cursorline
+set cursorcolumn
 
 " color scheme settings
 highlight Search ctermbg=0 ctermfg=1 cterm=bold,underline
 highlight CursorLine cterm=underline
-highlight Function term=underline
 
 " Key remaps
 " Remap Ctrl+x Ctrl+o to Ctrl+Space (omni complete)

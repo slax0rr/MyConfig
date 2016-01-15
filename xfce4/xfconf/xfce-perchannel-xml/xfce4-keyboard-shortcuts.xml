@@ -28,7 +28,9 @@
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
       <property name="override" type="bool" value="true"/>
-      <property name="&lt;Super&gt;4" type="string" value="sh /home/slax0r/.bin/screencap.sh"/>
+      <property name="&lt;Super&gt;4" type="string" value="python /home/slax0r/.bin/dbshare.py">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
     </property>
   </property>
   <property name="xfwm4" type="empty">

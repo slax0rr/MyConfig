@@ -1,4 +1,4 @@
-let devenv = $DEV_ENV
+let devenv = substitute(system('cat ~/.vim_env'), '\n', '', 'g')
 if devenv == 'work'
 	set noexpandtab
 	" Configure phpqa

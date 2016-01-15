@@ -63,7 +63,7 @@ set omnifunc=syntaxcomplete#Complete
 set hlsearch
 
 " set colorscheme
-colorscheme solarized
+colorscheme base16-atelierheath
 
 " set font
 if has('gui_gtk2')
@@ -84,9 +84,6 @@ set tags=.tags;
 " set forward slashes
 set shellslash
 
-" Add current line marker
-set cursorline
-
 " Disable mouse
 set mouse=
 
@@ -96,9 +93,7 @@ let g:airline_powerline_fonts = 1
 " Show pretty tabline
 let g:airline#extensions#tabline#enabled = 1
 " Change theme for cli version
-if has('gui_running') == 0
-	let g:airline_theme='jellybeans'
-endif
+let g:airline_theme='base16'
 
 " Turn on all python highlights of the python syntax plugin
 let python_highlight_all = 1
@@ -109,6 +104,14 @@ let g:polyglot_disables = ['php']
 " NERDTree config
 let g:NERDTreeWinSize = 40 
 map <leader>nt :NERDTree<CR>
+
+" Add cursorline
+set cursorline
+
+" color scheme settings
+highlight Search ctermbg=0 ctermfg=1 cterm=bold,underline
+highlight CursorLine cterm=underline
+highlight Function term=underline
 
 " Key remaps
 " Remap Ctrl+x Ctrl+o to Ctrl+Space (omni complete)

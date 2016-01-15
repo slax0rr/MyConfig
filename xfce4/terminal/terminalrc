@@ -1,8 +1,8 @@
 [Configuration]
-ColorCursor=#93a1a1
-ColorForeground=#839496
-ColorBackground=#002b36
-ColorPalette=#073642;#dc322f;#859900;#b58900;#268bd2;#d33682;#2aa198;#eee8d5;#002b36;#cb4b16;#586e75;#657b83;#839496;#6c71c4;#93a1a1;#fdf6e3
+ColorCursor=#ab9bab
+ColorForeground=#ab9bab
+ColorBackground=#1b181b
+ColorPalette=#1b181b;#ca402b;#379a37;#bb8a35;#516aec;#7b59c0;#159393;#ab9bab;#776977;#a65926;#292329;#695d69;#9e8f9e;#d8cad8;#cc33cc;#f7f3f7
 FontName=Hack 9
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE

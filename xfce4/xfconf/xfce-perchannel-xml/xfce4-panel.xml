@@ -20,7 +20,7 @@
         <value type="int" value="2"/>
         <value type="int" value="7"/>
       </property>
-      <property name="output-name" type="string" value="HDMI-0"/>
+      <property name="output-name" type="string" value=""/>
     </property>
     <property name="panel-2" type="empty">
       <property name="position" type="string" value="p=10;x=0;y=0"/>
@@ -61,6 +61,7 @@
         <value type="string" value="guake-indicator"/>
         <value type="string" value="guake"/>
         <value type="string" value="systray icon"/>
+        <value type="string" value="scp-dbus-service.py"/>
       </property>
       <property name="names-hidden" type="array">
         <value type="string" value="vlc"/>

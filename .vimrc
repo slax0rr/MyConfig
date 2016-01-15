@@ -106,6 +106,10 @@ let python_highlight_all = 1
 " Disable polyglot language packages
 let g:polyglot_disables = ['php']
 
+" NERDTree config
+let g:NERDTreeWinSize = 40 
+map <leader>nt :NERDTree<CR>
+
 " Key remaps
 " Remap Ctrl+x Ctrl+o to Ctrl+Space (omni complete)
 inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?

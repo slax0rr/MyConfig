@@ -280,9 +280,6 @@ if has("autocmd")
     au VimEnter * nested :call LoadSession()
     au VimLeave * :call UpdateSession()
 	au FileType php set keywordprg=pman
-	" Start NERDTree and TagbarToggle
-	au VimEnter * NERDTree
-	au VimEnter * TagbarToggle
 endif
 map <leader>m :call MakeSession()<CR>
 map <leader>l :call LoadSession()<CR>

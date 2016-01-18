@@ -280,6 +280,9 @@ if has("autocmd")
     au VimEnter * nested :call LoadSession()
     au VimLeave * :call UpdateSession()
 	au FileType php set keywordprg=pman
+	" Start NERDTree and TagbarToggle
+	au VimEnter * NERDTree
+	au VimEnter * TagbarToggle
 endif
 map <leader>m :call MakeSession()<CR>
 map <leader>l :call LoadSession()<CR>
@@ -287,4 +290,9 @@ map <leader>l :call LoadSession()<CR>
 " Load environment specific files, if it exists
 if !empty(glob("~/.vimrc_env"))
     source ~/.vimrc_env
+endif
+
+" Load computer specific config file, if it exists
+if !empty(glob("~/.vimrc_local"))
+	source ~/.vimrc_local
 endif

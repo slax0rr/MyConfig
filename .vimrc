@@ -288,3 +288,7 @@ map <leader>l :call LoadSession()<CR>
 if !empty(glob("~/.vimrc_env"))
     source ~/.vimrc_env
 endif
+
+" Start NERDTree and TagBar
+autocmd VimEnter * NERDTree
+autocmd VimEnter * TagbarToggle

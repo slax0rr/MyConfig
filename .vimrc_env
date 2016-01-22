@@ -1,11 +1,7 @@
 let devenv = substitute(system('cat ~/.vim_env'), '\n', '', 'g')
 if devenv == 'work'
 	set noexpandtab
-	" Configure phpqa
-	let g:phpqa_messdetector_autorun = 0
 	let g:phpqa_codesniffer_autorun = 0
-	let g:phpqa_codecoverage_autorun = 0
-	let g:phpqa_open_loc = 0
 else
     let g:phpqa_codesniffer_args = "--standard=PSR2SlaxWeb"
     let g:phpqa_messdetector_ruleset = "~/.ruleset.xml"

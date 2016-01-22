@@ -26,6 +26,8 @@ Plugin 'joonty/vim-phpqa'
 Plugin 'alvan/vim-php-manual'
 Plugin 'bling/vim-airline'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'suan/vim-instant-markdown'
+Plugin 'ctrlp.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -273,6 +275,12 @@ function! FixFormatting()
     execute '%s/\n\{3,}/\r\r/e'
 endfunction
 
+" DBGPavim config
+let g:dbgPavimPathMap = [['/home/slax0r/Development/projects/', '/mnt/hgfs/webserver/',]]
+
+" Instant markdown preview settings
+let g:instant_markdown_autostart = 0
+map <leader>md :InstantMarkdownPreview<CR>
 
 " Reopen file on same line as it was closed
 if has("autocmd")
@@ -289,6 +297,7 @@ if !empty(glob("~/.vimrc_env"))
     source ~/.vimrc_env
 endif
 
-" Start NERDTree and TagBar
-autocmd VimEnter * NERDTree
-autocmd VimEnter * TagbarToggle
+" Load computer specific config file, if it exists
+if !empty(glob("~/.vimrc_local"))
+	source ~/.vimrc_local
+endif

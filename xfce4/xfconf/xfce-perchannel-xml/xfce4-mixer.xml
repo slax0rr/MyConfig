@@ -24,17 +24,9 @@
       <value type="string" value="Master"/>
     </property>
     <property name="HDAIntelPCHAlsamixer" type="array">
-      <value type="string" value="Rear Mic Boost"/>
-      <value type="string" value="Rear Mic"/>
-      <value type="string" value="IEC958 Default PCM"/>
-      <value type="string" value="Line Boost"/>
-      <value type="string" value="Line-in"/>
-      <value type="string" value="Front Mic Boost"/>
-      <value type="string" value="Front Mic"/>
-      <value type="string" value="Front"/>
-      <value type="string" value="PCM"/>
-      <value type="string" value="Headphone"/>
       <value type="string" value="Master"/>
+      <value type="string" value="PCM"/>
+      <value type="string" value="Line-in"/>
     </property>
   </property>
   <property name="window-height" type="int" value="543"/>

@@ -64,16 +64,6 @@ set omnifunc=syntaxcomplete#Complete
 " set search highligh
 set hlsearch
 
-" set colorscheme
-colorscheme base16-atelierheath
-
-" set font
-if has('gui_gtk2')
-    set guifont=Hack\ 9
-else
-    set guifont=Hack:h9
-endif
-
 " remove gui elements
 set guioptions-=m  " remove menu bar
 set guioptions-=T  " remove toolbar
@@ -107,13 +97,33 @@ let g:polyglot_disables = ['php']
 let g:NERDTreeWinSize = 40 
 map <leader>nt :NERDTree<CR>
 
+" set colorscheme
+colorscheme base16-atelierheath
+
+" set font
+if has('gui_gtk2')
+    set guifont=Hack\ 9
+else
+    set guifont=Hack:h9
+endif
+
 " Add cursorline and cursorcolumn
 set cursorline
 set cursorcolumn
 
+" spellcheck
+map <leader>se :setlocal spell spelllang=en_gb<CR>
+map <leader>sd :setlocal nospell<CR>
+
 " color scheme settings
-highlight Search ctermbg=0 ctermfg=1 cterm=bold,underline
+highlight Search ctermbg=0 ctermfg=6 cterm=bold,underline
 highlight CursorLine cterm=underline
+
+" Spell highlight
+highlight SpellBad ctermbg=0 ctermfg=1 cterm=bold,underline
+highlight SpellCap ctermbg=0 ctermfg=2 cterm=bold,underline
+highlight SpellRare ctermbg=0 ctermfg=0 cterm=bold,underline
+highlight SpellLocal ctermbg=0 ctermfg=5 cterm=bold,underline
 
 " Key remaps
 " Remap Ctrl+x Ctrl+o to Ctrl+Space (omni complete)

@@ -19,19 +19,13 @@
         <value type="int" value="2"/>
         <value type="int" value="7"/>
       </property>
-      <property name="output-name" type="string" value=""/>
-      <property name="background-style" type="uint" value="0"/>
-      <property name="background-image" type="string" value="/home/slax0r/Pictures/timberwolf.jpg"/>
-      <property name="background-color" type="array">
-        <value type="uint" value="0"/>
-        <value type="uint" value="0"/>
-        <value type="uint" value="0"/>
-        <value type="uint" value="65535"/>
-      </property>
+      <property name="output-name" type="string" value="VGA-1"/>
     </property>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-1" type="string" value="applicationsmenu"/>
+    <property name="plugin-1" type="string" value="applicationsmenu">
+      <property name="button-icon" type="string" value="xfce4-panel-menu"/>
+    </property>
     <property name="plugin-2" type="string" value="actions"/>
     <property name="plugin-3" type="string" value="tasklist"/>
     <property name="plugin-15" type="string" value="separator">
@@ -42,11 +36,11 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
         <value type="string" value="thunar"/>
-        <value type="string" value="systray icon"/>
         <value type="string" value="networkmanager applet"/>
-        <value type="string" value="guake"/>
-        <value type="string" value="guake-indicator"/>
         <value type="string" value="clipman"/>
+        <value type="string" value="guake-indicator"/>
+        <value type="string" value="guake"/>
+        <value type="string" value="systray icon"/>
         <value type="string" value="scp-dbus-service.py"/>
       </property>
       <property name="names-hidden" type="array">

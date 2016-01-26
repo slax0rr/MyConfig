@@ -28,7 +28,10 @@
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
       <property name="override" type="bool" value="true"/>
-      <property name="&lt;Super&gt;4" type="string" value="python /home/slax0r/.bin/dbshare.py">
+      <property name="&lt;Super&gt;4" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Alt&gt;&lt;Super&gt;4" type="string" value="python /home/slax0r/.bin/dbshare.py">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
     </property>

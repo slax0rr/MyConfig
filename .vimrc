@@ -28,6 +28,7 @@ Plugin 'bling/vim-airline'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'ctrlp.vim'
+Plugin 'The-NERD-tree'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

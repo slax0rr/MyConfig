@@ -1,7 +1,5 @@
 vimfiles/sessions/*
 vimfiles/bundle/*
-.vim/sessions/*
 *.swp
-<<<<<<< HEAD
 .config/pulse/
 .config/chromium/

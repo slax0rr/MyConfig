@@ -128,15 +128,15 @@ highlight SpellRare ctermbg=0 ctermfg=0 cterm=bold,underline
 highlight SpellLocal ctermbg=0 ctermfg=5 cterm=bold,underline
 
 " highligh docblock inline tags
-highlight docblockTags ctermfg=180
-"highlight paramType ctermfg=7
-"highlight paramName ctermfg=1
+highlight docblockTags ctermfg=180 cterm=bold
+highlight paramType ctermfg=7  cterm=underline
+highlight paramName ctermfg=1
 "highlight returnType ctermfg=7
 
 " define match for php docblock inline tags
 match docblockTags "^\s\+\*\s\zs@.\{-}\ze\s"
-"match paramType "^\s\+\*\s@param\s\+\zs.\{-}\ze\s"
-"match paramName "^\s\+\*\s@param\s\+.\{-}\s\+\zs$.\{-}\ze\s"
+2match paramType "^\s\+\*\s@param\s\+\zs.\{-}\ze\s"
+3match paramName "^\s\+\*\s@param\s\+.\{-}\s\+\zs\$.\{-}\ze\s"
 "match returnType "^\s\+\*\s@return\s\+\zs.\{-}\ze\s"
 
 " Key remaps

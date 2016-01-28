@@ -29,6 +29,7 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'ctrlp.vim'
 Plugin 'The-NERD-tree'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

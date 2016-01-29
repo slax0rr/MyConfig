@@ -4433,6 +4433,10 @@ zrclocal
 # Set 256 colors for TERM
 export TERM=xterm-256color
 
+# Prepare for ENCFS
+export XAUTHORITY=~/.Xauthority
+alias encfs-dev='encfs --idle=5 --ondemand --extpass=/usr/bin/ssh-askpass ~/.dev/ ~/Development/'
+
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=4
 # Local variables:

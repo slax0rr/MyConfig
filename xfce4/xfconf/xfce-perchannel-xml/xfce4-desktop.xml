@@ -8,10 +8,10 @@
         <property name="color1" type="empty"/>
         <property name="color2" type="empty"/>
         <property name="color-style" type="empty"/>
-        <property name="image-path" type="string" value="/home/slax0r/Pictures/backgrounds/The Iron Maiden.jpeg"/>
+        <property name="image-path" type="string" value="/home/slax0r/Pictures/clanwolf.jpg"/>
         <property name="image-show" type="empty"/>
-        <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
-        <property name="last-single-image" type="string" value="/home/slax0r/Pictures/backgrounds/The Iron Maiden.jpeg"/>
+        <property name="last-image" type="string" value="/home/slax0r/Pictures/clanwolf.jpg"/>
+        <property name="last-single-image" type="string" value="/home/slax0r/Pictures/clanwolf.jpg"/>
       </property>
       <property name="monitor1" type="empty">
         <property name="image-path" type="string" value="/home/slax0r/Pictures/clanwolf.jpg"/>

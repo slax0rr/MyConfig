@@ -30,6 +30,7 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'ctrlp.vim'
 Plugin 'The-NERD-tree'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'fatih/vim-go'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -41,7 +42,6 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
-set smartindent
 
 " Backup file dir
 set backupdir=~/tmp

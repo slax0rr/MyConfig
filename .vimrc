@@ -3,7 +3,6 @@ syntax on
 set background=dark
 
 set nocompatible              " be iMproved, required
-filetype off                  " required
 
 let g:vimdir = ".vim"
 if has("win32")
@@ -60,7 +59,6 @@ set backspace=2
 set wmnu
 
 " Set autocompletion
-filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
 " set search highligh

@@ -1,3 +1,4 @@
+" mappings for the go-vim plugin
 map <leader>r <Plug>(go-run)
 map <leader>b <Plug>(go-build)
 map <leader>t <Plug>(go-test)
@@ -12,7 +13,8 @@ map <Leader>s <Plug>(go-implements)
 map <Leader>i <Plug>(go-info)
 map <Leader>e <Plug>(go-rename)
 
-set foldmethod=syntax
-set foldnestmax=10
-set nofoldenable
-set foldlevel=0
+" set folding settings
+setlocal foldmethod=syntax
+setlocal foldnestmax=10
+setlocal nofoldenable
+setlocal foldlevel=0

@@ -2,7 +2,7 @@
 ColorCursor=#444400000000
 ColorForeground=#abab9b9babab
 ColorBackground=#1b1b18181b1b
-ColorPalette=#1b1b18181b1b;#caca40402b2b;#37379a9a3737;#bbbb8a8a3535;#51516a6aecec;#7b7b5959c0c0;#151593939393;#abab9b9babab;#777769697777;#a6a659592626;#292923232929;#69695d5d6969;#9e9e8f8f9e9e;#d8d8cacad8d8;#00008d8d7373;#f7f7f3f3f7f7
+ColorPalette=#1b1b18181b1b;#caca40402b2b;#37379a9a3737;#bbbb8a8a3535;#51516a6aecec;#7b7b5959c0c0;#151593939393;#abab9b9babab;#777769697777;#a6a659592626;#3d824b023b34;#69695d5d6969;#9e9e8f8f9e9e;#d8d8cacad8d8;#00008d8d7373;#f7f7f3f3f7f7
 FontName=Hack 9
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE

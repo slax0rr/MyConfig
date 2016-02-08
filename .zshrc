@@ -4437,6 +4437,18 @@ export TERM=xterm-256color
 export XAUTHORITY=~/.Xauthority
 alias encfs-dev='encfs --idle=5 --ondemand --extpass=/usr/bin/ssh-askpass ~/.dev/ ~/Development/'
 
+# GoLang system vars
+if [ -d "$HOME/go" ] ; then
+    export GOPATH="$HOME/go"
+fi
+
+if [ -d "$HOME/go/bin" ] ; then
+    PATH="$HOME/go/bin:$PATH"
+fi
+
+# Alias for IRC
+alias irssi="ssh ircserver 'tmux attach'"
+
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=4
 # Local variables:

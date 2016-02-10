@@ -2,6 +2,32 @@ let devenv = substitute(system('cat ~/.vim_env'), '\n', '', 'g')
 if devenv == 'work'
 	set noexpandtab
 	let g:phpqa_codesniffer_autorun = 0
+
+	command! -range=% -nargs=1 Slack call SlackIt(<f-args>, <line1>, <line2>)
+
+	function SlackIt(channel, line1, line2)
+		if !exists('g:slack_token')
+			echo 'Please set the g:slack_token with your Slack token value'
+			return
+		endif
+
+		let b:slack_url = 'https://slack.com/api/chat.postMessage'
+		let b:data = 'token=' . g:slack_token
+		let b:data .= '&channel=' . webapi#http#encodeURI(a:channel) . '&as_user=true&text='
+		let b:content = getline(a:line1, a:line2)
+		let b:data .= '```'
+		for b:line in b:content
+			let b:data .= webapi#http#encodeURI(b:line) . "\n"
+		endfor
+		let b:data .= '```'
+
+		let b:response = webapi#http#post(b:slack_url, b:data)
+		if b:response['status'] =~ '^2'
+			echo 'Done: ' . b:response['message'] . ' Content: ' . b:response['content']
+		else
+			echo 'Error: ' . b:response['status']
+		endif
+	endfunction
 else
     let g:phpqa_codesniffer_args = "--standard=PSR2SlaxWeb"
     let g:phpqa_messdetector_ruleset = "~/.ruleset.xml"

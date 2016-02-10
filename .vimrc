@@ -30,6 +30,7 @@ Plugin 'ctrlp.vim'
 Plugin 'The-NERD-tree'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'fatih/vim-go'
+Plugin 'WebAPI.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -216,6 +217,12 @@ map <leader>f :call FixFormatting()<cr>
 let g:dbgPavimPort = 9000
 let g:dbgPavimBreakAtEntry = 0
 "\   "/mnt/hgfs/webserver/": "/media/sf_S_DRIVE/projects/"
+
+" sharing is caring
+command! -range=% VP  execute <line1> . "," . <line2> . "w !vpaste ft=" . &filetype
+command! -range=% SP  silent execute <line1> . "," . <line2> . "w !curl -F 'sprunge=<-' http://sprunge.us/ | tr -d '\\n' | awk '{print $1\"?" . &filetype . "\"}' | xclip -selection clipboard"
+command! -range=% IX  silent execute <line1> . "," . <line2> . "w !curl -F 'f:1=<-' ix.io | tr -d '\\n' | xclip -selection clipboard"
+command!          CMD let @+ = ':' . @:
 
 " Functions, functions everywhere!
 " Creates a session

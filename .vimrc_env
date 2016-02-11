@@ -6,8 +6,13 @@ if devenv == 'work'
 	command! -range=% -nargs=1 Slack call SlackIt(<f-args>, <line1>, <line2>)
 
 	function SlackIt(channel, line1, line2)
+		if globpath(&rtp, 'autoload/webapi/http.vim') == ''
+			echo 'Error: Please install WebAPI.vim: https://github.com/mattn/webapi-vim'
+			return
+		endif
+
 		if !exists('g:slack_token')
-			echo 'Please set the g:slack_token with your Slack token value'
+			echo 'Error: Please set the g:slack_token with your Slack token value'
 			return
 		endif
 

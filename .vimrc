@@ -31,6 +31,7 @@ Plugin 'The-NERD-tree'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'fatih/vim-go'
 Plugin 'WebAPI.vim'
+Plugin 'metarw'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

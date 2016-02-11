@@ -4448,6 +4448,10 @@ fi
 
 # Alias for IRC
 alias irssi="ssh ircserver 'tmux attach'"
+# Alias for drive-goole
+alias gdrive="drive-google"
+
+export PATH=~/.bin:$PATH
 
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=4

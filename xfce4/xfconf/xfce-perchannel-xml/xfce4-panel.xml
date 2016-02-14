@@ -14,6 +14,7 @@
         <value type="int" value="3"/>
         <value type="int" value="15"/>
         <value type="int" value="4"/>
+        <value type="int" value="5"/>
         <value type="int" value="17"/>
         <value type="int" value="6"/>
         <value type="int" value="2"/>
@@ -53,5 +54,6 @@
     </property>
     <property name="plugin-7" type="string" value="showdesktop"/>
     <property name="plugin-17" type="string" value="datetime"/>
+    <property name="plugin-5" type="string" value="xkb-plugin"/>
   </property>
 </channel>

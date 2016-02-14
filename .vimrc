@@ -135,12 +135,12 @@ match docblockTags "^\s\+\*\s\zs@.\{-}\ze\s"
 
 " Key remaps
 " Remap Ctrl+x Ctrl+o to Ctrl+Space (omni complete)
-inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
-\   "\<lt>C-n>" :
-\   "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
-\   "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
-\   "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
-imap <C-@> <C-Space>
+"inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
+"\   "\<lt>C-n>" :
+"\   "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
+"\   "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
+"\   "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
+"imap <C-@> <C-Space>
 
 " Add closing brackets when an opening bracket is written
 " Squirly brackets
@@ -183,15 +183,15 @@ command! -nargs=1 Pdoc !xdg-open http://php.net/<args> &
 nmap <leader>pd :Pdoc <cword><CR>
 
 " Autocomplete already-existing words in the file with tab (extremely useful!)
-function! InsertTabWrapper()
-    let col = col('.') - 1
-    if !col || getline('.')[col - 1] !~ '\k'
-        return "\<tab>"
-    else
-        return "\<c-p>"
-    endif
-endfunction
-inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+"function! InsertTabWrapper()
+    "let col = col('.') - 1
+    "if !col || getline('.')[col - 1] !~ '\k'
+        "return "\<tab>"
+    "else
+        "return "\<c-p>"
+    "endif
+"endfunction
+"inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 
 " Highligh 80 and 120 columns
 let &colorcolumn="80,".join(range(120,999),",")
@@ -301,6 +301,12 @@ endfunction
 
 " DBGPavim config
 let g:dbgPavimPathMap = [['/home/slax0r/Development/projects/', '/mnt/hgfs/webserver/',]]
+
+" YCM settings
+let g:ycm_auto_trigger = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_cache_omnifunc = 1
 
 " Instant markdown preview settings
 let g:instant_markdown_autostart = 0

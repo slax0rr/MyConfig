@@ -3,7 +3,7 @@
 <channel name="keyboard-layout" version="1.0">
   <property name="Default" type="empty">
     <property name="XkbDisable" type="bool" value="false"/>
-    <property name="XkbLayout" type="string" value="gb,si"/>
-    <property name="XkbVariant" type="string" value=",alternatequotes"/>
+    <property name="XkbLayout" type="string" value="gb,si,at"/>
+    <property name="XkbVariant" type="string" value=",alternatequotes,nodeadkeys"/>
   </property>
 </channel>

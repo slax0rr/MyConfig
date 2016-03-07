@@ -48,7 +48,7 @@ set autoindent
 set backupdir=~/tmp
 
 " Line numbers
-set number
+set relativenumber
 
 " FuGITive status line
 set laststatus=2
@@ -298,6 +298,18 @@ function! FixFormatting()
     " Remove excesive blank lines
     execute '%s/\n\{3,}/\r\r/e'
 endfunction
+
+" Change to relative numbering and back
+function! NumberToggle()
+	if (&relativenumber == 1)
+		set number
+		set norelativenumber
+	else
+		set nonumber
+		set relativenumber
+	endif
+endfunction
+nnoremap <leader>n :call NumberToggle()<CR>
 
 " DBGPavim config
 let g:dbgPavimPathMap = [['/home/slax0r/Development/projects/', '/mnt/hgfs/webserver/',]]

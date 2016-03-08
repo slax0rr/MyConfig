@@ -4435,7 +4435,7 @@ export TERM=xterm-256color
 
 # Prepare for ENCFS
 export XAUTHORITY=~/.Xauthority
-alias encfs-dev='encfs --idle=5 --ondemand --extpass=/usr/bin/ssh-askpass ~/.dev/ ~/Development/'
+alias encfs-dev='encfs ~/.dev/ ~/Development/'
 
 # GoLang system vars
 if [ -d "$HOME/go" ] ; then

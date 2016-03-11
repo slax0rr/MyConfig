@@ -73,6 +73,12 @@ set mouse=
 if has("autocmd")
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+" sharing is caring
+command! -range=% VP  execute <line1> . "," . <line2> . "w !vpaste ft=" . &filetype
+command! -range=% SP  silent execute <line1> . "," . <line2> . "w !curl -F 'sprunge=<-' http://sprunge.us/ | tr -d '\\n' | awk '{print $1\"?" . &filetype . "\"}' | xclip -selection clipboard"
+command! -range=% IX  silent execute <line1> . "," . <line2> . "w !curl -F 'f:1=<-' ix.io | tr -d '\\n' | xclip -selection clipboard"
+command!          CMD let @+ = ':' . @:
 """""""""""""""""""""""""""
 " END                     "
 " Editor related settings "

@@ -1,46 +1,42 @@
-" be iMproved, required
-set nocompatible
+" Syntax settings
+syntax on
+set background=dark
 
-"""""""""""""""""""
-" BEGIN           "
-" Vundle settings "
-" BEGIN           "
-"""""""""""""""""""
-if !empty(glob("~/.vim/bundle/Vundle.vim"))
+set nocompatible              " be iMproved, required
+
+let g:vimdir = ".vim"
+if has("win32")
+    let g:vimdir = "vimfiles"
+endif
+
+" set the runtime path to include Vundle and initialize
+if has("win32")
+    set rtp+=~/vimfiles/bundle/Vundle.vim
+    call vundle#begin('~/' . g:vimdir . '/')
+else
     set rtp+=~/.vim/bundle/Vundle.vim
     call vundle#begin()
-
-	Plugin 'airblade/vim-gitgutter'
-	Plugin 'shawncplus/phpcomplete.vim'
-	Plugin 'joonty/vim-phpqa'
-	Plugin 'bling/vim-airline'
-	Plugin 'vim-airline/vim-airline-themes'
-	Plugin 'sheerun/vim-polyglot'
-	Plugin 'suan/vim-instant-markdown'
-	Plugin 'ctrlp.vim'
-	Plugin 'The-NERD-tree'
-	Plugin 'Valloric/YouCompleteMe'
-	Plugin 'fatih/vim-go'
-	Plugin 'WebAPI.vim'
-	Plugin 'metarw'
-	Plugin 'Tagbar'
-	Plugin 'fugitive.vim'
-
-    call vundle#end()
 endif
-"""""""""""""""""""
-" END             "
-" Vundle settings "
-" END             "
-"""""""""""""""""""
 
-"""""""""""""""""""""""""""
-" BEGIN                   "
-" Editor related settings "
-" BEGIN                   "
-"""""""""""""""""""""""""""
-" Enable filetype plugin and indent
-filetype plugin indent on
+Plugin 'gmarik/Vundle.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'joonty/vim-phpqa'
+Plugin 'alvan/vim-php-manual'
+Plugin 'bling/vim-airline'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'suan/vim-instant-markdown'
+Plugin 'ctrlp.vim'
+Plugin 'The-NERD-tree'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'fatih/vim-go'
+Plugin 'WebAPI.vim'
+Plugin 'metarw'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+execute pathogen#infect()
 
 " Tab and indent settings
 set tabstop=4
@@ -54,11 +50,27 @@ set backupdir=~/tmp
 " Line numbers
 set relativenumber
 
+" FuGITive status line
+set laststatus=2
+set statusline=%<\ %f\ %{fugitive#statusline()}
+
 " Set backspace to work as in other apps
 set backspace=2
 
 " Enable wmnu
 set wmnu
+
+" Set autocompletion
+set omnifunc=syntaxcomplete#Complete
+
+" set search highligh
+set hlsearch
+
+" remove gui elements
+set guioptions-=m  " remove menu bar
+set guioptions-=T  " remove toolbar
+set guioptions-=r  " remove right-hand scroll bar
+set guioptions-=L  " remove left-hand scroll bar
 
 " add custom ctags file
 set tags=.tags;
@@ -69,32 +81,41 @@ set shellslash
 " Disable mouse
 set mouse=
 
-" Reopen file on same line as it was closed
-if has("autocmd")
-    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-endif
-"""""""""""""""""""""""""""
-" END                     "
-" Editor related settings "
-" END                     "
-"""""""""""""""""""""""""""
+" Airline settings
+" Enable powerline symbols
+let g:airline_powerline_fonts = 1
+" Show pretty tabline
+let g:airline#extensions#tabline#enabled = 1
+" Change theme for cli version
+let g:airline_theme='base16'
 
-""""""""""""""""""""""""""""""
-" BEGIN                      "
-" Graphical related settings "
-" BEGIN                      "
-""""""""""""""""""""""""""""""
-" Syntax Highlighting
-syntax on
+" Turn on all python highlights of the python syntax plugin
+let python_highlight_all = 1
 
-" Set Search Highlighting
-set hlsearch
+" Disable polyglot language packages
+let g:polyglot_disables = ['php']
 
-" set background
-set background=dark
+" NERDTree config
+let g:NERDTreeWinSize = 40 
+map <leader>nt :NERDTree<CR>
 
-" Set Colorscheme
+" set colorscheme
 colorscheme base16-atelierheath
+
+" set font
+if has('gui_gtk2')
+    set guifont=Hack\ 9
+else
+    set guifont=Hack:h9
+endif
+
+" Add cursorline and cursorcolumn
+set cursorline
+set cursorcolumn
+
+" spellcheck
+map <leader>se :setlocal spell spelllang=en_gb<CR>
+map <leader>sd :setlocal nospell<CR>
 
 " color scheme settings
 highlight Search ctermbg=0 ctermfg=6 cterm=bold,underline
@@ -112,25 +133,14 @@ highlight docblockTags ctermfg=180 cterm=bold
 " define match for php docblock inline tags
 match docblockTags "^\s\+\*\s\zs@.\{-}\ze\s"
 
-" Highligh 80 and 120 columns
-let &colorcolumn="80,".join(range(120,999),",")
-
-" Add cursorline and cursorcolumn
-set cursorline
-set cursorcolumn
-""""""""""""""""""""""""""""""
-" END                        "
-" Graphical related settings "
-" END                        "
-""""""""""""""""""""""""""""""
-
-"""""""""""""""""""""""""""
-" BEGIN                   "
-" Autocompletion settings "
-" BEGIN                   "
-"""""""""""""""""""""""""""
-" Set omnifunc
-set omnifunc=syntaxcomplete#Complete
+" Key remaps
+" Remap Ctrl+x Ctrl+o to Ctrl+Space (omni complete)
+"inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
+"\   "\<lt>C-n>" :
+"\   "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
+"\   "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
+"\   "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
+"imap <C-@> <C-Space>
 
 " Add closing brackets when an opening bracket is written
 " Squirly brackets
@@ -164,23 +174,6 @@ inoremap <expr> " strpart(getline('.'), col('.')-1, 1) == "\"" ? "\<Right>" : "\
 inoremap '  ''<Left>
 inoremap '' '
 inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\'\'\<Left>"
-"""""""""""""""""""""""""""
-" END                     "
-" Autocompletion settings "
-" END                     "
-"""""""""""""""""""""""""""
-
-""""""""""""""
-" BEGIN      "
-" Remappings "
-" BEGIN      "
-""""""""""""""
-" NERDTree config
-map <leader>nt :NERDTree<CR>
-
-" spellcheck
-map <leader>se :setlocal spell spelllang=en_gb<CR>
-map <leader>sd :setlocal nospell<CR>
 
 " Hide search highlights for current search
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
@@ -189,6 +182,20 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 command! -nargs=1 Pdoc !xdg-open http://php.net/<args> &
 nmap <leader>pd :Pdoc <cword><CR>
 
+" Autocomplete already-existing words in the file with tab (extremely useful!)
+"function! InsertTabWrapper()
+    "let col = col('.') - 1
+    "if !col || getline('.')[col - 1] !~ '\k'
+        "return "\<tab>"
+    "else
+        "return "\<c-p>"
+    "endif
+"endfunction
+"inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+
+" Highligh 80 and 120 columns
+let &colorcolumn="80,".join(range(120,999),",")
+
 " ctag bar
 nmap <leader>tb :TagbarToggle<CR>
 
@@ -196,7 +203,7 @@ nmap <leader>tb :TagbarToggle<CR>
 map ,f :set foldmethod=indent<cr>zM<cr>
 map ,F :set foldmethod=manual<cr>zR<cr>
 
-" Map \j and \sj keys to search for tags
+" Map F6 and F7 keys to search for tags
 map <leader>j g<C-]>
 map <leader>sj <C-W>g<C-]>
 
@@ -207,19 +214,18 @@ map <leader>k <C-w>K
 " Run some formatting rules on a file
 map <leader>f :call FixFormatting()<cr>
 
-" Instant markdown preview mapping
-map <leader>md :InstantMarkdownPreview<CR>
-""""""""""""""
-" END        "
-" Remappings "
-" END        "
-""""""""""""""
+" Debugger config
+let g:dbgPavimPort = 9000
+let g:dbgPavimBreakAtEntry = 0
+"\   "/mnt/hgfs/webserver/": "/media/sf_S_DRIVE/projects/"
 
-""""""""""""""""""""
-" BEGIN            "
-" Helper Functions "
-" BEGIN            "
-""""""""""""""""""""
+" sharing is caring
+command! -range=% VP  execute <line1> . "," . <line2> . "w !vpaste ft=" . &filetype
+command! -range=% SP  silent execute <line1> . "," . <line2> . "w !curl -F 'sprunge=<-' http://sprunge.us/ | tr -d '\\n' | awk '{print $1\"?" . &filetype . "\"}' | xclip -selection clipboard"
+command! -range=% IX  silent execute <line1> . "," . <line2> . "w !curl -F 'f:1=<-' ix.io | tr -d '\\n' | xclip -selection clipboard"
+command!          CMD let @+ = ':' . @:
+
+" Functions, functions everywhere!
 " Creates a session
 function! MakeSession()
     let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '\', '/', 'g')
@@ -304,44 +310,9 @@ function! NumberToggle()
 	endif
 endfunction
 nnoremap <leader>n :call NumberToggle()<CR>
-""""""""""""""""""""
-" END              "
-" Helper Functions "
-" END              "
-""""""""""""""""""""
-
-""""""""""""""""""
-" BEGIN          "
-" Plugin Settins "
-" BEGIN          "
-""""""""""""""""""
-" FuGITive status line
-set laststatus=2
-set statusline=%<\ %f\ %{fugitive#statusline()}
-
-" Airline settings
-" Enable powerline symbols
-let g:airline_powerline_fonts = 1
-" Show pretty tabline
-let g:airline#extensions#tabline#enabled = 1
-" Change theme for cli version
-let g:airline_theme='base16'
-
-" Turn on all python highlights of the python syntax plugin
-let python_highlight_all = 1
-
-" Disable polyglot language packages
-let g:polyglot_disables = ['php']
-
-" NERDTree config
-let g:NERDTreeWinSize = 40 
 
 " DBGPavim config
-let g:dbgPavimPort = 9000
-let g:dbgPavimBreakAtEntry = 0
-let g:dbgPavimPathMap = [
-\   ['/home/slax0r/Development/projects/', '/mnt/hgfs/webserver/',]
-\]
+let g:dbgPavimPathMap = [['/home/slax0r/Development/projects/', '/mnt/hgfs/webserver/',]]
 
 " YCM settings
 let g:ycm_auto_trigger = 1
@@ -351,18 +322,24 @@ let g:ycm_cache_omnifunc = 1
 
 " Instant markdown preview settings
 let g:instant_markdown_autostart = 0
-""""""""""""""""""
-" END            "
-" Plugin Settins "
-" END            "
-""""""""""""""""""
+map <leader>md :InstantMarkdownPreview<CR>
+
+" Reopen file on same line as it was closed
+if has("autocmd")
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+    au VimEnter * nested :call LoadSession()
+    au VimLeave * :call UpdateSession()
+	au FileType php set keywordprg=pman
+endif
+map <leader>m :call MakeSession()<CR>
+map <leader>l :call LoadSession()<CR>
 
 " Load environment specific files, if it exists
 if !empty(glob("~/.vimrc_env"))
     source ~/.vimrc_env
 endif
 
-" Load private computer specific config file, if it exists
+" Load computer specific config file, if it exists
 if !empty(glob("~/.vimrc_local"))
 	source ~/.vimrc_local
 endif

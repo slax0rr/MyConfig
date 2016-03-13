@@ -341,6 +341,7 @@ let g:polyglot_disables = ['php']
 
 " NERDTree config
 let g:NERDTreeWinSize = 40 
+let NERDTreeQuitOnOpen = 1
 
 " DBGPavim config
 let g:dbgPavimPort = 9000

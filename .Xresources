@@ -1,5 +1,17 @@
+XTerm*utf8: 1
 xterm*faceName: Hack:size=9:antialias=true
 XTerm*metaSendsEscape: true
+XTerm*pointerColor: white
+XTerm*pointerColorBackground: black
+XTerm*selectToClipboard: true
+XTerm*on3Clicks: regex [^ \n]+
+*VT100*translations: #override Shift <Btn1Up>: exec-formatted("xdg-open '%t'", CLIPBOARD)
+XTerm*SaveLines: 10000
+XTerm*ScrollBar: false
+XTerm*ScrollKey: true
+XTerm*visualbell: true
+XTerm*bellIsUrgent: true
+XTerm*cursorBlink: false
 
 ! special
 XTerm*.foreground:   #ab9bab

@@ -12,7 +12,7 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
 
 	Plugin 'airblade/vim-gitgutter'
 	Plugin 'shawncplus/phpcomplete.vim'
-	Plugin 'joonty/vim-phpqa'
+	"Plugin 'joonty/vim-phpqa'
 	Plugin 'bling/vim-airline'
 	Plugin 'vim-airline/vim-airline-themes'
 	Plugin 'sheerun/vim-polyglot'

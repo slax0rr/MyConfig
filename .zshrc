@@ -4453,6 +4453,8 @@ alias gdrive="drive-google"
 
 export PATH=~/.bin:$PATH
 
+export TERMINAL=xterm
+
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=4
 # Local variables:

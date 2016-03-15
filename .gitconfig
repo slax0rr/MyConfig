@@ -9,8 +9,9 @@
     pu = push
     co = checkout
     br = branch
-    unstage = reset HEAD --
+    di = diff
     sta = add .
+    unstage = reset HEAD --
     tree = log --all --graph --decorate=short --color --format=format:'%C(bold blue)%h%C(reset) %C(auto)%d%C(reset)\n         %C(white)[%cr]%C(reset)  %x09%C(white)%an: %s %C(reset)'
     logx = log --all --graph --decorate=short --color --format=format:'%C(bold blue)%h%C(reset)+%C(dim white)(%cr)%C(reset)+%C(auto)%d%C(reset)++\n+++       %C(bold white)%an%C(reset)%C(white): %s%C(reset)'
     stree = !bash -c '"                                                                             \

@@ -183,6 +183,7 @@ inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\
 """"""""""""""
 " NERDTree config
 map <leader>nt :NERDTree<CR>
+map <leader>r :NERDTreeFind<CR>
 
 " spellcheck
 map <leader>se :setlocal spell spelllang=en_gb<CR>

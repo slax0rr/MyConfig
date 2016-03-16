@@ -5,6 +5,7 @@
     co = checkout
     br = branch
     di = diff
+    fe = fetch
     sta = add -A .
     unstage = reset HEAD --
     tree = log --all --graph --decorate=short --color --format=format:'%C(bold blue)%h%C(reset) %C(auto)%d%C(reset)\n         %C(white)[%cr]%C(reset)  %x09%C(white)%an: %s %C(reset)'

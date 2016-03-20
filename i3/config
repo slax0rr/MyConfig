@@ -131,10 +131,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -154,3 +154,12 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# startup apps
+exec --no-startup-id nm-applet
+
+# app shortcuts
+# browser
+bindsym $mod+b exec x-www-browser
+# screen capper
+bindsym $mod+Mod1+4 exec ~/.bin/screencap.sh

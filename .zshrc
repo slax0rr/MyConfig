@@ -4452,7 +4452,6 @@ alias irssi="ssh ircserver 'tmux attach'"
 alias gdrive="drive-google"
 
 export PATH=~/.bin:$PATH
-
 export TERMINAL=xterm
 
 ## END OF FILE #################################################################

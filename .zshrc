@@ -2434,7 +2434,7 @@ grmlcomp() {
     zstyle ':completion:*:history-words'   stop yes
 
     # match uppercase from lowercase
-    zstyle ':completion:*'                 matcher-list 'm:{a-z}={A-Z}'
+    #zstyle ':completion:*'                 matcher-list 'm:{a-z}={A-Z}'
 
     # separate matches into groups
     zstyle ':completion:*:matches'         group 'yes'

@@ -2,6 +2,7 @@
     st = status
     ci = commit
     pu = push
+    pl = pull
     co = checkout
     br = branch
     di = diff

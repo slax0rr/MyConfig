@@ -121,7 +121,18 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+mode "Exit (L)ogout, (R)eboot, (P)oweroff" {
+    bindsym $mod+r exec systemctl reboot
+    bindsym $mod+e exit
+    bindsym $mod+p exec systemctl poweroff
+    bindsym $mod+l exec "i3-msg mode default && i3lock"
+
+    # exit back to normal
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+e mode "Exit (L)ogout, (R)eboot, (P)oweroff" 
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -158,8 +169,18 @@ bar {
 # startup apps
 exec --no-startup-id nm-applet
 
-# app shortcuts
-# browser
-bindsym $mod+b exec x-www-browser
-# screen capper
-bindsym $mod+Mod1+4 exec ~/.bin/screencap.sh
+# app launcher
+set $mode_launcher Launch: [b]rowser [s]creencap
+
+mode "$mode_launcher" {
+    # browser
+    bindsym b exec "i3-msg mode default && x-www-browser"
+    # screen capper
+    bindsym s exec "i3-msg mode default && ~/.bin/screencap.sh"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+o mode "$mode_launcher"

@@ -121,7 +121,8 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-mode "Exit (L)ogout, (R)eboot, (P)oweroff" {
+set $mode_exit Exit mode [e]xit, [l]ock, [r]eboot, [p]oweroff
+mode "$mode_exit" {
     bindsym $mod+r exec systemctl reboot
     bindsym $mod+e exit
     bindsym $mod+p exec systemctl poweroff
@@ -131,7 +132,7 @@ mode "Exit (L)ogout, (R)eboot, (P)oweroff" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+Shift+e mode "Exit (L)ogout, (R)eboot, (P)oweroff" 
+bindsym $mod+Shift+e mode "$mode_exit" 
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)

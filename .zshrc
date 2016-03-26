@@ -4433,10 +4433,6 @@ zrclocal
 # Set 256 colors for TERM
 export TERM=xterm-256color
 
-# Prepare for ENCFS
-export XAUTHORITY=~/.Xauthority
-alias encfs-dev='encfs ~/.dev/ ~/Development/'
-
 # GoLang system vars
 if [ -d "$HOME/go" ] ; then
     export GOPATH="$HOME/go"
@@ -4446,10 +4442,16 @@ if [ -d "$HOME/go/bin" ] ; then
     PATH="$HOME/go/bin:$PATH"
 fi
 
+## aliases {{{
+
 # Alias for IRC
 alias irssi="ssh ircserver 'tmux attach'"
 # Alias for drive-goole
 alias gdrive="drive-google"
+# ack alias
+alias ack="ack-grep"
+
+## }}}
 
 export PATH=~/.bin:$PATH
 export TERMINAL=xterm

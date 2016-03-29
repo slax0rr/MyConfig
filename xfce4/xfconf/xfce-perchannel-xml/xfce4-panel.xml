@@ -14,8 +14,6 @@
         <value type="int" value="3"/>
         <value type="int" value="15"/>
         <value type="int" value="4"/>
-        <value type="int" value="5"/>
-        <value type="int" value="17"/>
         <value type="int" value="6"/>
         <value type="int" value="2"/>
         <value type="int" value="7"/>
@@ -37,11 +35,11 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
         <value type="string" value="thunar"/>
-        <value type="string" value="networkmanager applet"/>
-        <value type="string" value="clipman"/>
-        <value type="string" value="guake-indicator"/>
-        <value type="string" value="guake"/>
         <value type="string" value="systray icon"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="guake"/>
+        <value type="string" value="guake-indicator"/>
+        <value type="string" value="clipman"/>
         <value type="string" value="scp-dbus-service.py"/>
       </property>
       <property name="names-hidden" type="array">

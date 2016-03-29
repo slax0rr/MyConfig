@@ -25,6 +25,7 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
 	Plugin 'metarw'
 	Plugin 'Tagbar'
 	Plugin 'fugitive.vim'
+    Plugin 'mattn/emmet-vim'
 
     call vundle#end()
 endif
@@ -314,6 +315,12 @@ function! NumberToggle()
 	endif
 endfunction
 nnoremap <leader>n :call NumberToggle()<CR>
+
+" Code Sniffer Command
+command PhpCS :cexpr system("phpcs --colors --standard=PSR2SlaxWeb " . expand("%:p")) | copen
+
+" Mess Detector Command
+command PhpMD :cexpr system("phpmd " . expand("%:p") . " text ~/.ruleset.xml") | copen
 """"""""""""""""""""
 " END              "
 " Helper Functions "

@@ -4452,8 +4452,12 @@ alias irssi="ssh ircserver 'tmux attach'"
 alias gdrive="drive-google"
 
 export PATH=~/.bin:$PATH
-
 export TERMINAL=xterm
+
+# machine related aliases
+if [[ -a ~/.aliases ]]; then
+    source ~/.aliases
+fi
 
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=4

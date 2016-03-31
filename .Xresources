@@ -1,20 +1,35 @@
-XTerm*utf8: 1
-xterm*faceName: Hack:size=9:antialias=true
-XTerm*metaSendsEscape: true
-XTerm*pointerColor: white
-XTerm*pointerColorBackground: black
-XTerm*selectToClipboard: true
-XTerm*on3Clicks: regex [^ \n]+
-*VT100*translations: #override Shift <Btn1Up>: exec-formatted("xdg-open '%t'", CLIPBOARD)
-XTerm*SaveLines: 10000
-XTerm*ScrollBar: false
-XTerm*ScrollKey: true
-XTerm*visualbell: true
-XTerm*bellIsUrgent: true
-XTerm*cursorBlink: false
+XTerm*pointerColor				: white
+XTerm*pointerColorBackground	: black
+XTerm*selectToClipboard			: true
+XTerm*on3Clicks					: regex [^ \n]+
+*VT100*translations				: #override Shift <Btn1Up>: exec-formatted("xdg-open '%t'", CLIPBOARD)
+XTerm*SaveLines					: 10000
+XTerm*ScrollBar					: false
+XTerm*ScrollKey					: true
+XTerm*visualbell				: true
+XTerm*bellIsUrgent				: true
+XTerm*cursorBlink				: false
+XTerm*scaleHeight				: 1.05
+
+!! Set the font to Hack.
+*font							: Hack:size=9
+dmenu.font						: xft:Hack:size=9:antialias=true:autohint=false
+
+XTerm*.allowBoldFonts 			: true
+XTerm*.bellIsUrgent   			: true
+XTerm*.cutNewline     			: true
+XTerm*.faceName       			: Hack
+XTerm*.faceSize       			: 9
+XTerm*.fullscreen     			: never
+XTerm*.internalBorder 			: 0
+XTerm*.renderFont     			: true
+XTerm*.termName       			: xterm-256color
+XTerm*.utf8           			: always
+XTerm*.utf8Fonts      			: always
+XTerm*.visualBell     			: false
+XTerm*.visualBellLine 			: false
 
 !colors
-!
 #define base00 #272822
 #define base01 #383830
 #define base02 #49483e

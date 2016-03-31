@@ -4456,6 +4456,11 @@ alias ack="ack-grep"
 export PATH=~/.bin:$PATH
 export TERMINAL=xterm
 
+# machine related aliases
+if [[ -a ~/.aliases ]]; then
+    source ~/.aliases
+fi
+
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=4
 # Local variables:

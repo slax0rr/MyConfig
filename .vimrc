@@ -80,6 +80,9 @@ command! -range=% VP  execute <line1> . "," . <line2> . "w !vpaste ft=" . &filet
 command! -range=% SP  silent execute <line1> . "," . <line2> . "w !curl -F 'sprunge=<-' http://sprunge.us/ | tr -d '\\n' | awk '{print $1\"?" . &filetype . "\"}' | xclip -selection clipboard"
 command! -range=% IX  silent execute <line1> . "," . <line2> . "w !curl -F 'f:1=<-' ix.io | tr -d '\\n' | xclip -selection clipboard"
 command!          CMD let @+ = ':' . @:
+
+" hide files, instead of closing
+set hidden
 """""""""""""""""""""""""""
 " END                     "
 " Editor related settings "

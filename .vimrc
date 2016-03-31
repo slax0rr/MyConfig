@@ -26,6 +26,7 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
 	Plugin 'Tagbar'
 	Plugin 'fugitive.vim'
     Plugin 'mattn/emmet-vim'
+	Plugin 'DBGPavim'
 
     call vundle#end()
 endif

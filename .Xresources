@@ -13,39 +13,50 @@ XTerm*visualbell: true
 XTerm*bellIsUrgent: true
 XTerm*cursorBlink: false
 
-! special
-XTerm*.foreground:   #ab9bab
-XTerm*.background:   #1b181b
-XTerm*.cursorColor:  #ab9bab
+!colors
+!
+#define base00 #272822
+#define base01 #383830
+#define base02 #49483e
+#define base03 #75715e
+#define base04 #a59f85
+#define base05 #f8f8f2
+#define base06 #f5f4f1
+#define base07 #f9f8f5
+#define base08 #f92672
+#define base09 #fd971f
+#define base0A #f4bf75
+#define base0B #a6e22e
+#define base0C #a1efe4
+#define base0D #66d9ef
+#define base0E #ae81ff
+#define base0F #cc6633
 
-! black
-XTerm*.color0:       #1b181b
-XTerm*.color8:       #776977
+XTerm*.foreground:   base07
+XTerm*.background:   base00
+XTerm*.cursorColor:  base07
 
-! red
-XTerm*.color1:       #ca402b
-XTerm*.color9:       #ca402b
+XTerm*.color0:       base00
+XTerm*.color1:       base08
+XTerm*.color2:       base0B
+XTerm*.color3:       base0A
+XTerm*.color4:       base0D
+XTerm*.color5:       base0E
+XTerm*.color6:       base0C
+XTerm*.color7:       base05
 
-! green
-XTerm*.color2:       #379a37
-XTerm*.color10:      #379a37
+XTerm*.color8:       base03
+XTerm*.color9:       base09
+XTerm*.color10:      base01
+XTerm*.color11:      base02
+XTerm*.color12:      base04
+XTerm*.color13:      base06
+XTerm*.color14:      base0F
+XTerm*.color15:      base07
 
-! yellow
-XTerm*.color3:       #bb8a35
-XTerm*.color11:      #bb8a35
-
-! blue
-XTerm*.color4:       #516aec
-XTerm*.color12:      #516aec
-
-! magenta
-XTerm*.color5:       #7b59c0
-XTerm*.color13:      #7b59c0
-
-! cyan
-XTerm*.color6:       #159393
-XTerm*.color14:      #159393
-
-! white
-XTerm*.color7:       #ab9bab
-XTerm*.color15:      #f7f3f7
+XTerm*.color16:      base09
+XTerm*.color17:      base0F
+XTerm*.color18:      base01
+XTerm*.color19:      base02
+XTerm*.color20:      base04
+XTerm*.color21:      base06

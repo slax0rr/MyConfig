@@ -25,6 +25,7 @@ XTerm*ScrollBar					: false
 XTerm*ScrollKey					: true
 XTerm*cursorBlink				: false
 XTerm*scaleHeight				: 1.05
+XTerm*eightBitInput				: false
 
 !colors
 #define base00 #272822

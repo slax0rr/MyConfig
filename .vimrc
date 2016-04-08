@@ -356,7 +356,7 @@ let g:NERDTreeWinSize = 40
 let NERDTreeQuitOnOpen = 1
 
 " DBGPavim config
-let g:dbgPavimPort = 9000
+let g:dbgPavimPort = 9009
 let g:dbgPavimBreakAtEntry = 0
 let g:dbgPavimPathMap = [
 \   ['/home/slax0r/Development/projects/', '/mnt/hgfs/webserver/',]
@@ -370,6 +370,9 @@ let g:ycm_cache_omnifunc = 1
 
 " Instant markdown preview settings
 let g:instant_markdown_autostart = 0
+
+" ctrlp config
+let g:ctrlp_extensions = ['tag']
 """"""""""""""""""
 " END            "
 " Plugin Settins "

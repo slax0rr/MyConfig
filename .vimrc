@@ -359,7 +359,8 @@ let NERDTreeQuitOnOpen = 1
 let g:dbgPavimPort = 9009
 let g:dbgPavimBreakAtEntry = 0
 let g:dbgPavimPathMap = [
-\   ['/home/slax0r/Development/projects/', '/mnt/hgfs/webserver/',]
+\   ['/home/slax0r/Development/projects/', '/mnt/hgfs/webserver/',],
+\   ['/home/slax0r/vms/php7/c3network.dev/', '/var/www/c3network.dev',]
 \]
 
 " YCM settings

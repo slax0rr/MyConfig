@@ -185,3 +185,17 @@ mode "$mode_launcher" {
 }
 
 bindsym $mod+o mode "$mode_launcher"
+
+# keyboard layout switcher
+set $kb_switch Keyboard Layout: [g]b [d]e [s]i
+
+mode "$kb_switch" {
+	# british
+	bindsym g exec "i3-msg mode default && setxkbmap gb"
+	# german
+	bindsym d exec "i3-msg mode default && setxkbmap de"
+	# slovenian
+	bindsym s exec "i3-msg mode default && setxkbmap si"
+}
+
+bindsym $mod+Mod1+k mode "$kb_switch"

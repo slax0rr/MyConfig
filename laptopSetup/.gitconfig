@@ -1,0 +1,9 @@
+[user]
+	name = Tomaz Lovrec
+	email = tomaz.lovrec@acl.at
+[include]
+    path = /home/slax0r/.gitaliases
+[core]
+	excludesfile = /home/slax0r/.gitignore_global
+[push]
+	default = simple

@@ -31,4 +31,4 @@ ln -s Documents/MyConfig/.gitignore_global .
 ln -s Documents/MyConfig/.gitaliases .
 ln -s Documents/MyConfig/.ctags .
 ln -s Documents/MyConfig/.Xresources .
-ln -s Document/MyConfig/i3/ .config/i3
+ln -s Document/MyConfig/i3/ .i3

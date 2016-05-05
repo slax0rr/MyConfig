@@ -1,0 +1,26 @@
+# Aliases file
+
+# Load local aliases
+if [[ -a ~/.aliases_local ]]; then
+    source ~/.aliases_local
+fi
+
+# convert md to pdf
+pandoc_md2pdf() {
+    /usr/bin/pandoc $1.md --latex-engine=xelatex -o $1.pdf
+}
+pandoc_md2pdf_open() {
+    pandoc_md2pdf $1
+    xdg-open $1.pdf
+}
+alias md2pdf='pandoc_md2pdf'
+alias md2pdfopen='pandoc_md2pdf_open'
+
+# ack alias
+alias ack="ack-grep"
+
+# Alias for IRC
+alias irssi="ssh ircserver 'tmux attach'"
+
+# Alias for drive-goole
+alias gdrive="drive-google"

@@ -4442,21 +4442,10 @@ if [ -d "$HOME/go/bin" ] ; then
     PATH="$HOME/go/bin:$PATH"
 fi
 
-## aliases {{{
-
-# Alias for IRC
-alias irssi="ssh ircserver 'tmux attach'"
-# Alias for drive-goole
-alias gdrive="drive-google"
-# ack alias
-alias ack="ack-grep"
-
-## }}}
-
 export PATH=~/.bin:$PATH
 export TERMINAL=xterm
 
-# machine related aliases
+# aliases
 if [[ -a ~/.aliases ]]; then
     source ~/.aliases
 fi

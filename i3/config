@@ -126,7 +126,7 @@ mode "$mode_exit" {
     bindsym $mod+r exec "i3-nagbar -t warning -m 'Reboot?' -b 'Yes, reboot' 'i3-msg exec systemctl reboot'"
     bindsym $mod+e exec "i3-nagbar -t warning -m 'Exit?' -b 'Yes, exit i3' 'i3-msg exit'"
     bindsym $mod+p exec "i3-nagbar -t warning -m 'Shutdown?' -b 'Yes, shutdown' 'i3-msg exec systemctl poweroff'"
-    bindsym $mod+l exec "i3-msg mode default && i3lock"
+    bindsym $mod+l exec "i3-msg mode default && i3lock -c 000000"
 
     # exit back to normal
     bindsym Return mode "default"

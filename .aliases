@@ -24,3 +24,6 @@ alias irssi="ssh ircserver 'tmux attach'"
 
 # Alias for drive-goole
 alias gdrive="drive-google"
+
+# Composer
+alias c="composer"

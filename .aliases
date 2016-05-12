@@ -27,3 +27,11 @@ alias gdrive="drive-google"
 
 # Composer
 alias c="composer"
+
+# Virtualbox
+alias vboxhdls="VBoxManage startvm --type headless"
+alias vboxpwroff="VBoxManage controlvm poweroff"
+alias vboxrst="VBoxManage controlvm reset"
+alias vboxctrl="VBoxManage controlvm"
+alias vboxlst="VBoxManage list vms"
+alias vboxlstrun="VBoxManage list runningvms"

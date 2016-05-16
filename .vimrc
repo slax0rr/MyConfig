@@ -374,6 +374,9 @@ let g:instant_markdown_autostart = 0
 
 " ctrlp config
 let g:ctrlp_extensions = ['tag']
+
+" emmet config
+let g:user_emmet_complete_tag = 1
 """"""""""""""""""
 " END            "
 " Plugin Settins "

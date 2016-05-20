@@ -4450,6 +4450,9 @@ if [[ -a ~/.aliases ]]; then
     source ~/.aliases
 fi
 
+# laod dircolors if exists
+eval "`dircolors -b ~/.dircolors`"
+
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=4
 # Local variables:

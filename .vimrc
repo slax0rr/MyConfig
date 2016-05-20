@@ -15,7 +15,7 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
 	"Plugin 'joonty/vim-phpqa'
 	Plugin 'bling/vim-airline'
 	Plugin 'vim-airline/vim-airline-themes'
-	Plugin 'sheerun/vim-polyglot'
+	"Plugin 'sheerun/vim-polyglot'
 	Plugin 'suan/vim-instant-markdown'
 	Plugin 'ctrlp.vim'
 	Plugin 'The-NERD-tree'

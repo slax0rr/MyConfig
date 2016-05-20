@@ -108,7 +108,7 @@ set background=dark
 colorscheme base16-atelierheath
 
 " color scheme settings
-highlight Search ctermbg=0 ctermfg=6 cterm=bold,underline
+highlight Search ctermbg=0 ctermfg=9 cterm=bold,underline
 highlight CursorLine cterm=underline
 
 " Spell highlight
@@ -356,11 +356,11 @@ let g:NERDTreeWinSize = 40
 let NERDTreeQuitOnOpen = 1
 
 " DBGPavim config
-let g:dbgPavimPort = 9009
+let g:dbgPavimPort = 9000
 let g:dbgPavimBreakAtEntry = 0
 let g:dbgPavimPathMap = [
-\   ['/home/slax0r/Development/projects/', '/mnt/hgfs/webserver/',],
-\   ['/home/slax0r/vms/php7/c3network.dev/', '/var/www/c3network.dev',]
+\   ['/home/slax0r/Development/projects/shops/oxidkoegig/', '/var/www/html/koedocker.acl.local/',],
+\   ['/home/slax0r/vms/php7/c3network.dev/', '/var/www/c3network.dev/',]
 \]
 
 " YCM settings

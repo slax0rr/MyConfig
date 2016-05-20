@@ -4451,7 +4451,9 @@ if [[ -a ~/.aliases ]]; then
 fi
 
 # laod dircolors if exists
-eval "`dircolors -b ~/.dircolors`"
+if [[ -a ~/.dircolors ]]; then
+    eval "`dircolors -b ~/.dircolors`"
+fi
 
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=4

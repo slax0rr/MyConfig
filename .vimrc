@@ -360,6 +360,7 @@ let g:dbgPavimPort = 9000
 let g:dbgPavimBreakAtEntry = 0
 let g:dbgPavimPathMap = [
 \   ['/home/slax0r/Development/projects/shops/oxidkoegig/', '/var/www/html/koedocker.acl.local/',],
+\   ['/home/slax0r/Development/projects/shops/forstinger/', '/var/www/html/fordocker.acl.local/',],
 \   ['/home/slax0r/vms/php7/c3network.dev/', '/var/www/c3network.dev/',]
 \]
 

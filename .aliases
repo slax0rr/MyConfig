@@ -28,6 +28,10 @@ alias gdrive="drive-google"
 # Composer
 alias c="composer"
 
+# Docker Compose
+alias dcup="docker-compose up -d"
+alias dcstop="docker-compose up -d"
+
 # Virtualbox
 alias vboxhdls="VBoxManage startvm --type headless"
 alias vboxpwroff="VBoxManage controlvm poweroff"

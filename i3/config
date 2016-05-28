@@ -134,7 +134,7 @@ mode "$mode_exit" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+Shift+e mode "$mode_exit" 
+bindsym $mod+Shift+e mode "$mode_exit"
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
@@ -210,12 +210,12 @@ bindsym $mod+o mode "$mode_launcher"
 set $kb_switch Keyboard Layout: [g]b [d]e [s]i
 
 mode "$kb_switch" {
-	# british
-	bindsym g exec "i3-msg mode default && setxkbmap gb"
-	# german
-	bindsym d exec "i3-msg mode default && setxkbmap de"
-	# slovenian
-	bindsym s exec "i3-msg mode default && setxkbmap si"
+    # british
+    bindsym g exec "i3-msg mode default && setxkbmap gb"
+    # german
+    bindsym d exec "i3-msg mode default && setxkbmap de"
+    # slovenian
+    bindsym s exec "i3-msg mode default && setxkbmap si"
 }
 
 bindsym $mod+Mod1+k mode "$kb_switch"

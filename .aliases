@@ -30,7 +30,7 @@ alias c="composer"
 
 # Docker Compose
 alias dcup="docker-compose up -d"
-alias dcstop="docker-compose up -d"
+alias dcstop="docker-compose stop"
 
 # Virtualbox
 alias vboxhdls="VBoxManage startvm --type headless"

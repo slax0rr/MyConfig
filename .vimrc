@@ -117,12 +117,6 @@ highlight SpellCap ctermbg=0 ctermfg=2 cterm=bold,underline
 highlight SpellRare ctermbg=0 ctermfg=0 cterm=bold,underline
 highlight SpellLocal ctermbg=0 ctermfg=5 cterm=bold,underline
 
-" highligh docblock inline tags
-highlight docblockTags ctermfg=180 cterm=bold
-
-" define match for php docblock inline tags
-match docblockTags "^\s\+\*\s\zs@.\{-}\ze\s"
-
 " Highligh 80 and 120 columns
 let &colorcolumn="80,".join(range(120,999),",")
 

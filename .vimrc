@@ -10,23 +10,23 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     set rtp+=~/.vim/bundle/Vundle.vim
     call vundle#begin()
 
-	Plugin 'airblade/vim-gitgutter'
-	"Plugin 'shawncplus/phpcomplete.vim'
-	"Plugin 'joonty/vim-phpqa'
-	Plugin 'bling/vim-airline'
-	Plugin 'vim-airline/vim-airline-themes'
-	"Plugin 'sheerun/vim-polyglot'
-	Plugin 'suan/vim-instant-markdown'
-	Plugin 'ctrlp.vim'
-	Plugin 'The-NERD-tree'
-	Plugin 'Valloric/YouCompleteMe'
-	Plugin 'fatih/vim-go'
-	Plugin 'WebAPI.vim'
-	Plugin 'metarw'
-	Plugin 'Tagbar'
-	Plugin 'fugitive.vim'
+    Plugin 'airblade/vim-gitgutter'
+    "Plugin 'shawncplus/phpcomplete.vim'
+    "Plugin 'joonty/vim-phpqa'
+    Plugin 'bling/vim-airline'
+    Plugin 'vim-airline/vim-airline-themes'
+    "Plugin 'sheerun/vim-polyglot'
+    Plugin 'suan/vim-instant-markdown'
+    Plugin 'ctrlp.vim'
+    Plugin 'The-NERD-tree'
+    Plugin 'Valloric/YouCompleteMe'
+    Plugin 'fatih/vim-go'
+    Plugin 'WebAPI.vim'
+    Plugin 'metarw'
+    Plugin 'Tagbar'
+    Plugin 'fugitive.vim'
     Plugin 'mattn/emmet-vim'
-	Plugin 'DBGPavim'
+    Plugin 'DBGPavim'
 
     call vundle#end()
 endif
@@ -301,13 +301,13 @@ endfunction
 
 " Change to relative numbering and back
 function! NumberToggle()
-	if (&relativenumber == 1)
-		set number
-		set norelativenumber
-	else
-		set nonumber
-		set relativenumber
-	endif
+    if (&relativenumber == 1)
+        set number
+        set norelativenumber
+    else
+        set nonumber
+        set relativenumber
+    endif
 endfunction
 nnoremap <leader>n :call NumberToggle()<CR>
 
@@ -346,7 +346,7 @@ let python_highlight_all = 1
 let g:polyglot_disables = ['php']
 
 " NERDTree config
-let g:NERDTreeWinSize = 40 
+let g:NERDTreeWinSize = 40
 let NERDTreeQuitOnOpen = 1
 
 " DBGPavim config
@@ -355,6 +355,8 @@ let g:dbgPavimBreakAtEntry = 0
 let g:dbgPavimPathMap = [
 \   ['/home/slax0r/Development/projects/shops/oxidkoegig/', '/var/www/html/koedocker.acl.local/',],
 \   ['/home/slax0r/Development/projects/shops/forstinger/', '/var/www/html/fordocker.acl.local/',],
+\   ['/home/slax0r/Development/projects/shops/intersport/', '/var/www/html/ispdocker.acl.local/',],
+\   ['/home/slax0r/Development/projects/shops/deutschebahn/', '/var/www/html/ubkdocker.acl.local/',],
 \   ['/home/slax0r/vms/php7/c3network.dev/', '/var/www/c3network.dev/',]
 \]
 
@@ -385,5 +387,5 @@ endif
 
 " Load private computer specific config file, if it exists
 if !empty(glob("~/.vimrc_local"))
-	source ~/.vimrc_local
+    source ~/.vimrc_local
 endif

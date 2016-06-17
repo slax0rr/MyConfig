@@ -1,31 +1,31 @@
 !! Set the font to PragmataPro.
-*font							: PragmataPro:size=11
-dmenu.font						: xft:PragmataPro:size=11:antialias=true:autohint=false
+*font                           : PragmataProMono:size=10
+dmenu.font                      : xft:PragmataProMono:size=10:antialias=true:autohint=false
 
-XTerm*.allowBoldFonts 			: true
-XTerm*.bellIsUrgent   			: true
-XTerm*.cutNewline     			: true
-XTerm*.faceName       			: PragmataPro
-XTerm*.faceSize       			: 11
-XTerm*.fullscreen     			: never
-XTerm*.internalBorder 			: 0
-XTerm*.renderFont     			: true
-XTerm*.termName       			: xterm-256color
-XTerm*.utf8           			: always
-XTerm*.utf8Fonts      			: always
-XTerm*.visualBell     			: false
-XTerm*.visualBellLine 			: false
-XTerm*pointerColor				: white
-XTerm*pointerColorBackground	: black
-XTerm*selectToClipboard			: true
-XTerm*on3Clicks					: regex [^ \n]+
-XTerm*SaveLines					: 10000
-XTerm*ScrollBar					: false
-XTerm*ScrollKey					: true
-XTerm*cursorBlink				: false
-XTerm*scaleHeight				: 1.05
-XTerm*eightBitInput				: false
-*VT100*translations				: #override Shift <Btn1Up>: exec-formatted("xdg-open '%t'", CLIPBOARD)
+XTerm*.allowBoldFonts           : true
+XTerm*.bellIsUrgent             : true
+XTerm*.cutNewline               : true
+XTerm*.faceName                 : PragmataProMono
+XTerm*.faceSize                 : 10
+XTerm*.fullscreen               : never
+XTerm*.internalBorder           : 0
+XTerm*.renderFont               : true
+XTerm*.termName                 : xterm-256color
+XTerm*.utf8                     : always
+XTerm*.utf8Fonts                : always
+XTerm*.visualBell               : false
+XTerm*.visualBellLine           : false
+XTerm*pointerColor              : white
+XTerm*pointerColorBackground    : black
+XTerm*selectToClipboard         : true
+XTerm*on3Clicks                 : regex [^ \n]+
+XTerm*SaveLines                 : 10000
+XTerm*ScrollBar                 : false
+XTerm*ScrollKey                 : true
+XTerm*cursorBlink               : false
+XTerm*scaleHeight               : 1.05
+XTerm*eightBitInput             : false
+*VT100*translations             : #override Shift <Btn1Up>: exec-formatted("xdg-open '%t'", CLIPBOARD)
 
 !colors
 #define base00 #1b181b

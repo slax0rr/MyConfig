@@ -1,12 +1,12 @@
-!! Set the font to Hack.
-*font							: Hack:size=9
-dmenu.font						: xft:Hack:size=9:antialias=true:autohint=false
+!! Set the font to PragmataPro.
+*font							: PragmataPro:size=11
+dmenu.font						: xft:PragmataPro:size=11:antialias=true:autohint=false
 
 XTerm*.allowBoldFonts 			: true
 XTerm*.bellIsUrgent   			: true
 XTerm*.cutNewline     			: true
-XTerm*.faceName       			: Hack
-XTerm*.faceSize       			: 9
+XTerm*.faceName       			: PragmataPro
+XTerm*.faceSize       			: 11
 XTerm*.fullscreen     			: never
 XTerm*.internalBorder 			: 0
 XTerm*.renderFont     			: true
@@ -19,13 +19,13 @@ XTerm*pointerColor				: white
 XTerm*pointerColorBackground	: black
 XTerm*selectToClipboard			: true
 XTerm*on3Clicks					: regex [^ \n]+
-*VT100*translations				: #override Shift <Btn1Up>: exec-formatted("xdg-open '%t'", CLIPBOARD)
 XTerm*SaveLines					: 10000
 XTerm*ScrollBar					: false
 XTerm*ScrollKey					: true
 XTerm*cursorBlink				: false
 XTerm*scaleHeight				: 1.05
 XTerm*eightBitInput				: false
+*VT100*translations				: #override Shift <Btn1Up>: exec-formatted("xdg-open '%t'", CLIPBOARD)
 
 !colors
 #define base00 #1b181b

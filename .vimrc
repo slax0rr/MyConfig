@@ -205,6 +205,7 @@ map ,F :set foldmethod=manual<cr>zR<cr>
 " Map \j and \sj keys to search for tags
 map <leader>j g<C-]>
 map <leader>sj <C-W>g<C-]>
+map <silent><leader>tp <C-W>g}
 
 " Horizontal split to vertical split
 map <leader>h <C-w>H

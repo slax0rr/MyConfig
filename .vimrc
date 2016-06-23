@@ -84,6 +84,12 @@ command!          CMD let @+ = ':' . @:
 
 " hide files, instead of closing
 set hidden
+
+" set folding
+set foldmethod=indent
+set foldlevel=99
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview 
 """""""""""""""""""""""""""
 " END                     "
 " Editor related settings "
@@ -199,8 +205,7 @@ nmap <leader>pd :Pdoc <cword><CR>
 nmap <leader>tb :TagbarToggle<CR>
 
 " Folding and unfolding
-map ,f :set foldmethod=indent<cr>zM<cr>
-map ,F :set foldmethod=manual<cr>zR<cr>
+map <space> za
 
 " Map \j and \sj keys to search for tags
 map <leader>j g<C-]>

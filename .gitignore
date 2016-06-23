@@ -3,3 +3,4 @@ vimfiles/bundle/*
 *.swp
 .config/pulse/
 .config/chromium/
+vimfiles/view/*

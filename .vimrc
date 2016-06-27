@@ -204,9 +204,6 @@ nmap <leader>pd :Pdoc <cword><CR>
 " ctag bar
 nmap <leader>tb :TagbarToggle<CR>
 
-" Folding and unfolding
-map <space> za
-
 " Map \j and \sj keys to search for tags
 map <leader>j g<C-]>
 map <leader>sj <C-W>g<C-]>

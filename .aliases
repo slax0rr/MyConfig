@@ -44,3 +44,19 @@ alias vboxlstrun="VBoxManage list runningvms"
 codecept() {
 	docker run -it --rm --net host -v `pwd`:/wd -w /wd shouldbee/codecept $@
 }
+
+openWithSudo() {
+    file=$1
+    if ! [[ -w "$file" ]] ; then
+        echo "No permissions. Edit as root? (requires sudo): (y/N): "
+        read REPLY
+        if [[ $REPLY =~ ^[Yy]$ ]] ; then
+            sudo -e $file
+        else
+            echo "Aborting.."
+        fi
+    else
+        vim $file
+    fi
+}
+alias vim='openWithSudo'

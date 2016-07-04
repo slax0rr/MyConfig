@@ -283,6 +283,7 @@ function! FixFormatting()
     execute '%s/\(\S\{-}\)\([<>!]\{-}=\+\|[<>|]\+\)\(\S\{-}\)/\1 \2 \3/ge'
     execute '%s/[,a-zA-Z0-9 ^I]\@<!\([a-zA-Z0-9 ^I]\+\)\(&\+\)/\1 \2 /ge'
     execute '%s/< ?php/<?php/ge'
+    execute '%s/-\s>\(\S\)/->\1/g'
     " Add a space after control structure keyword, and after closing parenthesis
     execute '%s/\(if\|for\|foreach\|while\|switch\)\s\{-}\((.*)\)\s\{-}{/\1 \2 {/ge'
     " Turn else if into elseif
@@ -297,16 +298,18 @@ function! FixFormatting()
     " Add whitespace after each comma
     execute '%s/,\(\S\+\)/, \1/ge'
     " Properly format function definitions
-    execute '%s/function\s\+\(.\{-}\)\s\{-}(\(.\{-})\)\s*{/function \1(\2) {/ge'
+    execute '%s/function\s\+\(.\{-}\)\s\{-}(\(.\{-}\))\s*{/function \1(\2)\r{/ge'
     " Properly format class definitions
-    execute '%s/\(class\|interface\)\s\+\([a-zA-Z0-9]*\)\(.\{-}\)\s*{/\1 \2\3 {/ge'
-    " Retab the whole file
-    execute 'retab'
-    normal gg=G
+    execute '%s/\(class\|interface\)\s\+\([a-zA-Z0-9]*\)\(.\{-}\)\s*{/\1 \2\3\r{/ge'
     " Remove any trailing whitespace
     execute '%s/\s\+$//ge'
     " Remove excesive blank lines
-    execute '%s/\n\{3,}/\r\r/e'
+    execute 'g/^\n\{2,}/d'
+    " Remove blank lines before closing curly braces
+    execute 'g/^\n.*}/d'
+    " Retab the whole file
+    execute 'retab'
+    normal gg=G
 endfunction
 
 " Change to relative numbering and back

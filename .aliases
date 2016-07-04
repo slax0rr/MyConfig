@@ -46,17 +46,12 @@ codecept() {
 }
 
 openWithSudo() {
-    file=$1
-    if ! [[ -w "$file" ]] ; then
-        echo "No permissions. Edit as root? (requires sudo): (y/N): "
-        read REPLY
-        if [[ $REPLY =~ ^[Yy]$ ]] ; then
-            sudo -e $file
-        else
-            echo "Aborting.."
-        fi
-    else
-        vim $file
+    [[ ! -a $1 ]] && vim && return
+    if ! [[ -w "$1" ]] ; then
+        echo "No permissions. Edit as root? (requires sudo): (y/N): " 
+        read REPLY 
+        [[ $REPLY =~ ^[Yy]$ ]] && sudo -e $1 && return 
     fi
+    vim $1
 }
 alias vim='openWithSudo'

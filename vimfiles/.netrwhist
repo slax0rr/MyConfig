@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/slax0r/Development/projects/shops/forstinger'
+let g:netrw_dirhist_2='/home/slax0r/Development/projects/shops/forstinger/core'
+let g:netrw_dirhist_3='/home/slax0r/Development/projects/shops/forstinger/core/smarty'
+let g:netrw_dirhist_4='/home/slax0r/Development/projects/shops/forstinger/core/smarty/plugins'

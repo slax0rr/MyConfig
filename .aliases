@@ -54,4 +54,4 @@ openWithSudo() {
     fi
     vim $1
 }
-alias vim='openWithSudo'
+#alias vim='openWithSudo'

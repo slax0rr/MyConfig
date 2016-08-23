@@ -10,6 +10,8 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     set rtp+=~/.vim/bundle/Vundle.vim
     call vundle#begin()
 
+    Plugin 'VundleVim/Vundle.vim'
+
     Plugin 'airblade/vim-gitgutter'
     "Plugin 'shawncplus/phpcomplete.vim'
     "Plugin 'joonty/vim-phpqa'
@@ -17,13 +19,13 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'vim-airline/vim-airline-themes'
     "Plugin 'sheerun/vim-polyglot'
     Plugin 'suan/vim-instant-markdown'
-    Plugin 'ctrlp.vim'
-    Plugin 'The-NERD-tree'
+    "Plugin 'ctrlp.vim'
+    "Plugin 'The-NERD-tree'
     Plugin 'Valloric/YouCompleteMe'
     Plugin 'fatih/vim-go'
     Plugin 'WebAPI.vim'
     Plugin 'metarw'
-    Plugin 'Tagbar'
+    "Plugin 'Tagbar'
     Plugin 'fugitive.vim'
     Plugin 'mattn/emmet-vim'
     Plugin 'DBGPavim'

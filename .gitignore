@@ -4,3 +4,4 @@ vimfiles/bundle/*
 .config/pulse/
 .config/chromium/
 vimfiles/view/*
+vimfiles/.netrwhist

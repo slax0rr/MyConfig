@@ -13,19 +13,13 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'VundleVim/Vundle.vim'
 
     Plugin 'airblade/vim-gitgutter'
-    "Plugin 'shawncplus/phpcomplete.vim'
-    "Plugin 'joonty/vim-phpqa'
     Plugin 'bling/vim-airline'
     Plugin 'vim-airline/vim-airline-themes'
-    "Plugin 'sheerun/vim-polyglot'
     Plugin 'suan/vim-instant-markdown'
-    "Plugin 'ctrlp.vim'
-    "Plugin 'The-NERD-tree'
     Plugin 'Valloric/YouCompleteMe'
     Plugin 'fatih/vim-go'
     Plugin 'WebAPI.vim'
     Plugin 'metarw'
-    "Plugin 'Tagbar'
     Plugin 'fugitive.vim'
     Plugin 'mattn/emmet-vim'
     Plugin 'DBGPavim'
@@ -189,10 +183,6 @@ inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\
 " Remappings "
 " BEGIN      "
 """"""""""""""
-" NERDTree config
-map <leader>nt :NERDTree<CR>
-map <leader>r :NERDTreeFind<CR>
-
 " spellcheck
 map <leader>se :setlocal spell spelllang=en_gb<CR>
 map <leader>sd :setlocal nospell<CR>
@@ -204,9 +194,6 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 command! -nargs=1 Pdoc !xdg-open http://php.net/<args> &
 nmap <leader>pd :Pdoc <cword><CR>
 
-" ctag bar
-nmap <leader>tb :TagbarToggle<CR>
-
 " Map \j and \sj keys to search for tags
 map <leader>j g<C-]>
 map <leader>sj <C-W>g<C-]>
@@ -216,17 +203,17 @@ map <silent><leader>tp <C-W>g}
 map <leader>h <C-w>H
 map <leader>k <C-w>K
 
+"split navigations
+nnoremap <C-j> <C-W><C-J>
+nnoremap <C-k> <C-W><C-K>
+nnoremap <C-l> <C-W><C-L>
+nnoremap <C-h> <C-W><C-H>
+
 " Run some formatting rules on a file
 map <leader>f :call FixFormatting()<cr>
 
 " Instant markdown preview mapping
 map <leader>md :InstantMarkdownPreview<CR>
-
-"split navigations
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
 """"""""""""""
 " END        "
 " Remappings "
@@ -238,47 +225,6 @@ nnoremap <C-H> <C-W><C-H>
 " Helper Functions "
 " BEGIN            "
 """"""""""""""""""""
-" Creates a session
-function! MakeSession()
-    let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '\', '/', 'g')
-    if (filewritable(b:sessiondir) != 2)
-        if has('win32')
-            exe 'silent !mkdir ' b:sessiondir
-        else
-            exe 'silent !mkdir -p ' b:sessiondir
-        endif
-        redraw!
-    endif
-    let b:sessionfile = b:sessiondir . '/session.vim'
-    exe "mksession! " . b:sessionfile
-endfunction
-
-" Updates a session, BUT ONLY IF IT ALREADY EXISTS
-function! UpdateSession()
-    let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '\', '/', 'g')
-    let b:sessionfile = b:sessiondir . "/session.vim"
-    if (filereadable(b:sessionfile))
-        exe "mksession! " . b:sessionfile
-        echo "updating session"
-    endif
-endfunction
-
-" Loads a session if it exists
-function! LoadSession()
-    if argc() == 0
-        let b:sessiondir = substitute($HOME . "/" . g:vimdir . "/sessions" . substitute(getcwd(), '\(\w\):', '/\1/', 'gi'), '\', '/', 'g')
-        let b:sessionfile = b:sessiondir . "/session.vim"
-        if (filereadable(b:sessionfile))
-            exe 'source ' b:sessionfile
-        else
-            echo "No session loaded."
-        endif
-    else
-        let b:sessionfile = ""
-        let b:sessiondir = ""
-    endif
-endfunction
-
 " Fix formatting
 function! FixFormatting()
     " wrap logical operators with spaces if there aren't any
@@ -360,10 +306,6 @@ let python_highlight_all = 1
 " Disable polyglot language packages
 let g:polyglot_disables = ['php']
 
-" NERDTree config
-let g:NERDTreeWinSize = 40
-let NERDTreeQuitOnOpen = 1
-
 " DBGPavim config
 let g:dbgPavimPort = 9000
 let g:dbgPavimBreakAtEntry = 0
@@ -383,9 +325,6 @@ let g:ycm_cache_omnifunc = 1
 
 " Instant markdown preview settings
 let g:instant_markdown_autostart = 0
-
-" ctrlp config
-let g:ctrlp_extensions = ['tag']
 
 " emmet config
 let g:user_emmet_complete_tag = 1

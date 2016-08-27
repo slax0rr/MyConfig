@@ -4434,13 +4434,13 @@ zrclocal
 export TERM=xterm-256color
 
 # GoLang system vars
-if [ -d "$HOME/go" ] ; then
-    export GOPATH="$HOME/go"
-fi
+#if [ -d "$HOME/go" ] ; then
+    #export GOPATH="$HOME/go"
+#fi
 
-if [ -d "$HOME/go/bin" ] ; then
-    PATH="$HOME/go/bin:$PATH"
-fi
+#if [ -d "$HOME/go/bin" ] ; then
+    #PATH="$HOME/go/bin:$PATH"
+#fi
 
 export PATH=~/.bin:$PATH
 export TERMINAL=xterm

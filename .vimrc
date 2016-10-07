@@ -68,6 +68,10 @@ set shellslash
 " Disable mouse
 set mouse=
 
+" Set listchars
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
+set list
+
 " Reopen file on same line as it was closed
 if has("autocmd")
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
@@ -108,19 +112,19 @@ set hlsearch
 set background=dark
 
 " Set Colorscheme
-colorscheme base16-atelierheath
+colorscheme true-monochrome
 
 " color scheme settings
-highlight Search ctermbg=0 ctermfg=9 cterm=bold,underline
+highlight Search ctermbg=0 ctermfg=13 cterm=bold,underline
 highlight CursorLine cterm=underline
 
 " Spell highlight
-highlight SpellBad ctermbg=0 ctermfg=1 cterm=bold,underline
-highlight SpellCap ctermbg=0 ctermfg=2 cterm=bold,underline
+highlight SpellBad ctermbg=0 ctermfg=13 cterm=bold,underline
+highlight SpellCap ctermbg=0 ctermfg=12 cterm=bold,underline
 highlight SpellRare ctermbg=0 ctermfg=0 cterm=bold,underline
-highlight SpellLocal ctermbg=0 ctermfg=5 cterm=bold,underline
+highlight SpellLocal ctermbg=0 ctermfg=11 cterm=bold,underline
 
-" Highligh 80 and 120 columns
+" Highlight 80 and 120 columns
 let &colorcolumn="80,".join(range(120,999),",")
 
 " Add cursorline and cursorcolumn
@@ -298,7 +302,7 @@ let g:airline_powerline_fonts = 1
 " Show pretty tabline
 let g:airline#extensions#tabline#enabled = 1
 " Change theme for cli version
-let g:airline_theme='base16'
+let g:airline_theme='monochrome'
 
 " Turn on all python highlights of the python syntax plugin
 let python_highlight_all = 1

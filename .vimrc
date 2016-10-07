@@ -112,7 +112,7 @@ set hlsearch
 set background=dark
 
 " Set Colorscheme
-colorscheme true-monochrome
+colorscheme base16-atelierheath
 
 " color scheme settings
 highlight Search ctermbg=0 ctermfg=13 cterm=bold,underline
@@ -302,7 +302,7 @@ let g:airline_powerline_fonts = 1
 " Show pretty tabline
 let g:airline#extensions#tabline#enabled = 1
 " Change theme for cli version
-let g:airline_theme='monochrome'
+let g:airline_theme='base16'
 
 " Turn on all python highlights of the python syntax plugin
 let python_highlight_all = 1

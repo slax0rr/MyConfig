@@ -27,7 +27,25 @@ XTerm*scaleHeight              : 1.05
 XTerm*eightBitInput            : false
 *VT100*translations             : #override Shift <Btn1Up>: exec-formatted("xdg-open '%t'", CLIPBOARD)
 
-!colors
+! colors - monochrome
+!#define base00 #000000
+!#define base01 #111111
+!#define base02 #222222
+!#define base03 #333333
+!#define base04 #444444
+!#define base05 #555555
+!#define base06 #666666
+!#define base07 #777777
+!#define base08 #888888
+!#define base09 #999999
+!#define base0A #AAAAAA
+!#define base0B #BBBBBB
+!#define base0C #CCCCCC
+!#define base0D #DDDDDD
+!#define base0E #EEEEEE
+!#define base0F #FFFFFF
+
+!colors - base 16
 #define base00 #1b181b
 #define base01 #292329
 #define base02 #695d69
@@ -45,24 +63,7 @@ XTerm*eightBitInput            : false
 #define base0E #7b59c0
 #define base0F #cc33cc
 
-!old colors - until I decide which to use
-!#define base00 #272822
-!#define base01 #383830
-!#define base02 #49483e
-!#define base03 #75715e
-!#define base04 #a59f85
-!#define base05 #f8f8f2
-!#define base06 #f5f4f1
-!#define base07 #f9f8f5
-!#define base08 #f92672
-!#define base09 #fd971f
-!#define base0A #f4bf75
-!#define base0B #a6e22e
-!#define base0C #a1efe4
-!#define base0D #66d9ef
-!#define base0E #ae81ff
-!#define base0F #cc6633
-
+! colors - base 16
 XTerm*.foreground:   base07
 XTerm*.background:   base00
 XTerm*.cursorColor:  base07
@@ -91,3 +92,33 @@ XTerm*.color18:      base01
 XTerm*.color19:      base02
 XTerm*.color20:      base04
 XTerm*.color21:      base06
+
+! colors - monochrome
+!XTerm*.foreground:   base0E
+!XTerm*.background:   base00
+!XTerm*.cursorColor:  base0E
+!
+!XTerm*.color0:       base00
+!XTerm*.color1:       base08
+!XTerm*.color2:       base0B
+!XTerm*.color3:       base0A
+!XTerm*.color4:       base0D
+!XTerm*.color5:       base0E
+!XTerm*.color6:       base0C
+!XTerm*.color7:       base05
+!
+!XTerm*.color8:       base05
+!XTerm*.color9:       base09
+!XTerm*.color10:      base07
+!XTerm*.color11:      base04
+!XTerm*.color12:      base06
+!XTerm*.color13:      base06
+!XTerm*.color14:      base0F
+!XTerm*.color15:      base07
+!
+!XTerm*.color16:      base09
+!XTerm*.color17:      base0F
+!XTerm*.color18:      base03
+!XTerm*.color19:      base06
+!XTerm*.color20:      base04
+!XTerm*.color21:      base06

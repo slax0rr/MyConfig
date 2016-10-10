@@ -218,6 +218,9 @@ map <leader>f :call FixFormatting()<cr>
 
 " Instant markdown preview mapping
 map <leader>md :InstantMarkdownPreview<CR>
+
+" open a file in the same dir as the current one (borrowed from mgedmin)
+map <expr>      <leader>E              ":e ".expand("%:h")."/"
 """"""""""""""
 " END        "
 " Remappings "

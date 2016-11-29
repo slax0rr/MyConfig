@@ -25,13 +25,6 @@ alias irssi="ssh ircserver 'tmux attach'"
 # Alias for drive-goole
 alias gdrive="drive-google"
 
-# Composer
-alias c="composer"
-
-# Docker Compose
-alias dcup="docker-compose up -d"
-alias dcstop="docker-compose stop"
-
 # Virtualbox
 alias vboxhdls="VBoxManage startvm --type headless"
 alias vboxpwroff="VBoxManage controlvm poweroff"

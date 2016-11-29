@@ -4430,31 +4430,6 @@ zrclocal
 
 ## }}}
 
-# Set 256 colors for TERM
-export TERM=xterm-256color
-
-# GoLang system vars
-#if [ -d "$HOME/go" ] ; then
-    #export GOPATH="$HOME/go"
-#fi
-
-#if [ -d "$HOME/go/bin" ] ; then
-    #PATH="$HOME/go/bin:$PATH"
-#fi
-
-export PATH=~/.bin:$PATH
-export TERMINAL=xterm
-
-# aliases
-if [[ -a ~/.aliases ]]; then
-    source ~/.aliases
-fi
-
-# laod dircolors if exists
-if [[ -a ~/.dircolors ]]; then
-    eval "`dircolors -b ~/.dircolors`"
-fi
-
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=4
 # Local variables:

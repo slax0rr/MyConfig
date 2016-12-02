@@ -90,6 +90,11 @@ if [[ -a ~/.aliases ]]; then
     source ~/.aliases
 fi
 
+# local zshrc file
+if [[ -a ~/.zshrc_local ]]; then
+    source ~/.zshrc_local
+fi
+
 # load dircolors if exists
 if [[ -a ~/.dircolors ]]; then
     eval "`dircolors -b ~/.dircolors`"

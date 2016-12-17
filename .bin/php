@@ -7,4 +7,4 @@ ARGS="-a"
 if [ $# -gt 0 ]; then
     ARGS="$@"
 fi
-docker run -it --rm -v $(pwd):/docs -w /docs php:$VER php $ARGS
+docker run -it --rm -v $(pwd):/code -w /code php:$VER php $ARGS

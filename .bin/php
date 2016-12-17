@@ -2,8 +2,9 @@
 #
 # Run all PHP commands through a docker container
 #
+VER="7.0-cli"
 ARGS="-a"
 if [ $# -gt 0 ]; then
     ARGS="$@"
 fi
-docker run -it --rm -v $(pwd):/docs -w /docs php:7.0-cli php $ARGS
+docker run -it --rm -v $(pwd):/docs -w /docs php:$VER php $ARGS

@@ -2,7 +2,7 @@
 #
 # Run all PHP commands through a docker container
 #
-VER="7.0-cli"
+VER=${PHPVERSION:-7.0-cli}
 ARGS="-a"
 if [ $# -gt 0 ]; then
     ARGS="$@"

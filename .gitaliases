@@ -5,6 +5,7 @@
     pl = pull
     co = checkout
     br = branch
+    bra = branch -a
     di = diff
     fe = fetch
     sta = add -A .

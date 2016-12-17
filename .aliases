@@ -33,18 +33,8 @@ alias vboxctrl="VBoxManage controlvm"
 alias vboxlst="VBoxManage list vms"
 alias vboxlstrun="VBoxManage list runningvms"
 
-# Run codeception through docker
-codecept() {
-	docker run -it --rm --net host -v `pwd`:/wd -w /wd shouldbee/codecept $@
-}
+# composer alias with docker container
+alias composer="docker run --rm -v $(pwd):/app composer/composer"
 
-#openWithSudo() {
-    #[[ ! -a $1 ]] && vim && return
-    #if ! [[ -w "$1" ]] ; then
-        #echo "No permissions. Edit as root? (requires sudo): (y/N): "
-        #read REPLY
-        #[[ $REPLY =~ ^[Yy]$ ]] && sudo -e $1 && return
-    #fi
-    #vim $1
-#}
-#alias vim='openWithSudo'
+# codeception alias with docker container
+alias codecept="docker run -it --rm -v $(pwd):/code -w /code php:7.0-cli /code/vendor/bin/codecept"

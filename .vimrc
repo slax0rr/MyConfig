@@ -90,7 +90,7 @@ set hidden
 set foldmethod=indent
 set foldlevel=99
 autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview 
+autocmd BufWinEnter *.* silent loadview
 """""""""""""""""""""""""""
 " END                     "
 " Editor related settings "

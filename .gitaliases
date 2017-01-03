@@ -24,3 +24,5 @@
             timelength=$(echo \"16+${#time}-${#timelength}\" | bc);                                 \
             printf \"%${timelength}s    %s %s %s\n\" \"$time\" \"$hash\" \"$branch\" \"$message\";  \
         done < <(git logx && echo);"'
+    ga = log --source --all -G
+    gad = log --source --all -p -G

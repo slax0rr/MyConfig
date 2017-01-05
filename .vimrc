@@ -290,11 +290,11 @@ command PhpMD :cexpr system("phpmd " . expand("%:p") . " text ~/.ruleset.xml") |
 " END              "
 """"""""""""""""""""
 
-""""""""""""""""""
-" BEGIN          "
-" Plugin Settins "
-" BEGIN          "
-""""""""""""""""""
+"""""""""""""""""""
+" BEGIN           "
+" Plugin Settings "
+" BEGIN           "
+"""""""""""""""""""
 " FuGITive status line
 set laststatus=2
 set statusline=%<\ %f\ %{fugitive#statusline()}
@@ -343,11 +343,11 @@ let g:go_highlight_fields = 1
 let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
-""""""""""""""""""
-" END            "
-" Plugin Settins "
-" END            "
-""""""""""""""""""
+"""""""""""""""""""
+" END             "
+" Plugin Settings "
+" END             "
+"""""""""""""""""""
 
 " Load environment specific files, if it exists
 if !empty(glob("~/.vimrc_env"))

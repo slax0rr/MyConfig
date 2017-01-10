@@ -33,5 +33,18 @@ alias vboxctrl="VBoxManage controlvm"
 alias vboxlst="VBoxManage list vms"
 alias vboxlstrun="VBoxManage list runningvms"
 
+# composer alias
+composer () {
+    tty=
+    tty -s && tty=--tty
+    docker run \
+        $tty \
+        --interactive \
+        --rm \
+        --user $(id -u):$(id -g) \
+        --volume $(pwd):/app \
+        composer "$@"
+}
+
 # codeception alias with docker container
 alias codecept='docker run -it --rm -v $(pwd):/code -w /code php:7.0-cli /code/vendor/bin/codecept'

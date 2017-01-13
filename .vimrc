@@ -16,7 +16,6 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'bling/vim-airline'
     Plugin 'vim-airline/vim-airline-themes'
     Plugin 'suan/vim-instant-markdown'
-    Plugin 'Valloric/YouCompleteMe'
     Plugin 'fatih/vim-go'
     Plugin 'WebAPI.vim'
     Plugin 'metarw'
@@ -141,9 +140,6 @@ set cursorcolumn
 " Autocompletion settings "
 " BEGIN                   "
 """""""""""""""""""""""""""
-" Set omnifunc
-set omnifunc=syntaxcomplete#Complete
-
 " Add closing brackets when an opening bracket is written
 " Squirly brackets
 inoremap {  {}<Left>
@@ -176,6 +172,21 @@ inoremap <expr> " strpart(getline('.'), col('.')-1, 1) == "\"" ? "\<Right>" : "\
 inoremap '  ''<Left>
 inoremap '' '
 inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\'\'\<Left>"
+
+" Autocompletion mappings
+function! InsertTabWrapper()
+  if pumvisible()
+    return "\<c-n>"
+  endif
+  let col = col('.') - 1
+  if !col || getline('.')[col - 1] !~ '\k'
+    return "\<tab>"
+  else
+    return "\<c-x>\<c-o>"
+  endif
+endfunction
+inoremap <expr><tab> InsertTabWrapper()
+inoremap <expr><s-tab> pumvisible()?"\<c-p>":"\<c-d>"
 """""""""""""""""""""""""""
 " END                     "
 " Autocompletion settings "
@@ -317,18 +328,12 @@ let g:polyglot_disables = ['php']
 let g:dbgPavimPort = 9000
 let g:dbgPavimBreakAtEntry = 0
 let g:dbgPavimPathMap = [
-\   ['/home/slax0r/Development/projects/shops/oxidkoegig/', '/var/www/html/koedocker.acl.local/',],
-\   ['/home/slax0r/Development/projects/shops/forstinger/', '/var/www/html/fordocker.acl.local/',],
-\   ['/home/slax0r/Development/projects/shops/intersport/', '/var/www/html/ispdocker.acl.local/',],
-\   ['/home/slax0r/Development/projects/shops/deutschebahn/', '/var/www/html/ubkdocker.acl.local/',],
+\   ['/home/slax0r/dev/projects/shops/kastner/', '/var/www/html/koedocker.acl.local/',],
+\   ['/home/slax0r/dev/projects/shops/forstinger/', '/var/www/html/fordocker.acl.local/',],
+\   ['/home/slax0r/dev/projects/shops/intersport/', '/var/www/html/ispdocker.acl.local/',],
+\   ['/home/slax0r/dev/projects/shops/deutschebahn/', '/var/www/html/ubkdocker.acl.local/',],
 \   ['/home/slax0r/vms/php7/c3network.dev/', '/var/www/c3network.dev/',]
 \]
-
-" YCM settings
-let g:ycm_auto_trigger = 1
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_cache_omnifunc = 1
 
 " Instant markdown preview settings
 let g:instant_markdown_autostart = 0

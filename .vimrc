@@ -22,7 +22,8 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'fugitive.vim'
     Plugin 'mattn/emmet-vim'
     Plugin 'DBGPavim'
-    Plugin 'terryma/vim-multiple-cursors'
+    Plugin 'pangloss/vim-javascript'
+    Plugin 'mxw/vim-jsx'
 
     call vundle#end()
 endif

@@ -1,10 +1,5 @@
 # Aliases file
 
-# Load local aliases
-if [[ -a ~/.aliases_local ]]; then
-    source ~/.aliases_local
-fi
-
 # convert md to pdf
 pandoc_md2pdf() {
     /usr/bin/pandoc $1.md --latex-engine=xelatex -o $1.pdf
@@ -42,9 +37,15 @@ composer () {
         --interactive \
         --rm \
         --user $(id -u):$(id -g) \
+        --volume ~/.composer/:/composer \
         --volume $(pwd):/app \
-        composer "$@"
+        composer --ignore-platform-reqs "$@"
 }
 
 # codeception alias with docker container
 alias codecept='docker run -it --rm -v $(pwd):/code -w /code php:7.0-cli /code/vendor/bin/codecept'
+
+# Load local aliases
+if [[ -a ~/.aliases_local ]]; then
+    source ~/.aliases_local
+fi

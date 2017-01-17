@@ -24,6 +24,7 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'DBGPavim'
     Plugin 'pangloss/vim-javascript'
     Plugin 'mxw/vim-jsx'
+    Plugin 'editorconfig/editorconfig-vim'
 
     call vundle#end()
 endif
@@ -349,6 +350,9 @@ let g:go_highlight_fields = 1
 let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+
+" setup the editorconfig plugin
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 """""""""""""""""""
 " END             "
 " Plugin Settings "

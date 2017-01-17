@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras colorize colored-man-pages composer compleat debian docker-compose docker golang pip tmux vagrant jira web-search)
+plugins=(git git-extras colorize colored-man-pages composer compleat debian docker-compose docker golang pip tmux vagrant jira web-search isup)
 
 source $ZSH/oh-my-zsh.sh
 

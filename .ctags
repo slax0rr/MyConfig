@@ -5,6 +5,7 @@
 --PHP-kinds=+cfd-v
 --regex-PHP=/^\s*abstract\s+class\s+([^ ]+)/\1/c/
 --regex-PHP=/^\s*interface\s+([^ ]+)/\1/c/
+--regex-PHP=/^\s*trait\s+([^ ]+)/\1/c/
 --regex-PHP=/^\s*(public\s+|static\s+|abstract\s+|final\s+|protected\s+|private\s+)function\s+\&?\s*([^ (]+)/\2/f/
 --regex-PHP=/^\s*function\s+\&?\s*([^ (]+)/\1/f/
 --regex-PHP=/^\s*const\s+([^ =]+)/\1/d/

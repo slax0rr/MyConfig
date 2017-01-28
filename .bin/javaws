@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Execute Java WS through the docker image
+#
+VER=${JAVAVERSION:-8-jre}
+docker run \
+    -it \
+    --rm \
+    -v $(pwd):/app \
+    -w /app \
+    openjdk:$VER javaws $@

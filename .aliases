@@ -15,7 +15,8 @@ alias md2pdfopen='pandoc_md2pdf_open'
 alias ack="ack-grep"
 
 # Alias for IRC
-alias irssi="ssh ircserver -t 'tmux attach'"
+alias irc="ssh ircserver -t 'tmux attach'"
+alias slack="irssi"
 
 # Alias for drive-goole
 alias gdrive="drive-google"
@@ -39,7 +40,7 @@ composer () {
         --user $(id -u):$(id -g) \
         --volume ~/.composer/:/composer \
         --volume $(pwd):/app \
-        composer --ignore-platform-reqs "$@"
+        composer "$@"
 }
 
 # codeception alias with docker container

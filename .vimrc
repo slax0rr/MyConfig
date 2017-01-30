@@ -21,10 +21,11 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'metarw'
     Plugin 'fugitive.vim'
     Plugin 'mattn/emmet-vim'
-    Plugin 'DBGPavim'
+    "Plugin 'DBGPavim'
     Plugin 'pangloss/vim-javascript'
     Plugin 'mxw/vim-jsx'
     Plugin 'editorconfig/editorconfig-vim'
+    Plugin 'joonty/vdebug'
 
     call vundle#end()
 endif
@@ -90,8 +91,6 @@ set hidden
 " set folding
 set foldmethod=indent
 set foldlevel=99
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
 """""""""""""""""""""""""""
 " END                     "
 " Editor related settings "
@@ -124,6 +123,9 @@ highlight SpellBad ctermbg=0 ctermfg=13 cterm=bold,underline
 highlight SpellCap ctermbg=0 ctermfg=12 cterm=bold,underline
 highlight SpellRare ctermbg=0 ctermfg=0 cterm=bold,underline
 highlight SpellLocal ctermbg=0 ctermfg=11 cterm=bold,underline
+
+" higlight SpecialKey
+highlight SpecialKey ctermfg=10
 
 " Highlight 80 and 120 columns
 let &colorcolumn="80,".join(range(120,999),",")
@@ -293,10 +295,10 @@ endfunction
 nnoremap <leader>n :call NumberToggle()<CR>
 
 " Code Sniffer Command
-command PhpCS :cexpr system("phpcs --colors --standard=PSR2SlaxWeb " . expand("%:p")) | copen
+command! PhpCS :cexpr system("phpcs --colors --standard=PSR2SlaxWeb " . expand("%:p")) | copen
 
 " Mess Detector Command
-command PhpMD :cexpr system("phpmd " . expand("%:p") . " text ~/.ruleset.xml") | copen
+command! PhpMD :cexpr system("phpmd " . expand("%:p") . " text ~/.ruleset.xml") | copen
 """"""""""""""""""""
 " END              "
 " Helper Functions "
@@ -327,15 +329,25 @@ let python_highlight_all = 1
 let g:polyglot_disables = ['php']
 
 " DBGPavim config
-let g:dbgPavimPort = 9000
-let g:dbgPavimBreakAtEntry = 0
-let g:dbgPavimPathMap = [
-\   ['/home/slax0r/dev/projects/shops/kastner/', '/var/www/html/koedocker.acl.local/',],
-\   ['/home/slax0r/dev/projects/shops/forstinger/', '/var/www/html/fordocker.acl.local/',],
-\   ['/home/slax0r/dev/projects/shops/intersport/', '/var/www/html/ispdocker.acl.local/',],
-\   ['/home/slax0r/dev/projects/shops/deutschebahn/', '/var/www/html/ubkdocker.acl.local/',],
-\   ['/home/slax0r/vms/php7/c3network.dev/', '/var/www/c3network.dev/',]
-\]
+"let g:dbgPavimPort = 9000
+"let g:dbgPavimBreakAtEntry = 0
+"let g:dbgPavimPathMap = [
+"\   ['/home/slax0r/dev/projects/shops/kastner/', '/var/www/html/koedocker.acl.local/',],
+"\   ['/home/slax0r/dev/projects/shops/forstinger/', '/var/www/html/fordocker.acl.local/',],
+"\   ['/home/slax0r/dev/projects/shops/intersport/', '/var/www/html/ispdocker.acl.local/',],
+"\   ['/home/slax0r/dev/projects/shops/deutschebahn/', '/var/www/html/ubkdocker.acl.local/',],
+"\   ['/home/slax0r/dev/projects/pim/elsta/data/www/', '/var/www/',]
+"\]
+
+" Vdebug settings
+let g:vdebug_options = {
+\   "port": 9000,
+\   "timeout": 60,
+\   "break_on_open": 0,
+\   "path_maps": {
+\       "/var/www": "/home/slax0r/dev/projects/pim/elsta/data/www"
+\   }
+\}
 
 " Instant markdown preview settings
 let g:instant_markdown_autostart = 0

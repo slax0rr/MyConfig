@@ -127,6 +127,9 @@ highlight SpellLocal ctermbg=0 ctermfg=11 cterm=bold,underline
 " higlight SpecialKey
 highlight SpecialKey ctermfg=10
 
+" statusline fg color
+highlight StatusLine ctermfg=0
+
 " Highlight 80 and 120 columns
 let &colorcolumn="80,".join(range(120,999),",")
 

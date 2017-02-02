@@ -13,8 +13,8 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'VundleVim/Vundle.vim'
 
     Plugin 'airblade/vim-gitgutter'
-    Plugin 'bling/vim-airline'
-    Plugin 'vim-airline/vim-airline-themes'
+    "Plugin 'bling/vim-airline'
+    "Plugin 'vim-airline/vim-airline-themes'
     Plugin 'suan/vim-instant-markdown'
     Plugin 'fatih/vim-go'
     Plugin 'WebAPI.vim'
@@ -312,15 +312,15 @@ command! PhpMD :cexpr system("phpmd " . expand("%:p") . " text ~/.ruleset.xml") 
 """""""""""""""""""
 " FuGITive status line
 set laststatus=2
-set statusline=%<\ %f\ %{fugitive#statusline()}
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " Airline settings
 " Enable powerline symbols
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 " Show pretty tabline
-let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#enabled = 1
 " Change theme for cli version
-let g:airline_theme='base16'
+"let g:airline_theme='base16'
 
 " Turn on all python highlights of the python syntax plugin
 let python_highlight_all = 1

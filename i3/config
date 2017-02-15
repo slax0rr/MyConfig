@@ -230,3 +230,6 @@ bindsym $mod+Mod1+k mode "$kb_switch"
 bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ unmute
 bindsym XF86AudioLowerVolume exec amixer set Master 5%- unmute
+
+# move xfce notification window to top left corner
+for_window [class="xfce4-notifyd"] floating enable move absolute position 0 0

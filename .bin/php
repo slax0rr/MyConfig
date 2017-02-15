@@ -10,5 +10,5 @@ fi
 docker run \
     -it \
     --rm \
-    -v $(pwd):/code \
+    -v "$(pwd)":/code \
     -w /code php:$VER php $ARGS

@@ -46,52 +46,52 @@ XTerm*eightBitInput            : false
 !#define base0F #FFFFFF
 
 !colors - base 16
-#define base00 #1b181b
-#define base01 #292329
-#define base02 #695d69
-#define base03 #776977
-#define base04 #9e8f9e
-#define base05 #ab9bab
-#define base06 #d8cad8
-#define base07 #f7f3f7
-#define base08 #ca402b
-#define base09 #a65926
-#define base0A #bb8a35
-#define base0B #918b3b
-#define base0C #159393
-#define base0D #516aec
-#define base0E #7b59c0
-#define base0F #cc33cc
+!#define base00 #1b181b
+!#define base01 #292329
+!#define base02 #695d69
+!#define base03 #776977
+!#define base04 #9e8f9e
+!#define base05 #ab9bab
+!#define base06 #d8cad8
+!#define base07 #f7f3f7
+!#define base08 #ca402b
+!#define base09 #a65926
+!#define base0A #bb8a35
+!#define base0B #918b3b
+!#define base0C #159393
+!#define base0D #516aec
+!#define base0E #7b59c0
+!#define base0F #cc33cc
 
 ! colors - base 16
-XTerm*.foreground:   base07
-XTerm*.background:   base00
-XTerm*.cursorColor:  base07
-
-XTerm*.color0:       base00
-XTerm*.color1:       base08
-XTerm*.color2:       base0B
-XTerm*.color3:       base0A
-XTerm*.color4:       base0D
-XTerm*.color5:       base0E
-XTerm*.color6:       base0C
-XTerm*.color7:       base05
-
-XTerm*.color8:       base03
-XTerm*.color9:       base09
-XTerm*.color10:      base01
-XTerm*.color11:      base02
-XTerm*.color12:      base04
-XTerm*.color13:      base06
-XTerm*.color14:      base0F
-XTerm*.color15:      base07
-
-XTerm*.color16:      base09
-XTerm*.color17:      base0F
-XTerm*.color18:      base01
-XTerm*.color19:      base02
-XTerm*.color20:      base04
-XTerm*.color21:      base06
+!XTerm*.foreground:   base07
+!XTerm*.background:   base00
+!XTerm*.cursorColor:  base07
+!
+!XTerm*.color0:       base00
+!XTerm*.color1:       base08
+!XTerm*.color2:       base0B
+!XTerm*.color3:       base0A
+!XTerm*.color4:       base0D
+!XTerm*.color5:       base0E
+!XTerm*.color6:       base0C
+!XTerm*.color7:       base05
+!
+!XTerm*.color8:       base03
+!XTerm*.color9:       base09
+!XTerm*.color10:      base01
+!XTerm*.color11:      base02
+!XTerm*.color12:      base04
+!XTerm*.color13:      base06
+!XTerm*.color14:      base0F
+!XTerm*.color15:      base07
+!
+!XTerm*.color16:      base09
+!XTerm*.color17:      base0F
+!XTerm*.color18:      base01
+!XTerm*.color19:      base02
+!XTerm*.color20:      base04
+!XTerm*.color21:      base06
 
 ! colors - monochrome
 !XTerm*.foreground:   base0E
@@ -122,3 +122,33 @@ XTerm*.color21:      base06
 !XTerm*.color19:      base06
 !XTerm*.color20:      base04
 !XTerm*.color21:      base06
+
+! colors - descapio
+! special
+*.foreground:   #dfdfdf
+*.background:   #121212
+*.cursorColor:  #dddddd
+! black
+*.color0:       #121212
+*.color8:       #808080
+! red
+*.color1:       #d75f00
+*.color9:       #d75f00
+! green
+*.color2:       #af875f
+*.color10:      #af875f
+! yellow
+*.color3:       #ffdfaf
+*.color11:      #ffdfaf
+! blue
+*.color4:       #5f8787
+*.color12:      #5f8787
+! magenta
+*.color5:       #fffedf
+*.color13:      #fffedf
+! cyan
+*.color6:       #ffaf87
+*.color14:      #ffaf87
+! white
+*.color7:       #e4e4e4
+*.color15:      #e4e4e4

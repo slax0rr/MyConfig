@@ -112,7 +112,9 @@ set hlsearch
 set background=dark
 
 " Set Colorscheme
-colorscheme base16-atelierheath
+let g:despacio_Midnight = 1
+colorscheme despacio
+"colorscheme base16-atelierheath
 
 " color scheme settings
 highlight Search ctermbg=0 ctermfg=13 cterm=bold,underline
@@ -125,13 +127,14 @@ highlight SpellRare ctermbg=0 ctermfg=0 cterm=bold,underline
 highlight SpellLocal ctermbg=0 ctermfg=11 cterm=bold,underline
 
 " higlight SpecialKey
-highlight SpecialKey ctermfg=10
+highlight SpecialKey ctermfg=232
 
 " statusline fg color
-highlight StatusLine ctermfg=0
+"highlight StatusLine ctermfg=0
 
 " Highlight 80 and 120 columns
 let &colorcolumn="80,".join(range(120,999),",")
+highlight! CursorLine ctermfg=NONE ctermbg=232 cterm=NONE
 
 " Add cursorline and cursorcolumn
 set cursorline

@@ -117,6 +117,7 @@ colorscheme base16-atelierheath
 " color scheme settings
 highlight Search ctermbg=0 ctermfg=13 cterm=bold,underline
 highlight CursorLine cterm=underline
+highlight CursorLineNr ctermbg=0
 
 " Spell highlight
 highlight SpellBad ctermbg=0 ctermfg=13 cterm=bold,underline

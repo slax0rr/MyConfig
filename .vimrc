@@ -74,6 +74,9 @@ set mouse=
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
 set list
 
+" Disable visual bell
+set t_vb=
+
 " Reopen file on same line as it was closed
 if has("autocmd")
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif

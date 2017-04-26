@@ -121,6 +121,7 @@ colorscheme base16-atelierheath
 highlight Search ctermbg=0 ctermfg=13 cterm=bold,underline
 highlight CursorLine cterm=underline
 highlight CursorLineNr ctermbg=0 ctermfg=NONE
+highlight WildMenu ctermbg=12 ctermfg=10
 
 " Spell highlight
 highlight SpellBad ctermbg=0 ctermfg=13 cterm=bold,underline
@@ -352,7 +353,8 @@ let g:vdebug_options = {
 \   "timeout": 60,
 \   "break_on_open": 0,
 \   "path_maps": {
-\       "/var/www": "/home/slax0r/dev/projects/pim/elsta/data/www"
+\       "/var/www": "/home/slax0r/dev/projects/post/shopware/data/www",
+\       "/var/www/html/koedocker.acl.local": "/home/slax0r/dev/projects/shops/kastner"
 \   }
 \}
 

@@ -7,8 +7,14 @@ ARGS="-a"
 if [ $# -gt 0 ]; then
     ARGS="$@"
 fi
+tty=
+tty -s && tty=--tty
 docker run \
-    -it \
+    $tty \
+    --interactive \
     --rm \
     -v "$(pwd)":/code \
+    -v /usr/local/bin/phpmd:/usr/local/bin/phpmd \
+    -v /usr/local/bin/phpcs:/usr/local/bin/phpcs \
+    -v /usr/local/bin/phpcbf:/usr/local/bin/phpcbf \
     -w /code php:$VER php $ARGS

@@ -27,3 +27,4 @@
         done < <(git logx && echo);"'
     ga = log --source --all -G
     gad = log --source --all -p -G
+    bdi = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative

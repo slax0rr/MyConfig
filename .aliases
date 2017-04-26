@@ -30,7 +30,7 @@ alias vboxlst="VBoxManage list vms"
 alias vboxlstrun="VBoxManage list runningvms"
 
 # composer alias
-composer () {
+composer() {
     tty=
     tty -s && tty=--tty
     docker run \
@@ -45,6 +45,22 @@ composer () {
 
 # codeception alias with docker container
 alias codecept='docker run -it --rm -v $(pwd):/code -w /code --user $(id -u):$(id -g) php:7.0-cli /code/vendor/bin/codecept'
+
+# flatpak aliases
+alias skype="flatpak run com.skype.Client"
+
+# ssh keys
+sadd() {
+    ssh-add ~/.ssh/$@
+}
+
+srm() {
+    ssh-add -d ~/.ssh/$@
+}
+
+scl() {
+    ssh-add -D
+}
 
 # Load local aliases
 if [[ -a ~/.aliases_local ]]; then

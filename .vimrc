@@ -211,9 +211,9 @@ command! -range=% IX  silent execute <line1> . "," . <line2> . "w !curl -F 'f:1=
 command!          CMD let @+ = ':' . @:
 
 " search in all files with same extension
-command! -nargs=* Sext execute 'grep ' . <f-args> . ' **/*.' . expand('%:e')
+command! -nargs=* Sext silent execute 'grep ' . expand('<f-args>') . ' **/*.' . expand('%:e')
 " search in all files
-command! -nargs=* Sall execute 'grep ' . <f-args> . ' **/*'
+command! -nargs=* Sall silent execute 'grep ' . expand('<f-args>') . ' **/*'
 
 """"""""""""
 " END      "

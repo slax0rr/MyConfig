@@ -244,6 +244,18 @@ map <leader>md :InstantMarkdownPreview<CR>
 
 " open a file in the same dir as the current one (borrowed from mgedmin)
 map <expr>      <leader>E              ":e ".expand("%:h")."/"
+
+" search for visually selected in all files with same ext
+vnoremap // y:exe 'grep "<C-R>"" **/*.' . expand('%:e')<CR>
+" search for visually selected in all files
+vnoremap /a y:grep "<C-R>"" **/*.*
+
+" The bellow rempas are usually handled by tags, but sometimes those just
+" don't work as desired in some of the sources I have to deal with
+" search for class with the selected text as name in all files with same ext
+vnoremap /c y:exe 'grep "class <C-R>"" **/*.' . expand('%:e')<CR>
+" search for function with the selected text as name in all files with same ext
+vnoremap /f y:exe 'grep "function <C-R>"" **/*.' . expand('%:e')<CR>
 """"""""""""""
 " END        "
 " Remappings "

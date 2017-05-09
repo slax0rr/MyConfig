@@ -82,12 +82,6 @@ if has("autocmd")
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-" sharing is caring
-command! -range=% VP  execute <line1> . "," . <line2> . "w !vpaste ft=" . &filetype
-command! -range=% SP  silent execute <line1> . "," . <line2> . "w !curl -F 'sprunge=<-' http://sprunge.us/ | tr -d '\\n' | awk '{print $1\"?" . &filetype . "\"}' | xclip -selection clipboard"
-command! -range=% IX  silent execute <line1> . "," . <line2> . "w !curl -F 'f:1=<-' ix.io | tr -d '\\n' | xclip -selection clipboard"
-command!          CMD let @+ = ':' . @:
-
 " hide files, instead of closing
 set hidden
 
@@ -204,6 +198,28 @@ inoremap <expr><s-tab> pumvisible()?"\<c-p>":"\<c-d>"
 " Autocompletion settings "
 " END                     "
 """""""""""""""""""""""""""
+
+""""""""""""
+" BEGIN    "
+" Commands "
+" BEGIN    "
+""""""""""""
+" sharing is caring
+command! -range=% VP  execute <line1> . "," . <line2> . "w !vpaste ft=" . &filetype
+command! -range=% SP  silent execute <line1> . "," . <line2> . "w !curl -F 'sprunge=<-' http://sprunge.us/ | tr -d '\\n' | awk '{print $1\"?" . &filetype . "\"}' | xclip -selection clipboard"
+command! -range=% IX  silent execute <line1> . "," . <line2> . "w !curl -F 'f:1=<-' ix.io | tr -d '\\n' | xclip -selection clipboard"
+command!          CMD let @+ = ':' . @:
+
+" search in all files with same extension
+command! -nargs=* Sext execute 'grep ' . <f-args> . ' **/*.' . expand('%:e')
+" search in all files
+command! -nargs=* Sall execute 'grep ' . <f-args> . ' **/*'
+
+""""""""""""
+" END      "
+" Commands "
+" END      "
+""""""""""""
 
 """"""""""""""
 " BEGIN      "

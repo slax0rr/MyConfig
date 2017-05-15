@@ -102,3 +102,14 @@ fi
 
 # default user
 [[ -n "$SSH_CLIENT" ]] || export DEFAULT_USER="slax0r"
+
+#vim tags
+function _get_tags {
+    if (( CURRENT == 3 )); then
+        compadd $(cut -f 1 .tags 2>/dev/null | grep -v '!_TAG')
+    else
+        _files
+    fi
+}
+compdef _get_tags vim
+#end vim tags

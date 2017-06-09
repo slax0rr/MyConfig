@@ -105,17 +105,19 @@ syntax on
 " Set Search Highlighting
 set hlsearch
 
-" set background
-set background=dark
-
-" Set Colorscheme
-colorscheme base16-atelierheath
-
 " color scheme settings
-highlight Search ctermbg=0 ctermfg=13 cterm=bold,underline
-highlight CursorLine cterm=underline
-highlight CursorLineNr ctermbg=0 ctermfg=NONE
-highlight WildMenu ctermbg=12 ctermfg=10
+highlight Search ctermbg=0 ctermfg=15 cterm=bold,underline
+highlight CursorLine cterm=underline ctermbg=0
+highlight CursorColumn ctermbg=0
+highlight CursorLineNr ctermbg=NONE ctermfg=NONE
+highlight ColorColumn ctermbg=0
+highlight WildMenu ctermbg=12 ctermfg=0
+highlight LineNr ctermbg=0
+highlight SignColumn ctermbg=NONE
+highlight VertSplit ctermbg=8 ctermfg=8
+highlight TabLineFill ctermbg=8 ctermfg=8
+highlight TabLine ctermbg=8 ctermfg=15
+highlight TabLineSel ctermbg=7 ctermfg=15
 
 " Spell highlight
 highlight SpellBad ctermbg=0 ctermfg=13 cterm=bold,underline
@@ -124,10 +126,11 @@ highlight SpellRare ctermbg=0 ctermfg=0 cterm=bold,underline
 highlight SpellLocal ctermbg=0 ctermfg=11 cterm=bold,underline
 
 " higlight SpecialKey
-highlight SpecialKey ctermfg=10
+highlight SpecialKey ctermfg=8
 
-" statusline fg color
-highlight StatusLine ctermfg=0
+" statusline
+highlight StatusLine ctermfg=8 ctermbg=7
+highlight StatusLineNC ctermfg=0 ctermbg=7
 
 " Highlight 80 and 120 columns
 let &colorcolumn="80,".join(range(120,999),",")

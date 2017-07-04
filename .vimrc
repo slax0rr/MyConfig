@@ -384,7 +384,7 @@ let g:vdebug_options = {
 \   "timeout": 60,
 \   "break_on_open": 0,
 \   "path_maps": {
-\       "/var/www": "/home/slax0r/dev/projects/post/shopware/data/www",
+\       "/var/www": "/home/slax0r/dev/projects/shops/wien-proxy/data/www",
 \       "/var/www/html/koedocker.acl.local": "/home/slax0r/dev/projects/shops/kastner"
 \   }
 \}

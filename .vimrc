@@ -101,6 +101,7 @@ set foldlevel=99
 """"""""""""""""""""""""""""""
 " Syntax Highlighting
 syntax on
+au BufRead,BufNewFile *.tpl set filetype=smarty 
 
 " Set Search Highlighting
 set hlsearch

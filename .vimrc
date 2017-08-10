@@ -13,19 +13,17 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'VundleVim/Vundle.vim'
 
     Plugin 'airblade/vim-gitgutter'
-    "Plugin 'bling/vim-airline'
-    "Plugin 'vim-airline/vim-airline-themes'
     Plugin 'suan/vim-instant-markdown'
     Plugin 'fatih/vim-go'
     Plugin 'WebAPI.vim'
     Plugin 'metarw'
     Plugin 'fugitive.vim'
     Plugin 'mattn/emmet-vim'
-    "Plugin 'DBGPavim'
     Plugin 'pangloss/vim-javascript'
     Plugin 'mxw/vim-jsx'
     Plugin 'editorconfig/editorconfig-vim'
     Plugin 'joonty/vdebug'
+    Plugin 'localrc.vim'
 
     call vundle#end()
 endif
@@ -385,7 +383,7 @@ let g:vdebug_options = {
 \   "timeout": 60,
 \   "break_on_open": 0,
 \   "path_maps": {
-\       "/var/www": "/home/slax0r/dev/projects/shops/wien-proxy/data/www",
+\       "/var/www": "/home/slax0r/dev/projects/shops/shopware-training/data/www",
 \       "/var/www/html/koedocker.acl.local": "/home/slax0r/dev/projects/shops/kastner"
 \   }
 \}

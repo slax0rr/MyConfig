@@ -12,7 +12,7 @@ alias md2pdf='pandoc_md2pdf'
 alias md2pdfopen='pandoc_md2pdf_open'
 
 # ack alias
-alias ack="ack-grep"
+alias ack="ag"
 
 # Alias for IRC
 alias irc="ssh ircserver -t 'tmux attach'"

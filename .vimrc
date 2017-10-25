@@ -383,7 +383,7 @@ let g:vdebug_options = {
 \   "timeout": 60,
 \   "break_on_open": 0,
 \   "path_maps": {
-\       "/var/www": "/home/slax0r/dev/projects/shops/shopware-training/data/www",
+\       "/var/www": "/home/slax0r/dev/projects/post/shopware5.2/data/www/",
 \       "/var/www/html/koedocker.acl.local": "/home/slax0r/dev/projects/shops/kastner"
 \   }
 \}
@@ -404,6 +404,9 @@ let g:go_highlight_build_constraints = 1
 
 " setup the editorconfig plugin
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+
+" force netrw directory listing to display line numbers
+let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 """""""""""""""""""
 " END             "
 " Plugin Settings "

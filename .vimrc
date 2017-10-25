@@ -24,6 +24,7 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'editorconfig/editorconfig-vim'
     Plugin 'joonty/vdebug'
     Plugin 'localrc.vim'
+    Plugin 'jdaddy.vim'
 
     call vundle#end()
 endif

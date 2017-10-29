@@ -113,3 +113,5 @@ function _get_tags {
 }
 compdef _get_tags vim
 #end vim tags
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

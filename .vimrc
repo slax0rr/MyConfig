@@ -24,6 +24,7 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'editorconfig/editorconfig-vim'
     Plugin 'joonty/vdebug'
     Plugin 'localrc.vim'
+    Plugin 'junegunn/fzf'
     Plugin 'jdaddy.vim'
 
     call vundle#end()
@@ -263,6 +264,9 @@ map <leader>md :InstantMarkdownPreview<CR>
 
 " open a file in the same dir as the current one (borrowed from mgedmin)
 map <expr>      <leader>E              ":e ".expand("%:h")."/"
+
+" open the fuzzy finder
+map <leader>e :FZF<CR>
 
 " search for visually selected in all files with same ext
 vnoremap // y:exe 'grep "<C-R>"" **/*.' . expand('%:e')<CR>

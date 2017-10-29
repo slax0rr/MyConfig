@@ -254,3 +254,4 @@ for_window [class="xfce4-notifyd"] floating enable move absolute position 0 0
 # start applications
 # calendar
 exec --no-startup-id orage
+exec_always --no-startup-id xrdb -load ~/.Xresources 

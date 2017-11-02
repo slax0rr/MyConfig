@@ -256,9 +256,6 @@ nnoremap <C-k> <C-W><C-K>
 nnoremap <C-l> <C-W><C-L>
 nnoremap <C-h> <C-W><C-H>
 
-" Run some formatting rules on a file
-map <leader>f :call FixFormatting()<cr>
-
 " Instant markdown preview mapping
 map <leader>md :InstantMarkdownPreview<CR>
 
@@ -266,7 +263,7 @@ map <leader>md :InstantMarkdownPreview<CR>
 map <expr>      <leader>E              ":e ".expand("%:h")."/"
 
 " open the fuzzy finder
-map <leader>e :FZF<CR>
+map <leader>d :FZF<CR>
 
 " search for visually selected in all files with same ext
 vnoremap // y:exe 'grep "<C-R>"" **/*.' . expand('%:e')<CR>
@@ -290,41 +287,6 @@ vnoremap /f y:exe 'grep "function <C-R>"" **/*.' . expand('%:e')<CR>
 " Helper Functions "
 " BEGIN            "
 """"""""""""""""""""
-" Fix formatting
-function! FixFormatting()
-    " wrap logical operators with spaces if there aren't any
-    execute '%s/\(\S\{-}\)\([<>!]\{-}=\+\|[<>|]\+\)\(\S\{-}\)/\1 \2 \3/ge'
-    execute '%s/[,a-zA-Z0-9 ^I]\@<!\([a-zA-Z0-9 ^I]\+\)\(&\+\)/\1 \2 /ge'
-    execute '%s/< ?php/<?php/ge'
-    execute '%s/-\s>\(\S\)/->\1/g'
-    " Add a space after control structure keyword, and after closing parenthesis
-    execute '%s/\(if\|for\|foreach\|while\|switch\)\s\{-}\((.*)\)\s\{-}{/\1 \2 {/ge'
-    " Turn else if into elseif
-    execute '%s/}\s\{-}else\s*if\s\{-}/} elseif/ge'
-    " Wrap else statement with spaces if there aren't any
-    execute '%s/}\s\{-}else\s\{-}{/} else {/ge'
-    " Remove whitespace in parenthesis
-    execute '%s/(\s*\(.*\)\s*)/(\1)/ge'
-    " Remove excesive whitespace
-    execute '%s/\(\S\+\) \{2,}\(\S\+\)/\1 \2/ge'
-    execute '%s/\(\S\+\) \{2,}\(\S\+\)/\1 \2/ge'
-    " Add whitespace after each comma
-    execute '%s/,\(\S\+\)/, \1/ge'
-    " Properly format function definitions
-    execute '%s/function\s\+\(.\{-}\)\s\{-}(\(.\{-}\))\s*{/function \1(\2)\r{/ge'
-    " Properly format class definitions
-    execute '%s/\(class\|interface\)\s\+\([a-zA-Z0-9]*\)\(.\{-}\)\s*{/\1 \2\3\r{/ge'
-    " Remove any trailing whitespace
-    execute '%s/\s\+$//ge'
-    " Remove excesive blank lines
-    execute 'g/^\n\{2,}/d'
-    " Remove blank lines before closing curly braces
-    execute 'g/^\n.*}/d'
-    " Retab the whole file
-    execute 'retab'
-    normal gg=G
-endfunction
-
 " Change to relative numbering and back
 function! NumberToggle()
     if (&relativenumber == 1)

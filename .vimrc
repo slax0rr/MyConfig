@@ -263,7 +263,7 @@ map <leader>md :InstantMarkdownPreview<CR>
 map <expr>      <leader>E              ":e ".expand("%:h")."/"
 
 " open the fuzzy finder
-map <leader>d :FZF<CR>
+map <leader>f :FZF<CR>
 
 " search for visually selected in all files with same ext
 vnoremap // y:exe 'grep "<C-R>"" **/*.' . expand('%:e')<CR>

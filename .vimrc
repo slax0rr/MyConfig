@@ -25,6 +25,7 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'joonty/vdebug'
     Plugin 'localrc.vim'
     Plugin 'junegunn/fzf'
+    Plugin 'junegunn/fzf.vim'
     Plugin 'jdaddy.vim'
 
     call vundle#end()
@@ -264,6 +265,8 @@ map <expr>      <leader>E              ":e ".expand("%:h")."/"
 
 " open the fuzzy finder
 map <leader>f :FZF<CR>
+map <leader>a :Ag<CR>
+map <leader>t :Tags<CR>
 
 " search for visually selected in all files with same ext
 vnoremap // y:exe 'grep "<C-R>"" **/*.' . expand('%:e')<CR>

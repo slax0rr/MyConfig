@@ -1,6 +1,6 @@
 !! Set the font to PragmataPro.
-*font                           : PragmataProMono:size=11
-dmenu.font                      : xft:PragmataProMono:size=11:antialias=true:autohint=false
+*font                          : PragmataProMono:size=11
+dmenu.font                     : xft:PragmataProMono:size=11:antialias=true:autohint=false
 
 XTerm*.allowBoldFonts          : true
 XTerm*.bellIsUrgent            : true
@@ -25,7 +25,7 @@ XTerm*ScrollKey                : true
 XTerm*cursorBlink              : false
 XTerm*scaleHeight              : 1.05
 XTerm*eightBitInput            : false
-*VT100*translations             : #override Shift <Btn1Up>: exec-formatted("xdg-open '%t'", CLIPBOARD)
+*VT100*translations            : #override Shift <Btn1Up>: exec-formatted("xdg-open '%t'", CLIPBOARD)
 
 ! colors - aprentice
 ! special

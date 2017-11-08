@@ -27,40 +27,40 @@ XTerm*scaleHeight              : 1.05
 XTerm*eightBitInput            : false
 *VT100*translations             : #override Shift <Btn1Up>: exec-formatted("xdg-open '%t'", CLIPBOARD)
 
-! colors - solarized
+! colors - aprentice
 ! special
-*.foreground:   #93a1a1
-*.background:   #002b36
-*.cursorColor:  #93a1a1
+*.foreground:   #bcbcbc
+*.background:   #262626
+*.cursorColor:  #bcbcbc
 
 ! black
-*.color0:       #002e3a
-*.color8:       #657b83
+*.color0:       #1c1c1c
+*.color8:       #444444
 
 ! red
-*.color1:       #dc322f
-*.color9:       #dc322f
+*.color1:       #af5f5f
+*.color9:       #ff8700
 
 ! green
-*.color2:       #859900
-*.color10:      #859900
+*.color2:       #5f875f
+*.color10:      #87af87
 
 ! yellow
-*.color3:       #b58900
-*.color11:      #b58900
+*.color3:       #87875f
+*.color11:      #ffffaf
 
 ! blue
-*.color4:       #268bd2
-*.color12:      #268bd2
+*.color4:       #5f87af
+*.color12:      #8fafd7
 
 ! magenta
-*.color5:       #6c71c4
-*.color13:      #6c71c4
+*.color5:       #5f5f87
+*.color13:      #8787af
 
 ! cyan
-*.color6:       #2aa198
-*.color14:      #2aa198
+*.color6:       #5f8787
+*.color14:      #5fafaf
 
 ! white
-*.color7:       #93a1a1
-*.color15:      #fdf6e3
+*.color7:       #6c6c6c
+*.color15:      #ffffff

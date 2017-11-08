@@ -38,29 +38,29 @@ XTerm*eightBitInput            : false
 *.color8:       #505050
 
 ! red
-*.color1:       #ac4142
-*.color9:       #622526
+*.color1:       #bc4849
+*.color9:       #ac4142
 
 ! green
-*.color2:       #90a959
-*.color10:      #4d5a30
+*.color2:       #a0ba62
+*.color10:      #90a959
 
 ! yellow
-*.color3:       #f4bf75
-*.color11:      #7e633c
+*.color3:       #ffc87a
+*.color11:      #f4bf75
 
 ! blue
-*.color4:       #6a9fb5
-*.color12:      #456a79
+*.color4:       #7ab7d0
+*.color12:      #6a9fb5
 
 ! magenta
-*.color5:       #aa759f
-*.color13:      #583d52
+*.color5:       #ba80ae
+*.color13:      #aa759f
 
 ! cyan
-*.color6:       #75b5aa
-*.color14:      #36534e
+*.color6:       #85cec2
+*.color14:      #75b5aa
 
 ! white
-*.color7:       #d0d0d0
-*.color15:      #525252
+*.color7:       #bfbfbf
+*.color15:      #f9f9f9

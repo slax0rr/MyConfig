@@ -264,9 +264,10 @@ map <leader>md :InstantMarkdownPreview<CR>
 map <expr>      <leader>E              ":e ".expand("%:h")."/"
 
 " open the fuzzy finder
-map <leader>f :FZF<CR>
-map <leader>a :Ag<CR>
-map <leader>t :Tags<CR>
+nnoremap <leader>f :FZF<CR>
+nnoremap <leader>a :Ag<CR>
+nnoremap <leader>t :Tags<CR>
+vnoremap <leader>a y:Ag <C-R>"<CR>
 
 " search for visually selected in all files with same ext
 vnoremap // y:exe 'grep "<C-R>"" **/*.' . expand('%:e')<CR>

@@ -203,7 +203,7 @@ mode "$mode_launcher" {
     # browser
     bindsym b exec "i3-msg mode default && x-www-browser"
     # screen capper
-    bindsym s exec "i3-msg mode default && ~/.bin/screencap.sh"
+    bindsym s exec "i3-msg mode default && sh ~/.bin/screenshot.sh"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"

@@ -219,7 +219,6 @@ command!          CMD let @+ = ':' . @:
 command! -nargs=* Sext silent execute 'grep ' . expand('<f-args>') . ' **/*.' . expand('%:e')
 " search in all files
 command! -nargs=* Sall silent execute 'grep ' . expand('<f-args>') . ' **/*'
-
 """"""""""""
 " END      "
 " Commands "
@@ -280,6 +279,9 @@ vnoremap /a y:grep "<C-R>"" **/*.*
 vnoremap /c y:exe 'grep "class <C-R>"" **/*.' . expand('%:e')<CR>
 " search for function with the selected text as name in all files with same ext
 vnoremap /f y:exe 'grep "function <C-R>"" **/*.' . expand('%:e')<CR>
+
+" copy current file path to clipboard
+noremap <leader>c :let @+ = expand("%")<CR>
 """"""""""""""
 " END        "
 " Remappings "

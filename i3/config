@@ -197,13 +197,14 @@ client.focused_inactive #695d69 #292329 #d8cad8 #1b181b     #918b3b
 exec --no-startup-id nm-applet
 
 # app launcher
-set $mode_launcher Launch: [b]rowser [s]creencap
+set $mode_launcher Launch: [b]rowser [s]creencap [f]full screencap
 
 mode "$mode_launcher" {
     # browser
     bindsym b exec "i3-msg mode default && x-www-browser"
     # screen capper
     bindsym s exec "i3-msg mode default && sh ~/.bin/screenshot.sh"
+    bindsym f exec "i3-msg mode default && sh ~/.bin/screenshot.sh full"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"

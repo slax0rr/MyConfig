@@ -1,11 +1,11 @@
 !! Set the font to PragmataProMono.
-*font                          : PragmataProMono:size=11:antialias=true:autohint=false
-dmenu.font                     : xft:PragmataProMono:size=11:antialias=true:autohint=false
+*font                          : PragmataProMono:size=12:antialias=true:autohint=false
+dmenu.font                     : xft:PragmataProMono:size=12:antialias=true:autohint=false
 
 XTerm*.allowBoldFonts          : true
 XTerm*.bellIsUrgent            : true
 XTerm*.cutNewline              : true
-XTerm*.faceName                : PragmataProMono:size=11:antialias=true:autohint=false
+XTerm*.faceName                : PragmataProMono:size=12:antialias=true:autohint=false
 XTerm*.fullscreen              : never
 XTerm*.internalBorder          : 0
 XTerm*.renderFont              : true

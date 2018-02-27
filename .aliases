@@ -15,7 +15,7 @@ alias md2pdfopen='pandoc_md2pdf_open'
 alias ack="/usr/bin/ag"
 
 # Alias for IRC
-alias irc="ssh ircserver -t 'tmux attach'"
+alias irc="ssh ircserver -t 'export TERM=xterm && tmux attach'"
 alias slack="irssi"
 
 # Alias for drive-goole

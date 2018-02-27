@@ -30,7 +30,7 @@ font PragmataProMono 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xterm
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -129,9 +129,9 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 set $mode_exit Exit mode [e]xit, [l]ock, [r]eboot, [p]oweroff, [s]uspend, [h]ibernate
 mode "$mode_exit" {
-    bindsym $mod+r exec "i3-nagbar -t warning -m 'Reboot?' -b 'Yes, reboot' 'i3-msg exec systemctl reboot'"
+    bindsym $mod+r exec "i3-nagbar -t warning -m 'Reboot?' -b 'Yes, reboot' 'sudo /sbin/reboot'"
     bindsym $mod+e exec "i3-nagbar -t warning -m 'Exit?' -b 'Yes, exit i3' 'i3-msg exit'"
-    bindsym $mod+p exec "i3-nagbar -t warning -m 'Shutdown?' -b 'Yes, shutdown' 'i3-msg exec systemctl poweroff'"
+    bindsym $mod+p exec "i3-nagbar -t warning -m 'Shutdown?' -b 'Yes, shutdown' 'sudo /sbin/poweroff'"
     bindsym $mod+l exec "i3-msg mode default && i3lock -c 000000"
     bindsym $mod+s exec "i3-msg mode default && systemctl suspend"
     bindsym $mod+h exec "i3-msg mode default && systemctl hibernate"
@@ -190,8 +190,8 @@ bar {
 
 # window decoration coloring
 # class                 border  bckgrnd text    indicator   child_border
-client.focused          #695d69 #776977 #d8cad8 #1b181b     #918b3b
-client.focused_inactive #695d69 #292329 #d8cad8 #1b181b     #918b3b
+client.focused          #695d69 #776977 #d8cad8 #1b181b     #695d69
+client.focused_inactive #695d69 #292329 #d8cad8 #1b181b     #695d69
 
 # startup apps
 exec --no-startup-id nm-applet
@@ -201,7 +201,7 @@ set $mode_launcher Launch: [b]rowser [s]creencap [f]full screencap
 
 mode "$mode_launcher" {
     # browser
-    bindsym b exec "i3-msg mode default && x-www-browser"
+    bindsym b exec "i3-msg mode default && chromium"
     # screen capper
     bindsym s exec "i3-msg mode default && sh ~/.bin/screenshot.sh"
     bindsym f exec "i3-msg mode default && sh ~/.bin/screenshot.sh full"
@@ -253,6 +253,5 @@ bindsym XF86AudioLowerVolume exec amixer set Master 5%- unmute
 for_window [class="xfce4-notifyd"] floating enable move absolute position 0 0
 
 # start applications
-# calendar
-exec --no-startup-id orage
+exec_always --no-startup-id feh --bg-scale /home/slax0r/pics/backgrounds/current.jpg
 exec_always --no-startup-id xrdb -load ~/.Xresources 

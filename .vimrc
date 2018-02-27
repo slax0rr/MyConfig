@@ -27,6 +27,7 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'junegunn/fzf'
     Plugin 'junegunn/fzf.vim'
     Plugin 'jdaddy.vim'
+    Plugin 'localvimrc'
 
     call vundle#end()
 endif
@@ -52,6 +53,7 @@ set autoindent
 
 " Backup file dir
 set backupdir=~/tmp
+set undodir=~/tmp/un
 
 " Line numbers
 set relativenumber
@@ -136,6 +138,9 @@ highlight StatusLineNC ctermfg=0 ctermbg=7
 
 " Highlight 80 and 120 columns
 let &colorcolumn="80,".join(range(120,999),",")
+
+" set bg=light
+set bg=light
 
 " Add cursorline and cursorcolumn
 set cursorline
@@ -380,6 +385,11 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
 " force netrw directory listing to display line numbers
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+
+" disable localvimrc sandbox mode
+let g:localvimrc_sandbox = 0
+" disable asking to load loaclvimrc file, if it's there, load it
+let g:localvimrc_ask = 0
 """""""""""""""""""
 " END             "
 " Plugin Settings "

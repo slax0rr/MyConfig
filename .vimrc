@@ -212,7 +212,8 @@ inoremap <expr><s-tab> pumvisible()?"\<c-p>":"\<c-d>"
 " sharing is caring
 command! -range=% VP  execute <line1> . "," . <line2> . "w !vpaste ft=" . &filetype
 command! -range=% SP  silent execute <line1> . "," . <line2> . "w !curl -F 'sprunge=<-' http://sprunge.us/ | tr -d '\\n' | awk '{print $1\"?" . &filetype . "\"}' | xclip -selection clipboard"
-command! -range=% IX  silent execute <line1> . "," . <line2> . "w !curl -F 'f:1=<-' ix.io | tr -d '\\n' | xclip -selection clipboard"
+command! -range=% IX  silent execute <line1> . "," . <line2> . "w !curl -F 'f:1=<-' ix.io | tr -d '\\n' | awk '{print $1\"/" . &filetype . "\"}' | xclip -selection clipboard"
+command! -range=% PT  silent execute <line1> . "," . <line2> . "w !curl -F c=@- https://ptpb.pw/ | grep \"url:\" | awk '{print $2\"/" . &filetype . "\"}' | xclip -selection clipboard"
 command!          CMD let @+ = ':' . @:
 
 " search in all files with same extension

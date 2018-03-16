@@ -45,6 +45,9 @@ endif
 " Enable filetype plugin and indent
 filetype plugin indent on
 
+" set updatetime
+set updatetime=50
+
 " Tab and indent settings
 set tabstop=4
 set shiftwidth=4

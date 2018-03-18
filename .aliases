@@ -16,7 +16,6 @@ alias ack="/usr/bin/ag"
 
 # Alias for IRC
 alias irc="ssh ircserver -t 'export TERM=xterm && tmux attach'"
-alias slack="irssi"
 
 # Alias for drive-goole
 alias gdrive="drive-google"
@@ -45,22 +44,6 @@ composer() {
 
 # codeception alias with docker container
 alias codecept='docker run -it --rm -v $(pwd):/code -w /code --user $(id -u):$(id -g) php:7.0-cli /code/vendor/bin/codecept'
-
-# flatpak aliases
-alias skype="flatpak run com.skype.Client"
-
-# ssh keys
-sadd() {
-    ssh-add ~/.ssh/$@
-}
-
-srm() {
-    ssh-add -d ~/.ssh/$@
-}
-
-scl() {
-    ssh-add -D
-}
 
 # Load local aliases
 if [[ -a ~/.aliases_local ]]; then

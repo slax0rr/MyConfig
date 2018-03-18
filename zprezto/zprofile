@@ -66,3 +66,7 @@ fi
 
 # password store
 export PASSWORD_STORE_X_SELECTION='p'
+
+# go env vars
+export GOROOT=~/go
+export PATH=$PATH:$GOOROOT/bin

@@ -133,8 +133,8 @@ mode "$mode_exit" {
     bindsym $mod+e exec "i3-nagbar -t warning -m 'Exit?' -b 'Yes, exit i3' 'i3-msg exit'"
     bindsym $mod+p exec "i3-nagbar -t warning -m 'Shutdown?' -b 'Yes, shutdown' 'sudo /sbin/poweroff'"
     bindsym $mod+l exec "i3-msg mode default && i3lock -c 000000"
-    bindsym $mod+s exec "i3-msg mode default && systemctl suspend"
-    bindsym $mod+h exec "i3-msg mode default && systemctl hibernate"
+    bindsym $mod+s exec "i3-msg mode default && sudo /usr/sbin/pm-suspend"
+    bindsym $mod+h exec "i3-msg mode default && sudo /usr/sbin/pm-hibernate"
 
     # exit back to normal
     bindsym Return mode "default"

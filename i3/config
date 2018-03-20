@@ -193,6 +193,9 @@ bar {
 client.focused          #695d69 #776977 #d8cad8 #1b181b     #695d69
 client.focused_inactive #695d69 #292329 #d8cad8 #1b181b     #695d69
 
+# laptop mouse switch
+bindsym $mod+m exec "sh ~/.local/bin/laptop_mouse.sh"
+
 # startup apps
 exec --no-startup-id nm-applet
 
@@ -203,8 +206,8 @@ mode "$mode_launcher" {
     # browser
     bindsym b exec "i3-msg mode default && chromium"
     # screen capper
-    bindsym s exec "i3-msg mode default && sh ~/.bin/screenshot.sh"
-    bindsym f exec "i3-msg mode default && sh ~/.bin/screenshot.sh full"
+    bindsym s exec "i3-msg mode default && sh ~/.local/bin/screenshot.sh"
+    bindsym f exec "i3-msg mode default && sh ~/.local/bin/screenshot.sh full"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"

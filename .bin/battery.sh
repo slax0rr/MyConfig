@@ -28,7 +28,7 @@ if [[ $CURRENTPERCENT -le $CRITLVL ]]; then
     sudo /usr/sbin/pm-hibernate
     exit 0
 elif [[ $CURRENTPERCENT -le $DANGERLVL ]]; then
-    $NS --urgency=critical --icon battery-critical "Battery level danger!" \
+    $NS --urgency=critical --icon battery-low "Battery level danger!" \
         "Battery level is bellow $DANGERLVL%, plug in now! ($CURRENTPERCENT%)"
     exit 0
 elif [[ $CURRENTPERCENT -le $WARNLVL ]]; then

@@ -17,7 +17,8 @@ CURRENTENERGY=`cat /sys/class/power_supply/BAT0/energy_now`
 let CURRENTPERCENT=100*$CURRENTENERGY/$FULLENERGY
 
 if [[ $CURRENTPERCENT -le $CRITLVL ]]; then
-    $NS --urgency=critical --icon batery-empty "Battery level critical!" "Battery level is bellow $CRITLVL%, hibernating system in 1 minute"
+    $NS --urgency=critical --icon batery-empty "Battery level critical!" \
+        "Battery level is bellow $CRITLVL%, hibernating system in 1 minute connect AC now to prevent hibernation"
     sleep 60
     STATUS=`cat /sys/class/power_supply/BAT0/status`
     if [[ "$STATUS" -eq "Discharging" ]]; then
@@ -27,7 +28,8 @@ if [[ $CURRENTPERCENT -le $CRITLVL ]]; then
     sudo /usr/sbin/pm-hibernate
     exit 0
 elif [[ $CURRENTPERCENT -le $DANGERLVL ]]; then
-    $NS --urgency=critical --icon battery-critical "Battery level danger!" "Battery level is bellow $DANGERLVL%, plug in now! ($CURRENTPERCENT%)"
+    $NS --urgency=critical --icon battery-critical "Battery level danger!" \
+        "Battery level is bellow $DANGERLVL%, plug in now! ($CURRENTPERCENT%)"
     exit 0
 elif [[ $CURRENTPERCENT -le $WARNLVL ]]; then
     $NS --icon battery "Battery level warning!" "Battery level is bellow $WARNLVL% ($CURRENTPERCENT%)"

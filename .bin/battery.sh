@@ -9,7 +9,7 @@ DANGERLVL=10
 CRITLVL=5
 
 STATUS=`cat /sys/class/power_supply/BAT0/status`
-if [[ "$STATUS" -ne "Discharging" ]]; then
+if [[ $STATUS != "Discharging" ]]; then
     exit 0
 fi
 FULLENERGY=`cat /sys/class/power_supply/BAT0/energy_full`
@@ -21,7 +21,7 @@ if [[ $CURRENTPERCENT -le $CRITLVL ]]; then
         "Battery level is bellow $CRITLVL%, hibernating system in 1 minute connect AC now to prevent hibernation"
     sleep 60
     STATUS=`cat /sys/class/power_supply/BAT0/status`
-    if [[ "$STATUS" -ne "Discharging" ]]; then
+    if [[ $STATUS == "Charging" ]]; then
         $NS --urgency=critical --icon battery-low-charging "AC Connected" "Detected AC connection, aborting hibernation"
         exit 0
     fi

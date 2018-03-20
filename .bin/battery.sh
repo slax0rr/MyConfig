@@ -17,12 +17,12 @@ CURRENTENERGY=`cat /sys/class/power_supply/BAT0/energy_now`
 let CURRENTPERCENT=100*$CURRENTENERGY/$FULLENERGY
 
 if [[ $CURRENTPERCENT -le $CRITLVL ]]; then
-    $NS --urgency=critical --icon batery-empty "Battery level critical!" \
+    $NS --urgency=critical --icon battery-empty "Battery level critical!" \
         "Battery level is bellow $CRITLVL%, hibernating system in 1 minute connect AC now to prevent hibernation"
     sleep 60
     STATUS=`cat /sys/class/power_supply/BAT0/status`
     if [[ "$STATUS" -eq "Discharging" ]]; then
-        $NS --urgency=critical --icon batery-low-charging "AC Connected" "Detected AC connection, aborting hibernation"
+        $NS --urgency=critical --icon battery-low-charging "AC Connected" "Detected AC connection, aborting hibernation"
         exit 0
     fi
     sudo /usr/sbin/pm-hibernate

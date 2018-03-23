@@ -121,10 +121,10 @@ highlight Search ctermbg=0 ctermfg=15 cterm=bold,underline
 highlight CursorLine cterm=underline ctermbg=0
 
 " Spell highlight
-highlight SpellBad ctermbg=0 ctermfg=13 cterm=bold,underline
-highlight SpellCap ctermbg=0 ctermfg=12 cterm=bold,underline
-highlight SpellRare ctermbg=0 ctermfg=0 cterm=bold,underline
-highlight SpellLocal ctermbg=0 ctermfg=11 cterm=bold,underline
+highlight SpellBad ctermbg=0 ctermfg=183 cterm=bold,underline
+highlight SpellCap ctermbg=0 ctermfg=111 cterm=bold,underline
+highlight SpellRare ctermbg=0 ctermfg=16 cterm=bold,underline
+highlight SpellLocal ctermbg=0 ctermfg=185 cterm=bold,underline
 
 " Highlight 80 and 120 columns
 let &colorcolumn="80,".join(range(120,999),",")

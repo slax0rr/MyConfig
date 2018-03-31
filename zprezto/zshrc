@@ -11,24 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-
-# GPG helper functions:
-if ! test -f $HOME/.gpg-agent-info || ! kill -0 $(cut -s -d: -f 2 $HOME/.gpg-agent-info) 2>/dev/null; then
-  # gpg-agent not running, start it
-  rm -rf $HOME/.gpg-agent-info
-  AGENT_VARS=$(gpg-agent --daemon --enable-ssh-support)
-
-  GPGPID=`pgrep gpg-agent`
-  GPG_AGENT_INFO="~/.gnupg/S.gpg-agent:$GPGPID:1"
-  echo "GPG_AGENT_INFO=$GPG_AGENT_INFO; export GPG_AGENT_INFO;" > $HOME/.gpg-agent-info
-  echo $AGENT_VARS >> $HOME/.gpg-agent-info
-  echo "SSH_AGENT_PID=$GPGPID; export SSH_AGENT_PID;" >> $HOME/.gpg-agent-info
+# Load local zshrc
+if test -f $HOME/.zshrc_local; then
+    source ~/.zshrc_local
 fi
-AGENT_VARS=$(cat $HOME/.gpg-agent-info)
-eval $AGENT_VARS
-GPG_TTY=$(tty)
-export GPG_TTY
-# END GPG helper functions:
 
 # Load aliases
 if test -f $HOME/.aliases; then

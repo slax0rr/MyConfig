@@ -49,3 +49,6 @@ alias codecept='docker run -it --rm -v $(pwd):/code -w /code --user $(id -u):$(i
 if [[ -a ~/.aliases_local ]]; then
     source ~/.aliases_local
 fi
+
+# reset TERM for ssh connections
+alias ssh="TERM=xterm-color ssh"

@@ -30,3 +30,8 @@ fi
 if [ $commands[kubectl] ]; then
   source <(kubectl completion zsh)
 fi
+
+# go env vars
+export GOROOT=~/.gobu/1.10.2/go
+export GOPATH=~/dev/projects/go
+export PATH=$GOROOT/bin:$GOPATH/bin:$PATH

@@ -28,6 +28,7 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'junegunn/fzf.vim'
     Plugin 'jdaddy.vim'
     Plugin 'localvimrc'
+    Plugin 'cespare/vim-toml'
 
     call vundle#end()
 endif
@@ -107,7 +108,7 @@ set foldlevel=99
 """"""""""""""""""""""""""""""
 " Syntax Highlighting
 syntax on
-au BufRead,BufNewFile *.tpl set filetype=smarty 
+au BufRead,BufNewFile *.tpl set filetype=smarty
 
 " Set Search Highlighting
 set hlsearch

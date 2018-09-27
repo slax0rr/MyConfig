@@ -12,9 +12,13 @@ map <Leader>gb <Plug>(go-doc-browser)
 map <Leader>s <Plug>(go-implements)
 map <Leader>i <Plug>(go-info)
 map <Leader>e <Plug>(go-rename)
+nmap <Leader>dd :GoDecls<cr>
 
 " set folding settings
 setlocal foldmethod=syntax
 setlocal foldnestmax=10
 setlocal nofoldenable
 setlocal foldlevel=0
+
+" run imports before saving
+au BufWritePre <buffer> :GoImports

@@ -5,8 +5,8 @@ G=/usr/bin/grep
 C=/usr/bin/cut
 A=/usr/bin/awk
 
-TOUCHPADID=${TOUCHPADID:-13}
-TRACKPOINTID=${TRACKPOINTID:-14}
+TOUCHPADID=${TOUCHPADID:-15}
+TRACKPOINTID=${TRACKPOINTID:-16}
 
 TOUCHENABLED=`$XI list-props $TOUCHPADID | $G -i "device enabled" | $C -s -d: -f2 | $A {'print $1'}`
 TRACKENABLED=`$XI list-props $TRACKPOINTID | $G -i "device enabled" | $C -s -d: -f2 | $A {'print $1'}`

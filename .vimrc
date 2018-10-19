@@ -91,10 +91,6 @@ endif
 
 " hide files, instead of closing
 set hidden
-
-" set folding
-set foldmethod=indent
-set foldlevel=99
 """""""""""""""""""""""""""
 " END                     "
 " Editor related settings "

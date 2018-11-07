@@ -272,6 +272,9 @@ vnoremap /f y:exe 'grep "function <C-R>"" **/*.' . expand('%:e')<CR>
 
 " copy current file path to clipboard
 noremap <leader>c :let @+ = expand("%")<CR>
+
+" open terminal
+noremap <C-x> :terminal<CR>
 """"""""""""""
 " END        "
 " Remappings "

@@ -29,6 +29,7 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'jdaddy.vim'
     Plugin 'localvimrc'
     Plugin 'cespare/vim-toml'
+    Plugin 'posva/vim-vue'
 
     call vundle#end()
 endif
@@ -376,8 +377,12 @@ let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 
 " disable localvimrc sandbox mode
 let g:localvimrc_sandbox = 0
+
 " disable asking to load loaclvimrc file, if it's there, load it
 let g:localvimrc_ask = 0
+
+" open instant markdown to world
+let g:instant_markdown_open_to_the_world = 1
 """""""""""""""""""
 " END             "
 " Plugin Settings "

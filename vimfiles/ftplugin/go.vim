@@ -14,6 +14,7 @@ map <Leader>i <Plug>(go-info)
 map <Leader>e <Plug>(go-rename)
 map <Leader>gi <Plug>(go-imports)
 nmap <Leader>dd :GoDecls<cr>
+nmap <Leader>ie :GoIfErr<cr>
 
 " set folding settings
 setlocal foldmethod=syntax

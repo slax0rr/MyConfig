@@ -5,8 +5,8 @@ G=/usr/bin/grep
 C=/usr/bin/cut
 A=/usr/bin/awk
 
-TOUCHPADID=${TOUCHPADID:-15}
-TRACKPOINTID=${TRACKPOINTID:-16}
+TOUCHPADID=`xinput --list | awk -v search="TouchPad" '$0 ~ search {match($0 , /id=[0-9]+/);if (RSTART) print substr($0, RSTART+3, RLENGTH-3)}'`
+TRACKPADID=`xinput --list | awk -v search="TrackPoint" '$0 ~ search {match($0 , /id=[0-9]+/);if (RSTART) print substr($0, RSTART+3, RLENGTH-3)}'`
 
 TOUCHENABLED=`$XI list-props $TOUCHPADID | $G -i "device enabled" | $C -s -d: -f2 | $A {'print $1'}`
 TRACKENABLED=`$XI list-props $TRACKPOINTID | $G -i "device enabled" | $C -s -d: -f2 | $A {'print $1'}`

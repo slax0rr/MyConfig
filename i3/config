@@ -47,6 +47,8 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
+bindsym $mod+Mod1+l focus parent; focus right
+
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -231,16 +233,16 @@ mode "$kb_switch" {
 bindsym $mod+Mod1+k mode "$kb_switch"
 
 # worklog control
-set $worklog_control Worklog: [s]tart win+[s]top [p]ause win+[p]unpause
+set $worklog_control Worklog: win+[s]tart win+alt+[s]top win+[p]ause win+alt+[p]unpause
 mode "$worklog_control" {
     # start
-    bindsym s exec "worklog start"
+    bindsym $mod+s exec "worklog start"
     # stop
-    bindsym $mod+s "worklog stop"
+    bindsym $mod+Mod1+s "worklog stop"
     # pause
-    bindsym p "worklog pause"
+    bindsym $mod+p "worklog pause"
     # unpause
-    bindsym $mod+p "worklog unpause"
+    bindsym $mod+Mod1+p "worklog unpause"
 
     # exit back to default mode
     bindsym Escape mode "default"

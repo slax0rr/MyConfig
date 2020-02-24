@@ -52,3 +52,5 @@ fi
 
 # reset TERM for ssh connections
 alias ssh="TERM=xterm-color ssh"
+
+alias k="kubectl"

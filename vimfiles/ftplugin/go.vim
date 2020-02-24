@@ -21,3 +21,8 @@ setlocal foldmethod=syntax
 setlocal foldnestmax=10
 setlocal nofoldenable
 setlocal foldlevel=0
+
+nmap <Leader>db :DlvToggleBreakpoint<cr>
+nmap <Leader>dr :DlvConnect 127.0.0.1:40000<cr>
+
+let g:go_highlight_function_calls = 1

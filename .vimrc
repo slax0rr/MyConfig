@@ -22,7 +22,7 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'pangloss/vim-javascript'
     Plugin 'mxw/vim-jsx'
     Plugin 'editorconfig/editorconfig-vim'
-    Plugin 'joonty/vdebug'
+    "Plugin 'joonty/vdebug'
     Plugin 'localrc.vim'
     Plugin 'junegunn/fzf'
     Plugin 'junegunn/fzf.vim'
@@ -30,6 +30,8 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'localvimrc'
     Plugin 'cespare/vim-toml'
     Plugin 'posva/vim-vue'
+    Plugin 'sebdah/vim-delve'
+    Plugin 'kylef/apiblueprint.vim'
 
     call vundle#end()
 endif
@@ -92,6 +94,9 @@ endif
 
 " hide files, instead of closing
 set hidden
+
+" set sql ft for *.pgsql files
+autocmd BufNewFile,BufRead *.pgsql set ft=sql
 """""""""""""""""""""""""""
 " END                     "
 " Editor related settings "
@@ -345,15 +350,15 @@ let g:polyglot_disables = ['php']
 "\]
 
 " Vdebug settings
-let g:vdebug_options = {
-\   "port": 9000,
-\   "timeout": 60,
-\   "break_on_open": 0,
-\   "path_maps": {
-\       "/var/www": "/home/slax0r/dev/projects/post/shopware5.2/data/www/",
-\       "/var/www/html/koedocker.acl.local": "/home/slax0r/dev/projects/shops/kastner"
-\   }
-\}
+"let g:vdebug_options = {
+"\   "port": 9000,
+"\   "timeout": 60,
+"\   "break_on_open": 0,
+"\   "path_maps": {
+"\       "/var/www": "/home/slax0r/dev/projects/post/shopware5.2/data/www/",
+"\       "/var/www/html/koedocker.acl.local": "/home/slax0r/dev/projects/shops/kastner"
+"\   }
+"\}
 
 " Instant markdown preview settings
 let g:instant_markdown_autostart = 0
@@ -370,7 +375,7 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 " setup the editorconfig plugin
-let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 " force netrw directory listing to display line numbers
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'

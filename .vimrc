@@ -19,19 +19,16 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'metarw'
     Plugin 'fugitive.vim'
     Plugin 'mattn/emmet-vim'
-    Plugin 'pangloss/vim-javascript'
-    Plugin 'mxw/vim-jsx'
     Plugin 'editorconfig/editorconfig-vim'
-    "Plugin 'joonty/vdebug'
     Plugin 'localrc.vim'
     Plugin 'junegunn/fzf'
     Plugin 'junegunn/fzf.vim'
     Plugin 'jdaddy.vim'
     Plugin 'localvimrc'
     Plugin 'cespare/vim-toml'
-    Plugin 'posva/vim-vue'
     Plugin 'sebdah/vim-delve'
     Plugin 'kylef/apiblueprint.vim'
+    Plugin 'utl.vim'
 
     call vundle#end()
 endif
@@ -105,6 +102,23 @@ autocmd BufNewFile,BufRead *.pgsql set ft=sql
 
 """"""""""""""""""""""""""""""
 " BEGIN                      "
+" GUI options                "
+" BEGIN                      "
+""""""""""""""""""""""""""""""
+if has('gui_running')
+    " set gui options
+    set guioptions=agit
+
+    set guifont=PragmataPro\ 10
+endif
+""""""""""""""""""""""""""""""
+" END                        "
+" GUI options                "
+" END                        "
+""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""
+" BEGIN                      "
 " Graphical related settings "
 " BEGIN                      "
 """"""""""""""""""""""""""""""
@@ -135,6 +149,9 @@ let &colorcolumn="80,".join(range(120,999),",")
 " Add cursorline and cursorcolumn
 set cursorline
 set cursorcolumn
+
+" API Blueprint filetype
+autocmd BufNewFile,BufRead *.apib set ft=apiblueprint
 """"""""""""""""""""""""""""""
 " END                        "
 " Graphical related settings "
@@ -280,7 +297,8 @@ vnoremap /f y:exe 'grep "function <C-R>"" **/*.' . expand('%:e')<CR>
 noremap <leader>c :let @+ = expand("%")<CR>
 
 " open terminal
-noremap <C-x> :terminal<CR>
+noremap <leader>x :terminal<CR>
+noremap <leader>s :shell<CR>
 """"""""""""""
 " END        "
 " Remappings "

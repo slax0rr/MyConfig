@@ -342,41 +342,11 @@ command! PhpMD :cexpr system("phpmd " . expand("%:p") . " text ~/.ruleset.xml") 
 set laststatus=2
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
-" Airline settings
-" Enable powerline symbols
-"let g:airline_powerline_fonts = 1
-" Show pretty tabline
-"let g:airline#extensions#tabline#enabled = 1
-" Change theme for cli version
-"let g:airline_theme='base16'
-
 " Turn on all python highlights of the python syntax plugin
 let python_highlight_all = 1
 
 " Disable polyglot language packages
 let g:polyglot_disables = ['php']
-
-" DBGPavim config
-"let g:dbgPavimPort = 9000
-"let g:dbgPavimBreakAtEntry = 0
-"let g:dbgPavimPathMap = [
-"\   ['/home/slax0r/dev/projects/shops/kastner/', '/var/www/html/koedocker.acl.local/',],
-"\   ['/home/slax0r/dev/projects/shops/forstinger/', '/var/www/html/fordocker.acl.local/',],
-"\   ['/home/slax0r/dev/projects/shops/intersport/', '/var/www/html/ispdocker.acl.local/',],
-"\   ['/home/slax0r/dev/projects/shops/deutschebahn/', '/var/www/html/ubkdocker.acl.local/',],
-"\   ['/home/slax0r/dev/projects/pim/elsta/data/www/', '/var/www/',]
-"\]
-
-" Vdebug settings
-"let g:vdebug_options = {
-"\   "port": 9000,
-"\   "timeout": 60,
-"\   "break_on_open": 0,
-"\   "path_maps": {
-"\       "/var/www": "/home/slax0r/dev/projects/post/shopware5.2/data/www/",
-"\       "/var/www/html/koedocker.acl.local": "/home/slax0r/dev/projects/shops/kastner"
-"\   }
-"\}
 
 " Instant markdown preview settings
 let g:instant_markdown_autostart = 0

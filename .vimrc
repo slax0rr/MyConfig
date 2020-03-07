@@ -94,6 +94,12 @@ set hidden
 
 " set sql ft for *.pgsql files
 autocmd BufNewFile,BufRead *.pgsql set ft=sql
+
+" set foldmethod to indent for apib files
+au BufRead,BufNewFile *.apib setlocal foldmethod=indent
+
+" export .org file to HTML on write
+au BufWritePost *.org silent! OrgExportToHTML
 """""""""""""""""""""""""""
 " END                     "
 " Editor related settings "
@@ -298,7 +304,7 @@ noremap <leader>c :let @+ = expand("%")<CR>
 
 " open terminal
 noremap <leader>x :terminal<CR>
-noremap <leader>s :shell<CR>
+noremap <leader>X :shell<CR>
 """"""""""""""
 " END        "
 " Remappings "

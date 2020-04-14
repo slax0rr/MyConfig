@@ -54,3 +54,5 @@ fi
 alias ssh="TERM=xterm-color ssh"
 
 alias k="kubectl"
+
+alias :e="vim"

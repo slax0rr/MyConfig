@@ -233,7 +233,7 @@ mode "$kb_switch" {
 bindsym $mod+Mod1+k mode "$kb_switch"
 
 # worklog control
-set $worklog_control Worklog: win+[s]tart win+alt+[s]top win+[p]ause win+alt+[p]unpause
+set $worklog_control Worklog: win+[s]tart win+alt+[s]top win+[p]ause win+alt+un[p]ause
 mode "$worklog_control" {
     # start
     bindsym $mod+s exec "worklog start"

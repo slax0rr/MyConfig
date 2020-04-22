@@ -29,6 +29,8 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'sebdah/vim-delve'
     Plugin 'kylef/apiblueprint.vim'
     Plugin 'utl.vim'
+    Plugin 'godlygeek/tabular'
+    Plugin 'plasticboy/vim-markdown'
 
     call vundle#end()
 endif
@@ -94,9 +96,6 @@ set hidden
 
 " set sql ft for *.pgsql files
 autocmd BufNewFile,BufRead *.pgsql set ft=sql
-
-" set foldmethod to indent for apib files
-au BufRead,BufNewFile *.apib setlocal foldmethod=indent
 
 " export .org file to HTML on write
 au BufWritePost *.org silent! OrgExportToHTML

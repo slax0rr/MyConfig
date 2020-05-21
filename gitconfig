@@ -1,0 +1,12 @@
+[user]
+	name = Tomaz Lovrec
+	email = tomaz.lovrec@gmail.com
+	signingkey = C6F0EAFA84E65C08
+[commit]
+	gpgsign = true
+[push]
+	default = simple
+[include]
+	path = ~/.gitaliases
+[core]
+	excludesfile = /home/slax0r/.gitignore_global

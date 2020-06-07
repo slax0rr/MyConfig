@@ -200,16 +200,17 @@ bindsym $mod+m exec "sh ~/.local/bin/laptop_mouse.sh"
 
 # startup apps
 exec --no-startup-id nm-applet
+exec_always --no-startup-id ~/.local/bin/startup.sh
+exec_always --no-startup-id setxkbmap gb
 
 # app launcher
-set $mode_launcher Launch: [b]rowser [s]creencap [f]full screencap
+set $mode_launcher Launch: [b]rowser [s]creencap
 
 mode "$mode_launcher" {
     # browser
     bindsym b exec "i3-msg mode default && chromium"
     # screen capper
-    bindsym s exec "i3-msg mode default && sh ~/.local/bin/screenshot.sh"
-    bindsym f exec "i3-msg mode default && sh ~/.local/bin/screenshot.sh full"
+    bindsym s exec "i3-msg mode default && ~/.local/bin/screenshot.sh"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
@@ -232,23 +233,6 @@ mode "$kb_switch" {
 
 bindsym $mod+Mod1+k mode "$kb_switch"
 
-# worklog control
-set $worklog_control Worklog: win+[s]tart win+alt+[s]top win+[p]ause win+alt+un[p]ause
-mode "$worklog_control" {
-    # start
-    bindsym $mod+s exec "worklog start"
-    # stop
-    bindsym $mod+Mod1+s "worklog stop"
-    # pause
-    bindsym $mod+p "worklog pause"
-    # unpause
-    bindsym $mod+Mod1+p "worklog unpause"
-
-    # exit back to default mode
-    bindsym Escape mode "default"
-}
-bindsym $mod+Mod1+t mode "$worklog_control"
-
 # sound controls from kb on laptop
 bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ unmute
@@ -256,7 +240,3 @@ bindsym XF86AudioLowerVolume exec amixer set Master 5%- unmute
 
 # move xfce notification window to top left corner
 for_window [class="xfce4-notifyd"] floating enable move absolute position 0 0
-
-# start applications
-exec_always --no-startup-id feh --bg-scale /home/slax0r/Pictures/bg.jpg
-exec_always --no-startup-id setxkbmap gb

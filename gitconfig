@@ -9,4 +9,6 @@
 [include]
 	path = ~/.gitaliases
 [core]
-	excludesfile = /home/slax0r/.gitignore_global
+	excludesfile = ~/.gitignore_global
+[include]
+	path = ~/.gitconfig_local

@@ -31,6 +31,7 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'utl.vim'
     Plugin 'godlygeek/tabular'
     Plugin 'plasticboy/vim-markdown'
+    Plugin 'aquach/vim-http-client'
 
     call vundle#end()
 endif

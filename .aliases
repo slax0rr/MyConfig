@@ -1,32 +1,7 @@
 # Aliases file
 
-# convert md to pdf
-pandoc_md2pdf() {
-    /usr/bin/pandoc $1.md --latex-engine=xelatex -o $1.pdf
-}
-pandoc_md2pdf_open() {
-    pandoc_md2pdf $1
-    xdg-open $1.pdf
-}
-alias md2pdf='pandoc_md2pdf'
-alias md2pdfopen='pandoc_md2pdf_open'
-
-# ack alias
-alias ack="/usr/bin/ag"
-
 # Alias for IRC
 alias irc="ssh ircserver -t 'export TERM=xterm && tmux attach'"
-
-# Alias for drive-goole
-alias gdrive="drive-google"
-
-# Virtualbox
-alias vboxhdls="VBoxManage startvm --type headless"
-alias vboxpwroff="VBoxManage controlvm poweroff"
-alias vboxrst="VBoxManage controlvm reset"
-alias vboxctrl="VBoxManage controlvm"
-alias vboxlst="VBoxManage list vms"
-alias vboxlstrun="VBoxManage list runningvms"
 
 # composer alias
 composer() {
@@ -55,4 +30,6 @@ alias ssh="TERM=xterm-color ssh"
 
 alias k="kubectl"
 
+# vim shortcuts in terminal.. because I type them mistakingly when I want to open a file or exit a terminal
 alias :e="vim"
+alias :q="exit"

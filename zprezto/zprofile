@@ -35,8 +35,6 @@ fi
 # Paths
 #
 
-export GOPROJ=~/dev/projects/go/src/git.vibe.rate
-
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path
 

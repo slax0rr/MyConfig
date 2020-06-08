@@ -387,11 +387,6 @@ let g:instant_markdown_open_to_the_world = 1
 " END             "
 """""""""""""""""""
 
-" Load environment specific files, if it exists
-if !empty(glob("~/.vimrc_env"))
-    source ~/.vimrc_env
-endif
-
 " Load private computer specific config file, if it exists
 if !empty(glob("~/.vimrc_local"))
     source ~/.vimrc_local

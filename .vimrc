@@ -6,6 +6,7 @@ set nocompatible
 " Vundle settings "
 " BEGIN           "
 """""""""""""""""""
+" TODO: replace vundle with vim-plug
 if !empty(glob("~/.vim/bundle/Vundle.vim"))
     set rtp+=~/.vim/bundle/Vundle.vim
     call vundle#begin()
@@ -32,6 +33,7 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'godlygeek/tabular'
     Plugin 'plasticboy/vim-markdown'
     Plugin 'aquach/vim-http-client'
+    Plugin 'mattn/calendar-vim'
 
     call vundle#end()
 endif
@@ -140,11 +142,9 @@ colorscheme apprentice
 
 " color scheme settings
 highlight Comment cterm=italic
-highlight Search ctermbg=0 ctermfg=15 cterm=bold,underline
 highlight CursorLine cterm=underline ctermbg=0
 
 " Spell highlight
-highlight SpellBad ctermbg=0 ctermfg=183 cterm=bold,underline
 highlight SpellCap ctermbg=0 ctermfg=111 cterm=bold,underline
 highlight SpellRare ctermbg=0 ctermfg=16 cterm=bold,underline
 highlight SpellLocal ctermbg=0 ctermfg=185 cterm=bold,underline
@@ -169,6 +169,7 @@ autocmd BufNewFile,BufRead *.apib set ft=apiblueprint
 " Autocompletion settings "
 " BEGIN                   "
 """""""""""""""""""""""""""
+" TODO: replace the mess with tpope/vim-surround
 " Add closing brackets when an opening bracket is written
 " Squirly brackets
 inoremap {  {}<Left>
@@ -256,10 +257,6 @@ map <leader>sd :setlocal nospell<CR>
 " Hide search highlights for current search
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
-" Find on PHP.net
-command! -nargs=1 Pdoc !xdg-open http://php.net/<args> &
-nmap <leader>pd :Pdoc <cword><CR>
-
 " Map \j and \sj keys to search for tags
 map <leader>j g<C-]>
 map <leader>sj <C-W>g<C-]>
@@ -275,11 +272,8 @@ nnoremap <C-k> <C-W><C-K>
 nnoremap <C-l> <C-W><C-L>
 nnoremap <C-h> <C-W><C-H>
 
-" Instant markdown preview mapping
-map <leader>md :InstantMarkdownPreview<CR>
-
 " open a file in the same dir as the current one (borrowed from mgedmin)
-map <expr>      <leader>E              ":e ".expand("%:h")."/"
+map <expr> <leader>E ":e ".expand("%:h")."/"
 
 " open the fuzzy finder
 nnoremap <leader>f :FZF<CR>
@@ -287,17 +281,8 @@ nnoremap <leader>a :Ag<CR>
 nnoremap <leader>t :Tags<CR>
 vnoremap <leader>a y:Ag <C-R>"<CR>
 
-" search for visually selected in all files with same ext
-vnoremap // y:exe 'grep "<C-R>"" **/*.' . expand('%:e')<CR>
-" search for visually selected in all files
-vnoremap /a y:grep "<C-R>"" **/*.*
-
-" The bellow rempas are usually handled by tags, but sometimes those just
-" don't work as desired in some of the sources I have to deal with
-" search for class with the selected text as name in all files with same ext
-vnoremap /c y:exe 'grep "class <C-R>"" **/*.' . expand('%:e')<CR>
-" search for function with the selected text as name in all files with same ext
-vnoremap /f y:exe 'grep "function <C-R>"" **/*.' . expand('%:e')<CR>
+" search for visually selected
+vnoremap // y:Ag <C-R>"<CR>
 
 " copy current file path to clipboard
 noremap <leader>c :let @+ = expand("%")<CR>
@@ -327,12 +312,6 @@ function! NumberToggle()
     endif
 endfunction
 nnoremap <leader>n :call NumberToggle()<CR>
-
-" Code Sniffer Command
-command! PhpCS :cexpr system("phpcs --colors --standard=PSR2SlaxWeb " . expand("%:p")) | copen
-
-" Mess Detector Command
-command! PhpMD :cexpr system("phpmd " . expand("%:p") . " text ~/.ruleset.xml") | copen
 """"""""""""""""""""
 " END              "
 " Helper Functions "
@@ -348,25 +327,8 @@ command! PhpMD :cexpr system("phpmd " . expand("%:p") . " text ~/.ruleset.xml") 
 set laststatus=2
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
-" Turn on all python highlights of the python syntax plugin
-let python_highlight_all = 1
-
-" Disable polyglot language packages
-let g:polyglot_disables = ['php']
-
-" Instant markdown preview settings
-let g:instant_markdown_autostart = 0
-
 " emmet config
 let g:user_emmet_complete_tag = 1
-
-" vim-go settings
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_types = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
 
 " setup the editorconfig plugin
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
@@ -379,9 +341,6 @@ let g:localvimrc_sandbox = 0
 
 " disable asking to load loaclvimrc file, if it's there, load it
 let g:localvimrc_ask = 0
-
-" open instant markdown to world
-let g:instant_markdown_open_to_the_world = 1
 """""""""""""""""""
 " END             "
 " Plugin Settings "

@@ -290,6 +290,9 @@ noremap <leader>c :let @+ = expand("%")<CR>
 " open terminal
 noremap <leader>x :terminal<CR>
 noremap <leader>X :shell<CR>
+
+" exec HTTPClientDoRequest
+nnoremap <leader>hr :HTTPClientDoRequest<CR>
 """"""""""""""
 " END        "
 " Remappings "

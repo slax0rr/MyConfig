@@ -2,6 +2,7 @@
 map <leader>r <Plug>(go-run)
 map <leader>b <Plug>(go-build)
 map <leader>t <Plug>(go-test)
+map <leader>tf <Plug>(go-test-func)
 map <leader>c <Plug>(go-coverage)
 map <Leader>ds <Plug>(go-def-split)
 map <Leader>dv <Plug>(go-def-vertical)

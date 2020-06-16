@@ -315,6 +315,10 @@ function! NumberToggle()
     endif
 endfunction
 nnoremap <leader>n :call NumberToggle()<CR>
+
+" format XML
+com! FormatXML :%!python3 -c "import xml.dom.minidom, sys; print(xml.dom.minidom.parse(sys.stdin).toprettyxml())"
+nnoremap <leader>xf :FormatXML<CR>
 """"""""""""""""""""
 " END              "
 " Helper Functions "

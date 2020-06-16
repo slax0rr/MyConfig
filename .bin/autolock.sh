@@ -11,4 +11,5 @@ xautolock \
     -time 5 \
     -locker "$HOME/.local/bin/i3lock.sh" \
     -notify 30 \
+    -detectsleep \
     -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"

@@ -29,6 +29,11 @@ if test -f $HOME/.aliases; then
     source ~/.aliases
 fi
 
+# Load local aliases
+if test -f $HOME/.aliases_local; then
+    source ~/.aliases_local
+fi
+
 # Load fzf
 if test -f $HOME/.fzf.zsh; then
     source ~/.fzf.zsh

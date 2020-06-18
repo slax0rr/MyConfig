@@ -34,6 +34,7 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'plasticboy/vim-markdown'
     Plugin 'aquach/vim-http-client'
     Plugin 'mattn/calendar-vim'
+    Plugin 'preservim/nerdcommenter'
 
     call vundle#end()
 endif
@@ -318,7 +319,10 @@ nnoremap <leader>n :call NumberToggle()<CR>
 
 " format XML
 com! FormatXML :%!python3 -c "import xml.dom.minidom, sys; print(xml.dom.minidom.parse(sys.stdin).toprettyxml())"
-nnoremap <leader>xf :FormatXML<CR>
+nnoremap <leader>fx :FormatXML<CR>
+
+" format JSON
+nnoremap <leader>fj :%!python -m json.tool
 """"""""""""""""""""
 " END              "
 " Helper Functions "

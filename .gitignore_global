@@ -2,3 +2,4 @@
 .tags
 .lvimrc
 pprof_*/
+*.vim.http

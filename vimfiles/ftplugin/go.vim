@@ -3,6 +3,7 @@ map <leader>r <Plug>(go-run)
 map <leader>b <Plug>(go-build)
 map <leader>t <Plug>(go-test)
 map <leader>tf <Plug>(go-test-func)
+map <leader>tdf :execute 'DlvTest -- -test.run ' GetCurrFuncName()<cr>
 map <leader>c <Plug>(go-coverage)
 map <Leader>ds <Plug>(go-def-split)
 map <Leader>dv <Plug>(go-def-vertical)
@@ -36,3 +37,10 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 let g:go_rename_command = 'gopls'
+
+function! GetCurrFuncName()
+    let funcLinePattern = "^[^ \t#/]\\{2}.*[^:]\s*$"
+    let funcNamePattern = '^\s*func\s*\%((.\{-})\)*\s\(.\{-}\)(.*).*{$'
+
+    return matchlist(getline(search(funcLinePattern, 'bWn')), funcNamePattern)[1]
+endfunction

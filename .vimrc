@@ -294,6 +294,12 @@ noremap <leader>X :shell<CR>
 
 " exec HTTPClientDoRequest
 nnoremap <leader>hr :HTTPClientDoRequest<CR>
+
+" format XML
+nnoremap <leader>fx :%!python3 -c "import xml.dom.minidom, sys; print(xml.dom.minidom.parse(sys.stdin).toprettyxml())"<CR>
+
+" format JSON
+nnoremap <leader>fj :%!python -m json.tool
 """"""""""""""
 " END        "
 " Remappings "
@@ -316,13 +322,6 @@ function! NumberToggle()
     endif
 endfunction
 nnoremap <leader>n :call NumberToggle()<CR>
-
-" format XML
-com! FormatXML :%!python3 -c "import xml.dom.minidom, sys; print(xml.dom.minidom.parse(sys.stdin).toprettyxml())"
-nnoremap <leader>fx :FormatXML<CR>
-
-" format JSON
-nnoremap <leader>fj :%!python -m json.tool
 """"""""""""""""""""
 " END              "
 " Helper Functions "

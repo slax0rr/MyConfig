@@ -35,6 +35,8 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'aquach/vim-http-client'
     Plugin 'mattn/calendar-vim'
     Plugin 'preservim/nerdcommenter'
+    Plugin 'preservim/nerdtree'
+    Plugin 'Xuyuanp/nerdtree-git-plugin'
 
     call vundle#end()
 endif
@@ -300,6 +302,9 @@ nnoremap <leader>fx :%!python3 -c "import xml.dom.minidom, sys; print(xml.dom.mi
 
 " format JSON
 nnoremap <leader>fj :%!python -m json.tool
+
+" nerd tree toggle
+map <C-n> :NERDTreeToggle<CR>
 """"""""""""""
 " END        "
 " Remappings "
@@ -351,6 +356,9 @@ let g:localvimrc_sandbox = 0
 
 " disable asking to load loaclvimrc file, if it's there, load it
 let g:localvimrc_ask = 0
+
+" set nerd tree size
+let NERDTreeWinSize = 25
 """""""""""""""""""
 " END             "
 " Plugin Settings "

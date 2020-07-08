@@ -279,10 +279,9 @@ nnoremap <C-h> <C-W><C-H>
 map <expr> <leader>E ":e ".expand("%:h")."/"
 
 " open the fuzzy finder
-nnoremap <leader>f :FZF<CR>
-nnoremap <leader>a :Ag<CR>
-nnoremap <leader>t :Tags<CR>
-vnoremap <leader>a y:Ag <C-R>"<CR>
+nnoremap <leader>ff :FZF<CR>
+nnoremap <leader>fb :Buffers<CR>
+nnoremap <leader>ft :Tags<CR>
 
 " search for visually selected
 vnoremap // y:Ag <C-R>"<CR>
@@ -305,6 +304,9 @@ nnoremap <leader>fj :%!python -m json.tool
 
 " nerd tree toggle
 map <C-n> :NERDTreeToggle<CR>
+
+" nerd tree - current file
+map <leader>ee :NERDTreeFind<CR>
 """"""""""""""
 " END        "
 " Remappings "

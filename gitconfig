@@ -12,3 +12,7 @@
 	excludesfile = ~/.gitignore_global
 [include]
 	path = ~/.gitconfig_local
+[merge]
+	conflictStyle = diff3
+[rerere]
+	enabled = true

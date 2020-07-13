@@ -63,9 +63,13 @@ set shiftwidth=4
 set expandtab
 set autoindent
 
-" Backup file dir
+" dir settings
 set backupdir=~/tmp
 set undodir=~/tmp/un
+set directory=~/tmp/sw//
+
+" enable undofile
+set undofile
 
 " Line numbers
 set relativenumber

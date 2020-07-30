@@ -37,6 +37,9 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 let g:go_rename_command = 'gopls'
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
+let g:go_implements_mode='gopls'
 
 function! GetCurrFuncName()
     let funcLinePattern = "^[^ \t#/]\\{2}.*[^:]\s*$"
@@ -44,3 +47,13 @@ function! GetCurrFuncName()
 
     return matchlist(getline(search(funcLinePattern, 'bWn')), funcNamePattern)[1]
 endfunction
+
+" run tests only in current file
+"let b:tests = []
+"let save_cursor = getcurpos()
+":g/func\s\+Test/call search('Test') | call add(b:tests,  '^' . expand('<cword>'))
+"call setpos('.', save_cursor)
+"" use it in a mapping, providing proper package name
+"exe "go test package_name -run " . join(b:tests, '\|')
+"" debug msg
+"echom "go test package_name -run " . join(b:tests, '\|')

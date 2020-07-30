@@ -62,6 +62,7 @@ TERM xterm-256color
 TERM xterm-88color
 TERM xterm-color
 TERM xterm-debian
+TERM xterm-termite
 # Below are the color init strings for the basic file types. A color init
 # string consists of one or more of the following numeric codes:
 # Attribute codes:
@@ -83,12 +84,12 @@ DOOR 01;35 # door
 BLK 40;33;01 # block device driver
 CHR 40;33;01 # character device driver
 ORPHAN 40;31;01 # symlink to nonexistent file, or non-stat'able file
-SETUID 37;41 # file that is setuid (u+s)
+SETUID 40;41 # file that is setuid (u+s)
 SETGID 30;43 # file that is setgid (g+s)
 CAPABILITY 30;41 # file with capability
 STICKY_OTHER_WRITABLE 30;42 # dir that is sticky and other-writable (+t,o+w)
-OTHER_WRITABLE 34;42 # dir that is other-writable (o+w) and not sticky
-STICKY 37;44 # dir with the sticky bit set (+t) and not other-writable
+OTHER_WRITABLE 40;42 # dir that is other-writable (o+w) and not sticky
+STICKY 40;44 # dir with the sticky bit set (+t) and not other-writable
 # This is for files with execute permission:
 EXEC 01;33
 # List any file extensions like '.gz' or '.tar' that you would like ls

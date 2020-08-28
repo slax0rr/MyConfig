@@ -12,7 +12,11 @@
 if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
 else
-  export BROWSER='chromium'
+  if [[ -x "/usr/bin/brave-browser" ]]; then
+    export BROWSER='brave-browser'
+  elif [[ -x "/usr/bin/chromium" ]]; then
+    export BROWSER='chromium'
+  fi
 fi
 
 #

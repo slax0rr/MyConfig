@@ -312,6 +312,12 @@ map <C-n> :NERDTreeToggle<CR>
 
 " nerd tree - current file
 map <leader>ee :NERDTreeFind<CR>
+
+" base64 encode registry
+nnoremap <leader>64 :exe 'norm a' . system('base64', @")<cr>
+
+" base63 decode registry
+nnoremap <leader>64d :exe 'norm a' . system('base64 --decode', @")<cr>
 """"""""""""""
 " END        "
 " Remappings "

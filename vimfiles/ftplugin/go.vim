@@ -15,6 +15,7 @@ map <Leader>s <Plug>(go-implements)
 map <Leader>i <Plug>(go-info)
 map <Leader>e <Plug>(go-rename)
 map <Leader>gi <Plug>(go-imports)
+map <Leader>gr <Plug>(go-referrers)
 nmap <Leader>dd :GoDecls<cr>
 nmap <Leader>ie :GoIfErr<cr>
 

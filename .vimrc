@@ -316,7 +316,7 @@ map <leader>ee :NERDTreeFind<CR>
 " base64 encode registry
 nnoremap <leader>64 :exe 'norm a' . system('base64', @")<cr>
 
-" base63 decode registry
+" base64 decode registry
 nnoremap <leader>64d :exe 'norm a' . system('base64 --decode', @")<cr>
 """"""""""""""
 " END        "

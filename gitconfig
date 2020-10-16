@@ -1,6 +1,6 @@
 [user]
 	name = Tomaz Lovrec
-	email = tomaz.lovrec@gmail.com
+	email = tomaz@lovrec.dev
 	signingkey = C6F0EAFA84E65C08
 [commit]
 	gpgsign = true

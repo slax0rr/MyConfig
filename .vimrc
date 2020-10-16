@@ -21,7 +21,6 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'fugitive.vim'
     Plugin 'mattn/emmet-vim'
     Plugin 'editorconfig/editorconfig-vim'
-    Plugin 'localrc.vim'
     Plugin 'junegunn/fzf'
     Plugin 'junegunn/fzf.vim'
     Plugin 'jdaddy.vim'
@@ -37,7 +36,6 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'preservim/nerdcommenter'
     Plugin 'preservim/nerdtree'
     Plugin 'Xuyuanp/nerdtree-git-plugin'
-    Plugin 'vim-test/vim-test'
 
     call vundle#end()
 endif
@@ -371,7 +369,7 @@ let g:localvimrc_sandbox = 0
 let g:localvimrc_ask = 0
 
 " set nerd tree size
-let NERDTreeWinSize = 25
+let NERDTreeWinSize = 45
 """""""""""""""""""
 " END             "
 " Plugin Settings "

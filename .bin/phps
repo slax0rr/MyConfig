@@ -4,17 +4,16 @@
 #
 VER=${PHPVERSION:-7.4-cli}
 ARGS="-a"
-if [ $# -gt 0 ]; then
-    ARGS="$@"
-fi
+PORT="$1"
 tty=
 tty -s && tty=--tty
 docker run \
     $tty \
     --interactive \
     --rm \
+    -p "$PORT:$PORT" \
     -v "$(pwd)":/code \
     -v /usr/local/bin/phpmd:/usr/local/bin/phpmd \
     -v /usr/local/bin/phpcs:/usr/local/bin/phpcs \
     -v /usr/local/bin/phpcbf:/usr/local/bin/phpcbf \
-    -w /code php:$VER php $ARGS
+    -w /code php:$VER php -S 0.0.0.0:$PORT

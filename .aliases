@@ -29,6 +29,7 @@ fi
 alias ssh="TERM=xterm-color ssh"
 
 alias k="kubectl"
+alias kdbgpod="kubectl run -i --tty --rm debug-pod-slax0r --image=alpine --restart=Never -- sh"
 
 # vim shortcuts in terminal.. because I type them mistakingly when I want to open a file or exit a terminal
 alias :e="vim"

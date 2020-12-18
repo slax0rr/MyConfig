@@ -49,3 +49,6 @@ fi
 
 # some completions are not working, force it
 autoload -U compinit && compinit
+
+# expand $PATH
+export PATH=$PATH:~/.local/bin

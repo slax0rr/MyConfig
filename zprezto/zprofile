@@ -70,3 +70,5 @@ fi
 
 # password store
 export PASSWORD_STORE_X_SELECTION='c'
+
+source /etc/profile.d/apps-bin-path.sh

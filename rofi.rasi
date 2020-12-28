@@ -1,0 +1,6 @@
+configuration {
+ modi: "window,drun,run,ssh,combi";
+ theme: "solarized";
+ font: "PragmataPro Mono 10";
+ combi-modi: "run,window,drun,ssh";
+}

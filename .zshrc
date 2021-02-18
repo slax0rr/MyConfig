@@ -52,3 +52,6 @@ autoload -U compinit && compinit
 
 # expand $PATH
 export PATH=$PATH:~/.local/bin
+
+# added by travis gem
+[ ! -s /home/tomaz/.travis/travis.sh ] || source /home/tomaz/.travis/travis.sh

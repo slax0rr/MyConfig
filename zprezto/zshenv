@@ -10,3 +10,4 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
   source "${ZDOTDIR:-$HOME}/.zprofile"
   source /etc/profile.d/apps-bin-path.sh
 fi
+source "$HOME/.cargo/env"

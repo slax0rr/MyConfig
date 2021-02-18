@@ -36,6 +36,8 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'preservim/nerdcommenter'
     Plugin 'preservim/nerdtree'
     Plugin 'Xuyuanp/nerdtree-git-plugin'
+    Plugin 'inkarkat/vim-ingo-library'
+    Plugin 'inkarkat/vim-SyntaxRange'
 
     call vundle#end()
 endif

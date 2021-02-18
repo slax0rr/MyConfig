@@ -47,6 +47,19 @@ endif
 " END             "
 """""""""""""""""""
 
+"""""""""""""""""""
+" BEGIN           "
+" Package stuff   "
+" BEGIN           "
+"""""""""""""""""""
+packloadall
+silent! helptags ALL
+"""""""""""""""""""
+" END             "
+" Package stuff   "
+" END             "
+"""""""""""""""""""
+
 """""""""""""""""""""""""""
 " BEGIN                   "
 " Editor related settings "

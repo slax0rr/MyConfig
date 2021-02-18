@@ -16,3 +16,5 @@
 	conflictStyle = diff3
 [rerere]
 	enabled = true
+[http]
+	cookiefile = /home/slax0r/.gitcookies

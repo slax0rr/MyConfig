@@ -34,3 +34,6 @@ alias kdbgpod="kubectl run -i --tty --rm debug-pod-slax0r --image=alpine --resta
 # vim shortcuts in terminal.. because I type them mistakingly when I want to open a file or exit a terminal
 alias :e="vim"
 alias :q="exit"
+
+# swagger
+alias swaggerd="docker run --rm -it  --user $(id -u):$(id -g) -e GOPATH=$HOME/dev/projects/go:/go -v $HOME:$HOME -w $(pwd) quay.io/goswagger/swagger"

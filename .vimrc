@@ -39,6 +39,7 @@ if !empty(glob("~/.vim/bundle/Vundle.vim"))
     Plugin 'inkarkat/vim-ingo-library'
     Plugin 'inkarkat/vim-SyntaxRange'
     Plugin 'hashivim/vim-terraform'
+    Plugin 'tpope/vim-speeddating'
 
     call vundle#end()
 endif
@@ -254,7 +255,6 @@ inoremap <expr><s-tab> pumvisible()?"\<c-p>":"\<c-d>"
 command! -range=% VP  execute <line1> . "," . <line2> . "w !vpaste ft=" . &filetype
 command! -range=% SP  silent execute <line1> . "," . <line2> . "w !curl -F 'sprunge=<-' http://sprunge.us/ | tr -d '\\n' | awk '{print $1\"?" . &filetype . "\"}' | xclip -selection clipboard"
 command! -range=% IX  silent execute <line1> . "," . <line2> . "w !curl -F 'f:1=<-' ix.io | tr -d '\\n' | awk '{print $1\"/" . &filetype . "\"}' | xclip -selection clipboard"
-command! -range=% PT  silent execute <line1> . "," . <line2> . "w !curl -F c=@- https://ptpb.pw/ | grep \"url:\" | awk '{print $2\"/" . &filetype . "\"}' | xclip -selection clipboard"
 command!          CMD let @+ = ':' . @:
 
 " search in all files with same extension
@@ -321,8 +321,11 @@ nnoremap <leader>fx :%!python3 -c "import xml.dom.minidom, sys; print(xml.dom.mi
 " format JSON
 nnoremap <leader>fj :%!python -m json.tool
 
+" nerd tree close
+map <C-c> :NERDTreeClose<CR>
+
 " nerd tree toggle
-map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeFocus<CR>
 
 " nerd tree - current file
 map <leader>ee :NERDTreeFind<CR>
@@ -386,6 +389,9 @@ let g:localvimrc_ask = 0
 
 " set nerd tree size
 let NERDTreeWinSize = 45
+
+" set agenda file for org-mode
+let g:org_agenda_files = ['~/Documents/TODO.org']
 """""""""""""""""""
 " END             "
 " Plugin Settings "

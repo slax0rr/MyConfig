@@ -1,25 +1,5 @@
 # Aliases file
 
-# Alias for IRC
-alias irc="ssh ircserver -t 'export TERM=xterm && tmux attach'"
-
-# composer alias
-composer() {
-    tty=
-    tty -s && tty=--tty
-    docker run \
-        $tty \
-        --interactive \
-        --rm \
-        --user $(id -u):$(id -g) \
-        --volume ~/.composer/:/composer \
-        --volume $(pwd):/app \
-        composer "$@"
-}
-
-# codeception alias with docker container
-alias codecept='docker run -it --rm -v $(pwd):/code -w /code --user $(id -u):$(id -g) php:7.2-cli-alpine /code/vendor/bin/codecept'
-
 # Load local aliases
 if [[ -a ~/.aliases_local ]]; then
     source ~/.aliases_local
@@ -29,8 +9,5 @@ fi
 alias ssh="TERM=xterm-color ssh"
 
 alias k="kubectl"
+alias g="git"
 alias kdbgpod="kubectl run -i --tty --rm debug-pod-slax0r --image=alpine --restart=Never -- sh"
-
-# vim shortcuts in terminal.. because I type them mistakingly when I want to open a file or exit a terminal
-alias :e="vim"
-alias :q="exit"

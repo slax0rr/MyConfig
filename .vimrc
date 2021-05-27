@@ -6,42 +6,38 @@ set nocompatible
 " Vundle settings "
 " BEGIN           "
 """""""""""""""""""
-" TODO: replace vundle with vim-plug
-if !empty(glob("~/.vim/bundle/Vundle.vim"))
-    set rtp+=~/.vim/bundle/Vundle.vim
-    call vundle#begin()
+if !empty(glob("~/.vim/autoload/plug.vim"))
+    call plug#begin('~/.vim/plugged')
 
-    Plugin 'VundleVim/Vundle.vim'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'suan/vim-instant-markdown'
+    Plug 'fatih/vim-go'
+    Plug 'vim-scripts/WebAPI.vim'
+    Plug 'vim-scripts/metarw'
+    Plug 'vim-scripts/fugitive.vim'
+    Plug 'mattn/emmet-vim'
+    Plug 'editorconfig/editorconfig-vim'
+    Plug 'junegunn/fzf'
+    Plug 'junegunn/fzf.vim'
+    Plug 'vim-scripts/jdaddy.vim'
+    Plug 'vim-scripts/localvimrc'
+    Plug 'cespare/vim-toml'
+    Plug 'sebdah/vim-delve'
+    Plug 'kylef/apiblueprint.vim'
+    Plug 'vim-scripts/utl.vim'
+    Plug 'godlygeek/tabular'
+    Plug 'plasticboy/vim-markdown'
+    Plug 'aquach/vim-http-client'
+    Plug 'mattn/calendar-vim'
+    Plug 'preservim/nerdcommenter'
+    Plug 'preservim/nerdtree'
+    Plug 'Xuyuanp/nerdtree-git-plugin'
+    Plug 'inkarkat/vim-ingo-library'
+    Plug 'inkarkat/vim-SyntaxRange'
+    Plug 'hashivim/vim-terraform'
+    Plug 'tpope/vim-speeddating'
 
-    Plugin 'airblade/vim-gitgutter'
-    Plugin 'suan/vim-instant-markdown'
-    Plugin 'fatih/vim-go'
-    Plugin 'WebAPI.vim'
-    Plugin 'metarw'
-    Plugin 'fugitive.vim'
-    Plugin 'mattn/emmet-vim'
-    Plugin 'editorconfig/editorconfig-vim'
-    Plugin 'junegunn/fzf'
-    Plugin 'junegunn/fzf.vim'
-    Plugin 'jdaddy.vim'
-    Plugin 'localvimrc'
-    Plugin 'cespare/vim-toml'
-    Plugin 'sebdah/vim-delve'
-    Plugin 'kylef/apiblueprint.vim'
-    Plugin 'utl.vim'
-    Plugin 'godlygeek/tabular'
-    Plugin 'plasticboy/vim-markdown'
-    Plugin 'aquach/vim-http-client'
-    Plugin 'mattn/calendar-vim'
-    Plugin 'preservim/nerdcommenter'
-    Plugin 'preservim/nerdtree'
-    Plugin 'Xuyuanp/nerdtree-git-plugin'
-    Plugin 'inkarkat/vim-ingo-library'
-    Plugin 'inkarkat/vim-SyntaxRange'
-    Plugin 'hashivim/vim-terraform'
-    Plugin 'tpope/vim-speeddating'
-
-    call vundle#end()
+    call plug#end()
 endif
 """""""""""""""""""
 " END             "

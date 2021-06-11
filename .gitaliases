@@ -30,3 +30,4 @@
     bdi = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
     eu = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; vim `f`"
     au = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git add `f`"
+    puu = push -u origin HEAD

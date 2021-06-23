@@ -5,3 +5,4 @@ vimfiles/bundle/*
 .config/chromium/
 vimfiles/view/*
 vimfiles/.netrwhist
+vimfiles/plugged/*

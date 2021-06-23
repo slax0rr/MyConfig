@@ -4,7 +4,6 @@
 	signingkey = C6F0EAFA84E65C08
 [commit]
 	gpgsign = true
-	template = ~/.git-commit-template
 [push]
 	default = simple
 [include]
@@ -26,5 +25,3 @@
 	patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
 	allowed = AKIAIOSFODNN7EXAMPLE
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-[init]
-	templateDir = /home/slax0r/.git-templates/git-secrets

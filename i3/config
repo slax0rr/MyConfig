@@ -133,12 +133,12 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 set $mode_exit Exit mode [e]xit, [l]ock, [r]eboot, [p]oweroff, [s]uspend, [h]ibernate
 mode "$mode_exit" {
-    bindsym $mod+r exec "i3-nagbar -t warning -m 'Reboot?' -b 'Yes, reboot' 'sudo /sbin/reboot'"
+    bindsym $mod+r exec "i3-nagbar -t warning -m 'Reboot?' -b 'Yes, reboot' 'systemctl reboot'"
     bindsym $mod+e exec "i3-nagbar -t warning -m 'Exit?' -b 'Yes, exit i3' 'i3-msg exit'"
-    bindsym $mod+p exec "i3-nagbar -t warning -m 'Shutdown?' -b 'Yes, shutdown' 'sudo /sbin/poweroff'"
+    bindsym $mod+p exec "i3-nagbar -t warning -m 'Shutdown?' -b 'Yes, shutdown' 'systemctl poweroff'"
     bindsym $mod+l exec "i3-msg mode default && ./.local/bin/i3lock.sh -c 000000"
-    bindsym $mod+s exec "i3-msg mode default && sudo /usr/sbin/pm-suspend"
-    bindsym $mod+h exec "i3-msg mode default && sudo /usr/sbin/pm-hibernate"
+    bindsym $mod+s exec "i3-msg mode default && systemctl suspend"
+    bindsym $mod+h exec "i3-msg mode default && systemctl hibernate"
 
     # exit back to normal
     bindsym Return mode "default"

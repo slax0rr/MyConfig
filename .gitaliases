@@ -6,6 +6,12 @@
     co = checkout
     br = branch
     bra = branch -a
+    brc = "!f() { \
+        git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d; \
+    }; f"
+    brcf = "!f() { \
+        git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D; \
+    }; f"
     di = diff
     fe = fetch
     sta = add -A .

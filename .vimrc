@@ -328,10 +328,10 @@ map <C-n> :NERDTreeFocus<CR>
 map <leader>ee :NERDTreeFind<CR>
 
 " base64 encode registry
-nnoremap <leader>64 :exe 'norm a' . system('base64', @")<cr>
+nnoremap <leader>64 :exe 'norm a' . system('base64 -w 0', @")<cr>
 
 " base64 decode registry
-nnoremap <leader>64d :exe 'norm a' . system('base64 --decode', @")<cr>
+nnoremap <leader>64d :exe 'norm a' . system('base64 --decode -w 0', @")<cr>
 """"""""""""""
 " END        "
 " Remappings "

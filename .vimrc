@@ -36,6 +36,7 @@ if !empty(glob("~/.vim/autoload/plug.vim"))
     Plug 'inkarkat/vim-SyntaxRange'
     Plug 'hashivim/vim-terraform'
     Plug 'tpope/vim-speeddating'
+    Plug 'junegunn/vim-easy-align'
 
     call plug#end()
 endif
@@ -388,6 +389,9 @@ let NERDTreeWinSize = 45
 
 " set agenda file for org-mode
 let g:org_agenda_files = ['~/Documents/TODO.org']
+
+" markdown easyalign
+au FileType markdown vmap <Leader>a :EasyAlign*<Bar><Enter>
 """""""""""""""""""
 " END             "
 " Plugin Settings "

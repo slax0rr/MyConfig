@@ -4,6 +4,7 @@
 	signingkey = C6F0EAFA84E65C08
 [commit]
 	gpgsign = true
+	template = ~/.git-commit-template
 [push]
 	default = simple
 [include]

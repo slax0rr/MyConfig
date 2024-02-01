@@ -2,10 +2,6 @@
 setlocal spell spelllang=en_gb
 
 " Instant markdown preview mapping
-map <leader>md :InstantMarkdownPreview<CR>
+map <leader>md :MarkdownPreview<CR>
 
-" Instant markdown preview settings
-let g:instant_markdown_autostart = 0
-
-" open instant markdown to world
-let g:instant_markdown_open_to_the_world = 1
+set nofoldenable

@@ -18,6 +18,8 @@ map <Leader>gi <Plug>(go-imports)
 map <Leader>gr <Plug>(go-referrers)
 nmap <Leader>dd :GoDecls<cr>
 nmap <Leader>ie :GoIfErr<cr>
+nmap <Leader>gpr :call go#lsp#Restart()
+nmap <Leader>im :call ImplementInterface()<cr>
 
 " set folding settings
 setlocal foldmethod=syntax
@@ -44,11 +46,20 @@ let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 let g:go_implements_mode='gopls'
 
+let g:go_test_timeout = '60s'
+
 function! GetCurrFuncName()
     let funcLinePattern = "^[^ \t#/]\\{2}.*[^:]\s*$"
     let funcNamePattern = '^\s*func\s*\%((.\{-})\)*\s\(.\{-}\)(.*).*{$'
 
     return matchlist(getline(search(funcLinePattern, 'bWn')), funcNamePattern)[1]
+endfunction
+
+function! ImplementInterface()
+    let decLinePattern = 'var\s.\{-}\s\(.\{-}\)\s=\s\(.\{-}\){}*$'
+
+    let list = matchlist(getline('.'), decLinePattern)
+    execute 'GoImpl _ ' list[2] list[1]
 endfunction
 
 " run tests only in current file

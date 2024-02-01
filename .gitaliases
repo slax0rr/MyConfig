@@ -37,3 +37,4 @@
     eu = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; vim `f`"
     au = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git add `f`"
     puu = push -u origin HEAD
+    puf = push -f

@@ -130,3 +130,11 @@ fi
 if test -f $HOME/.aliases; then
     source ~/.aliases
 fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/slax0r/gcloud/google-cloud-sdk/path.bash.inc' ]; then . '/home/slax0r/gcloud/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/slax0r/gcloud/google-cloud-sdk/completion.bash.inc' ]; then . '/home/slax0r/gcloud/google-cloud-sdk/completion.bash.inc'; fi
+
+[[ -s "/home/slax0r/.gvm/scripts/gvm" ]] && source "/home/slax0r/.gvm/scripts/gvm"

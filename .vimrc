@@ -3,14 +3,13 @@ set nocompatible
 
 """""""""""""""""""
 " BEGIN           "
-" Vundle settings "
+" Plug settings   "
 " BEGIN           "
 """""""""""""""""""
 if !empty(glob("~/.vim/autoload/plug.vim"))
     call plug#begin('~/.vim/plugged')
 
     Plug 'airblade/vim-gitgutter'
-    Plug 'suan/vim-instant-markdown'
     Plug 'fatih/vim-go'
     Plug 'vim-scripts/WebAPI.vim'
     Plug 'vim-scripts/metarw'
@@ -37,12 +36,19 @@ if !empty(glob("~/.vim/autoload/plug.vim"))
     Plug 'hashivim/vim-terraform'
     Plug 'tpope/vim-speeddating'
     Plug 'junegunn/vim-easy-align'
+    Plug 'mracos/mermaid.vim'
+    Plug 'jclsn/glow.vim'
+    Plug 'jceb/vim-orgmode'
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+    Plug 'embear/vim-localvimrc'
+    Plug 'ruanyl/vim-gh-line'
+    Plug 'takac/vim-hardtime'
 
     call plug#end()
 endif
 """""""""""""""""""
 " END             "
-" Vundle settings "
+" Plug settings   "
 " END             "
 """""""""""""""""""
 
@@ -161,7 +167,7 @@ set hlsearch
 colorscheme apprentice
 
 " color scheme settings
-highlight Comment cterm=italic
+"highlight Comment cterm=italic
 highlight CursorLine cterm=underline ctermbg=0
 
 " Spell highlight
@@ -170,7 +176,7 @@ highlight SpellRare ctermbg=0 ctermfg=16 cterm=bold,underline
 highlight SpellLocal ctermbg=0 ctermfg=185 cterm=bold,underline
 
 " Highlight 80 and 120 columns
-let &colorcolumn="80,".join(range(120,999),",")
+let &colorcolumn="80,".join(range(120,130),",")
 
 " Add cursorline and cursorcolumn
 set cursorline
@@ -269,6 +275,10 @@ command! -nargs=* Sall silent execute 'grep ' . expand('<f-args>') . ' **/*'
 " Remappings "
 " BEGIN      "
 """"""""""""""
+" esc remap
+inoremap jj <Esc>
+vnoremap jj <Esc>
+
 " spellcheck
 map <leader>se :setlocal spell spelllang=en_gb<CR>
 map <leader>sd :setlocal nospell<CR>
@@ -332,6 +342,23 @@ nnoremap <leader>64 :exe 'norm a' . system('base64 -w 0', @")<cr>
 
 " base64 decode registry
 nnoremap <leader>64d :exe 'norm a' . system('base64 --decode -w 0', @")<cr>
+
+" no arrows
+nnoremap <Left> :echo "No left for you!"<CR>
+vnoremap <Left> :<C-u>echo "No left for you!"<CR>
+inoremap <Left> <C-o>:echo "No left for you!"<CR>
+
+nnoremap <Right> :echo "No right for you!"<CR>
+vnoremap <Right> :<C-u>echo "No right for you!"<CR>
+inoremap <Right> <C-o>:echo "No right for you!"<CR>
+
+nnoremap <Up> :echo "No up for you!"<CR>
+vnoremap <Up> :<C-u>echo "No up for you!"<CR>
+inoremap <Up> <C-o>:echo "No up for you!"<CR>
+
+nnoremap <Down> :echo "No down for you!"<CR>
+vnoremap <Down> :<C-u>echo "No down for you!"<CR>
+inoremap <Down> <C-o>:echo "No down for you!"<CR>
 """"""""""""""
 " END        "
 " Remappings "
@@ -354,6 +381,21 @@ function! NumberToggle()
     endif
 endfunction
 nnoremap <leader>n :call NumberToggle()<CR>
+
+" Stage all and commit
+function! GitStageAndCommit()
+    silent execute '!git add -A .'
+    Gcommit -v
+endfunction
+nnoremap <leader>gc :call GitStageAndCommit()<CR>
+nnoremap <leader>gp :Gpush<CR>
+
+" push all commits and open a PR on GitHub with the f3 tool
+function! GitPushAndOpenPR()
+    Gpush -u origin HEAD
+    !f3 github pr
+endfunction
+nnoremap <leader>pr :call GitPushAndOpenPR()<CR>
 """"""""""""""""""""
 " END              "
 " Helper Functions "
@@ -392,6 +434,24 @@ let g:org_agenda_files = ['~/Documents/TODO.org']
 
 " markdown easyalign
 au FileType markdown vmap <Leader>a :EasyAlign*<Bar><Enter>
+
+" syntax highlighting on markdown code blocks
+let g:markdown_fenced_languages = ['html', 'go', 'vim', 'json', 'xml']
+
+" enable hardtime
+let g:hardtime_default_on = 1
+
+" stop hardtime in NERDtree
+let g:hardtime_ignore_buffer_patterns = ["NERD.*"]
+
+" stop hardtime in quickfix
+let g:hardtime_ignore_quickfix = 1
+
+" reduce timeout for hardtime
+let g:hardtime_timeout = 500
+
+" reset hardtime timeout on numbered navigation (10j)
+let g:hardtime_motion_with_count_resets = 1
 """""""""""""""""""
 " END             "
 " Plugin Settings "

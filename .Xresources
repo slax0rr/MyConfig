@@ -1,11 +1,12 @@
 !! Set the font to PragmataProMono.
-*font                          : PragmataProMono:size=12:antialias=true:autohint=false
-dmenu.font                     : xft:PragmataProMono:size=12:antialias=true:autohint=false
+*font                          : PragmataProMono:size=14:antialias=true:autohint=false
+dmenu.font                     : xft:PragmataProMono:size=14:antialias=true:autohint=false
 
+!xterm
 XTerm*.allowBoldFonts          : true
 XTerm*.bellIsUrgent            : true
 XTerm*.cutNewline              : true
-XTerm*.faceName                : PragmataProMono:size=12:antialias=true:autohint=false
+XTerm*.faceName                : PragmataProMono:size=14:antialias=true:autohint=false
 XTerm*.fullscreen              : never
 XTerm*.internalBorder          : 0
 XTerm*.renderFont              : true
@@ -24,42 +25,67 @@ XTerm*ScrollKey                : true
 XTerm*cursorBlink              : false
 XTerm*scaleHeight              : 1.05
 XTerm*eightBitInput            : false
+
+!uxterm
+UXTerm*.allowBoldFonts          : true
+UXTerm*.bellIsUrgent            : true
+UXTerm*.cutNewline              : true
+UXTerm*.faceName                : PragmataProMono:size=14:antialias=true:autohint=false
+UXTerm*.fullscreen              : never
+UXTerm*.internalBorder          : 0
+UXTerm*.renderFont              : true
+UXTerm*.termName                : xterm-256color
+UXTerm*.utf8                    : always
+UXTerm*.utf8Fonts               : always
+UXTerm*.visualBell              : false
+UXTerm*.visualBellLine          : false
+UXTerm*pointerColor             : white
+UXTerm*pointerColorBackground   : black
+UXTerm*selectToClipboard        : true
+UXTerm*on3Clicks                : regex [^ \n]+
+UXTerm*SaveLines                : 10000
+UXTerm*ScrollBar                : false
+UXTerm*ScrollKey                : true
+UXTerm*cursorBlink              : false
+UXTerm*scaleHeight              : 1.05
+UXTerm*eightBitInput            : false
+
 *VT100*translations            : #override Shift <Btn1Up>: exec-formatted("xdg-open '%t'", CLIPBOARD)
 
-!! colors - aprentice
-!! special
-!*.foreground:   #bcbcbc
-!*.background:   #262626
-!*.cursorColor:  #bcbcbc
-!
-!! black
-!*.color0:       #1c1c1c
-!*.color8:       #444444
-!
-!! red
-!*.color1:       #af5f5f
-!*.color9:       #ff8700
-!
-!! green
-!*.color2:       #5f875f
-!*.color10:      #87af87
-!
-!! yellow
-!*.color3:       #87875f
-!*.color11:      #ffffaf
-!
-!! blue
-!*.color4:       #5f87af
-!*.color12:      #8fafd7
-!
-!! magenta
-!*.color5:       #5f5f87
-!*.color13:      #8787af
-!
-!! cyan
-!*.color6:       #5f8787
-!*.color14:      #5fafaf
-!
-!! white
-!*.color7:       #6c6c6c
-!*.color15:      #ffffff
+! colors - aprentice
+! special
+*.foreground:   #bcbcbc
+*.background:   #262626
+*.cursorColor:  #bcbcbc
+
+! black
+*.color0:       #1c1c1c
+*.color8:       #444444
+
+! red
+*.color1:       #af5f5f
+*.color9:       #ff8700
+
+! green
+*.color2:       #5f875f
+*.color10:      #87af87
+
+! yellow
+*.color3:       #87875f
+*.color11:      #ffffaf
+
+! blue
+*.color4:       #5f87af
+*.color12:      #8fafd7
+
+! magenta
+*.color5:       #5f5f87
+*.color13:      #8787af
+
+! cyan
+*.color6:       #5f8787
+*.color14:      #5fafaf
+
+! white
+*.color7:       #6c6c6c
+*.color15:      #ffffff

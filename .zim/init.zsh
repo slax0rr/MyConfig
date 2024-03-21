@@ -1,0 +1,16 @@
+zimfw() { source /home/slax0r/.zim/zimfw.zsh "${@}" }
+zmodule() { source /home/slax0r/.zim/zimfw.zsh "${@}" }
+fpath=(/home/slax0r/.zim/modules/git/functions /home/slax0r/.zim/modules/utility/functions /home/slax0r/.zim/modules/duration-info/functions /home/slax0r/.zim/modules/git-info/functions /home/slax0r/.zim/modules/zsh-completions/src ${fpath})
+autoload -Uz -- git-alias-lookup git-branch-current git-branch-delete-interactive git-branch-remote-tracking git-dir git-ignore-add git-root git-stash-clear-interactive git-stash-recover git-submodule-move git-submodule-remove mkcd mkpw duration-info-precmd duration-info-preexec coalesce git-action git-info
+source /home/slax0r/.zim/modules/environment/init.zsh
+source /home/slax0r/.zim/modules/git/init.zsh
+source /home/slax0r/.zim/modules/input/init.zsh
+source /home/slax0r/.zim/modules/termtitle/init.zsh
+source /home/slax0r/.zim/modules/utility/init.zsh
+source /home/slax0r/.zim/modules/duration-info/init.zsh
+source /home/slax0r/.zim/modules/asciiship/asciiship.zsh-theme
+source /home/slax0r/.zim/modules/completion/init.zsh
+source /home/slax0r/.zim/modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/slax0r/.zim/modules/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /home/slax0r/.zim/modules/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/slax0r/.zim/modules/powerlevel10k/powerlevel10k.zsh-theme

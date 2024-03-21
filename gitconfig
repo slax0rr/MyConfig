@@ -1,9 +1,9 @@
 [user]
 	name = Tomaz Lovrec
 	email = tomaz@lovrec.dev
-	signingkey = C6F0EAFA84E65C08
+	signingkey = 4B52965E2BB0BA16
 [commit]
-	gpgsign = false
+	gpgsign = true
 	#template = ~/.git-commit-template
 [push]
 	default = simple

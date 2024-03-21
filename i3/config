@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:PragmataProMono 8
+font pango:PragmataProMono 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -30,7 +30,7 @@ font pango:PragmataProMono 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec xterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -131,12 +131,12 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-set $mode_exit Exit mode [e]xit, [l]ock, [r]eboot, [p]oweroff, [s]uspend, [h]ibernate
+set $mode_exit Exit mode [e]xit, l[o]ck, [r]eboot, [p]oweroff, [s]uspend, [h]ibernate
 mode "$mode_exit" {
     bindsym $mod+r exec "i3-nagbar -t warning -m 'Reboot?' -b 'Yes, reboot' 'systemctl reboot'"
     bindsym $mod+e exec "i3-nagbar -t warning -m 'Exit?' -b 'Yes, exit i3' 'i3-msg exit'"
     bindsym $mod+p exec "i3-nagbar -t warning -m 'Shutdown?' -b 'Yes, shutdown' 'systemctl poweroff'"
-    bindsym $mod+l exec "i3-msg mode default && ./.local/bin/i3lock.sh -c 000000"
+    bindsym $mod+o exec "i3-msg mode default && ./.local/bin/i3lock.sh -c 000000"
     bindsym $mod+s exec "i3-msg mode default && systemctl suspend"
     bindsym $mod+h exec "i3-msg mode default && systemctl hibernate"
 
@@ -203,14 +203,14 @@ bindsym $mod+m exec "sh ~/.local/bin/laptop_mouse.sh"
 # startup apps
 exec --no-startup-id nm-applet
 exec_always --no-startup-id ~/.local/bin/startup.sh
-exec_always --no-startup-id setxkbmap gb
+exec_always --no-startup-id setxkbmap us
 
 # app launcher
 set $mode_launcher Launch: [b]rowser [s]creencap
 
 mode "$mode_launcher" {
     # browser
-    bindsym b exec "i3-msg mode default && chromium"
+    bindsym b exec "i3-msg mode default && brave-browser"
     # screen capper
     bindsym s exec "i3-msg mode default && ~/.local/bin/screenshot.sh"
 
@@ -222,11 +222,11 @@ mode "$mode_launcher" {
 bindsym $mod+o mode "$mode_launcher"
 
 # keyboard layout switcher
-set $kb_switch Keyboard Layout: [g]b [d]e [s]i
+set $kb_switch Keyboard Layout: [u]s [d]e [s]i
 
 mode "$kb_switch" {
     # british
-    bindsym g exec "i3-msg mode default && setxkbmap gb"
+    bindsym u exec "i3-msg mode default && setxkbmap us"
     # german
     bindsym d exec "i3-msg mode default && setxkbmap de"
     # slovenian

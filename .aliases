@@ -10,4 +10,3 @@ alias ssh="TERM=xterm-color ssh"
 
 alias k="kubectl"
 alias g="git"
-alias kdbgpod="kubectl run -i --tty --rm debug-pod-slax0r --image=alpine --restart=Never -- sh"

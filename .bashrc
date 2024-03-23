@@ -131,6 +131,10 @@ if test -f $HOME/.aliases; then
     source ~/.aliases
 fi
 
+if test -f $HOME/.bash_profile; then
+    source ~/.bash_profile
+fi
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/slax0r/gcloud/google-cloud-sdk/path.bash.inc' ]; then . '/home/slax0r/gcloud/google-cloud-sdk/path.bash.inc'; fi
 

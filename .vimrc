@@ -427,7 +427,7 @@ let g:localvimrc_sandbox = 0
 let g:localvimrc_ask = 0
 
 " set nerd tree size
-let NERDTreeWinSize = 45
+let NERDTreeWinSize = 37
 
 " set agenda file for org-mode
 let g:org_agenda_files = ['~/Documents/TODO.org']

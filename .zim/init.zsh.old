@@ -13,3 +13,4 @@ source /home/slax0r/.zim/modules/completion/init.zsh
 source /home/slax0r/.zim/modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/slax0r/.zim/modules/zsh-history-substring-search/zsh-history-substring-search.zsh
 source /home/slax0r/.zim/modules/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/slax0r/.zim/modules/powerlevel10k/powerlevel10k.zsh-theme

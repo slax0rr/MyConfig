@@ -43,6 +43,7 @@ if !empty(glob("~/.vim/autoload/plug.vim"))
     Plug 'embear/vim-localvimrc'
     Plug 'ruanyl/vim-gh-line'
     Plug 'takac/vim-hardtime'
+    Plug 'leafOfTree/vim-matchtag'
 
     call plug#end()
 endif

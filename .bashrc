@@ -119,7 +119,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # load local rc file if exists
 if test -f $HOME/.bashrc_local; then
@@ -142,3 +141,7 @@ if [ -f '/home/slax0r/gcloud/google-cloud-sdk/path.bash.inc' ]; then . '/home/sl
 if [ -f '/home/slax0r/gcloud/google-cloud-sdk/completion.bash.inc' ]; then . '/home/slax0r/gcloud/google-cloud-sdk/completion.bash.inc'; fi
 
 [[ -s "/home/slax0r/.gvm/scripts/gvm" ]] && source "/home/slax0r/.gvm/scripts/gvm"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+LS_COLORS="$LS_COLORS:ow=103;30;01"

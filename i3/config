@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -49,7 +49,7 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
-bindsym $mod+Mod1+l focus parent; focus right
+bindsym $mod+Mod4+l focus parent; focus right
 
 
 # alternatively, you can use the cursor keys:
@@ -71,16 +71,16 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # move workspace between screens
-bindsym $mod+Mod1+Shift+h move workspace to output left
-bindsym $mod+Mod1+Shift+j move workspace to output down
-bindsym $mod+Mod1+Shift+k move workspace to output up
-bindsym $mod+Mod1+Shift+l move workspace to output right
+bindsym $mod+Mod4+Shift+h move workspace to output left
+bindsym $mod+Mod4+Shift+j move workspace to output down
+bindsym $mod+Mod4+Shift+k move workspace to output up
+bindsym $mod+Mod4+Shift+l move workspace to output right
 
 # split in horizontal orientation
-bindsym $mod+Mod1+h split h
+bindsym $mod+slash split h
 
 # split in vertical orientation
-bindsym $mod+Mod1+v split v
+bindsym $mod+minus split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen
@@ -178,6 +178,7 @@ bindsym $mod+r mode "resize"
 bar {
     status_command i3status
     mode hide
+    modifier $mod
     position top
     tray_output primary
 
@@ -233,7 +234,7 @@ mode "$kb_switch" {
     bindsym s exec "i3-msg mode default && setxkbmap si"
 }
 
-bindsym $mod+Mod1+k mode "$kb_switch"
+bindsym $mod+Mod4+k mode "$kb_switch"
 
 # sound controls from kb on laptop
 bindsym XF86AudioMute exec ~/.local/bin/volume.sh toggle

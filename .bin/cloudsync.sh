@@ -7,7 +7,10 @@ SYNC_ADDRESS=https://cloud.lovrec.eu
 UNSYNCED=~/Documents/.unsynced
 EXCLUDE=~/Documents/.exclude
 
-rm -rf ${SYNC_PATH}/.sync_*
+if [[ $RM == "1" ]]; then
+    echo "removing"
+    rm -rf ${SYNC_PATH}/.sync_*
+fi
 nextcloudcmd --user ${SYNC_USER} \
     --unsyncedfolders ${UNSYNCED} \
     --exclude ${EXCLUDE} \

@@ -10,3 +10,6 @@ alias ssh="TERM=xterm-color ssh"
 
 alias k="kubectl"
 alias g="git"
+
+alias au="sudo apt update && sudo apt upgrade"
+alias auy="sudo apt update && sudo apt upgrade -y"

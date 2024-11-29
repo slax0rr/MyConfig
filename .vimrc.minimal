@@ -1,59 +1,6 @@
 " be iMproved, required
 set nocompatible
-
-"""""""""""""""""""
-" BEGIN           "
-" Plug settings   "
-" BEGIN           "
-"""""""""""""""""""
-if !empty(glob("~/.vim/autoload/plug.vim"))
-    call plug#begin('~/.vim/plugged')
-
-    Plug 'airblade/vim-gitgutter'
-    Plug 'fatih/vim-go'
-    Plug 'vim-scripts/WebAPI.vim'
-    Plug 'vim-scripts/metarw'
-    Plug 'vim-scripts/fugitive.vim'
-    Plug 'mattn/emmet-vim'
-    Plug 'editorconfig/editorconfig-vim'
-    Plug 'junegunn/fzf'
-    Plug 'junegunn/fzf.vim'
-    Plug 'vim-scripts/jdaddy.vim'
-    Plug 'vim-scripts/localvimrc'
-    Plug 'cespare/vim-toml'
-    Plug 'sebdah/vim-delve'
-    Plug 'kylef/apiblueprint.vim'
-    Plug 'vim-scripts/utl.vim'
-    Plug 'godlygeek/tabular'
-    Plug 'plasticboy/vim-markdown'
-    Plug 'aquach/vim-http-client'
-    Plug 'mattn/calendar-vim'
-    Plug 'preservim/nerdcommenter'
-    Plug 'preservim/nerdtree'
-    Plug 'Xuyuanp/nerdtree-git-plugin'
-    Plug 'inkarkat/vim-ingo-library'
-    Plug 'inkarkat/vim-SyntaxRange'
-    Plug 'hashivim/vim-terraform'
-    Plug 'tpope/vim-speeddating'
-    Plug 'junegunn/vim-easy-align'
-    Plug 'mracos/mermaid.vim'
-    Plug 'jclsn/glow.vim'
-    Plug 'jceb/vim-orgmode'
-    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-    Plug 'embear/vim-localvimrc'
-    Plug 'ruanyl/vim-gh-line'
-    Plug 'takac/vim-hardtime'
-    Plug 'leafOfTree/vim-matchtag'
-    Plug 'madox2/vim-ai'
-
-    call plug#end()
-endif
-"""""""""""""""""""
-" END             "
-" Plug settings   "
-" END             "
-"""""""""""""""""""
-
+"
 """""""""""""""""""
 " BEGIN           "
 " Package stuff   "
@@ -87,7 +34,7 @@ set autoindent
 " dir settings
 set backupdir=~/tmp
 set undodir=~/tmp/un
-set directory=~/tmp/sw//
+set directory=~/tmp/sw/
 
 " enable undofile
 set undofile
@@ -127,9 +74,6 @@ set hidden
 
 " set sql ft for *.pgsql files
 autocmd BufNewFile,BufRead *.pgsql set ft=sql
-
-" set html ft for *.njk files
-autocmd BufNewFile,BufRead *.njk set ft=html
 
 " export .org file to HTML on write
 au BufWritePost *.org silent! OrgExportToHTML
@@ -207,6 +151,7 @@ inoremap {  {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{  {
 inoremap {}  {}
+inoremap {  {}<Left>
 inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
 
 " Parenthesis
@@ -214,6 +159,7 @@ inoremap (  ()<Left>
 inoremap (<CR> (<CR>)<Esc>O
 inoremap ((  (
 inoremap ()  ()
+inoremap (  ()<Left>
 inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
 
 " Square brackets
@@ -221,6 +167,7 @@ inoremap [  []<Left>
 inoremap [<CR> [<CR>]<Esc>O
 inoremap [[  [
 inoremap []  []
+inoremap [  []<Left>
 inoremap <expr> ]  strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
 
 " Add closing quotes when an opening bracket is written, and jump over closing
@@ -230,7 +177,6 @@ inoremap <expr> " strpart(getline('.'), col('.')-1, 1) == "\"" ? "\<Right>" : "\
 inoremap '  ''<Left>
 inoremap '' '
 inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\'\'\<Left>"
-
 " Autocompletion mappings
 function! InsertTabWrapper()
   if pumvisible()
@@ -257,8 +203,10 @@ inoremap <expr><s-tab> pumvisible()?"\<c-p>":"\<c-d>"
 " BEGIN    "
 """"""""""""
 " sharing is caring
-" TODO all previously existing pastebins have been made defunct, need to roll my
-" own
+command! -range=% VP  execute <line1> . "," . <line2> . "w !vpaste ft=" . &filetype
+command! -range=% SP  silent execute <line1> . "," . <line2> . "w !curl -F 'sprunge=<-' http://sprunge.us/ | tr -d '\\n' | awk '{print $1\"?" . &filetype . "\"}' | xclip -selection clipboard"
+command! -range=% IX  silent execute <line1> . "," . <line2> . "w !curl -F 'f:1=<-' ix.io | tr -d '\\n' | awk '{print $1\"/" . &filetype . "\"}' | xclip -selection clipboard"
+command!          CMD let @+ = ':' . @:
 
 " search in all files with same extension
 command! -nargs=* Sext silent execute 'grep ' . expand('<f-args>') . ' **/*.' . expand('%:e')
@@ -319,23 +267,11 @@ noremap <leader>c :let @+ = expand("%")<CR>
 noremap <leader>x :terminal<CR>
 noremap <leader>X :shell<CR>
 
-" exec HTTPClientDoRequest
-nnoremap <leader>hr :HTTPClientDoRequest<CR>
-
 " format XML
 nnoremap <leader>fx :%!python3 -c "import xml.dom.minidom, sys; print(xml.dom.minidom.parse(sys.stdin).toprettyxml())"<CR>
 
 " format JSON
 nnoremap <leader>fj :%!python -m json.tool
-
-" nerd tree close
-map <C-c> :NERDTreeClose<CR>
-
-" nerd tree toggle
-map <C-n> :NERDTreeFocus<CR>
-
-" nerd tree - current file
-map <leader>ee :NERDTreeFind<CR>
 
 " base64 encode registry
 nnoremap <leader>64 :exe 'norm a' . system('base64 -w 0', @")<cr>
@@ -381,85 +317,11 @@ function! NumberToggle()
     endif
 endfunction
 nnoremap <leader>n :call NumberToggle()<CR>
-
-" Stage all and commit
-function! GitStageAndCommit()
-    silent execute '!git add -A .'
-    Gcommit -v
-endfunction
-nnoremap <leader>gc :call GitStageAndCommit()<CR>
-nnoremap <leader>gp :Gpush<CR>
-
-" push all commits and open a PR on GitHub with the f3 tool
-function! GitPushAndOpenPR()
-    Gpush -u origin HEAD
-    !f3 github pr
-endfunction
-nnoremap <leader>pr :call GitPushAndOpenPR()<CR>
 """"""""""""""""""""
 " END              "
 " Helper Functions "
 " END              "
 """"""""""""""""""""
-
-"""""""""""""""""""
-" BEGIN           "
-" Plugin Settings "
-" BEGIN           "
-"""""""""""""""""""
-" FuGITive status line
-set laststatus=2
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
-
-" emmet config
-let g:user_emmet_complete_tag = 1
-
-" setup the editorconfig plugin
-let g:EditorConfig_exclude_patterns = ['fugitive://.*']
-
-" force netrw directory listing to display line numbers
-let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
-
-" disable localvimrc sandbox mode
-let g:localvimrc_sandbox = 0
-
-" disable asking to load loaclvimrc file, if it's there, load it
-let g:localvimrc_ask = 0
-
-" set nerd tree size
-let NERDTreeWinSize = 37
-
-" set agenda file for org-mode
-let g:org_agenda_files = ['~/Documents/TODO.org']
-
-" markdown easyalign
-au FileType markdown vmap <Leader>a :EasyAlign*<Bar><Enter>
-
-" syntax highlighting on markdown code blocks
-let g:markdown_fenced_languages = ['html', 'go', 'vim', 'json', 'xml', 'javascript']
-
-" enable hardtime
-let g:hardtime_default_on = 1
-
-" stop hardtime in NERDtree
-let g:hardtime_ignore_buffer_patterns = ["NERD.*"]
-
-" stop hardtime in quickfix
-let g:hardtime_ignore_quickfix = 1
-
-" reduce timeout for hardtime
-let g:hardtime_timeout = 500
-
-" reset hardtime timeout on numbered navigation (10j)
-let g:hardtime_motion_with_count_resets = 1
-
-" openai token
-let g:vim_ai_token_file_path = '~/.config/openai.token'
-"""""""""""""""""""
-" END             "
-" Plugin Settings "
-" END             "
-"""""""""""""""""""
 
 " Load private computer specific config file, if it exists
 if !empty(glob("~/.vimrc_local"))

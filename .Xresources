@@ -1,12 +1,12 @@
 !! Set the font to PragmataProMono.
-*font                          : PragmataProMono:size=11:antialias=true:autohint=false
-dmenu.font                     : xft:PragmataProMono:size=11:antialias=true:autohint=false
+*font                          : PragmataProMono:size=10:antialias=true:autohint=false
+dmenu.font                     : xft:PragmataProMono:size=10:antialias=true:autohint=false
 
 !xterm
 XTerm*.allowBoldFonts          : true
 XTerm*.bellIsUrgent            : true
 XTerm*.cutNewline              : true
-XTerm*.faceName                : PragmataProMono:size=11:antialias=true:autohint=false
+XTerm*.faceName                : PragmataProMono:size=10:antialias=true:autohint=false
 XTerm*.fullscreen              : never
 XTerm*.internalBorder          : 0
 XTerm*.renderFont              : true
@@ -30,7 +30,7 @@ XTerm*eightBitInput            : false
 UXTerm*.allowBoldFonts          : true
 UXTerm*.bellIsUrgent            : true
 UXTerm*.cutNewline              : true
-UXTerm*.faceName                : PragmataProMono:size=11:antialias=true:autohint=false
+UXTerm*.faceName                : PragmataProMono:size=10:antialias=true:autohint=false
 UXTerm*.fullscreen              : never
 UXTerm*.internalBorder          : 0
 UXTerm*.renderFont              : true
@@ -52,42 +52,117 @@ UXTerm*eightBitInput            : false
 
 *VT100*translations            : #override Shift <Btn1Up>: exec-formatted("xdg-open '%t'", CLIPBOARD)
 
-! colors - aprentice
-! special
-*.foreground:   #bcbcbc
-*.background:   #262626
-*.cursorColor:  #bcbcbc
-
-! black
-*.color0:       #1c1c1c
-*.color8:       #444444
-
-! red
-*.color1:       #af5f5f
-*.color9:       #ff8700
-
-! green
-*.color2:       #5f875f
-*.color10:      #87af87
-
-! yellow
-*.color3:       #87875f
-*.color11:      #ffffaf
-
-! blue
-*.color4:       #5f87af
-*.color12:      #8fafd7
-
-! magenta
-*.color5:       #5f5f87
-*.color13:      #8787af
-
-! cyan
-*.color6:       #5f8787
-*.color14:      #5fafaf
-
-! white
-*.color7:       #6c6c6c
-*.color15:      #ffffff
+! Apprentice colors
+!*.foreground:   #bcbcbc
+!*.background:   #262626
+!*.cursorColor:  #bcbcbc
+!
+!! black
+!*.color0:       #1c1c1c
+!*.color8:       #444444
+!
+!! red
+!*.color1:       #af5f5f
+!*.color9:       #ff8700
+!
+!! green
+!*.color2:       #5f875f
+!*.color10:      #87af87
+!
+!! yellow
+!*.color3:       #87875f
+!*.color11:      #ffffaf
+!
+!! blue
+!*.color4:       #5f87af
+!*.color12:      #8fafd7
+!
+!! magenta
+!*.color5:       #5f5f87
+!*.color13:      #8787af
+!
+!! cyan
+!*.color6:       #5f8787
+!*.color14:      #5fafaf
+!
+!! white
+!*.color7:       #6c6c6c
+!*.color15:      #ffffff
 
 Xft.dpi: 144
+
+
+! Catppuccin Mocha Theme for XTerm
+
+! Background and Foreground
+!*background: #1e1e2e
+!*foreground: #cdd6f4
+!*cursorColor: #cdd6f4
+!
+!! Colors
+!*color0:  #45475a
+!*color1:  #f38ba8
+!*color2:  #a6e3a1
+!*color3:  #f9e2af
+!*color4:  #89b4fa
+!*color5:  #cba6f7
+!*color6:  #89dceb
+!*color7:  #cdd6f4
+!*color8:  #585b70
+!*color9:  #f38ba8
+!*color10: #a6e3a1
+!*color11: #f9e2af
+!*color12: #89b4fa
+!*color13: #cba6f7
+!*color14: #89dceb
+!*color15: #f5e0dc
+
+! Catppuccin Frappe Theme for XTerm
+
+! Background and Foreground
+!*background: #303446
+!*foreground: #c6d0f5
+!*cursorColor: #c6d0f5
+!
+!! Colors
+!*color0:  #51576d
+!*color1:  #e78284
+!*color2:  #a6d189
+!*color3:  #e5c890
+!*color4:  #8caaee
+!*color5:  #ca9ee6
+!*color6:  #81c8be
+!*color7:  #c6d0f5
+!*color8:  #626880k
+!*color9:  #e78284
+!*color10: #a6d189n
+!*color11: #e5c890ow
+!*color12: #8caaee
+!*color13: #ca9ee6nta
+!*color14: #81c8be
+!*color15: #a5adce
+
+! Catppuccin Macchiato Theme for XTerm
+
+! Background and Foreground
+*background: #24273a
+*foreground: #cad3f5
+*cursorColor: #cad3f5
+
+! Colors
+*color0:  #494d64
+*color1:  #ed8796
+*color2:  #a6da95
+*color3:  #eed49f
+*color4:  #8aadf4
+*color5:  #f5bde6
+*color6:  #8bd5ca
+*color7:  #cad3f5
+*color8:  #5b6078
+*color9:  #ed8796
+*color10: #a6da95
+*color11: #eed49f
+*color12: #8aadf4
+*color13: #f5bde6
+*color14: #8bd5ca
+*color15: #b8c0e0

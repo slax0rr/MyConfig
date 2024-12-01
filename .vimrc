@@ -45,6 +45,7 @@ if !empty(glob("~/.vim/autoload/plug.vim"))
     Plug 'takac/vim-hardtime'
     Plug 'leafOfTree/vim-matchtag'
     Plug 'madox2/vim-ai'
+    Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
     call plug#end()
 endif
@@ -169,11 +170,17 @@ au BufRead,BufNewFile *.tpl set filetype=smarty
 set hlsearch
 
 " set colorscheme
-colorscheme apprentice
+set termguicolors
+colorscheme catppuccin_macchiato
 
 " color scheme settings
-"highlight Comment cterm=italic
-highlight CursorLine cterm=underline ctermbg=0
+highlight Comment cterm=italic
+highlight CursorLine cterm=underline guibg=NONE
+
+" set color for listchars
+highlight NonText ctermbg=NONE ctermfg=240 guibg=NONE guifg=#363a4f cterm=NONE gui=NONE
+highlight SpecialKey ctermbg=NONE ctermfg=237 guibg=NONE guifg=#363a4f cterm=NONE gui=NONE
+
 
 " Spell highlight
 highlight SpellCap ctermbg=0 ctermfg=111 cterm=bold,underline
@@ -203,7 +210,7 @@ autocmd BufNewFile,BufRead *.apib set ft=apiblueprint
 " TODO: replace the mess with tpope/vim-surround
 " Add closing brackets when an opening bracket is written
 " Squirly brackets
-inoremap {  {}<Left>
+inoremap {   {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{  {
 inoremap {}  {}

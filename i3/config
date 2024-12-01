@@ -183,20 +183,22 @@ bar {
     tray_output primary
 
     colors {
-        background #1b181b
-        separator #292329
-        statusline #a59f85
+        background #24273a        # Bar background
+        separator #5b6078         # Separator color
+        statusline #cad3f5        # Status text color
 
-        focused_workspace #695d69 #776977 #d8cad8
-        active_workspace #695d69 #292329 #d8cad8
-        inactive_workspace #695d69 #695d69 #1b181b
+        focused_workspace #494d64 #8aadf4 #cad3f5   # Focused workspace colors
+        active_workspace  #494d64 #24273a #cad3f5   # Active workspace colors
+        inactive_workspace #494d64 #494d64 #24273a  # Inactive workspace colors
     }
 }
 
-# window decoration coloring
-# class                 border  bckgrnd text    indicator   child_border
-client.focused          #695d69 #776977 #d8cad8 #1b181b     #695d69
-client.focused_inactive #695d69 #292329 #d8cad8 #1b181b     #695d69
+# Window decoration coloring
+# class                 border     background text       indicator   child_border
+client.focused          #8aadf4    #494d64    #cad3f5    #f5bde6     #8aadf4
+client.focused_inactive #494d64    #24273a    #cad3f5    #5b6078     #494d64
+client.unfocused        #494d64    #24273a    #5b6078    #494d64     #494d64
+client.urgent           #ed8796    #ed8796    #24273a    #24273a     #ed8796
 
 # laptop mouse switch
 bindsym $mod+m exec "sh ~/.local/bin/laptop_mouse.sh"

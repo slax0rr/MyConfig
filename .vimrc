@@ -132,6 +132,9 @@ autocmd BufNewFile,BufRead *.pgsql set ft=sql
 " set html ft for *.njk files
 autocmd BufNewFile,BufRead *.njk set ft=html
 
+" API Blueprint filetype
+autocmd BufNewFile,BufRead *.apib set ft=apiblueprint
+
 " export .org file to HTML on write
 au BufWritePost *.org silent! OrgExportToHTML
 """""""""""""""""""""""""""
@@ -176,11 +179,11 @@ colorscheme catppuccin_macchiato
 " color scheme settings
 highlight Comment cterm=italic
 highlight CursorLine cterm=underline guibg=NONE
+highlight CursorColumn guibg=#313244
 
 " set color for listchars
 highlight NonText ctermbg=NONE ctermfg=240 guibg=NONE guifg=#363a4f cterm=NONE gui=NONE
 highlight SpecialKey ctermbg=NONE ctermfg=237 guibg=NONE guifg=#363a4f cterm=NONE gui=NONE
-
 
 " Spell highlight
 highlight SpellCap ctermbg=0 ctermfg=111 cterm=bold,underline
@@ -193,9 +196,6 @@ let &colorcolumn="80,".join(range(120,130),",")
 " Add cursorline and cursorcolumn
 set cursorline
 set cursorcolumn
-
-" API Blueprint filetype
-autocmd BufNewFile,BufRead *.apib set ft=apiblueprint
 """"""""""""""""""""""""""""""
 " END                        "
 " Graphical related settings "

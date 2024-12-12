@@ -185,6 +185,9 @@ highlight CursorColumn guibg=#313244
 highlight NonText ctermbg=NONE ctermfg=240 guibg=NONE guifg=#363a4f cterm=NONE gui=NONE
 highlight SpecialKey ctermbg=NONE ctermfg=237 guibg=NONE guifg=#363a4f cterm=NONE gui=NONE
 
+" statusline - brighter color
+highlight Statusline guibg=#494d64
+
 " Spell highlight
 highlight SpellCap ctermbg=0 ctermfg=111 cterm=bold,underline
 highlight SpellRare ctermbg=0 ctermfg=16 cterm=bold,underline

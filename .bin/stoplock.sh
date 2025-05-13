@@ -4,7 +4,7 @@ DEBUG=0
 LOGFILE=/tmp/xautolock_debug.log
 STATEFILE="/tmp/xautolock_state.txt"
 MEDIA_PLAYER_TITLES=("YouTube" "Netflix" "Twitch" "Vimeo")
-NON_PLAYER_TITLES=("Meet -" "Meeting" "Zoom")
+NON_PLAYER_TITLES=("Meet" "Meeting" "Zoom" "Teams")
 
 log() {
   if [ "$DEBUG" -eq 1 ]; then

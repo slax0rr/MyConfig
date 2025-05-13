@@ -206,6 +206,7 @@ bindsym $mod+m exec "sh ~/.local/bin/laptop_mouse.sh"
 # startup apps
 exec --no-startup-id nm-applet
 exec_always --no-startup-id ~/.local/bin/startup.sh
+exec_always --no-startup-id nextcloud
 exec_always --no-startup-id setxkbmap us
 
 # app launcher

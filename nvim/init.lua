@@ -119,7 +119,7 @@ require("lazy").setup({
     config = function()
       require("nvim-tree").setup({
         view = {
-          width = 30,
+          width = 45,
           side = "left",
         },
         renderer = {
@@ -137,6 +137,52 @@ require("lazy").setup({
         },
       })
     end,
+  },
+  {
+    "lewis6991/gitsigns.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      require("gitsigns").setup({
+        signs = {
+          add          = { text = "│" },
+          change       = { text = "│" },
+          delete       = { text = "_" },
+          topdelete    = { text = "‾" },
+          changedelete = { text = "~" },
+          untracked    = { text = "┆" },
+        },
+        current_line_blame = false,
+        on_attach = function(bufnr)
+          local gs = package.loaded.gitsigns
+          local opts = { buffer = bufnr, noremap = true, silent = true }
+        end,
+      })
+    end,
+  },
+  {
+    "f-person/git-blame.nvim",
+    config = function()
+      require("gitblame").setup({
+        enabled = true,
+      })
+    end,
+  },
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = function()
+      require("nvim-autopairs").setup({
+        check_ts = true, -- enables smarter behavior with Treesitter
+      })
+    end,
+  },
+  {
+    "ray-x/go.nvim",
+    dependencies = { "ray-x/guihua.lua" },
+    config = function()
+      require("go").setup()
+    end,
+    ft = { "go", "gomod" },
   },
 })
 
@@ -244,6 +290,16 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
   pattern = "*.pgsql",
   command = "set filetype=sql",
+})
+
+-- re-enter insert mode on terminal
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = "term://*",
+  callback = function()
+    if vim.fn.mode() ~= "i" then
+      vim.cmd("startinsert")
+    end
+  end,
 })
 
 ------------------

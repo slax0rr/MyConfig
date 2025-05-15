@@ -11,6 +11,7 @@
 	path = ~/.gitaliases
 [core]
 	excludesfile = ~/.gitignore_global
+	editor = nvim
 [include]
 	path = ~/.gitconfig_local
 [merge]

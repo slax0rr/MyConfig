@@ -118,3 +118,8 @@ keymap("n", "<leader>gi", function()
     print("No match for GoImpl pattern.")
   end
 end, opts)
+
+-- complete
+vim.keymap.set("i", "<C-x>o", function()
+  require("blink.cmp").show()
+end, { desc = "Trigger blink.cmp completion menu" })

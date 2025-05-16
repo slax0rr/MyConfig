@@ -53,9 +53,17 @@ require("lazy").setup({
   {
     "Saghen/blink.cmp",
     version = "1.*", -- Use the latest stable version
-    dependencies = { "rafamadriz/friendly-snippets" }, -- Optional: for snippet support
+    dependencies = { "rafamadriz/friendly-snippets" },
     opts = {
-      keymap = { preset = "default" }, -- Preset key mappings
+      keymap = {
+        preset = "default",
+
+        ['<Tab>'] = { 'select_next', 'fallback' },
+        ['<S-Tab>'] = { 'select_prev', 'fallback' },
+        ['<CR>'] = { 'accept_and_enter', 'fallback' },
+        ['<Space>'] = { 'accept', 'fallback' },
+        ['<S-Space>'] = { 'show_documentation', 'fallback' },
+      },
       appearance = { nerd_font_variant = "mono" },
       completion = {
         documentation = { auto_show = false },

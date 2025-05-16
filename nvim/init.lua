@@ -56,17 +56,13 @@ require("lazy").setup({
     dependencies = { "rafamadriz/friendly-snippets" },
     opts = {
       keymap = {
-        preset = "default",
-
+        preset = "enter",
         ['<Tab>'] = { 'select_next', 'fallback' },
         ['<S-Tab>'] = { 'select_prev', 'fallback' },
-        ['<CR>'] = { 'accept_and_enter', 'fallback' },
-        ['<Space>'] = { 'accept', 'fallback' },
-        ['<S-Space>'] = { 'show_documentation', 'fallback' },
       },
       appearance = { nerd_font_variant = "mono" },
       completion = {
-        documentation = { auto_show = false },
+        documentation = { auto_show = true },
       },
       sources = {
         default = { "lsp", "path", "snippets", "buffer" },
@@ -192,6 +188,13 @@ require("lazy").setup({
     end,
     ft = { "go", "gomod" },
   },
+  {
+    "numToStr/Comment.nvim",
+    config = function()
+      require("Comment").setup()
+    end,
+    event = { "BufReadPost", "BufNewFile" },
+  }
 })
 
 --------------------------

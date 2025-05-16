@@ -98,13 +98,17 @@ vim.keymap.set("n", "<leader>gc", function()
     git_command = { "git", "diff", "--name-only", "--diff-filter=U" },
   })
 end)
+-- git history
+keymap("n", "<leader>gh", function()
+  require("telescope.builtin").git_bcommits()
+end, opts)
 
 -- Nvim Tree
 keymap("n", "<C-n>", ":NvimTreeFocus<CR>", opts)
 keymap("n", "<C-c>", ":NvimTreeClose<CR>", opts)
 
 -- Go mappings
-keymap("n", "<leader>t", ":GoTest<CR>", opts)
+keymap("n", "<leader>t", ":GoTestFile<CR>", opts)
 keymap("n", "<leader>tf", ":GoTestFunc<CR>", opts)
 keymap("n", "<leader>ie", ":GoIfErr<CR>", opts)
 
@@ -123,3 +127,22 @@ end, opts)
 vim.keymap.set("i", "<C-x>o", function()
   require("blink.cmp").show()
 end, { desc = "Trigger blink.cmp completion menu" })
+
+-- commenter
+-- Line comment with <leader>ci
+keymap("n", "<leader>ci", function()
+  require("Comment.api").toggle.linewise.current()
+end, opts)
+
+keymap("v", "<leader>ci", function()
+  require("Comment.api").toggle.linewise(vim.fn.visualmode())
+end, opts)
+
+-- Block comment with <leader>cs
+keymap("n", "<leader>cs", function()
+  require("Comment.api").toggle.blockwise.current()
+end, opts)
+
+keymap("v", "<leader>cs", function()
+  require("Comment.api").toggle.blockwise(vim.fn.visualmode())
+end, opts)

@@ -108,9 +108,14 @@ keymap("n", "<C-n>", ":NvimTreeFocus<CR>", opts)
 keymap("n", "<C-c>", ":NvimTreeClose<CR>", opts)
 
 -- Go mappings
-keymap("n", "<leader>t", ":GoTestFile<CR>", opts)
-keymap("n", "<leader>tf", ":GoTestFunc<CR>", opts)
+keymap("n", "<leader>t", ":GoTestFile -n 1<CR>", opts)
+keymap("n", "<leader>tf", ":GoTestFunc -n 1<CR>", opts)
 keymap("n", "<leader>ie", ":GoIfErr<CR>", opts)
+keymap("n", "<leader>e", vim.lsp.buf.rename, opts)
+keymap("n", "<leader>i", function()
+    vim.lsp.buf.hover { border = "single", max_height = 25, max_width = 120 }
+end, opts)
+keymap("n", "<leader>ih", ":GoInlayForceToggle<CR>", opts)
 
 keymap("n", "<leader>gi", function()
   local line = vim.fn.getline(".")

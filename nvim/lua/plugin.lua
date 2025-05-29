@@ -22,19 +22,3 @@ require("telescope").setup({
     },
   },
 })
-
-require("lspconfig").gopls.setup({
-  on_attach = function(client, bufnr)
-    -- Format + organize imports on save
-    vim.api.nvim_create_autocmd("BufWritePre", {
-      buffer = bufnr,
-      callback = function()
-        vim.lsp.buf.format({ async = false })
-        vim.lsp.buf.code_action({
-          context = { only = { "source.organizeImports" } },
-          apply = true,
-        })
-      end,
-    })
-  end,
-})

@@ -42,17 +42,29 @@ require("lazy").setup({
         sections = {
           lualine_a = { "mode" },
           lualine_b = { "branch", "diff" },
-          lualine_c = { "filename" },
+          lualine_c = {
+            { "filename", path = 1 }
+          },
           lualine_x = { "encoding", "fileformat", "filetype" },
           lualine_y = { "progress" },
           lualine_z = { "location" },
+        },
+        inactive_sections = {
+          lualine_a = {},
+          lualine_b = {},
+          lualine_c = {
+            { "filename", path = 1 }
+          },
+          lualine_x = {},
+          lualine_y = {},
+          lualine_z = {},
         },
       })
     end,
   },
   {
     "Saghen/blink.cmp",
-    version = "1.*", -- Use the latest stable version
+    version = "1.*",
     dependencies = { "rafamadriz/friendly-snippets" },
     opts = {
       keymap = {
@@ -63,6 +75,12 @@ require("lazy").setup({
       appearance = { nerd_font_variant = "mono" },
       completion = {
         documentation = { auto_show = true },
+        list = {
+          selection = {
+            preselect = false,
+            auto_insert = false,
+          },
+        },
       },
       sources = {
         default = { "lsp", "path", "snippets", "buffer" },
@@ -168,6 +186,7 @@ require("lazy").setup({
     config = function()
       require("gitblame").setup({
         enabled = true,
+        highlight_group = "GitBlameVirtualText",
       })
     end,
   },
@@ -183,9 +202,6 @@ require("lazy").setup({
   {
     "ray-x/go.nvim",
     dependencies = { "ray-x/guihua.lua" },
-    config = function()
-      require("go").setup()
-    end,
     ft = { "go", "gomod" },
   },
   {
@@ -235,6 +251,20 @@ vim.api.nvim_set_hl(0, "CursorLine", {
 
 vim.api.nvim_set_hl(0, "CursorColumn", {
   bg = "#313244",
+})
+
+vim.api.nvim_set_hl(0, "GitBlameVirtualText", {
+  fg = "#363a4f",
+  bg = "NONE",
+  italic = true,
+})
+
+-- inlays
+vim.api.nvim_set_hl(0, "LspInlayHint", {
+  fg = "#6c7086",
+  bg = "NONE",
+  italic = true,
+  underline = true,
 })
 
 -- Highlight 80 and 120 columns
@@ -326,6 +356,9 @@ vim.api.nvim_create_autocmd("BufEnter", {
 ------------------
 package.loaded["plugin"] = nil
 require("plugin")
+
+package.loaded["config.go"] = nil
+require("config.go")
 
 ------------
 -- Keymaps -

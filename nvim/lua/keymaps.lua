@@ -129,25 +129,10 @@ keymap("n", "<leader>gi", function()
 end, opts)
 
 -- complete
-vim.keymap.set("i", "<C-x>o", function()
+keymap("i", "<C-x>o", function()
   require("blink.cmp").show()
 end, { desc = "Trigger blink.cmp completion menu" })
 
 -- commenter
--- Line comment with <leader>ci
-keymap("n", "<leader>ci", function()
-  require("Comment.api").toggle.linewise.current()
-end, opts)
-
-keymap("v", "<leader>ci", function()
-  require("Comment.api").toggle.linewise(vim.fn.visualmode())
-end, opts)
-
--- Block comment with <leader>cs
-keymap("n", "<leader>cs", function()
-  require("Comment.api").toggle.blockwise.current()
-end, opts)
-
-keymap("v", "<leader>cs", function()
-  require("Comment.api").toggle.blockwise(vim.fn.visualmode())
-end, opts)
+keymap("v", "<leader>ci", "<Plug>(comment_toggle_linewise_visual)", opts)
+keymap("v", "<leader>cs", "<Plug>(comment_toggle_blockwise_visual)", opts)

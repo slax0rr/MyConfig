@@ -1,7 +1,7 @@
 vim.g.mapleader = '\\'
 vim.g.maplocalleader = '\\'
 
--- Load and install the plugin manager (lazy.nvim)
+-- load and install the plugin manager (lazy.nvim)
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -14,7 +14,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Load plugins using lazy.nvim
+-- load plugins using lazy.nvim
 require("lazy").setup({
   {
     "catppuccin/nvim",
@@ -71,6 +71,7 @@ require("lazy").setup({
         preset = "enter",
         ['<Tab>'] = { 'select_next', 'fallback' },
         ['<S-Tab>'] = { 'select_prev', 'fallback' },
+        ['<C-o>'] = { 'show' },
       },
       appearance = { nerd_font_variant = "mono" },
       completion = {
@@ -110,7 +111,6 @@ require("lazy").setup({
         indent = { enable = true },
       })
     end,
-    -- The correct way to trigger :TSUpdate without breaking sync
     init = function()
       local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
       ts_update()
@@ -195,7 +195,7 @@ require("lazy").setup({
     event = "InsertEnter",
     config = function()
       require("nvim-autopairs").setup({
-        check_ts = true, -- enables smarter behavior with Treesitter
+        check_ts = true,
       })
     end,
   },
@@ -207,7 +207,12 @@ require("lazy").setup({
   {
     "numToStr/Comment.nvim",
     config = function()
-      require("Comment").setup()
+      require("Comment").setup({
+        mappings = {
+          basic = true,
+          extra = false,
+        },
+      })
     end,
     event = { "BufReadPost", "BufNewFile" },
   },
@@ -225,7 +230,7 @@ require("lazy").setup({
 -- Color scheme settings -
 --------------------------
 
--- Term GUI colors
+-- term GUI colors
 vim.opt.termguicolors = true
 
 -- status line
@@ -243,7 +248,7 @@ vim.api.nvim_set_hl(0, "SpecialKey", {
   fg = "#363a4f",
 })
 
--- Cursor line and column colors
+-- cursor line and column colors
 vim.api.nvim_set_hl(0, "CursorLine", {
   underline = true,
   bg = "NONE",
@@ -267,10 +272,10 @@ vim.api.nvim_set_hl(0, "LspInlayHint", {
   underline = true,
 })
 
--- Highlight 80 and 120 columns
+-- highlight 80 and 120 columns
 vim.opt.colorcolumn = { 80, unpack(vim.fn.range(120, 129)) }
 
--- Add cursorline and cursorcolumn
+-- add cursorline and cursorcolumn
 vim.opt.cursorline = true
 vim.opt.cursorcolumn = true
 
@@ -278,41 +283,41 @@ vim.opt.cursorcolumn = true
 -- Editor settings -
 --------------------
 
--- Filetype plugin and indent
+-- filetype plugin and indent
 vim.cmd("filetype plugin indent on")
 
--- Fast update time for CursorHold, etc.
+-- fast update time for CursorHold, etc.
 vim.opt.updatetime = 50
 
--- Tab and indent settings
+-- tab and indent settings
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.autoindent = true
 
--- Directories for swap, undo, backup
+-- directories for swap, undo, backup
 vim.opt.backupdir = vim.fn.expand("~/tmp")
 vim.opt.undodir = vim.fn.expand("~/tmp/un")
 vim.opt.directory = vim.fn.expand("~/tmp/sw")
 vim.opt.undofile = true
 
--- Line numbers
+-- line numbers
 vim.opt.relativenumber = true
 vim.opt.number = true -- add absolute numbers too
 
--- Backspace behavior
+-- backspace behavior
 vim.opt.backspace = { "indent", "eol", "start" }
 
--- Command-line completion menu
+-- command-line completion menu
 vim.opt.wildmenu = true
 
--- Custom ctags
+-- custom ctags
 vim.opt.tags = ".tags;"
 
--- Disable mouse
+-- disable mouse
 vim.opt.mouse = ""
 
--- Visualize whitespace
+-- visualize whitespace
 vim.opt.listchars = {
   eol = "¬",
   tab = ">·",
@@ -322,10 +327,10 @@ vim.opt.listchars = {
 }
 vim.opt.list = true
 
--- Visual bell
+-- visual bell
 vim.opt.visualbell = false
 
--- Reopen file on same line as it was closed
+-- reopen file on same line as it was closed
 vim.api.nvim_create_autocmd("BufReadPost", {
   callback = function()
     local mark = vim.fn.line([['"]])

@@ -136,3 +136,13 @@ end, { desc = "Trigger blink.cmp completion menu" })
 -- commenter
 keymap("v", "<leader>ci", "<Plug>(comment_toggle_linewise_visual)", opts)
 keymap("v", "<leader>cs", "<Plug>(comment_toggle_blockwise_visual)", opts)
+
+-- file diagnostics
+keymap("n", "<leader>q", function()
+  vim.diagnostic.setloclist()
+  vim.cmd("lopen")
+end, { desc = "Open diagnostics in location list" })
+keymap("n", "<leader>Q", function()
+  vim.diagnostic.setqflist()
+  vim.cmd("copen")
+end, { desc = "Open diagnostics in quickfix list" })

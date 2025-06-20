@@ -22,7 +22,7 @@ require("lazy").setup({
     priority = 1000,
     config = function()
       require("catppuccin").setup({
-        flavour = "mocha", -- latte, frappe, macchiato, mocha
+        flavour = "mocha",
         transparent_background = true,
       })
       vim.cmd.colorscheme("catppuccin")
@@ -69,8 +69,20 @@ require("lazy").setup({
     opts = {
       keymap = {
         preset = "enter",
-        ['<Tab>'] = { 'select_next', 'fallback' },
-        ['<S-Tab>'] = { 'select_prev', 'fallback' },
+        ['<Tab>'] = {
+          function(cmp)
+            if cmp.is_visible() then return cmp.select_next() end
+          end,
+          'snippet_forward',
+          'fallback'
+        },
+        ['<S-Tab>'] = {
+          function(cmp)
+            if cmp.is_visible() then return cmp.select_prev() end
+          end,
+          'snippet_backward',
+          'fallback'
+        },
         ['<C-o>'] = { 'show' },
       },
       appearance = { nerd_font_variant = "mono" },
@@ -91,19 +103,35 @@ require("lazy").setup({
   },
   {
     "neovim/nvim-lspconfig",
+    dependencies = { "hashivim/vim-terraform" },
     config = function()
       local capabilities = require("blink.cmp").get_lsp_capabilities()
-      require("lspconfig").gopls.setup({
-        capabilities = capabilities,
-      })
+      local lspconfig = require("lspconfig")
+      lspconfig.gopls.setup({ capabilities = capabilities })
+      lspconfig.terraformls.setup({ capabilities = capabilities })
     end,
+  },
+  {
+    "hashivim/vim-terraform",
+    ft = { "terraform" },
+    init = function()
+      vim.g.terraform_fmt_on_save = 0
+    end,
+  },
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        terraform = { "terraform_fmt" },
+      },
+    },
   },
   {
     "nvim-treesitter/nvim-treesitter",
     event = { "BufReadPost", "BufNewFile" },
     config = function()
       require("nvim-treesitter.configs").setup({
-        ensure_installed = { "go", "lua", "gomod", "gowork", "gosum" },
+        ensure_installed = { "go", "lua", "gomod", "gowork", "gosum", "hcl", "terraform" },
         highlight = {
           enable = true,
           additional_vim_regex_highlighting = false,

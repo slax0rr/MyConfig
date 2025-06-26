@@ -2,8 +2,8 @@ local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
 -- esc remap
-keymap("i", "jj", "<Esc>", opts)
-keymap("v", "jj", "<Esc>", opts)
+keymap("i", ";;", "<Esc>", opts)
+keymap("v", ";;", "<Esc>", opts)
 
 -- Hide search highlights for current search
 keymap("n", "<Space>", ":nohlsearch<Bar>:echo<CR>", opts)

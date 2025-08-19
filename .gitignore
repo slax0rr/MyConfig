@@ -6,3 +6,4 @@ vimfiles/bundle/*
 vimfiles/view/*
 vimfiles/.netrwhist
 vimfiles/plugged/*
+.bin/

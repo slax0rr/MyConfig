@@ -252,6 +252,11 @@ require("lazy").setup({
       vim.g.mkdp_auto_start = 0
     end,
   },
+  {
+    "nvim-orgmode/orgmode",
+    event = "VeryLazy",
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+  },
 })
 
 --------------------------
@@ -392,6 +397,9 @@ require("plugin")
 
 package.loaded["config.go"] = nil
 require("config.go")
+
+package.loaded["config.org"] = nil
+require("config.org")
 
 ------------
 -- Keymaps -

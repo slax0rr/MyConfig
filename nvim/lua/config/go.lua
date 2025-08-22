@@ -15,7 +15,7 @@ end
 
 go.setup({
   lsp_inlay_hints = {
-    enable = true,
+    enable = false,
   },
   lsp_cfg = {
     on_attach = format_on_save,

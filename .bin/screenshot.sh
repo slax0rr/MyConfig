@@ -38,7 +38,7 @@ album_id=""
 credentials_file="${HOME}/.config/imgur-screenshot/credentials.conf"
 
 file_name_format="imgur-%Y_%m_%d-%H:%M:%S.png" # when using scrot, must end with .png!
-file_dir="${HOME}/Pictures"
+file_dir="${HOME}/Pictures/screenshots"
 
 upload_connect_timeout="5"
 upload_timeout="120"

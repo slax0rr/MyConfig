@@ -257,6 +257,59 @@ require("lazy").setup({
     event = "VeryLazy",
     dependencies = { "nvim-treesitter/nvim-treesitter" },
   },
+  {
+    {
+      "coder/claudecode.nvim",
+      dependencies = { "folke/snacks.nvim" },
+      keys = {
+        {
+          "<C-,>",
+          "<cmd>ClaudeCodeFocus --continue<cr>",
+          mode = { "n", "x" },
+          desc = "Toggle Claude Code with continue",
+        },
+        {
+          "<leader>an",
+          "<cmd>ClaudeCode<cr>",
+          desc = "New Claude session",
+        },
+        {
+          "<leader>ar",
+          "<cmd>ClaudeCode --resume<cr>",
+          desc = "Resume Claude session",
+        },
+      },
+
+      opts = {
+        focus_after_send = false,
+        track_selection = true,
+
+        terminal = {
+          split_side = "right",
+          split_width_percentage = 0.35,
+          provider = "auto", -- "auto", "toggleterm", or "snacks"
+
+          -- snacks_win_opts = {
+          --   position = "float",
+          --   width = 0.9,
+          --   height = 0.9,
+          --   keys = {
+          --     claude_hide = {
+          --       "<C-,>",
+          --       function(self)
+          --         self:hide()
+          --       end,
+          --       mode = "t",
+          --       desc = "Hide Claude Code",
+          --     },
+          --   },
+          -- },
+        },
+
+        log_level = "info", -- "trace", "debug", "info", "warn", "error"
+      },
+    },
+  }
 })
 
 --------------------------

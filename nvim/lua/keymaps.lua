@@ -146,3 +146,13 @@ keymap("n", "<leader>Q", function()
   vim.diagnostic.setqflist()
   vim.cmd("copen")
 end, { desc = "Open diagnostics in quickfix list" })
+
+-- uuid generator
+vim.keymap.set("i", "<C-u>", function()
+  local uuid = vim.fn.trim(vim.fn.system("uuidgen"))
+  vim.api.nvim_put({ uuid }, "c", true, true)
+end, { noremap = true })
+vim.keymap.set("n", "<leader>u", function()
+  local uuid = vim.fn.trim(vim.fn.system("uuidgen"))
+  vim.api.nvim_put({ uuid }, "c", true, true)
+end, { noremap = true, silent = true })

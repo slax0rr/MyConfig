@@ -14,6 +14,25 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+local function open_codex(cmd)
+  local codex = require("codex")
+  local state = require("codex.state")
+
+  -- If a Codex job is already running, reopen/focus it instead of starting a second one.
+  if state.job then
+    codex.open()
+    return
+  end
+
+  codex.setup({
+    autoinstall = false,
+    panel = true,
+    use_buffer = false,
+    cmd = cmd,
+  })
+  codex.open()
+end
+
 -- load plugins using lazy.nvim
 require("lazy").setup({
   {
@@ -258,58 +277,64 @@ require("lazy").setup({
     dependencies = { "nvim-treesitter/nvim-treesitter" },
   },
   {
-    {
-      "coder/claudecode.nvim",
-      dependencies = { "folke/snacks.nvim" },
-      keys = {
-        {
-          "<C-,>",
-          "<cmd>ClaudeCodeFocus --continue<cr>",
-          mode = { "n", "x" },
-          desc = "Toggle Claude Code with continue",
-        },
-        {
-          "<leader>an",
-          "<cmd>ClaudeCode<cr>",
-          desc = "New Claude session",
-        },
-        {
-          "<leader>ar",
-          "<cmd>ClaudeCode --resume<cr>",
-          desc = "Resume Claude session",
-        },
+    "coder/claudecode.nvim",
+    dependencies = { "folke/snacks.nvim" },
+    keys = {
+      {
+        "<C-,>",
+        "<cmd>ClaudeCodeFocus --continue<cr>",
+        mode = { "n", "x" },
+        desc = "Toggle Claude Code with continue",
       },
-
-      opts = {
-        focus_after_send = false,
-        track_selection = true,
-
-        terminal = {
-          split_side = "right",
-          split_width_percentage = 0.35,
-          provider = "auto", -- "auto", "toggleterm", or "snacks"
-
-          -- snacks_win_opts = {
-          --   position = "float",
-          --   width = 0.9,
-          --   height = 0.9,
-          --   keys = {
-          --     claude_hide = {
-          --       "<C-,>",
-          --       function(self)
-          --         self:hide()
-          --       end,
-          --       mode = "t",
-          --       desc = "Hide Claude Code",
-          --     },
-          --   },
-          -- },
-        },
-
-        log_level = "info", -- "trace", "debug", "info", "warn", "error"
+      {
+        "<leader>an",
+        "<cmd>ClaudeCode<cr>",
+        desc = "New Claude session",
+      },
+      {
+        "<leader>ar",
+        "<cmd>ClaudeCode --resume<cr>",
+        desc = "Resume Claude session",
       },
     },
-  }
+    opts = {
+      focus_after_send = false,
+      track_selection = true,
+      terminal = {
+        split_side = "right",
+        split_width_percentage = 0.35,
+        provider = "auto", -- "auto", "toggleterm", or "snacks"
+      },
+      log_level = "info", -- "trace", "debug", "info", "warn", "error"
+    },
+  },
+  {
+    "johnseth97/codex.nvim",
+    cmd = { "Codex", "CodexToggle" },
+    keys = {
+      {
+        "<leader>ax",
+        function()
+          open_codex({ "codex", "resume", "--last" })
+        end,
+        desc = "Resume last Codex session",
+        mode = "n",
+      },
+      {
+        "<leader>aX",
+        function()
+          open_codex({ "codex" })
+        end,
+        desc = "New Codex session",
+        mode = "n",
+      },
+    },
+    opts = {
+      autoinstall = false,
+      panel = true,
+      use_buffer = false,
+    },
+  },
 })
 
 --------------------------

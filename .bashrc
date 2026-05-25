@@ -16,8 +16,12 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=50000
+HISTFILESIZE=100000
+HISTTIMEFORMAT="%F %T "
+shopt -s cmdhist
+# flush each command to history immediately so multiple terminals stay in sync
+PROMPT_COMMAND='history -a'
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -56,8 +60,16 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+# Use git's own __git_ps1 (fast, written in C) instead of forking git+sed every prompt
+if [ -f /usr/lib/git-core/git-sh-prompt ]; then
+    . /usr/lib/git-core/git-sh-prompt
+    GIT_PS1_SHOWDIRTYSTATE=1
+    GIT_PS1_SHOWUNTRACKEDFILES=1
+fi
 parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+    if declare -F __git_ps1 >/dev/null; then
+        __git_ps1 "(%s)"
+    fi
 }
 VIM_PROMPT=""
 if [ ! -z $VIMRUNTIME ]; then
@@ -99,15 +111,6 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -130,17 +133,12 @@ if test -f $HOME/.aliases; then
     source ~/.aliases
 fi
 
+# Source .bash_profile from interactive non-login shells too.
+# This is non-standard, but ~/.bash_profile holds PATH (~/.local/bin, go paths),
+# EDITOR, and exported tokens that subshells inside nvim/tmux/etc. need to see.
 if test -f $HOME/.bash_profile; then
     source ~/.bash_profile
 fi
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/slax0r/gcloud/google-cloud-sdk/path.bash.inc' ]; then . '/home/slax0r/gcloud/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/slax0r/gcloud/google-cloud-sdk/completion.bash.inc' ]; then . '/home/slax0r/gcloud/google-cloud-sdk/completion.bash.inc'; fi
-
-[[ -s "/home/slax0r/.gvm/scripts/gvm" ]] && source "/home/slax0r/.gvm/scripts/gvm"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 

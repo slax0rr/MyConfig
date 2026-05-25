@@ -3,7 +3,7 @@ vim.g.maplocalleader = '\\'
 
 -- load and install the plugin manager (lazy.nvim)
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
     "git",
     "clone",
@@ -49,6 +49,7 @@ require("lazy").setup({
   },
   {
     "nvim-lualine/lualine.nvim",
+    event = "VeryLazy",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
       require("lualine").setup({
@@ -139,15 +140,24 @@ require("lazy").setup({
   },
   {
     "stevearc/conform.nvim",
+    event = { "BufWritePre" },
     opts = {
       formatters_by_ft = {
         terraform = { "terraform_fmt" },
+        tf = { "terraform_fmt" },
+        lua = { "stylua" },
       },
+      format_on_save = function(bufnr)
+        -- Go is handled by gopls in lua/config/go.lua; skip here to avoid double-format.
+        if vim.bo[bufnr].filetype == "go" then return end
+        return { timeout_ms = 1000, lsp_fallback = false }
+      end,
     },
   },
   {
     "nvim-treesitter/nvim-treesitter",
     event = { "BufReadPost", "BufNewFile" },
+    build = ":TSUpdate",
     config = function()
       require("nvim-treesitter.configs").setup({
         ensure_installed = { "go", "lua", "gomod", "gowork", "gosum", "hcl", "terraform" },
@@ -158,13 +168,11 @@ require("lazy").setup({
         indent = { enable = true },
       })
     end,
-    init = function()
-      local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
-      ts_update()
-    end,
   },
   {
     "nvim-telescope/telescope.nvim",
+    cmd = "Telescope",
+    keys = { "<leader>ff", "<leader>fb", "<leader>fg", "<leader>gr", "<leader>dd", "<leader>gc", "<leader>gh" },
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       local telescope = require("telescope")
@@ -184,6 +192,8 @@ require("lazy").setup({
   },
   {
     "nvim-tree/nvim-tree.lua",
+    cmd = { "NvimTreeFocus", "NvimTreeToggle", "NvimTreeOpen", "NvimTreeClose", "NvimTreeFindFile" },
+    keys = { "<C-n>", "<C-c>" },
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
       require("nvim-tree").setup({
@@ -230,9 +240,13 @@ require("lazy").setup({
   },
   {
     "f-person/git-blame.nvim",
+    cmd = { "GitBlameToggle", "GitBlameEnable", "GitBlameOpenCommitURL", "GitBlameCopySHA" },
+    keys = {
+      { "<leader>gb", "<cmd>GitBlameToggle<cr>", desc = "Toggle git blame virtual text" },
+    },
     config = function()
       require("gitblame").setup({
-        enabled = true,
+        enabled = false,
         highlight_group = "GitBlameVirtualText",
       })
     end,
@@ -275,6 +289,21 @@ require("lazy").setup({
     "nvim-orgmode/orgmode",
     event = "VeryLazy",
     dependencies = { "nvim-treesitter/nvim-treesitter" },
+  },
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    opts = {
+      preset = "modern",
+      spec = {
+        { "<leader>a", group = "AI" },
+        { "<leader>c", group = "Comment / Code" },
+        { "<leader>f", group = "Find (Telescope)" },
+        { "<leader>g", group = "Git / Go" },
+        { "<leader>r", group = "Refactor" },
+        { "<leader>t", group = "Test" },
+      },
+    },
   },
   {
     "coder/claudecode.nvim",
@@ -343,6 +372,23 @@ require("lazy").setup({
 
 -- term GUI colors
 vim.opt.termguicolors = true
+
+-- diagnostic display
+vim.diagnostic.config({
+  virtual_text = true,
+  severity_sort = true,
+  underline = true,
+  update_in_insert = false,
+  float = { border = "rounded", source = "if_many" },
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = "",
+      [vim.diagnostic.severity.WARN]  = "",
+      [vim.diagnostic.severity.INFO]  = "",
+      [vim.diagnostic.severity.HINT]  = "",
+    },
+  },
+})
 
 -- status line
 vim.api.nvim_set_hl(0, "StatusLine", { bg = "#494d64" })
@@ -470,17 +516,19 @@ vim.api.nvim_create_autocmd("BufEnter", {
 ------------------
 -- Plugin config -
 ------------------
-package.loaded["plugin"] = nil
 require("plugin")
-
-package.loaded["config.go"] = nil
-require("config.go")
-
-package.loaded["config.org"] = nil
 require("config.org")
+
+-- Defer config.go until a Go file is actually opened. require("config.go")
+-- eagerly loads go.nvim, which on setup() runs `go install` for its tooling;
+-- that errors out if `go` isn't on PATH in nvim's spawn environment.
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "go", "gomod", "gowork", "gosum" },
+  once = true,
+  callback = function() require("config.go") end,
+})
 
 ------------
 -- Keymaps -
 ------------
-package.loaded["keymaps"] = nil
 require("keymaps")

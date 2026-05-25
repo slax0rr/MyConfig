@@ -73,10 +73,15 @@ vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(ev)
     local opts = { buffer = ev.buf }
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+    vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
     vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
+    vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
     vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
     vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
     vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+    vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
+    vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
+    vim.keymap.set("n", "<leader>de", vim.diagnostic.open_float, opts)
   end,
 })
 
@@ -88,7 +93,7 @@ keymap("n", "<leader>fb", "<cmd>Telescope buffers<CR>", opts)
 -- open live grep
 keymap("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)
 -- references
-keymap("n", "<leader>gr", require("telescope.builtin").lsp_references, opts)
+keymap("n", "<leader>gr", function() require("telescope.builtin").lsp_references() end, opts)
 -- document symbols - functions
 keymap("n", "<leader>dd", ":Telescope lsp_document_symbols<CR>", opts)
 -- git conflicts

@@ -23,5 +23,6 @@
   "snacks.nvim": { "branch": "main", "commit": "fe7cfe9800a182274d0f868a74b7263b8c0c020b" },
   "telescope-fzf-native.nvim": { "branch": "main", "commit": "1f08ed60cafc8f6168b72b80be2b2ea149813e55" },
   "telescope.nvim": { "branch": "master", "commit": "b4da76be54691e854d3e0e02c36b0245f945c2c7" },
-  "vim-terraform": { "branch": "master", "commit": "520498fab16a3a11f2ae1b8cb65e0a1684bc317a" }
+  "vim-terraform": { "branch": "master", "commit": "520498fab16a3a11f2ae1b8cb65e0a1684bc317a" },
+  "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" }
 }

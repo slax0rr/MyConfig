@@ -1,3 +1,7 @@
+# NOTE (2026-05): zsh + zim + p10k are no longer the primary shell setup.
+# Daily driver is bash (see .bashrc / .aliases). Kept here for reference only;
+# do not invest tuning effort in this file without first re-switching shells.
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.

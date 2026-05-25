@@ -11,5 +11,10 @@ alias ssh="TERM=xterm-color ssh"
 alias k="kubectl"
 alias g="git"
 
+# always reach nvim, never fall back to legacy vim
+alias vim="nvim"
+alias vi="nvim"
+alias v="nvim"
+
 alias au="sudo apt update && sudo apt upgrade"
 alias auy="sudo apt update && sudo apt upgrade -y"

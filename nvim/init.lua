@@ -38,6 +38,7 @@ require("lazy").setup({
   {
     "catppuccin/nvim",
     name = "catppuccin",
+    commit = "426dbebe06b5c69fd846ceb17b42e12f890aedf1",
     priority = 1000,
     config = function()
       require("catppuccin").setup({
@@ -123,7 +124,7 @@ require("lazy").setup({
   },
   {
     "neovim/nvim-lspconfig",
-    dependencies = { "hashivim/vim-terraform" },
+    dependencies = { "Saghen/blink.cmp", "hashivim/vim-terraform" },
     config = function()
       local capabilities = require("blink.cmp").get_lsp_capabilities()
       local lspconfig = require("lspconfig")
@@ -172,7 +173,7 @@ require("lazy").setup({
   {
     "nvim-telescope/telescope.nvim",
     cmd = "Telescope",
-    keys = { "<leader>ff", "<leader>fb", "<leader>fg", "<leader>gr", "<leader>dd", "<leader>gc", "<leader>gh" },
+    keys = { "<leader>ff", "<leader>fb", "<leader>fg", "<leader>gr", "<leader>dd", "<leader>gc", "<leader>gh", "<leader>fd" },
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       local telescope = require("telescope")
@@ -193,7 +194,6 @@ require("lazy").setup({
   {
     "nvim-tree/nvim-tree.lua",
     cmd = { "NvimTreeFocus", "NvimTreeToggle", "NvimTreeOpen", "NvimTreeClose", "NvimTreeFindFile" },
-    keys = { "<C-n>", "<C-c>" },
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
       require("nvim-tree").setup({
@@ -364,6 +364,40 @@ require("lazy").setup({
       use_buffer = false,
     },
   },
+  {
+    "suiramdev/cursorcli.nvim",
+    dependencies = { "folke/snacks.nvim" },
+    cmd = {
+      "CursorCliOpen",
+      "CursorCliOpenWithLayout",
+      "CursorCliClose",
+      "CursorCliToggle",
+      "CursorCliNew",
+      "CursorCliSelect",
+      "CursorCliResume",
+    },
+    keys = {
+      {
+        "<leader>ac",
+        "<cmd>CursorCliToggle<cr>",
+        desc = "Toggle Cursor CLI (right split)",
+        mode = "n",
+      },
+      {
+        "<leader>aC",
+        "<cmd>CursorCliNew<cr>",
+        desc = "New Cursor CLI chat",
+        mode = "n",
+      },
+    },
+    config = function()
+      require("cursorcli").setup({
+        position = "right",
+        split_size = 0.35,
+        command = { "cursor-agent" },
+      })
+    end,
+  },
 })
 
 --------------------------
@@ -518,6 +552,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
 ------------------
 require("plugin")
 require("config.org")
+require("config.notes").setup()
 
 -- Defer config.go until a Go file is actually opened. require("config.go")
 -- eagerly loads go.nvim, which on setup() runs `go install` for its tooling;

@@ -1,4 +1,5 @@
 local go = require("go")
+local has_codelens_enable = type(vim.lsp.codelens.enable) == "function"
 
 local function format_on_save(client, bufnr)
   vim.api.nvim_create_autocmd("BufWritePre", {
@@ -14,6 +15,7 @@ local function format_on_save(client, bufnr)
 end
 
 go.setup({
+  lsp_codelens = has_codelens_enable,
   lsp_inlay_hints = {
     enable = false,
   },

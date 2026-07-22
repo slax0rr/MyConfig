@@ -1,4 +1,5 @@
 local keymap = vim.keymap.set
+local notes = require("config.notes")
 local opts = { noremap = true, silent = true }
 
 -- esc remap
@@ -35,6 +36,9 @@ vim.keymap.set("n", "<leader>x", function()
   vim.cmd("startinsert")
 end, opts)
 keymap("n", "<leader>X", "<C-\\><C-n>:stop<CR>", opts)
+
+-- open notes
+keymap("n", "<leader>nn", notes.open, { noremap = true, silent = true, desc = "Open notes" })
 
 -- Base64 encode from system clipboard and insert
 keymap("n", "<leader>64", function()
@@ -92,6 +96,8 @@ keymap("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
 keymap("n", "<leader>fb", "<cmd>Telescope buffers<CR>", opts)
 -- open live grep
 keymap("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)
+-- diagnostics
+keymap("n", "<leader>fd", "<cmd>Telescope diagnostics<CR>", opts)
 -- references
 keymap("n", "<leader>gr", function() require("telescope.builtin").lsp_references() end, opts)
 -- document symbols - functions

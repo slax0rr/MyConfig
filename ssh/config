@@ -1,0 +1,9 @@
+Host garmr
+    HostName garmr.lovrec.dev
+    Port 22
+    User root
+
+Host pi
+    HostName 192.168.0.133
+    Port 22
+    User pi

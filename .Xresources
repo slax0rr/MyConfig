@@ -3,7 +3,7 @@
 dmenu.font:            xft:PragmataProMonoNerdFont:size=10:antialias=true:autohint=false
 
 !! HiDPI
-Xft.dpi: 144
+Xft.dpi: 120
 
 !! Catppuccin Macchiato (matches alacritty + nvim + i3)
 *background:  #24273a

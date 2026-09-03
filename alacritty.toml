@@ -2,14 +2,14 @@
 decorations = "full"
 dynamic_title = true
 startup_mode = "Windowed"
-opacity = 1.0
+opacity = 1
 
 [window.padding]
 x = 0
 y = 0
 
 [font]
-size = 10.0
+size = 11.0
 
 [font.normal]
 family = "PragmataProMonoNerdFont"
@@ -26,7 +26,7 @@ bindings = [
   { key = "V", mods = "Control|Shift", action = "Paste" },
   { key = "C", mods = "Control|Shift", action = "Copy" },
   { key = "Insert", mods = "Shift", action = "Paste" },
-  { key = "Return", mods = "Shift", chars = "\r" },
+  { key = "Return", mods = "Shift", chars = "\u001B\r" },
 ]
 
 [env]

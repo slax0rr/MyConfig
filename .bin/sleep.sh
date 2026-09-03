@@ -5,6 +5,5 @@ if [ $1 != "suspend" ] && [ $1 != "hibernate" ]; then
     exit 0
 fi
 
-~/.local/bin/i3lock.sh -c 000000
-
+# xss-lock locks on the logind sleep signal itself, no need to lock here
 systemctl $1

@@ -9,9 +9,6 @@ scrot -o $img
 convert $img -scale 10% -scale 1000% $img
 # Add the lock-icon
 convert $img $icon -gravity center -composite $img
-# temp disable of xautolock
-xautolock -disable
-# Finally run i3lock itself
-i3lock -u -i $img
-# reenable xautolock
-xautolock -enable
+# Finally run i3lock itself. -n keeps it in the foreground so xss-lock can
+# tell when the screen is actually unlocked again.
+i3lock -n -u -i $img

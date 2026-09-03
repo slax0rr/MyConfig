@@ -18,3 +18,6 @@ alias v="nvim"
 
 alias au="sudo apt update && sudo apt upgrade"
 alias auy="sudo apt update && sudo apt upgrade -y"
+
+alias pa="ps aux"
+alias pag="ps aux | grep"

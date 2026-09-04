@@ -1,0 +1,5 @@
+# Runs before i3 starts (sourced by Xsession).
+# i3bar's `tray_output primary` is resolved at i3bar startup, so the primary
+# output must exist by then or the systray never appears.
+xrandr --query | grep -q " primary" || \
+    xrandr --output "$(xrandr --query | awk '/ connected/{print $1; exit}')" --primary

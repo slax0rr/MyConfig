@@ -3,3 +3,5 @@
 .lvimrc
 pprof_*/
 *.vim.http
+
+**/.claude/settings.local.json

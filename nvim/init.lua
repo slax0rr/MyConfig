@@ -168,6 +168,8 @@ require("lazy").setup({
         },
         indent = { enable = true },
       })
+      -- nvim-treesitter master is not 0.12-ready; patch its query handlers.
+      require("config.ts_compat").setup()
     end,
   },
   {

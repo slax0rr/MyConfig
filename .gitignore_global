@@ -3,5 +3,5 @@
 .lvimrc
 pprof_*/
 *.vim.http
-
+.plan/
 **/.claude/settings.local.json

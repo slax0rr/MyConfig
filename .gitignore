@@ -7,5 +7,4 @@ vimfiles/view/*
 vimfiles/.netrwhist
 vimfiles/plugged/*
 .bin/
-claude/
 claude.json

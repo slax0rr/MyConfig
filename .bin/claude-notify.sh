@@ -17,8 +17,8 @@ except Exception:
 " 2>/dev/null)
 MESSAGE=${MESSAGE:-"Claude needs your input"}
 
-# Desktop notification (critical urgency, 15 s timeout)
-notify-send -u critical -t 15000 "Claude Code" "$MESSAGE" 2>/dev/null &
+# Desktop notification (normal urgency, 15 s timeout — critical never auto-expires)
+notify-send -u normal -t 15000 "Claude Code" "$MESSAGE" 2>/dev/null &
 
 # Walk up the process tree to find the alacritty PID
 find_alacritty_pid() {
